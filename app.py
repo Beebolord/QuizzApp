@@ -5,7 +5,7 @@ app = Flask(__name__)
 app.secret_key = 'your_secret_key_here'  # set a secure secret key for sessions
 
 def load_quizzes():
-    with open('Linux_Part2.json', 'r', encoding='utf-8') as f:
+    with open('Firewall.json', 'r', encoding='utf-8') as f:
         data = json.load(f)
     return data['Quizzes']
 

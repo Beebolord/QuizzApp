@@ -1,0 +1,321 @@
+{
+  "Quizzes": [
+    {
+      "quizz_title": "Lesson 1: FortiGate Firewall and Security Basics",
+      "questions": [
+        {
+          "question": "How does FortiGate check content for spam or malicious websites?",
+          "answer": [
+            "Local verification using a downloaded web filter database locally on FortiGate",
+            "Live queries to FortiGuard over UDP or HTTPS"
+          ],
+          "correct_answer": "Live queries to FortiGuard over UDP or HTTPS"
+        },
+        {
+          "question": "What must be selected in the Source field of a firewall policy?",
+          "answer": [
+            "At least one source user and one source address object",
+            "At least one address object or ISDB"
+          ],
+          "correct_answer": "At least one address object or ISDB"
+        },
+        {
+          "question": "What is the purpose of the policy lookup feature on FortiGate?",
+          "answer": [
+            "To find a matching policy based on input criteria",
+            "To block traffic based on input criteria"
+          ],
+          "correct_answer": "To find a matching policy based on input criteria"
+        },
+        {
+          "question": "Which is a more accurate description of a modern firewall?",
+          "answer": [
+            "A device that inspects network traffic at an entry point to the internet and within a simple, easily defined network perimeter",
+            "A multifunctional device that inspects network traffic from the perimeter or internally, within a network that has many different entry points"
+          ],
+          "correct_answer": "A multifunctional device that inspects network traffic from the perimeter or internally, within a network that has many different entry points"
+        },
+        {
+          "question": "Which solution specific to Fortinet enhances performance and reduces latency for specific features and traffic?",
+          "answer": [
+            "Increased RAM and CPU power",
+            "Acceleration hardware, called SPUs"
+          ],
+          "correct_answer": "Acceleration hardware, called SPUs"
+        },
+        {
+          "question": "What criteria does FortiGate use to match traffic to a firewall policy?",
+          "answer": [
+            "Security profiles",
+            "Source and destination interfaces"
+          ],
+          "correct_answer": "Source and destination interfaces"
+        },
+        {
+          "question": "Which protocol does FortiGate use to download antivirus and IPS packages?",
+          "answer": [
+            "UDP",
+            "TCP"
+          ],
+          "correct_answer": "TCP"
+        },
+        {
+          "question": "If you configure a firewall policy with the any interface, you can view the firewall policy list only in which view?",
+          "answer": [
+            "The By Sequence View",
+            "The Interface Pair View"
+          ],
+          "correct_answer": "The By Sequence View"
+        },
+        {
+          "question": "As a best security practice when configuring administrative access to FortiGate, which protocol should you disable?",
+          "answer": [
+            "Telnet",
+            "SSH"
+          ],
+          "correct_answer": "Telnet"
+        },
+        {
+          "question": "Which of the following naming formats is correct when configuring a name for a firewall address object?",
+          "answer": [
+            "Good(Training)",
+            "Good_Training"
+          ],
+          "correct_answer": "Good_Training"
+        }
+      ]
+    },
+    {
+      "quizz_title": "Lesson 2: FortiGate NAT Configuration and Behavior",
+      "questions": [
+        {
+          "question": "What is a benefit of using NAT?",
+          "answer": [
+            "Prevents depletion of IPv4 public address",
+            "Enhanced content inspection"
+          ],
+          "correct_answer": "Prevents depletion of IPv4 public address"
+        },
+        {
+          "question": "Which of the following is the default VIP type?",
+          "answer": [
+            "static-nat",
+            "load-balance"
+          ],
+          "correct_answer": "static-nat"
+        },
+        {
+          "question": "What happens if there is no matching central SNAT policy or no central SNAT policy configured?",
+          "answer": [
+            "NAT is not be applied to the firewall session.",
+            "The egress interface IP is used."
+          ],
+          "correct_answer": "NAT is not be applied to the firewall session."
+        },
+        {
+          "question": "An administrator wants to check the total number of TCP sessions for an IP pool named INTERNAL. Which CLI command should the administrator use?",
+          "answer": [
+            "diagnose firewall ippool-all list INTERNAL",
+            "diagnose firewall ippool-all stats INTERNAL"
+          ],
+          "correct_answer": "diagnose firewall ippool-all stats INTERNAL"
+        },
+        {
+          "question": "Which statement is true?",
+          "answer": [
+            "Both central NAT and firewall policy NAT can be enabled together.",
+            "Central NAT is not enabled by default."
+          ],
+          "correct_answer": "Central NAT is not enabled by default."
+        },
+        {
+          "question": "What is the default IP pool type?",
+          "answer": [
+            "One-to-one",
+            "Overload"
+          ],
+          "correct_answer": "Overload"
+        },
+        {
+          "question": "Which statement about NAT66 is true?",
+          "answer": [
+            "It is used to translate addresses between two IPv6 networks.",
+            "It is used to translate addresses between two IPv4 networks."
+          ],
+          "correct_answer": "It is used to translate addresses between two IPv6 networks."
+        }
+      ]
+    },
+     {
+      "quizz_title": "Lesson 3: FortiGate Authentication and Logging",
+      "questions": [
+        {
+          "question": "Which firewall authentication method does FortiGate support?",
+          "answer": [
+            "Local password authentication",
+            "Biometric authentication"
+          ],
+          "correct_answer": "Local password authentication"
+        },
+        {
+          "question": "Which type of logs are application control, web filter, and antivirus?",
+          "answer": [
+            "Security",
+            "Event"
+          ],
+          "correct_answer": "Security"
+        },
+        {
+          "question": "What happens when logs roll?",
+          "answer": [
+            "It lowers the space requirements needed to contain those logs.",
+            "They are uploaded to an FTP server."
+          ],
+          "correct_answer": "It lowers the space requirements needed to contain those logs."
+        },
+        {
+          "question": "A remote LDAP user is trying to authenticate with a username and password. How does FortiGate verify the login credentials?",
+          "answer": [
+            "FortiGate queries its own database for user credentials.",
+            "FortiGate sends the user-entered credentials to the remote server for verification."
+          ],
+          "correct_answer": "FortiGate sends the user-entered credentials to the remote server for verification."
+        },
+        {
+          "question": "If you enable reliable logging, which transport protocol will FortiGate use?",
+          "answer": [
+            "TCP",
+            "UDP"
+          ],
+          "correct_answer": "TCP"
+        },
+        {
+          "question": "Guest accounts are most commonly used for which purposes?",
+          "answer": [
+            "To provide temporary visitor access to corporate network resources",
+            "To provide temporary visitor access to wireless networks"
+          ],
+          "correct_answer": "To provide temporary visitor access to wireless networks"
+        },
+        {
+          "question": "When FortiGate uses a RADIUS server for remote authentication, which statement about RADIUS is true?",
+          "answer": [
+            "FortiGate must query the remote RADIUS server using the distinguished name (dn).",
+            "RADIUS group memberships are provided by vendor-specific attributes (VSAs) configured on the RADIUS server"
+          ],
+          "correct_answer": "RADIUS group memberships are provided by vendor-specific attributes (VSAs) configured on the RADIUS server"
+        },
+        {
+          "question": "The log ________ contains fields that are common to all log types, such as originating date and time, log identifier, log category, and VDOM.",
+          "answer": [
+            "body",
+            "header"
+          ],
+          "correct_answer": "header"
+        },
+        {
+          "question": "Which protocol does FortiGate use to send encrypted logs to FortiAnalyzer?",
+          "answer": [
+            "OFTPS",
+            "SSL"
+          ],
+          "correct_answer": "OFTPS"
+        },
+        {
+          "question": "Which storage type is preferred for logging?",
+          "answer": [
+            "Hard drive",
+            "Remote logging"
+          ],
+          "correct_answer": "Remote logging"
+        }
+      ]
+    },
+     {
+      "quizz_title": "Lesson 4: SSL Inspection and Web Filtering",
+      "questions": [
+        {
+          "question": "Which certificate extension and value is required in the FortiGate CA certificate in order to enable full SSL inspection?",
+          "answer": [
+            "CRL DP=ca_arl.arl",
+            "cA=True"
+          ],
+          "correct_answer": "cA=True"
+        },
+        {
+          "question": "Which configuration requires FortiGate to act as a CA for full SSL inspection?",
+          "answer": [
+            "Multiple clients connecting to multiple servers",
+            "Protecting the SSL server"
+          ],
+          "correct_answer": "Multiple clients connecting to multiple servers"
+        },
+        {
+          "question": "How does NGFW policy-based mode differ from profile-based mode?",
+          "answer": [
+            "Policy-based flow inspection supports web profile overrides.",
+            "Policy-based flow inspection defines URL filters directly in the firewall policy."
+          ],
+          "correct_answer": "Policy-based flow inspection defines URL filters directly in the firewall policy."
+        },
+        {
+          "question": "Which statement about proxy-based web filtering is true?",
+          "answer": [
+            "It requires more resources than flow-based",
+            "It transparently analyzes the TCP flow of the traffic"
+          ],
+          "correct_answer": "It requires more resources than flow-based"
+        },
+        {
+          "question": "Which is required by FortiGate to configure YouTube video filtering?",
+          "answer": [
+            "Username",
+            "YouTube API key"
+          ],
+          "correct_answer": "YouTube API key"
+        },
+        {
+          "question": "Which feature can be used for restricting websites or images from search results?",
+          "answer": [
+            "Web Content Filtering",
+            "Search Engine Filtering"
+          ],
+          "correct_answer": "Search Engine Filtering"
+        },
+        {
+          "question": "Which action in video filtering will prevent the videos from playing?",
+          "answer": [
+            "Block",
+            "Deny"
+          ],
+          "correct_answer": "Block"
+        },
+        {
+          "question": "Which attribute or extension identifies the owner of a certificate?",
+          "answer": [
+            "The unique serial number in the certificate",
+            "The subject name in the certificate"
+          ],
+          "correct_answer": "The subject name in the certificate"
+        },
+        {
+          "question": "Which of the following is used for matching content in Web Content Filtering?",
+          "answer": [
+            "Perl regular expressions",
+            "Boolean operators"
+          ],
+          "correct_answer": "Perl regular expressions"
+        },
+        {
+          "question": "How does FortiGate determine if a certificate has been revoked?",
+          "answer": [
+            "It retrieves the CRL from a directory server.",
+            "It checks the CRL that resides on FortiGate."
+          ],
+          "correct_answer": "It checks the CRL that resides on FortiGate."
+        }
+      ]
+    }
+
+  ]
+}
