@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        .option {
+            margin-bottom: 10px;
+        }
+
+        .option label {
+            margin-left: 5px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 8px 16px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h4>Question {{ index }} of {{ total }}</h4>
+    <h2>Question {{ index }} of {{ total }}</h2>
+    <p><strong>{{ question['question'] }}</strong></p>
+
+    <form method="post" action="{{ url_for('submit_answer') }}">
+        {% for option in question['answer'] %}
+            <div class="option">
+                <input type="radio" id="option{{ loop.index }}" name="selected_answer" value="{{ option }}" required>
+                <label for="option{{ loop.index }}">{{ option }}</label>
+            </div>
+        {% endfor %}
+
+        <button type="submit">Next</button>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+/* General page styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+/* Container for centering content */
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+h1, h2 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 30px;
+}
+
+/* Quiz list */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 12px 0;
+}
+
+ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+ul li a:hover {
+  color: #0056b3;
+}
+
+/* Question text */
+.question-text {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+/* Multiple choice list */
+.answers {
+  list-style: none;
+  padding: 0;
+}
+
+.answers li {
+  margin-bottom: 15px;
+}
+
+.answers label {
+  cursor: pointer;
+  padding: 10px 15px;
+  display: block;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.answers input[type="radio"] {
+  margin-right: 12px;
+}
+
+.answers label:hover {
+  background-color: #e7f1ff;
+  border-color: #007bff;
+}
+
+/* Submit button */
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1em;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: block;
+  margin: 30px auto 0;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Result page styling */
+.result {
+  text-align: center;
+  font-size: 1.3em;
+  margin-top: 40px;
+  color: #28a745; /* green */
+}

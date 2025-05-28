@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+ </head>
+<body>
+  <h1>Select a Quiz</h1>
+  <ul>
+    {% for quiz in quizzes %}
+      <li>
+        <a href="{{ url_for('question', quiz_title=quiz.quizz_title, index=0) }}">{{ quiz.quizz_title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</body>
+</html>

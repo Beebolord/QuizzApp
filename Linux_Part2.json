@@ -1,0 +1,1627 @@
+{
+  "Quizzes": [
+    {
+      "quizz_title": "Chapter 17: Implementing Logging Services and Review Questions",
+      "questions": [
+        {
+          "question": "What protocol became a de facto standard in Linux for tracking system event messages?",
+          "answer": [
+            "SMTP",
+            "FTP",
+            "NTP",
+            "syslog",
+            "journalctl"
+          ],
+          "correct_answer": "syslog"
+        },
+        {
+          "question": "Nancy wants to write a rsyslogd rule that separates event messages coming from the system job scheduler to a separate log file. Which syslog facility keyword should she use?",
+          "answer": [
+            "cron",
+            "user",
+            "kern",
+            "console",
+            "local0"
+          ],
+          "correct_answer": "cron"
+        },
+        {
+          "question": "What syslog severity level has the highest priority ranking in rsyslogd?",
+          "answer": [
+            "crit",
+            "alert",
+            "emerg",
+            "notice",
+            "err"
+          ],
+          "correct_answer": "emerg"
+        },
+        {
+          "question": "What syslog severity level represents normal but significant condition messages?",
+          "answer": [
+            "crit",
+            "notice",
+            "info",
+            "alert",
+            "local0"
+          ],
+          "correct_answer": "notice"
+        },
+        {
+          "question": "What syslog application is known for its rocket-fast speed?",
+          "answer": [
+            "syslogd",
+            "syslog-ng",
+            "systemd-journald",
+            "klogd",
+            "rsyslogd"
+          ],
+          "correct_answer": "rsyslogd"
+        },
+        {
+          "question": "What configuration file does the rsyslogd application use by default?",
+          "answer": [
+            "rsyslog.conf",
+            "journald.conf",
+            "syslogd.conf",
+            "rsyslog.d",
+            "syslog.d"
+          ],
+          "correct_answer": "rsyslog.conf"
+        },
+        {
+          "question": "James needs to log all kernel messages that have a severity level of warning or higher to a separate log file. What facility and priority setting should he use?",
+          "answer": [
+            "kern.=warn",
+            "kern.*",
+            "*.info",
+            "kern.warn",
+            "kern.alert"
+          ],
+          "correct_answer": "kern.warn"
+        },
+        {
+          "question": "Barbara wants to ensure that the journal log files will be saved after the next reboot of her Linux system. What systemd-journald configuration setting should she use?",
+          "answer": [
+            "Storage=auto",
+            "Storage=persistent",
+            "ForwardToSyslog=on",
+            "Storage=volatile",
+            "ForwardToSyslog=off"
+          ],
+          "correct_answer": "Storage=persistent"
+        },
+        {
+          "question": "Katie wants to display the most recent entries in the journal log on her Linux system. What journalctl option should she use?",
+          "answer": [
+            "-a",
+            "-l",
+            "-r",
+            "-e",
+            "-n"
+          ],
+          "correct_answer": "-r"
+        },
+        {
+          "question": "Tony is trying to troubleshoot errors produced by an application on his Linux system but has to dig through lots of entries in the journal log file to find them. What journalctl match option would help him by only displaying journal entries related to the specific application?",
+          "answer": [
+            "OBJECT_PID",
+            "Kernel",
+            "_TRANSPORT",
+            "_UID",
+            "_UDEV"
+          ],
+          "correct_answer": "OBJECT_PID"
+        }
+      ]
+    },
+    {
+  "quizz_title": "Chapter 18 - Overseeing Linux Firewalls",
+  "questions": [
+    {
+      "question": "Which of the following is true concerning firewalls on Linux that were covered in this chapter? (Choose all that apply.)",
+      "answer": [
+        "They use ACLs for allowing packets.",
+        "They inspect packet control information.",
+        "They employ configuration files for persistency.",
+        "They prevent unauthorized logins by enforcing strong passwords."
+      ],
+      "correct_answer":
+        "They use ACLs for allowing packets., They inspect packet control information., They employ configuration files for persistency."
+    },
+    {
+      "question": "Which of the following options best describes packet filtering?",
+      "answer": [
+        "Identifying network packets based on their data content and determining whether to allow or block the packet.",
+        "Identifying network packets via their control information and determining what action to take.",
+        "Inspecting packets to see whether they are authorized according to usernames and passwords.",
+        "Using antivirus software to determine whether packets are safe."
+      ],
+      "correct_answer": "Identifying network packets via their control information and determining what action to take."
+    },
+    {
+      "question": "Which of the following iptables commands can be used to view the NAT table?",
+      "answer": [
+        "iptables -t nat -L",
+        "iptables -nat",
+        "iptables --table NAT --list",
+        "iptables -table nat"
+      ],
+      "correct_answer": "iptables -t nat -L"
+    },
+    {
+      "question": "Which of the following are valid iptables chains? (Choose all that apply.)",
+      "answer": [
+        "INPUT",
+        "REJECT",
+        "DROP",
+        "FORWARD"
+      ],
+      "correct_answer":
+        "INPUT,FORWARD"
+    },
+    {
+      "question": "Which of the following firewall utilities are scripts that work with iptables? (Choose all that apply.)",
+      "answer": [
+        "firewalld",
+        "ufw",
+        "SuSEfirewall2",
+        "nftables"
+      ],
+      "correct_answer":
+        "ufw, SuSEfirewall2"
+    },
+    {
+      "question": "Which file contains iptables rules for SuSEfirewall2?",
+      "answer": [
+        "/etc/sysconfig/SuSEfirewall2",
+        "/etc/sysconfig/SuSEfirewall",
+        "/etc/sysconfig/SuSEfirewall/iptables",
+        "/etc/sysconfig/scripts/SuSEfirewall2"
+      ],
+      "correct_answer": "/etc/sysconfig/SuSEfirewall2"
+    },
+    {
+      "question": "Which of the following commands can display the status of firewalld? (Choose all that apply.)",
+      "answer": [
+        "firewalld --status",
+        "firewall-cmd --state",
+        "systemctl status firewalld",
+        "firewalld-cmd --status"
+      ],
+      "correct_answer":
+        "firewall-cmd --state, systemctl status firewalld"
+    },
+    {
+      "question": "Which of the following commands can add a rule to the public zone to allow HTTPS permanently in firewalld?",
+      "answer": [
+        "firewall-cmd --zone=public --add-service=https",
+        "firewall-cmd --zone=public --add-service=https --permanent",
+        "firewall-cmd --public --add-https --permanent",
+        "firewall-cmd --zone=public --permanent --allow=https"
+      ],
+      "correct_answer": "firewall-cmd --zone=public --add-service=https --permanent"
+    },
+    {
+      "question": "Which of the following describes masquerading?",
+      "answer": [
+        "It changes the source IP address to the firewall’s IP address when the packet exits.",
+        "It changes the destination IP address to the firewall’s IP address when the packet enters.",
+        "It rewrites the packet headers to include MAC addresses.",
+        "It blocks all inbound traffic unless specified otherwise."
+      ],
+      "correct_answer": "It changes the source IP address to the firewall’s IP address when the packet exits."
+    },
+    {
+      "question": "Which of the following commands enables masquerading for the external zone in firewalld?",
+      "answer": [
+        "firewall-cmd --zone=external --add-masquerade --permanent",
+        "firewall-cmd --zone=external --enable-masquerade --permanent",
+        "firewall-cmd --add-masquerade --zone=external",
+        "firewalld-cmd --zone=external --add-masquerade --permanent"
+      ],
+      "correct_answer": "firewall-cmd --zone=external --add-masquerade --permanent"
+    }
+  ]
+},
+    {
+  "quizz_title": "Chapter 19: Embracing Best Security Practices",
+  "questions": [
+    {
+      "question": "Which authentication method issues tickets to users and helps with implementing the single sign-on feature in a network of servers?",
+      "answer": [
+        "LDAP",
+        "Kerberos",
+        "RADIUS",
+        "TACACS+",
+        "Biometrics"
+      ],
+      "correct_answer": "Kerberos"
+    },
+    {
+      "question": "Mary wants to implement two-factor authentication using fingerprint readers for her users to authenticate with the Linux system. Which method of authentication should she look into implementing?",
+      "answer": [
+        "LDAP",
+        "Tokens",
+        "Biometrics",
+        "PKI",
+        "Kerberos"
+      ],
+      "correct_answer": "Biometrics"
+    },
+    {
+      "question": "Jaime is interested in using a distributed database method for authorizing users to access resources located on multiple network servers. Which authentication method would be best for her to use?",
+      "answer": [
+        "LDAP",
+        "Kerberos",
+        "Tokens",
+        "RADIUS",
+        "PKI"
+      ],
+      "correct_answer": "LDAP"
+    },
+    {
+      "question": "Fred wants to block users from logging in directly with the root user account from any console or terminal session. What is the best way he can do that?",
+      "answer": [
+        "Implement biometric authentication.",
+        "Implement tokens.",
+        "Use Kerberos authentication.",
+        "Remove root user entry from the /etc/passwd file.",
+        "Set the default login shell for the root user to /usr/sbin/nologin."
+      ],
+      "correct_answer": "Set the default login shell for the root user to /usr/sbin/nologin."
+    },
+    {
+      "question": "Which directory should you place on a separate partition to separate user data from system data?",
+      "answer": [
+        "/usr",
+        "/home",
+        "/etc",
+        "/sbin",
+        "/bin"
+      ],
+      "correct_answer": "/home"
+    },
+    {
+      "question": "Sally is concerned about an application that allows guests to connect to her Linux system and access a database. What can she do to limit the application to a specific directory structure on the Linux server so it can't access system data?",
+      "answer": [
+        "Block the application network port.",
+        "Move the application port to a private port number.",
+        "Place the application in an encrypted partition.",
+        "Run the application with chroot.",
+        "Place the application in a separate partition."
+      ],
+      "correct_answer": "Run the application with chroot."
+    },
+    {
+      "question": "Ted wants to provide encryption at the disk level so that users don't need to encrypt individual files as they store them. What Linux feature should he use?",
+      "answer": [
+        "LUKS",
+        "chroot",
+        "auditd",
+        "PKI",
+        "Kerberos"
+      ],
+      "correct_answer": "LUKS"
+    },
+    {
+      "question": "Ned notices in the logs that a user account schedules a job every day at noon that uses all of the system resources. How can he prevent that user account from doing that?",
+      "answer": [
+        "Use chroot for the user account.",
+        "Use nologin as the user's default shell.",
+        "Add the user account to the /etc/cron.deny file.",
+        "Add the user account to the /etc/hosts.deny file.",
+        "Create a /etc/motd message telling users to not schedule large jobs."
+      ],
+      "correct_answer": "Add the user account to the /etc/cron.deny file."
+    },
+    {
+      "question": "Tom sees an attacker continually attempt to break into a user account on his Linux system from a specific IP address. What can he do to quickly mitigate this issue?",
+      "answer": [
+        "Place the application in a chroot jail.",
+        "Add the nologin shell to the user account.",
+        "Implement two-factor authentication.",
+        "Add the attacker's IP address to the /etc/hosts.deny file.",
+        "Add the user account to the /etc/cron.deny file."
+      ],
+      "correct_answer": "Add the attacker's IP address to the /etc/hosts.deny file."
+    },
+    {
+      "question": "Despite his warnings, Fred continues to see users transfer files to his Linux server using unsecure FTP. How can he stop this?",
+      "answer": [
+        "Place a message in the /etc/motd file telling users to stop.",
+        "Move the FTP application to a different network port.",
+        "Place the user accounts in the /etc/hosts.deny file.",
+        "Place the user accounts in the /etc/cron.deny file.",
+        "Disable the FTP application ports."
+      ],
+      "correct_answer": "Disable the FTP application ports."
+    }
+  ]
+},
+    {
+  "quizz_title": "Chapter 20: Analyzing System Properties and Remediation",
+  "questions": [
+    {
+      "question": "Which of the following is true concerning network sockets? (Choose all that apply.)",
+      "answer": [
+        "Numbers used to identify which service is transmitting data",
+        "A single endpoint of a network connection's two endpoints",
+        "Uses a combination of an IP address and a port number",
+        "Endpoints between processes on a local system",
+        "Provides better IPC than localhost"
+      ],
+      "correct_answer":
+        "A single endpoint of a network connection's two endpoints, Uses a combination of an IP address and a port number"
+    },
+    {
+      "question": "The system administrator, Preston, has noticed that the IPv4 network seems sluggish. He decides to run some tests to check for high latency. Which of the following utilities should he use? (Choose all that apply.)",
+      "answer": [
+        "iperf",
+        "ping",
+        "ip neigh",
+        "dig",
+        "traceroute"
+      ],
+      "correct_answer":
+        "iperf, ping, traceroute"
+    },
+    {
+      "question": "Scott has formulated a problem cause theory that routers are saturated with traffic and dropping TCP packets from their queues. Which of the following tools should he employ to test this theory? (Choose all that apply.)",
+      "answer": [
+        "mtr",
+        "ifconfig",
+        "ethtool -s",
+        "tracepath",
+        "traceroute"
+      ],
+      "correct_answer":
+        "mtr, tracepath, traceroute"
+    },
+    {
+      "question": "The network engineer, Keenser, believes the choices of name servers in the system's /etc/resolv.conf file are inefficient. Which of the following tools can he employ to test new server choices?",
+      "answer": [
+        "dnsmasq",
+        "whois",
+        "nmap",
+        "nslookup",
+        "ipset list"
+      ],
+      "correct_answer": "nslookup"
+    },
+    {
+      "question": "Mera, a Linux system admin, believes a new application on her system is producing too much I/O for a particular partition, causing the system's processor to appear sluggish. Which tool should she use to test her problem cause theory?",
+      "answer": [
+        "iostat",
+        "ioping",
+        "du",
+        "df",
+        "iotop"
+      ],
+      "correct_answer": "iostat"
+    },
+    {
+      "question": "From analysis, Arthur believes the system's I/O throughput will improve by changing the I/O scheduler. On his system is a real-time application, which uses a database located on a solid-state drive. Which I/O scheduler should Arthur choose?",
+      "answer": [
+        "scheduler",
+        "deadline",
+        "queue",
+        "cfq",
+        "noop"
+      ],
+      "correct_answer": "deadline"
+    },
+    {
+      "question": "Using the uptime command, you will see CPU load averages in what increments? (Choose all that apply.)",
+      "answer": [
+        "1 minute",
+        "5 minutes",
+        "10 minutes",
+        "15 minutes",
+        "20 minutes"
+      ],
+      "correct_answer":
+        "1 minute, 5 minutes, 15 minutes"
+    },
+    {
+      "question": "Mary wants to view her system's processor performance over time. Which is the best utility for her to employ?",
+      "answer": [
+        "uptime",
+        "sysstat",
+        "sar",
+        "cat /proc/cpuinfo",
+        "sysctl"
+      ],
+      "correct_answer": "sar"
+    },
+    {
+      "question": "Gertie needs to determine a swap space element's type, name, and priority. Which command should she use?",
+      "answer": [
+        "vmstat",
+        "free",
+        "fstab",
+        "swapoff",
+        "swapon -s"
+      ],
+      "correct_answer": "swapon -s"
+    },
+    {
+      "question": "Elliot is administering a Linux system that has multiple swap spaces. One is on a logical volume, but it needs more space to accommodate additional RAM that is to be installed in the near future. What is the best way for Elliot to add swap space?",
+      "answer": [
+        "Add a partition and format it with the mkswap command.",
+        "Add a file and format it with the mkswap command.",
+        "Add a partition using the swapon utility.",
+        "Add a file using the swapon utility.",
+        "Use LVM tools to increase the logical volume."
+      ],
+      "correct_answer": "Use LVM tools to increase the logical volume."
+    }
+  ]
+},
+    {
+  "quizz_title": "Chapter 21: Optimizing Performance",
+  "questions": [
+    {
+      "question": "Which options are valid with the GNU ps command in Linux?",
+      "answer": [
+        "The GNU ps command supports legacy BSD and Unix options",
+        "The ps command uses Linux style options like --all",
+        "The ps command includes GNU-created options",
+        "The ps command supports BSD-style options without a dash",
+        "The ps command uses numeric options"
+      ],
+      "correct_answer": "The GNU ps command supports legacy BSD and Unix options, The ps command includes GNU-created options, The ps command supports BSD-style options without a dash"
+    },
+    {
+      "question": "Which option style uses a single dash with the GNU ps command?",
+      "answer": [
+        "GNU style options use a double dash",
+        "Unix style options use a single dash",
+        "BSD style options use no dash",
+        "Unix options use decimal numbers",
+        "Unix options use hexadecimal numbers"
+      ],
+      "correct_answer": "Unix style options use a single dash"
+    },
+    {
+      "question": "What does the GNU ps command display with no command-line options?",
+      "answer": [
+        "All processes on a specific terminal",
+        "All active processes",
+        "All sleeping processes",
+        "Only processes from the current shell",
+        "All processes for the current user"
+      ],
+      "correct_answer": "Only processes from the current shell"
+    },
+    {
+      "question": "Which command displays running processes in real time?",
+      "answer": [
+        "top",
+        "ps",
+        "lsof",
+        "pkill",
+        "kill"
+      ],
+      "correct_answer": "top"
+    },
+    {
+      "question": "Which top command displays processes based on cumulative CPU time?",
+      "answer": [
+        "l command for load average",
+        "F command to sort by field",
+        "r command to reverse sort order",
+        "y command to highlight running tasks",
+        "S command for cumulative CPU time"
+      ],
+      "correct_answer": "S command for cumulative CPU time"
+    },
+    {
+      "question": "What does the RES column in the top command output represent?",
+      "answer": [
+        "Virtual memory used by the application",
+        "Physical memory used by the application",
+        "Shared memory used by the application",
+        "Status of the application process",
+        "Percentage of memory used"
+      ],
+      "correct_answer": "Physical memory used by the application"
+    },
+    {
+      "question": "Which command allows you to specify the priority level for a new application?",
+      "answer": [
+        "renice",
+        "pkill",
+        "nice",
+        "kill",
+        "pgrep"
+      ],
+      "correct_answer": "nice"
+    },
+    {
+      "question": "Which command allows you to change the priority level of a running application?",
+      "answer": [
+        "renice",
+        "pkill",
+        "nice",
+        "kill",
+        "pgrep"
+      ],
+      "correct_answer": "renice"
+    },
+    {
+      "question": "Which command sends a HUP signal to a running process using its name?",
+      "answer": [
+        "renice",
+        "pkill",
+        "nice",
+        "kill",
+        "pgrep"
+      ],
+      "correct_answer": "pkill"
+    },
+    {
+      "question": "Which command stops a running application using its process ID?",
+      "answer": [
+        "renice",
+        "pkill",
+        "nice",
+        "kill",
+        "pgrep"
+      ],
+      "correct_answer": "kill"
+    }
+  ]
+},
+    {
+  "quizz_title": "Chapter 22: Investigating User Issues",
+  "questions": [
+    {
+      "question": "Lamar, a contractor, claims he cannot log into his account locally. He was able to do so yesterday. No one else seems to be having problems accessing the system. What should you check first?",
+      "answer": [
+        "Check if GUI services are running using the systemctl command.",
+        "Look at the OpenSSH server configuration files.",
+        "Determine if his account has expired by using the chage command.",
+        "See if the account is locked using the faillock utility.",
+        "Check for policy violations in the SELinux log files."
+      ],
+      "correct_answer": "Determine if his account has expired by using the chage command."
+    },
+    {
+      "question": "Irene normally logs into the system locally via the tty4 terminal but cannot today. She tries her authentication at the tty3 terminal and logs in successfully. What should you check first?",
+      "answer": [
+        "Determine if getty services are running using the systemctl command.",
+        "Review access rules in the /etc/security/access.conf file.",
+        "See if the account is locked using the passwd -S command.",
+        "Use the last command to see when she last logged in.",
+        "Check if the tty4 device file is corrupted using the ls -l command."
+      ],
+      "correct_answer": "Check if the tty4 device file is corrupted using the ls -l command."
+    },
+    {
+      "question": "Vincent is attempting to remotely log into the system using OpenSSH without success. He asks you what he can do to help troubleshoot this problem. What should you recommend first?",
+      "answer": [
+        "Check the /etc/ssh/sshd_config configuration file.",
+        "Add the -vvv option on to Vincent's ssh command.",
+        "Add the -X option onto Vincent's ssh command.",
+        "Confirm that Vincent's public key is stored in the ~/.ssh/authorized_keys file.",
+        "Check the ~/.ssh/config configuration file."
+      ],
+      "correct_answer": "Add the -vvv option on to Vincent's ssh command."
+    },
+    {
+      "question": "Anton is struggling to determine why a particular user cannot log into a Rocky Linux system, where SELinux is disabled and auditd is not used. Which of the following are the best log files to peruse? (Choose two.)",
+      "answer": [
+        "/var/log/audit/audit.log",
+        "/var/log/messages",
+        "/var/log/auth",
+        "/var/log/secure",
+        "/var/log/lastlog"
+      ],
+      "correct_answer": "/var/log/secure, /var/log/lastlog"
+    },
+    {
+      "question": "Tarissa needs to run a shell script, which has the permissions of rwxr--r--, is owned by root, and belongs to the wheel group. Tarissa's user account is T2T1000, and she is a member of the admin group. What can be done to allow her to run this script? (Choose all that apply.)",
+      "answer": [
+        "Add Tarissa to the wheel group.",
+        "Create a new account for Tarissa named wheel.",
+        "Add w to the script file's group permissions.",
+        "Add x to the script file's group permissions.",
+        "Nothing. Tarissa can run the script now."
+      ],
+      "correct_answer": "Add Tarissa to the wheel group, Add x to the script file's group permissions."
+    },
+    {
+      "question": "Miles needs to change his present working directory to the /home/miles directory. He does not own the directory, nor is he a member of its group. Assuming needed parent directory permissions are set, what needs to take place for this to successfully occur?",
+      "answer": [
+        "Nothing. The /home/miles directory is Miles's home directory, so he can access it by default.",
+        "The execute (x) permission needs to be added.",
+        "The write (w) permission needs to be added.",
+        "The read (r) permission needs to be added.",
+        "The dash (-) permission needs to be added."
+      ],
+      "correct_answer": "The execute (x) permission needs to be added."
+    },
+    {
+      "question": "Sarah, a system administrator, attempts to create a file and receives an error message indicating the file cannot be created. Which of the following might be the problem? (Choose all that apply.)",
+      "answer": [
+        "The filesystem on which she is attempting to create the file has quotas set, and she is past her quota and grace period.",
+        "The filesystem on which she is attempting to create the file has run out of space.",
+        "The file that she is attempting to create has the immutable bit set and therefore cannot be created.",
+        "The action is triggering either a SELinux or an AppArmor policy violation.",
+        "The filesystem is experiencing inode exhaustion and therefore cannot accommodate any new files."
+      ],
+      "correct_answer": "The filesystem on which she is attempting to create the file has quotas set, and she is past her quota and grace period., The filesystem on which she is attempting to create the file has run out of space., The filesystem is experiencing inode exhaustion and therefore cannot accommodate any new files."
+    },
+    {
+      "question": "A user cannot delete one of their files but is able to delete other files in their directory. John, a system administrator, is attempting to troubleshoot this issue. What command should he use first on the file?",
+      "answer": [
+        "chown",
+        "chattr",
+        "chmod",
+        "umask",
+        "lsattr"
+      ],
+      "correct_answer": "lsattr"
+    },
+    {
+      "question": "Melissa wants to set her default editor to the vim editor and wants this to stay set when she enters a subshell. What should she do?",
+      "answer": [
+        "Put EDITOR='vim' in the /etc/profile file.",
+        "Put export EDITOR='vim' in the /etc/profile file.",
+        "Put EDITOR='vim' in her ~/.profile file.",
+        "Put export EDITOR='vim' in her ~/.profile file.",
+        "Put export EDITOR='vim' in her ~/.bash.bashrc file."
+      ],
+      "correct_answer": "Put export EDITOR='vim' in her ~/.profile file."
+    },
+    {
+      "question": "Mark Watney, a system administrator, has his account, MW2015, modified by a new system administrator intern. When Mark logs into the system and tries to group a list of commands by using braces, it no longer works. No one else is having this problem. He suspects his account's default shell has been changed from /bin/bash to /bin/tcsh. Which of the following will help determine if his suspicion is correct? (Choose all that apply.)",
+      "answer": [
+        "cat /etc/profile",
+        "echo $SHELL",
+        "sudo grep tcsh$ /etc/passwd",
+        "sudo getent shadow MW2015",
+        "sudo getent passwd MW2015"
+      ],
+      "correct_answer": "echo $SHELL, sudo grep tcsh$ /etc/passwd, sudo getent passwd MW2015"
+    }
+  ]
+},
+    {
+  "quizz_title": "Chapter 23: Dealing with Linux Devices",
+  "questions": [
+    {
+      "question": "What type of hardware interface uses interrupts, I/O ports, and DMA channels to communicate with the PC motherboard?",
+      "answer": [
+        "USB",
+        "GPIO",
+        "PCI",
+        "Monitors",
+        "Printers"
+      ],
+      "correct_answer": "PCI"
+    },
+    {
+      "question": "What filesystem does the Linux system use to track ports used to communicate with PCI boards?",
+      "answer": [
+        "/proc/ioports",
+        "/proc/interrupts",
+        "/sys",
+        "/dev",
+        "/proc/dma"
+      ],
+      "correct_answer": "/proc/ioports"
+    },
+    {
+      "question": "Where does Linux create files to send data to and receive data from directly with devices?",
+      "answer": [
+        "/sys",
+        "/proc",
+        "/etc",
+        "/dev",
+        "/dev/mapper"
+      ],
+      "correct_answer": "/dev"
+    },
+    {
+      "question": "Katie Jane created a new LVM volume on her Linux system. Where in the virtual directory should she look to find the virtual file related to the new volume?",
+      "answer": [
+        "/dev",
+        "/dev/mapper",
+        "/proc",
+        "/sys",
+        "/etc"
+      ],
+      "correct_answer": "/dev/mapper"
+    },
+    {
+      "question": "Joel installed a new PCI card in his Linux system but is now getting a conflict with another device on the system. What command can he use to display the interrupts, I/O ports, and DMA channels in use by all the existing devices?",
+      "answer": [
+        "lsdev",
+        "lsblk",
+        "lspci",
+        "lsusb",
+        "dmesg"
+      ],
+      "correct_answer": "lsdev"
+    },
+    {
+      "question": "Which Linux command displays the contents of the kernel ring buffer?",
+      "answer": [
+        "lsdev",
+        "lsblk",
+        "lspci",
+        "lsusb",
+        "dmesg"
+      ],
+      "correct_answer": "dmesg"
+    },
+    {
+      "question": "Which software packages implement the X Windows graphical system in Linux? (Choose two.)",
+      "answer": [
+        "X.org",
+        "CUPS",
+        "Wayland",
+        "X11",
+        "udev"
+      ],
+      "correct_answer": "X.org, Wayland"
+    },
+    {
+      "question": "Sophia needs to connect her Linux system to a new network printer on the office network. What software package does she need to ensure is installed so she can configure the new network printer?",
+      "answer": [
+        "X.org",
+        "CUPS",
+        "Wayland",
+        "X11",
+        "udev"
+      ],
+      "correct_answer": "CUPS"
+    },
+    {
+      "question": "Which program runs in the background monitoring the kernel ring buffer messages for new devices?",
+      "answer": [
+        "X.org",
+        "CUPS",
+        "Wayland",
+        "X11",
+        "udev"
+      ],
+      "correct_answer": "udev"
+    },
+    {
+      "question": "Which program allows you to reload the defined rules for detecting and installing new devices?",
+      "answer": [
+        "udevadm",
+        "udev",
+        "lsusb",
+        "lspci",
+        "lsdev"
+      ],
+      "correct_answer": "udevadm"
+    }
+  ]
+},
+    {
+  "quizz_title": "Chapter 24: Troubleshooting Application and Hardware Issues",
+  "questions": [
+    {
+      "question": "Peter's system has a memory-intensive application running on it continually. To help improve performance, he has replaced the old hard drives with solid-state drives instead of increasing RAM. Which of the following is most likely true about this situation?",
+      "answer": [
+        "The SSD for application data will enter a degraded mode.",
+        "The SSD for swap will become degraded storage.",
+        "The SSD will need a namespace in its device filename.",
+        "The SSD will end up a missing volume.",
+        "The SSD will experience resource exhaustion."
+      ],
+      "correct_answer": "The SSD for swap will become degraded storage."
+    },
+    {
+      "question": "Mary adds the first SCSI disk to a Linux system that currently has only IDE drives. The system is not recognizing the new disk. Which of the following commands should she employ to troubleshoot the problem? (Choose all that apply.)",
+      "answer": [
+        "ls /sys/bus/scsi/drivers",
+        "pvscan /dev/vg00/lvol0",
+        "lsmod | grep module-name",
+        "hdparm -B 127 device-filename",
+        "smartctl -a"
+      ],
+      "correct_answer": "ls /sys/bus/scsi/drivers, lsmod | grep module-name"
+    },
+    {
+      "question": "The system administrator, Norman, runs a Python program and receives an IO Error: [Error 13] Permission denied message. What information should he gather (or know) to start troubleshooting this issue? (Choose all that apply.)",
+      "answer": [
+        "The disk type, where the program resides",
+        "His user account name",
+        "The program action that raised the error",
+        "Filename and directory location of the program's I/O files",
+        "The program's name"
+      ],
+      "correct_answer": "His user account name, The program action that raised the error, Filename and directory location of the program's I/O files"
+    },
+    {
+      "question": "Harry has modified an application to create a file in a directory and then write data to it. The program creates the file with no problems but cannot write data to it and receives a permission error. Which of the following is most likely the issue?",
+      "answer": [
+        "Directory ownership",
+        "File ownership",
+        "File group membership",
+        "Permission inheritance",
+        "Executable privileges"
+      ],
+      "correct_answer": "Permission inheritance"
+    },
+    {
+      "question": "Ben updates his Ubuntu system's packages using the sudo apt-get upgrade command, and now the Apache Web service is not working properly. What command should he run?",
+      "answer": [
+        "sudo apt-get clean",
+        "sudo zypper clean -a",
+        "sudo ldd /usr/sbin/apache2",
+        "sudo rpm -aV",
+        "sudo apt-get check"
+      ],
+      "correct_answer": "sudo apt-get check"
+    },
+    {
+      "question": "Peter writes a new C++ application to use for managing his older Linux server. The new app contains no programming or logic errors. However, when he tries to compile it, it does not work. Which of the following is most likely the issue?",
+      "answer": [
+        "An incorrect application permission",
+        "An incorrect file permission",
+        "A missing or outdated GCC",
+        "A missing or outdated device",
+        "A repository problem"
+      ],
+      "correct_answer": "A missing or outdated GCC"
+    },
+    {
+      "question": "Mary confirms via the sealert utility that her application cannot access the file flash.txt. What command should she use next?",
+      "answer": [
+        "ls -l flash.txt",
+        "ls -Z flash.txt",
+        "ls -l flash.txt-directory",
+        "setroubleshoot",
+        "restorecon"
+      ],
+      "correct_answer": "ls -Z flash.txt"
+    },
+    {
+      "question": "A clock-in/out application, which uses an NTP server on the local network, is throwing an error concerning reaching the server. There are currently no network problems. Which of the following are steps in the troubleshooting process for this issue? (Choose all that apply.)",
+      "answer": [
+        "Check the firewall ACLs on the NTP server.",
+        "Check the firewall ACLs on the application server.",
+        "Use the firewall-cmd --get-default-zone command.",
+        "Check the /etc/services file for NTP ports and transport protocols.",
+        "View firewall log entries."
+      ],
+      "correct_answer": "Check the firewall ACLs on the NTP server., Check the firewall ACLs on the application server., Check the /etc/services file for NTP ports and transport protocols., View firewall log entries."
+    },
+    {
+      "question": "Your system administrator team member Norman tells you the device located at the communications port is not working. What command should you issue to start the troubleshooting process?",
+      "answer": [
+        "dmesg | grep -i COM",
+        "dmesg | grep -i ttys",
+        "sudo setserial -a /dev/COM1",
+        "sudo setserial -a /dev/ttyS0",
+        "cat /proc/interrupts"
+      ],
+      "correct_answer": "dmesg | grep -i ttys"
+    },
+    {
+      "question": "Harry's newly installed USB printer is not working. The system employs CUPS. Which of the following are steps that may be included in the troubleshooting process? (Choose all that apply.)",
+      "answer": [
+        "Issue the less /etc/printcap command.",
+        "Use the lpinfo -m command to view available USB ports.",
+        "Put a watch on the appropriate log file and plug in the USB cable.",
+        "Use the dmesg and grep utilities to find printer information.",
+        "Use the lsusb -v command to see if the device is on the USB bus."
+      ],
+      "correct_answer": "Put a watch on the appropriate log file and plug in the USB cable., Use the dmesg and grep utilities to find printer information., Use the lsusb -v command to see if the device is on the USB bus."
+    }
+  ]
+},
+    {
+  "quizz_title": "Chapter 25: Deploying Bash Scripts",
+  "questions": [
+    {
+      "question": "What character or characters make up the shebang used in Linux to define the shell used for a shell script?",
+      "answer": [
+        "#!",
+        "|",
+        ">",
+        "2>"
+      ],
+      "correct_answer": "#!"
+    },
+    {
+      "question": "Henry needs to store the output from his script into a new log file that he can read later. What character or characters should he use to do that?",
+      "answer": [
+        "#!",
+        "|",
+        ">",
+        "2>"
+      ],
+      "correct_answer": ">"
+    },
+    {
+      "question": "Jasmine has created a new Bash shell script and wants to run it from the command line. What chmod permissions should she assign to the file to run it as a shell script?",
+      "answer": [
+        "644",
+        "u+r",
+        "u+x",
+        "u+w",
+        "u=wr"
+      ],
+      "correct_answer": "u+x"
+    },
+    {
+      "question": "What environment variable contains the username of the user who started the shell?",
+      "answer": [
+        "$USER",
+        "$UID",
+        "$HOME",
+        "$BASH",
+        "$1"
+      ],
+      "correct_answer": "$USER"
+    },
+    {
+      "question": "Zuri is writing a Bash shell script and needs to assign a number to a variable. How should he do that?",
+      "answer": [
+        "var1=$(10)",
+        "var1 = 10",
+        "var1=10",
+        "var1=\"10\"",
+        "var1=`10`"
+      ],
+      "correct_answer": "var1=10"
+    },
+    {
+      "question": "Cameron is writing a Bash shell script and needs to test if a file exists and that it's a file. What line of code should he write to do that?",
+      "answer": [
+        "if [ -e file ]",
+        "if [ -f file ]",
+        "if [ -d file ]",
+        "if [ -x file ]",
+        "if [ -w file ]"
+      ],
+      "correct_answer": "if [ -f file ]"
+    },
+    {
+      "question": "What character or combination of characters do you use to redirect the output of one command to another command?",
+      "answer": [
+        ">",
+        "#!",
+        "|",
+        "2>"
+      ],
+      "correct_answer": "|"
+    },
+    {
+      "question": "Christina is creating a Bash shell script and wants to make the script return a value of 2 if it fails. What statement should she add to do that?",
+      "answer": [
+        "#!",
+        "$?",
+        "$1",
+        "exit",
+        "while"
+      ],
+      "correct_answer": "exit"
+    },
+    {
+      "question": "What command should you use to perform a command substitution to assign the output of a command to a variable in your shell script?",
+      "answer": [
+        ">",
+        ">>",
+        "$[]",
+        "$()"
+      ],
+      "correct_answer": "$()"
+    },
+    {
+      "question": "What command should you use to perform a mathematical operation in your shell script?",
+      "answer": [
+        ">",
+        ">>",
+        "$[]",
+        "$()"
+      ],
+      "correct_answer": "$[]"
+    }
+  ]
+},
+{
+  "quizz_title": "Chapter 26: Automating Jobs",
+  "questions": [
+    {
+      "question": "Frank wants to run his large number-crunching application in background mode on his console session. What command does he need to use to do that?",
+      "answer": [
+        "&",
+        "|",
+        ">>",
+        "nohup"
+      ],
+      "correct_answer": "&"
+    },
+    {
+      "question": "What command do you use to disconnect a shell script from the current console so that it can continue to run after the console exits?",
+      "answer": [
+        "&",
+        "|",
+        ">>",
+        "nohup"
+      ],
+      "correct_answer": "nohup"
+    },
+    {
+      "question": "When Melanie runs a shell script, she notices that it takes up all of the memory on her Linux system and she needs to stop it. How can she do that?",
+      "answer": [
+        "Start it with the nohup command.",
+        "Start it with the ampersand (&) command.",
+        "Press Ctrl+C while the script is running.",
+        "Redirect the output using the pipe symbol.",
+        "Use the kill command to stop it."
+      ],
+      "correct_answer": "Press Ctrl+C while the script is running."
+    },
+    {
+      "question": "How can you temporarily pause a shell script from running in foreground mode in a console session?",
+      "answer": [
+        "Press the Ctrl+Z key combination.",
+        "Press the Ctrl+C key combination.",
+        "Start the command with the nohup command.",
+        "Start the command with the ampersand (&) command.",
+        "Start the command with the fg command."
+      ],
+      "correct_answer": "Press the Ctrl+Z key combination."
+    },
+    {
+      "question": "How do you determine the default job running in a console session?",
+      "answer": [
+        "By the PID number",
+        "By the job number",
+        "By a plus sign next to the job number in the jobs output",
+        "By a minus sign next to the job number in the jobs output",
+        "By using the ps command"
+      ],
+      "correct_answer": "By a plus sign next to the job number in the jobs output"
+    },
+    {
+      "question": "Barbara has an application running in background mode in her console session and needs to bring it to foreground mode. What command should she use to do that?",
+      "answer": [
+        "bg",
+        "fg",
+        "nohup",
+        "&",
+        "at"
+      ],
+      "correct_answer": "fg"
+    },
+    {
+      "question": "What command allows you to run a shell script at a specific time?",
+      "answer": [
+        "nohup",
+        "&",
+        "at",
+        "|",
+        ">"
+      ],
+      "correct_answer": "at"
+    },
+    {
+      "question": "Nick needs to run a report at midnight every day on his Linux system. How should he do that?",
+      "answer": [
+        "Use the at command to schedule the job.",
+        "Run the job using the nohup command.",
+        "Run the job using the ampersand (&) symbol.",
+        "Schedule the job using cron.",
+        "Run the job using the atq command."
+      ],
+      "correct_answer": "Schedule the job using cron."
+    },
+    {
+      "question": "When will the cron table entry 10 5 * * * myscript run the specified shell script?",
+      "answer": [
+        "At 10:05 a.m. every day",
+        "On May 10th every year",
+        "On October 5th every year",
+        "At 5:10 p.m. every day",
+        "At 5:10 a.m. every day"
+      ],
+      "correct_answer": "At 5:10 a.m. every day"
+    },
+    {
+      "question": "Jane needs to check on what jobs are scheduled to run automatically for her user account. What command should she use to list the cron table entries for her user account?",
+      "answer": [
+        "cron",
+        "at",
+        "crontab",
+        "jobs",
+        "nohup"
+      ],
+      "correct_answer": "crontab"
+    }
+  ]
+},
+    {
+  "quizz_title": "Chapter 27: Controlling Versions with Git",
+  "questions": [
+    {
+      "question": "Which of the following is true concerning version control? (Choose all that apply.)",
+      "answer": [
+        "Provides a common place to merge and store files",
+        "Requires filenames to contain version numbers",
+        "May be distributed or nondistributed",
+        "Helps to protect files from being overwritten",
+        "Can deal with files other than programs"
+      ],
+      "correct_answer": "Provides a common place to merge and store files, May be distributed or nondistributed, Helps to protect files from being overwritten, Can deal with files other than programs"
+    },
+    {
+      "question": "Conceptually Git is broken up into distinct areas. Which of the following is one of those areas? (Choose all that apply.)",
+      "answer": [
+        "Blob",
+        "Local repository",
+        "Remote repository",
+        "Index",
+        "Working directory"
+      ],
+      "correct_answer": "Local repository, Remote repository, Index, Working directory"
+    },
+    {
+      "question": "Which of the following are steps needed to set up a Git environment for the first time? (Choose all that apply.)",
+      "answer": [
+        "Create a working directory.",
+        "Initialize the .git/ directory in the working directory.",
+        "Set up the local repository options.",
+        "Add files to the staging area when ready.",
+        "Establish the remote repository."
+      ],
+      "correct_answer": "Create a working directory., Initialize the .git/ directory in the working directory., Set up the local repository options., Establish the remote repository."
+    },
+    {
+      "question": "Natasha has created her working directory for a new project. What should she do next to set up her Git project environment?",
+      "answer": [
+        "Issue the mkdir command.",
+        "Enter the git config --list command.",
+        "Set up her GitHub repository.",
+        "Enter the git init command.",
+        "Start creating her program files."
+      ],
+      "correct_answer": "Enter the git init command."
+    },
+    {
+      "question": "When setting his Git configuration options, Bruce employs the --global option on his commands. What does this mean?",
+      "answer": [
+        "The configuration information is stored on GitHub.",
+        "The configuration information is stored in ~/.gitconfig.",
+        "The configuration information is stored in the working directory's .git/config file.",
+        "The configuration information is stored in the working directory's .git/index file.",
+        "The configuration information is stored in the working directory's .git/objects directory."
+      ],
+      "correct_answer": "The configuration information is stored in ~/.gitconfig."
+    },
+    {
+      "question": "Bruce has set up his Git environment and finished working on his new GreenMass.sh script. What should he do next?",
+      "answer": [
+        "Add the script to the staging area.",
+        "Issue the git init command.",
+        "Commit the script to the local repository.",
+        "Issue the git log command.",
+        "Commit the script to the remote repository."
+      ],
+      "correct_answer": "Add the script to the staging area."
+    },
+    {
+      "question": "There are 25 files in Natasha's working directory and she only wants to add 22 of them to the index. She plans on using the git add . command to be efficient. What should she do?",
+      "answer": [
+        "Move the three files out of her working directory.",
+        "Add the 22 files individually via the git add command.",
+        "Create a new working directory for the three files.",
+        "Add the three files' names to a .gitignore file.",
+        "Temporarily delete the three files."
+      ],
+      "correct_answer": "Add the three files' names to a .gitignore file."
+    },
+    {
+      "question": "Natasha has completed her open source project, which is set to be released to the public today. She has moved the files to the staging area, committed her work to the local repository, and configured the remote repository's address. What is her next step?",
+      "answer": [
+        "Go home and relax. She deserves it.",
+        "Clone the remote repository to her local system.",
+        "Push her project to the remote repository.",
+        "Pull her project from the remote repository.",
+        "Use the remote add origin URL command."
+      ],
+      "correct_answer": "Push her project to the remote repository."
+    },
+    {
+      "question": "Which of the following commands allows you to switch to a new Git branch called testing?",
+      "answer": [
+        "git branch testing",
+        "git ls‐tree --name‐only -r testing",
+        "git branch",
+        "git commit -m \"testing\"",
+        "git checkout testing"
+      ],
+      "correct_answer": "git checkout testing"
+    },
+    {
+      "question": "Tony created a new branch of the StoneTracker project called report. He has completed and tested his work. He now needs to merge it with the StoneTracker project's master branch. After switching branches to the master branch, what command should he employ?",
+      "answer": [
+        "git merge master",
+        "git merge report",
+        "git rebase master",
+        "git rebase report",
+        "git checkout master"
+      ],
+      "correct_answer": "git merge report"
+    }
+  ]
+},
+    {
+  "quizz_title": "Chapter 28: Understanding Cloud and Virtualization Concepts",
+  "questions": [
+    {
+      "question": "Which cloud service method utilizes only servers owned and operated by a third party?",
+      "answer": [
+        "Private",
+        "Public",
+        "Hybrid",
+        "Type II",
+        "Type I"
+      ],
+      "correct_answer": "Public"
+    },
+    {
+      "question": "Tom currently runs a cloud for his company on internal servers but needs some extra processing power to run a new application. What method of cloud service can he check out to leverage his existing cloud without needing to buy more internal servers?",
+      "answer": [
+        "Private",
+        "Public",
+        "Hybrid",
+        "Type I",
+        "Type II"
+      ],
+      "correct_answer": "Hybrid"
+    },
+    {
+      "question": "Sally is interested in developing her application in the cloud without having to worry about administering an operating system. What type of cloud service should she buy?",
+      "answer": [
+        "PaaS",
+        "Private cloud",
+        "IaaS",
+        "SaaS",
+        "Hybrid cloud"
+      ],
+      "correct_answer": "PaaS"
+    },
+    {
+      "question": "Which type of cloud service allows you to spin up your own operating systems on infrastructure provided by the cloud?",
+      "answer": [
+        "PaaS",
+        "Private cloud",
+        "IaaS",
+        "SaaS",
+        "Hybrid cloud"
+      ],
+      "correct_answer": "IaaS"
+    },
+    {
+      "question": "Which type of hypervisor interfaces directly with the host system hardware?",
+      "answer": [
+        "Private",
+        "Public",
+        "Type II",
+        "Type I",
+        "Hybrid"
+      ],
+      "correct_answer": "Type I"
+    },
+    {
+      "question": "Henry already has installed Red Hat Linux on his server but now needs to install virtual machines. What type of hypervisor package should he use?",
+      "answer": [
+        "Private",
+        "Public",
+        "Type II",
+        "Type I",
+        "Hybrid"
+      ],
+      "correct_answer": "Type II"
+    },
+    {
+      "question": "Which type of hypervisor template bundles all of the configuration files into a single file for distribution?",
+      "answer": [
+        "XML",
+        "JSON",
+        "OVA",
+        "OVF",
+        "YAML"
+      ],
+      "correct_answer": "OVA"
+    },
+    {
+      "question": "Fred wants to package his application so that it's guaranteed to run the same way no matter what Linux distribution his customers use. How can he do this?",
+      "answer": [
+        "Package the application as a container.",
+        "Package the application as a hypervisor.",
+        "Deploy the application to a private cloud.",
+        "Deploy the application as a virtual machine.",
+        "Bundle the application as a tar file and deploy it."
+      ],
+      "correct_answer": "Package the application as a container."
+    },
+    {
+      "question": "What method should you use to easily move an application from a development environment to a production environment without having to duplicate the operating system?",
+      "answer": [
+        "Public cloud",
+        "Private cloud",
+        "Type I hypervisor",
+        "Type II hypervisor",
+        "Container"
+      ],
+      "correct_answer": "Container"
+    },
+    {
+      "question": "Which Linux container package runs an engine as a process on the host operating system and provides a command-line interface to control containers?",
+      "answer": [
+        "Snap",
+        "Docker",
+        "KVM",
+        "XEN",
+        "VirtualBox"
+      ],
+      "correct_answer": "Docker"
+    }
+  ]
+},
+    {
+  "quizz_title": "Chapter 29: Inspecting Cloud and Virtualization Services",
+  "questions": [
+    {
+      "question": "Which of the following is true concerning the libvirt library software collection? (Choose all that apply.)",
+      "answer": [
+        "Provides an API library for hypervisors",
+        "Provides a complete hypervisor (VMM) application",
+        "Provides the virsh and virsh-install utilities",
+        "Provides the anaconda file used for bootstrapping",
+        "Provides the libvirtd daemon for host systems"
+      ],
+      "correct_answer": "Provides an API library for hypervisors, Provides the virsh and virsh-install utilities, Provides the libvirtd daemon for host systems"
+    },
+    {
+      "question": "Carol wants to automate the management of her virtual machines via a Bash shell script. Which of the following utilities can she use in this script? (Choose all that apply.)",
+      "answer": [
+        "virsh",
+        "virtinst",
+        "virt-manage",
+        "virt-install",
+        "setvcpus"
+      ],
+      "correct_answer": "virsh, virt-install"
+    },
+    {
+      "question": "Nick is setting up a bootstrapping process on a RHEL system. He needs to store the installation tree. Which of the following are locations where he could store it? (Choose all that apply.)",
+      "answer": [
+        "Network location",
+        "USB flash drive",
+        "On AutoYaST",
+        "Within the preseed directory",
+        "With the kickstart file"
+      ],
+      "correct_answer": "Network location, USB flash drive, With the kickstart file"
+    },
+    {
+      "question": "Which of the following is true concerning the cloud-init product? (Choose all that apply.)",
+      "answer": [
+        "It was created and maintained by Microsoft.",
+        "It is usable by cloud-based virtualization services.",
+        "It is usable by cloud-based management operating systems.",
+        "It is supported by most major Linux distributions.",
+        "It is a bootstrap product."
+      ],
+      "correct_answer": "It is usable by cloud-based virtualization services, It is usable by cloud-based management operating systems, It is supported by most major Linux distributions, It is a bootstrap product"
+    },
+    {
+      "question": "Ms. Danvers is designing a set of virtual machines for her company, Miracle. Currently, her host machine uses LVM but only has enough disk space for 1 TB of data. Her three VMs will need 200 GB of disk space immediately but are projected to grow to 300 GB each within the next year. What should she do?",
+      "answer": [
+        "Configure the three VMs to use persistent storage.",
+        "Configure the three VMs to use temporary storage.",
+        "Configure the three VMs to use thick provisioned storage.",
+        "Configure the three VMs to use thin provisioned storage.",
+        "Configure the three VMs to use blob storage."
+      ],
+      "correct_answer": "Configure the three VMs to use thin provisioned storage."
+    },
+    {
+      "question": "Mr. Fury is a programming professor at Galactic University. This next semester he has chosen to use virtual machines for his students' labs. The students will be creating a single program that they'll work on throughout the entire semester. What is the best choice of disk storage for Mr. Fury's student virtual machines?",
+      "answer": [
+        "Persistent storage",
+        "Temporary storage",
+        "Thick provisioned storage",
+        "Thin provisioned storage",
+        "Blob block storage"
+      ],
+      "correct_answer": "Persistent storage"
+    },
+    {
+      "question": "Which of the following is true about an overlay network? (Choose all that apply.)",
+      "answer": [
+        "It is a storage virtualization method.",
+        "It is a network virtualization method.",
+        "It is a method that employs encapsulation.",
+        "It is a method that employs bandwidth tunneling.",
+        "It is a method that employs page blobs."
+      ],
+      "correct_answer": "It is a network virtualization method, It is a method that employs encapsulation, It is a method that employs bandwidth tunneling"
+    },
+    {
+      "question": "Carol needs her virtual machines to all act as nodes on her host machine's LAN and get their own IP address that they will use to send/receive network traffic. Which virtual NIC type should she configure on them?",
+      "answer": [
+        "Host-only",
+        "Bridged",
+        "NAT",
+        "Multihomed",
+        "Dual-homed"
+      ],
+      "correct_answer": "Bridged"
+    },
+    {
+      "question": "Ms. Danvers wants her three virtual machines' IP address to be kept private, but she also wants them to communicate on the host machine's network using its IP address. Which virtual NIC type should she configure on them?",
+      "answer": [
+        "Host-only",
+        "Bridged",
+        "NAT",
+        "Multihomed",
+        "Dual-homed"
+      ],
+      "correct_answer": "NAT"
+    },
+    {
+      "question": "Nick has created five virtual machines on his host system. One virtual machine is employed as a firewall for the other four machines, which are confined with host-only adapters. The firewall VM operates on the host system's network as a node. Which of the following describe his firewall adapter configuration? (Choose all that apply.)",
+      "answer": [
+        "Host-only",
+        "Bridged",
+        "NAT",
+        "Multihomed",
+        "Dual-homed"
+      ],
+      "correct_answer": "Host-only, Bridged, Dual-homed"
+    }
+  ]
+},
+    {
+  "quizz_title": "Chapter 30: Orchestrating the Environment",
+  "questions": [
+    {
+      "question": "Which of the following can use orchestration? (Choose all that apply.)",
+      "answer": [
+        "Software development",
+        "Music production",
+        "Server monitoring",
+        "DevOps",
+        "Containers"
+      ],
+      "correct_answer": "Software development, Music production, Server monitoring, DevOps, Containers"
+    },
+    {
+      "question": "Connie, the tech ops lead, provides the development team with a development environment that currently matches the production environment. She insists that besides the app modifications, the environment should not change. What attribute should this development environment have to meet Connie's requirement?",
+      "answer": [
+        "Self-replicating",
+        "Immutable",
+        "Kubernetes",
+        "Infrastructure as code",
+        "Self-healing"
+      ],
+      "correct_answer": "Immutable"
+    },
+    {
+      "question": "Bill, the software development team leader, understands Connie's (tech ops lead) desire for a static and matching development environment. However, since they are employing containers, Bill suggests a better improvement. Which of the following should he suggest?",
+      "answer": [
+        "Modify the production container so that it matches the development container when the app is ready for production.",
+        "Move the app from the development container to the production container when the app is ready for production.",
+        "Stop any software updates on the development container from occurring before the app is ready for production.",
+        "Replace the production container with the development container when the app is ready for production.",
+        "Remove any updates on the development container that are not on the production container when the app is ready for production."
+      ],
+      "correct_answer": "Replace the production container with the development container when the app is ready for production."
+    },
+    {
+      "question": "Which of the following orchestrated container attributes best provides high availability to an app user?",
+      "answer": [
+        "Immutability",
+        "Version control",
+        "Replication",
+        "Automation",
+        "Documentation"
+      ],
+      "correct_answer": "Replication"
+    },
+    {
+      "question": "In DevOps and container orchestration, non-hardware items such as the operating system and libraries and security policies are documented within the orchestration tool, implemented into the desired environment, and are called what?",
+      "answer": [
+        "Marathon",
+        "Build automation",
+        "A development environment",
+        "A container",
+        "Infrastructure as code"
+      ],
+      "correct_answer": "Infrastructure as code"
+    },
+    {
+      "question": "Ms. Ward needs to move an app container into production. She employs an orchestration tool, which uses the predefined infrastructure as code to deploy and replicate the needed production container images. What orchestration concept did Ms. Ward use?",
+      "answer": [
+        "Monitoring",
+        "Build automation",
+        "Replication",
+        "Version control",
+        "Docker Swarm"
+      ],
+      "correct_answer": "Build automation"
+    },
+    {
+      "question": "Which of the following is a benefit of automated configuration management in container orchestration? (Choose all that apply.)",
+      "answer": [
+        "Containers can be deployed automatically.",
+        "Containers can be replicated automatically.",
+        "Troubleshooting infrastructure issues is easier.",
+        "Continuous software delivery is enabled.",
+        "Infrastructure modifications are tracked."
+      ],
+      "correct_answer": "Containers can be deployed automatically., Containers can be replicated automatically., Troubleshooting infrastructure issues is easier., Infrastructure modifications are tracked."
+    },
+    {
+      "question": "Mr. Abbot is recording requirements for the new orchestration tool. He needs the tool to automatically deploy and replicate any containers that have crashed. What is this called?",
+      "answer": [
+        "Self-healing",
+        "Build automation",
+        "Continuous integration",
+        "Infrastructure as code",
+        "Pod builds"
+      ],
+      "correct_answer": "Self-healing"
+    },
+    {
+      "question": "Which of the following are items that may be collected, used, or watched by an orchestration monitoring tool? (Choose all that apply.)",
+      "answer": [
+        "Version control errors",
+        "App container performance",
+        "App metrics",
+        "App container health",
+        "Default states"
+      ],
+      "correct_answer": "App container performance, App metrics, App container health, Default states"
+    },
+    {
+      "question": "Connie has picked an agentless orchestration monitoring utility for her app containers. Which of the following reasons might she have used in reaching this decision? (Choose all that apply.)",
+      "answer": [
+        "Connie wanted monitoring software installed on each app container.",
+        "She did not want monitoring software installed on each app container.",
+        "Connie was concerned about container performance being adversely affected by the monitoring software.",
+        "She was not concerned about container performance being adversely affected by the monitoring software.",
+        "Connie wanted to use what most companies use for orchestration monitoring."
+      ],
+      "correct_answer": "She did not want monitoring software installed on each app container., Connie was concerned about container performance being adversely affected by the monitoring software."
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  ]
+}

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <title>{{ title }} - Results</title>
+</head>
+<body>
+    <h2>{{ title }} - Your Score</h2>
+    <p>{{ score }} out of {{ total }}</p>
+    <a href="/">Back to Quiz List</a>
+</body>
+</html>
