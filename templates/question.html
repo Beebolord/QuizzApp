@@ -17,8 +17,15 @@
       <label for="{{ option }}">{{ option }}</label>
     </div>
   {% endfor %}
+    <button type="button" onclick="document.getElementById('correct-answer').style.display='block'">Show Answer </button>
+
   <button type="submit">Submit</button>
+ <p id="correct-answer" style="display:none; color:green;">
+  Correct answer: {{ question.correct_answer }}
+</p>
 </form>
 
+
+</button>
 </body>
 </html>
