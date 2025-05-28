@@ -1,13 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-
     <title>{{ title }} - Results</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9fafb;
+            color: #222;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;  /* centers horizontally */
+            align-items: center;      /* centers vertically */
+        }
+
+        .results-container {
+            text-align: center;
+            max-width: 600px;
+            padding: 30px 40px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+        }
+
+        .results-title {
+            font-weight: 700;
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+        }
+
+        .score {
+            font-size: 2.2rem;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .out-of {
+            font-weight: 500;
+            color: #555;
+            margin: 0 8px;
+        }
+
+        a.btn {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 14px 28px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        a.btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <h2>{{ title }} - Your Score</h2>
-    <p>{{ score }} out of {{ total }}</p>
-    <a href="/">Back to Quiz List</a>
+    <div class="results-container">
+        <h2 class="results-title">{{ title }} - Your Score</h2>
+        <p class="score">{{ score }} <span class="out-of">out of</span> {{ total }}</p>
+        <a href="/" class="btn">Back to Quiz List</a>
+    </div>
 </body>
 </html>

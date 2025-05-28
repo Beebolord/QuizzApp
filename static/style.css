@@ -5,6 +5,25 @@ body {
   margin: 0;
   padding: 20px;
   color: #333;
+  font-size: 16px;
+
+}
+ input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #007bff; /* Optional: sets the color in supported browsers */
+    vertical-align: middle;
+  }
+ label {
+    font-size: 1.2rem;  /* or use px like 18px */
+  /* optional spacing from the radio button */
+    cursor: pointer;
+    margin-bottom: 4px;
+  }
+
+  label.option {
+  display: block;
+  margin-bottom: 4px;
 }
 
 /* Container for centering content */
@@ -89,7 +108,7 @@ button[type="submit"] {
   border-radius: 6px;
   cursor: pointer;
   display: block;
-  margin: 30px auto 0;
+  margin:  auto 0;
   transition: background-color 0.3s ease;
 }
 button[type="button"] {
@@ -101,7 +120,8 @@ button[type="button"] {
   border-radius: 6px;
   cursor: pointer;
   display: block;
-  margin: 30px auto 0;
+  margin:  auto 0;
+   margin-left: 200px;
   transition: background-color 0.3s ease;
 }
 button[type="submit"]:hover {
@@ -117,4 +137,15 @@ button[type="button"]:hover {
   font-size: 1.3em;
   margin-top: 40px;
   color: #28a745; /* green */
+}
+.wrapper {
+  display: flex;
+  flex-direction: column; /* vertical stacking */
+  align-items: center;    /* optional: center contents horizontally */
+  gap: 1rem;              /* spacing between vertical elements if needed */
+}
+
+.button-row {
+  display: flex;
+  gap: 10px;              /* space between buttons */
 }

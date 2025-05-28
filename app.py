@@ -1,5 +1,7 @@
 from flask import Flask, render_template, request, session, redirect, url_for
 import json
+import random
+
 
 app = Flask(__name__)
 app.secret_key = 'your_secret_key_here'  # set a secure secret key for sessions
@@ -45,7 +47,9 @@ def question(quiz_title, index):
 
     # GET method - show current question
     question_data = quiz['questions'][index]
-    return render_template('question.html', quiz_title=quiz_title, index=index, question=question_data)
+
+    total = len(quiz['questions']) if quiz else 0
+    return render_template('question.html', quiz_title=quiz_title, index=index, question=question_data, total=total)
 
 @app.route('/result')
 def result():
@@ -57,6 +61,17 @@ def result():
     # Clear session after showing result
     session.clear()
     return render_template('result.html', score=score, total=total, quiz_title=quiz_title)
+
+@app.route('/next', methods=['POST'])
+def next_question():
+    session['question_index'] = session.get('question_index', 0) + 1
+    return redirect(request.referrer or url_for('home'))
+
+@app.route('/previous', methods=['POST'])
+def previous_question():
+    session['question_index'] = max(session.get('question_index', 0) - 1, 0)
+    return redirect(request.referrer or url_for('home'))
+
 
 if __name__ == '__main__':
     app.run(debug=True)

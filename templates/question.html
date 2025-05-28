@@ -2,30 +2,76 @@
 <html>
 <head>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-
-    <title>{{ title }} - Question {{ index + 1 }}</title>
+    <title>{{ title }} - Question {{ index + 1 }} out of {{ total_questions }}</title>
+    <style>
+      .correct {
+        color: green;
+        font-weight: bold;
+      }
+      .incorrect {
+        color: red;
+        font-weight: bold;
+      }
+      .button-row {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+    </style>
 </head>
 <body>
+   <h2>Question {{ index + 1 }} out of {{ total }}</h2>
+   <div style="width: 800px; margin: 20px auto;">
+      <h3>{{ question.question }}</h3>
+      <div style="height: 20px;"></div>
+      <form method="POST">
+        {% for option in question.answer %}
+          <div>
+            <label class="option" for="{{ option }}">
+              <input type="radio" id="{{ option }}" name="option" value="{{ option }}" required>
+              {{ option }}
+              <div style="height: 10px;"></div>
+            </label>
+          </div>
+        {% endfor %}
+        <div class="button-row">
+          <button type="button" onclick="showAnswer()">Show Answer</button>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
 
-   <h2>Question {{ index + 1 }}</h2>
-<p>{{ question.question }}</p>
+      <p id="result-message" style="display:none;"></p>
+      <p id="correct-answer" style="display:none;">Correct answer: {{ question.correct_answer }}</p>
+   </div>
 
-<form method="POST">
-  {% for option in question.answer %}
-    <div>
-      <input type="radio" id="{{ option }}" name="option" value="{{ option }}" required>
-      <label for="{{ option }}">{{ option }}</label>
-    </div>
-  {% endfor %}
-    <button type="button" onclick="document.getElementById('correct-answer').style.display='block'">Show Answer </button>
+<script>
+  const correctAnswer = "{{ question.correct_answer }}";
 
-  <button type="submit">Submit</button>
- <p id="correct-answer" style="display:none; color:green;">
-  Correct answer: {{ question.correct_answer }}
-</p>
-</form>
+  function showAnswer() {
+    const form = document.querySelector('form');
+    const selectedOption = form.option.value;  // get selected radio value
+    const resultMessage = document.getElementById('result-message');
+    const answerElem = document.getElementById('correct-answer');
 
+    if (!selectedOption) {
+      alert('Please select an option first.');
+      return;
+    }
 
-</button>
+    if (selectedOption === correctAnswer) {
+      resultMessage.textContent = 'Correct! 🎉';
+      resultMessage.className = 'correct';
+      answerElem.style.color = 'green';
+    } else {
+      resultMessage.textContent = 'Incorrect. 😞';
+      resultMessage.className = 'incorrect';
+      answerElem.style.color = 'red';
+    }
+
+    resultMessage.style.display = 'block';
+    answerElem.style.display = 'block';
+  }
+</script>
+
 </body>
 </html>
