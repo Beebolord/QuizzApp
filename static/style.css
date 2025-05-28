@@ -92,8 +92,22 @@ button[type="submit"] {
   margin: 30px auto 0;
   transition: background-color 0.3s ease;
 }
-
+button[type="button"] {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1em;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: block;
+  margin: 30px auto 0;
+  transition: background-color 0.3s ease;
+}
 button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+button[type="button"]:hover {
   background-color: #0056b3;
 }
 
