@@ -8,7 +8,9 @@ app.secret_key = 'your_secret_key_here'
 # Mapping of module names to their JSON files
 MODULES = {
     'Firewall': 'Firewall.json',
-    'Linux': 'Linux Part 2.json'
+    'Linux': 'Linux Part 2.json',
+    'CCNA Part 1': 'ccna.json',
+    'CCNA Part 2': 'ccna_2.json',
 }
 
 def load_module_quizzes(module_name):

@@ -1,0 +1,1652 @@
+{
+  "Quizzes": [
+    {
+      "quizz_title": "Chapter 1: TCP/IP Protocols Quiz",
+      "questions": [
+        {
+          "question": "Which of the following protocols are examples of TCP/IP transport layer protocols? (Choose two answers.)",
+          "answer": [
+            "Ethernet",
+            "HTTP",
+            "IP",
+            "UDP",
+            "SMTP",
+            "TCP"
+          ],
+          "correct_answer": "UDP, TCP"
+        },
+        {
+          "question": "Which of the following protocols are examples of TCP/IP data-link layer protocols? (Choose two answers.)",
+          "answer": [
+            "Ethernet",
+            "HTTP",
+            "IP",
+            "UDP",
+            "SMTP",
+            "TCP",
+            "802.11"
+          ],
+          "correct_answer": "Ethernet, 802.11"
+        },
+        {
+          "question": "The process of HTTP asking TCP to send some data and making sure that it is received correctly is an example of what?",
+          "answer": [
+            "Same-layer interaction",
+            "Adjacent-layer interaction",
+            "TCP/IP model",
+            "All of these answers are correct"
+          ],
+          "correct_answer": "Adjacent-layer interaction"
+        },
+        {
+          "question": "The process of TCP on one computer marking a TCP segment as segment 1 and the receiving computer then acknowledging the receipt of TCP segment 1 is an example of what?",
+          "answer": [
+            "Data encapsulation",
+            "Same-layer interaction",
+            "Adjacent-layer interaction",
+            "TCP/IP model",
+            "All of these answers are correct"
+          ],
+          "correct_answer": "Same-layer interaction"
+        },
+        {
+          "question": "The process of a web server adding a TCP header to the contents of a web page, followed by adding an IP header and then adding a data-link header and trailer, is an example of what?",
+          "answer": [
+            "Data encapsulation",
+            "Same-layer interaction",
+            "TCP/IP model",
+            "All of these answers are correct"
+          ],
+          "correct_answer": "Data encapsulation"
+        },
+        {
+          "question": "Which of the following terms is used specifically to identify the entity created when encapsulating data inside data-link layer headers and trailers?",
+          "answer": [
+            "Data",
+            "Chunk",
+            "Segment",
+            "Frame",
+            "Packet"
+          ],
+          "correct_answer": "Frame"
+        }
+      ]
+    },
+    {
+      "quizz_title": "Chapter 2: Ethernet and Networking Quiz",
+      "questions": [
+        {
+          "question": "Some end-user devices connect to a LAN using a cable while others use wireless. Which answer best characterizes which devices use Ethernet to connect to the LAN?",
+          "answer": [
+            "Only the end-user devices that use cables are using Ethernet.",
+            "Only the end-user devices that use wireless are using Ethernet.",
+            "Both the end-user devices using cables and those using wireless are using Ethernet.",
+            "Neither the end-user devices using cables nor those using wireless are using Ethernet."
+          ],
+          "correct_answer": "Only the end-user devices that use cables are using Ethernet."
+        },
+        {
+          "question": "Which of the following Ethernet standards defines Gigabit Ethernet over UTP cabling?",
+          "answer": [
+            "10GBASE-T",
+            "100BASE-T",
+            "1000BASE-T",
+            "None of the other answers are correct."
+          ],
+          "correct_answer": "1000BASE-T"
+        },
+        {
+          "question": "Which of the following is true about Ethernet crossover cables for Fast Ethernet?",
+          "answer": [
+            "Pins 1 and 2 are reversed on the other end of the cable.",
+            "Pins 1 and 2 on one end of the cable connect to pins 3 and 6 on the other end of the cable.",
+            "Pins 1 and 2 on one end of the cable connect to pins 3 and 4 on the other end of the cable.",
+            "The cable can be up to 1000 meters long to cross over between buildings.",
+            "None of the other answers are correct."
+          ],
+          "correct_answer": "Pins 1 and 2 on one end of the cable connect to pins 3 and 6 on the other end of the cable."
+        },
+        {
+          "question": "Each answer lists two types of devices used in a 100BASE-T network. If these devices were connected with UTP Ethernet cables, which pairs of devices would require a straight-through cable? (Choose three answers.)",
+          "answer": [
+            "PC and router",
+            "PC and switch",
+            "Hub and switch",
+            "Router and hub",
+            "Wireless access point (Ethernet port) and switch"
+          ],
+          "correct_answer": "PC and switch, Router and hub, Wireless access point (Ethernet port) and switch"
+        },
+        {
+          "question": "Which of the following are advantages of using multimode fiber for an Ethernet link instead of UTP or single-mode fiber? (Choose two answers.)",
+          "answer": [
+            "To achieve the longest distance possible for that single link.",
+            "To extend the link beyond 100 meters while keeping initial costs as low as possible.",
+            "To make use of an existing stock of laser-based SFP/SFP+ modules.",
+            "To make use of an existing stock of LED-based SFP/SFP+ modules."
+          ],
+          "correct_answer": "To extend the link beyond 100 meters while keeping initial costs as low as possible., To make use of an existing stock of LED-based SFP/SFP+ modules."
+        },
+        {
+          "question": "Which of the following is true about the CSMA/CD algorithm?",
+          "answer": [
+            "The algorithm never allows collisions to occur.",
+            "Collisions can happen, but the algorithm defines how the computers should notice a collision and how to recover.",
+            "The algorithm works with only two devices on the same Ethernet.",
+            "None of the other answers are correct."
+          ],
+          "correct_answer": "Collisions can happen, but the algorithm defines how the computers should notice a collision and how to recover."
+        },
+        {
+          "question": "Which of the following is true about the Ethernet FCS field?",
+          "answer": [
+            "Ethernet uses FCS for error recovery.",
+            "It is 2 bytes long.",
+            "It resides in the Ethernet trailer, not the Ethernet header.",
+            "It is used for encryption."
+          ],
+          "correct_answer": "It resides in the Ethernet trailer, not the Ethernet header."
+        },
+        {
+          "question": "Which of the following are true about the format of Ethernet addresses? (Choose three answers.)",
+          "answer": [
+            "Each manufacturer puts a unique OUI code into the first 2 bytes of the address.",
+            "Each manufacturer puts a unique OUI code into the first 3 bytes of the address.",
+            "Each manufacturer puts a unique OUI code into the first half of the address.",
+            "The part of the address that holds the manufacturer’s code is called the MAC.",
+            "The part of the address that holds the manufacturer’s code is called the OUI.",
+            "The part of the address that holds the manufacturer’s code has no specific name."
+          ],
+          "correct_answer": "Each manufacturer puts a unique OUI code into the first 3 bytes of the address., Each manufacturer puts a unique OUI code into the first half of the address., The part of the address that holds the manufacturer’s code is called the OUI."
+        },
+        {
+          "question": "Which of the following terms describe Ethernet addresses that can be used to send one frame that is delivered to multiple devices on the LAN? (Choose two answers.)",
+          "answer": [
+            "Burned-in address",
+            "Unicast address",
+            "Broadcast address",
+            "Multicast address"
+          ],
+          "correct_answer": "Broadcast address, Multicast address"
+        }
+      ]
+    },
+    {
+      "quizz_title": "Chapter 3: Ethernet LANs",
+      "questions": [
+        {
+          "question": "Some end-user devices connect to a LAN using a cable while others use wireless. Which correct_answer best characterizes which devices use Ethernet to connect to the LAN?",
+          "answer": [
+            "Only the end-user devices that use cables are using Ethernet.",
+            "Only the end-user devices that use wireless are using Ethernet.",
+            "Both the end-user devices using cables and those using wireless are using Ethernet.",
+            "Neither the end-user devices using cables nor those using wireless are using Ethernet."
+          ],
+          "correct_answer": "Only the end-user devices that use cables are using Ethernet."
+        },
+        {
+          "question": "Which of the following Ethernet standards defines Gigabit Ethernet over UTP cabling?",
+          "answer": [
+            "10GBASE-T",
+            "100BASE-T",
+            "1000BASE-T",
+            "None of the other correct_answers are correct."
+          ],
+          "correct_answer": "1000BASE-T"
+        },
+        {
+          "question": "Which of the following is true about Ethernet crossover cables for Fast Ethernet?",
+          "answer": [
+            "Pins 1 and 2 are reversed on the other end of the cable.",
+            "Pins 1 and 2 on one end of the cable connect to pins 3 and 6 on the other end of the cable.",
+            "Pins 1 and 2 on one end of the cable connect to pins 3 and 4 on the other end of the cable.",
+            "The cable can be up to 1000 meters long to cross over between buildings.",
+            "None of the other correct_answers are correct."
+          ],
+          "correct_answer": "Pins 1 and 2 on one end of the cable connect to pins 3 and 6 on the other end of the cable."
+        },
+        {
+          "question": "Each correct_answer lists two types of devices used in a 100BASE-T network. If these devices were connected with UTP Ethernet cables, which pairs of devices would require a straight-through cable? (Choose three correct_answers.)",
+          "answer": [
+            "PC and router",
+            "PC and switch",
+            "Hub and switch",
+            "Router and hub",
+            "Wireless access point (Ethernet port) and switch"
+          ],
+          "correct_answer": "PC and switch, Router and hub, Wireless access point (Ethernet port) and switch"
+        },
+        {
+          "question": "Which of the following are advantages of using multimode fiber for an Ethernet link instead of UTP or single-mode fiber? (Choose two correct_answers.)",
+          "answer": [
+            "To achieve the longest distance possible for that single link.",
+            "To extend the link beyond 100 meters while keeping initial costs as low as possible.",
+            "To make use of an existing stock of laser-based SFP/SFP+ modules.",
+            "To make use of an existing stock of LED-based SFP/SFP+ modules."
+          ],
+          "correct_answer": "To extend the link beyond 100 meters while keeping initial costs as low as possible., To make use of an existing stock of LED-based SFP/SFP+ modules."
+        },
+        {
+          "question": "Which of the following is true about the CSMA/CD algorithm?",
+          "answer": [
+            "The algorithm never allows collisions to occur.",
+            "Collisions can happen, but the algorithm defines how the computers should notice a collision and how to recover.",
+            "The algorithm works with only two devices on the same Ethernet.",
+            "None of the other answers are correct."
+          ],
+          "correct_answer": "Collisions can happen, but the algorithm defines how the computers should notice a collision and how to recover."
+        },
+        {
+          "question": "Which of the following is true about the Ethernet FCS field?",
+          "answer": [
+            "Ethernet uses FCS for error recovery.",
+            "It is 2 bytes long.",
+            "It resides in the Ethernet trailer, not the Ethernet header.",
+            "It is used for encryption."
+          ],
+          "correct_answer": "It resides in the Ethernet trailer, not the Ethernet header."
+        },
+        {
+          "question": "Which of the following are true about the format of Ethernet addresses? (Choose three correct_answers.)",
+          "answer": [
+            "Each manufacturer puts a unique OUI code into the first 2 bytes of the address.",
+            "Each manufacturer puts a unique OUI code into the first 3 bytes of the address.",
+            "Each manufacturer puts a unique OUI code into the first half of the address.",
+            "The part of the address that holds the manufacturer’s code is called the MAC.",
+            "The part of the address that holds the manufacturer’s code is called the OUI.",
+            "The part of the address that holds the manufacturer’s code has no specific name."
+          ],
+          "correct_answer": "Each manufacturer puts a unique OUI code into the first 3 bytes of the address., Each manufacturer puts a unique OUI code into the first half of the address., The part of the address that holds the manufacturer’s code is called the OUI."
+        },
+        {
+          "question": "Which of the following terms describe Ethernet addresses that can be used to send one frame that is delivered to multiple devices on the LAN? (Choose two correct_answers.)",
+          "answer": [
+            "Burned-in address",
+            "Unicast address",
+            "Broadcast address",
+            "Multicast address"
+          ],
+          "correct_answer": "Broadcast address, Multicast address"
+        }
+      ]
+    },
+    {
+      "quizz_title": "Chapter 4: Cisco Switch CLI and Concepts",
+      "questions": [
+        {
+          "question": "In what modes can you type the command 'show mac address-table' and expect to get a response with MAC table entries?",
+          "answer": [
+            "User  mode",
+            "Enable mode",
+            "Global configuration mode",
+            "Interface configuration mode"
+          ],
+          "correct_answer": "User  mode, Enable mode"
+        },
+        {
+          "question": "In which of the following modes of the CLI could you type the command 'reload' and expect the switch to reboot?",
+          "answer": [
+            "User  mode",
+            "Enable mode",
+            "Global configuration mode",
+            "Interface configuration mode"
+          ],
+          "correct_answer": "Enable mode"
+        },
+        {
+          "question": "Which of the following is a difference between Telnet and SSH as supported by a Cisco switch?",
+          "answer": [
+            "SSH encrypts the passwords used at login, but not other traffic; Telnet encrypts nothing.",
+            "SSH encrypts all data exchange, including login passwords; Telnet encrypts nothing.",
+            "Telnet is used from Microsoft operating systems, and SSH is used from UNIX and Linux operating systems.",
+            "Telnet encrypts only password exchanges; SSH encrypts all data exchanges."
+          ],
+          "correct_answer": "SSH encrypts all data exchange, including login passwords; Telnet encrypts nothing."
+        },
+        {
+          "question": "What type of switch memory is used to store the configuration used by the switch when it is up and working?",
+          "answer": [
+            "RAM",
+            "ROM",
+            "Flash",
+            "NVRAM",
+            "Bubble"
+          ],
+          "correct_answer": "RAM"
+        },
+        {
+          "question": "What command copies the configuration from RAM into NVRAM?",
+          "answer": [
+            "copy running-config tftp",
+            "copy tftp running-config",
+            "copy running-config start-up-config",
+            "copy start-up-config running-config",
+            "copy startup-config running-config",
+            "copy running-config startup-config"
+          ],
+          "correct_answer": "copy running-config startup-config"
+        },
+        {
+          "question": "A switch user is currently in console line configuration mode. Which of the following would place the user in enable mode?",
+          "answer": [
+            "Using the exit command once",
+            "Using the end command once",
+            "Pressing the Ctrl+Z key sequence once",
+            "Using the quit command"
+          ],
+          "correct_answer": "Using the end command once"
+        }
+      ]
+    },
+    {
+      "quizz_title": "Chapter 5: Switch Forwarding Logic and MAC Address Table",
+      "questions": [
+        {
+          "question": "Which of the following statements describes part of the process of how a switch decides to forward a frame destined for a known unicast MAC address?",
+          "answer": [
+            "It compares the unicast destination address to the bridging, or MAC address, table.",
+            "It compares the unicast source address to the bridging, or MAC address, table.",
+            "It forwards the frame out all interfaces in the same VLAN except for the incoming interface.",
+            "It compares the destination IP address to the destination MAC address.",
+            "It compares the frame’s incoming interface to the source MAC entry in the MAC address table."
+          ],
+          "correct_answer": "It compares the unicast destination address to the bridging, or MAC address, table."
+        },
+        {
+          "question": "Which of the following statements best describes the forwarding logic that a LAN switch, with all interfaces assigned to VLAN 1 as per default settings, uses for an incoming frame with a destination MAC address of FFFF.FFFF.FFFF?",
+          "answer": [
+            "It forwards the frame out all switch ports.",
+            "It forwards the frame out all switch ports except the arrival port.",
+            "It forwards the frame out all ports that had earlier registered to ask to receive broadcasts.",
+            "It discards the frame."
+          ],
+          "correct_answer": "It forwards the frame out all switch ports except the arrival port."
+        },
+        {
+          "question": "Which of the following statements best describes what a switch does with a frame destined for an unknown unicast address?",
+          "answer": [
+            "It forwards out all interfaces in the same VLAN except for the incoming interface.",
+            "It forwards the frame out the one interface identified by the matching entry in the MAC address table.",
+            "It compares the destination IP address to the destination MAC address.",
+            "It compares the frame’s incoming interface to the source MAC entry in the MAC address table."
+          ],
+          "correct_answer": "It forwards out all interfaces in the same VLAN except for the incoming interface."
+        },
+        {
+          "question": "Which of the following comparisons does a switch make when deciding whether a new MAC address should be added to its MAC address table?",
+          "answer": [
+            "It compares the unicast destination address to the bridging, or MAC address, table.",
+            "It compares the unicast source address to the bridging, or MAC address, table.",
+            "It compares the VLAN ID to the bridging, or MAC address, table.",
+            "It compares the destination IP address’s ARP cache entry to the bridging, or MAC address, table."
+          ],
+          "correct_answer": "It compares the unicast source address to the bridging, or MAC address, table."
+        },
+        {
+          "question": "A Cisco Catalyst switch has 24 10/100 ports, numbered 0/1 through 0/24. Ten PCs connect to the ten lowest numbered ports, with those PCs working and sending data over the network. The other ports are not connected to any device. Which of the following correct_answers lists facts displayed by the show interfaces status command?",
+          "answer": [
+            "Port Ethernet 0/1 is in a connected state.",
+            "Port Fast Ethernet 0/11 is in a connected state.",
+            "Port Fast Ethernet 0/5 is in a connected state.",
+            "Port Ethernet 0/15 is in a notconnected state."
+          ],
+          "correct_answer": "Port Fast Ethernet 0/5 is in a connected state."
+        },
+        {
+          "question": "Consider the following output from a Cisco Catalyst switch:\n\nSW1# show mac address-table dynamic\n          Mac Address Table\n-------------------------------------------\nVlan    Mac Address       Type        Ports\n----    -----------       --------    -----\n   1    02AA.AAAA.AAAA    DYNAMIC     Gi0/1\n   1    02BB.BBBB.BBBB    DYNAMIC     Gi0/2\n   1    02CC.CCCC.CCCC    DYNAMIC     Gi0/3\nTotal Mac Addresses for this criterion: 3\n\nWhich of the following correct_answers is true about this switch?",
+          "answer": [
+            "The output proves that port Gi0/2 connects directly to a device that uses address 02BB.BBBB.BBBB.",
+            "The switch has learned three MAC addresses since the switch powered on.",
+            "The three listed MAC addresses were learned based on the destination MAC address of frames forwarded by the switch.",
+            "Address 02CC.CCCC.CCCC was learned from the source MAC address of a frame that entered port Gi0/3."
+          ],
+          "correct_answer": "Address 02CC.CCCC.CCCC was learned from the source MAC address of a frame that entered port Gi0/3."
+        }
+      ]
+    },
+    {
+      "quizz_title": "Chapter 6: Switch Password Protection and Configuration",
+      "questions": [
+        {
+          "question": "Imagine that you have configured the enable secret command, followed by the enable password command, from the console. You log out of the switch and log back in at the console. Which command defines the password that you had to enter to access privileged mode?",
+          "answer": [
+            "enable password",
+            "enable secret",
+            "Neither",
+            "The password command, if it is configured"
+          ],
+          "correct_answer": "enable secret"
+        },
+        {
+          "question": "An engineer wants to set up simple password protection with no usernames for some switches in a lab, for the purpose of keeping curious coworkers from logging in to the lab switches from their desktop PCs. Which of the following commands would be a useful part of that configuration?",
+          "answer": [
+            "A login vty mode subcommand",
+            "A password password console subcommand",
+            "A login local vty subcommand",
+            "A transport input ssh vty subcommand"
+          ],
+          "correct_answer": "A password password console subcommand"
+        },
+        {
+          "question": "An engineer had formerly configured a Cisco 2960 switch to allow Telnet access so that the switch expected a password of mypassword from the Telnet user. The engineer then changed the configuration to support Secure Shell. Which of the following commands could have been part of the new configuration? (Choose two correct_answers.)",
+          "answer": [
+            "A username name secret password vty mode subcommand",
+            "A username name secret password global configuration command",
+            "A login local vty mode subcommand",
+            "A transport input ssh global configuration command"
+          ],
+          "correct_answer": "A login local vty mode subcommand, A transport input ssh global configuration command"
+        },
+        {
+          "question": "An engineer’s desktop PC connects to a switch at the main site. A router at the main site connects to each branch office through a serial link, with one small router and switch at each branch. Which of the following commands must be configured on the branch office switches, in the listed configuration mode, to allow the engineer to telnet to the branch office switches and supply only a password to log in? (Choose three correct_answers.)",
+          "answer": [
+            "The ip address command in interface configuration mode",
+            "The ip address command in global configuration mode",
+            "The ip default-gateway command in VLAN configuration mode",
+            "The ip default-gateway command in global configuration mode",
+            "The password command in console line configuration mode",
+            "The password command in vty line configuration mode"
+          ],
+          "correct_answer": "The ip address command in interface configuration mode, The ip default-gateway command in global configuration mode, The password command in vty line configuration mode"
+        },
+        {
+          "question": "A Layer 2 switch configuration places all its physical ports into VLAN 2. An attached router uses address/mask 172.16.2.254/24. The IP address plan calls for the switch to use address/mask 172.16.2.250/24 and to use the router as its default gateway. The switch needs to support SSH connections into the switch from any subnet in the network. Which of the following commands are part of the required configuration in this case? (Choose two correct_answers.)",
+          "answer": [
+            "The ip address 172.16.2.250 255.255.255.0 command in interface vlan 1 configuration mode.",
+            "The ip address 172.16.2.250 255.255.255.0 command in interface vlan 2 configuration mode.",
+            "The ip default-gateway 172.16.2.254 command in global configuration mode.",
+            "The switch cannot support SSH because all its ports connect to VLAN 2, and the IP address must be configured on interface VLAN 1."
+          ],
+          "correct_answer": "The ip address 172.16.2.250 255.255.255.0 command in interface vlan 2 configuration mode, The ip default-gateway 172.16.2.254 command in global configuration mode."
+        },
+        {
+          "question": "Which of the following line subcommands tells a switch to wait until a show command’s output has completed before displaying log messages on the screen?",
+          "answer": [
+            "logging synchronous",
+            "no ip domain-lookup",
+            "exec-timeout 0 0",
+            "history size 15"
+          ],
+          "correct_answer": "logging synchronous"
+        }
+      ]
+    },
+    {
+      "quizz_title": "Chapter 7: Switch Password Protection and Configuration",
+      "questions": [
+        {
+          "question": "Imagine that you have configured the enable secret command, followed by the enable password command, from the console. You log out of the switch and log back in at the console. Which command defines the password that you had to enter to access privileged mode?",
+          "answer": [
+            "enable password",
+            "enable secret",
+            "Neither",
+            "The password command, if it is configured"
+          ],
+          "correct_answer": "enable secret"
+        },
+        {
+          "question": "An engineer wants to set up simple password protection with no usernames for some switches in a lab, for the purpose of keeping curious coworkers from logging in to the lab switches from their desktop PCs. Which of the following commands would be a useful part of that configuration?",
+          "answer": [
+            "A login vty mode subcommand",
+            "A password password console subcommand",
+            "A login local vty subcommand",
+            "A transport input ssh vty subcommand"
+          ],
+          "correct_answer": "A password password console subcommand"
+        },
+        {
+          "question": "An engineer had formerly configured a Cisco 2960 switch to allow Telnet access so that the switch expected a password of mypassword from the Telnet user. The engineer then changed the configuration to support Secure Shell. Which of the following commands could have been part of the new configuration? (Choose two correct_answers.)",
+          "answer": [
+            "A username name secret password vty mode subcommand",
+            "A username name secret password global configuration command",
+            "A login local vty mode subcommand",
+            "A transport input ssh global configuration command"
+          ],
+          "correct_answer": "A login local vty mode subcommand, A transport input ssh global configuration command"
+        },
+        {
+          "question": "An engineer’s desktop PC connects to a switch at the main site. A router at the main site connects to each branch office through a serial link, with one small router and switch at each branch. Which of the following commands must be configured on the branch office switches, in the listed configuration mode, to allow the engineer to telnet to the branch office switches and supply only a password to log in? (Choose three correct_answers.)",
+          "answer": [
+            "The ip address command in interface configuration mode",
+            "The ip address command in global configuration mode",
+            "The ip default-gateway command in VLAN configuration mode",
+            "The ip default-gateway command in global configuration mode",
+            "The password command in console line configuration mode",
+            "The password command in vty line configuration mode"
+          ],
+          "correct_answer": "The ip address command in interface configuration mode, The ip default-gateway command in global configuration mode, The password command in vty line configuration mode"
+        },
+        {
+          "question": "A Layer 2 switch configuration places all its physical ports into VLAN 2. An attached router uses address/mask 172.16.2.254/24. The IP address plan calls for the switch to use address/mask 172.16.2.250/24 and to use the router as its default gateway. The switch needs to support SSH connections into the switch from any subnet in the network. Which of the following commands are part of the required configuration in this case? (Choose two correct_answers.)",
+          "answer": [
+            "The ip address 172.16.2.250 255.255.255.0 command in interface vlan 1 configuration mode.",
+            "The ip address 172.16.2.250 255.255.255.0 command in interface vlan 2 configuration mode.",
+            "The ip default-gateway 172.16.2.254 command in global configuration mode.",
+            "The switch cannot support SSH because all its ports connect to VLAN 2, and the IP address must be configured on interface VLAN 1."
+          ],
+          "correct_answer": "The ip address 172.16.2.250 255.255.255.0 command in interface vlan 2 configuration mode, The ip default-gateway 172.16.2.254 command in global configuration mode."
+        },
+        {
+          "question": "Which of the following line subcommands tells a switch to wait until a show command’s output has completed before displaying log messages on the screen?",
+          "answer": [
+            "logging synchronous",
+            "no ip domain-lookup",
+            "exec-timeout 0 0",
+            "history size 15"
+          ],
+          "correct_answer": "logging synchronous"
+        }
+      ]
+    },
+    {
+      "quizz_title": "Chapter 8: VLAN and Trunking Configuration",
+      "questions": [
+        {
+          "question": "In a LAN, which of the following terms best equates to the term VLAN?",
+          "answer": [
+            "Collision domain",
+            "Broadcast domain",
+            "Subnet",
+            "Single switch",
+            "Trunk"
+          ],
+          "correct_answer": "Broadcast domain"
+        },
+        {
+          "question": "Imagine a small lab network with one LAN switch, with the ports configured to be in three different VLANs. How many IP subnets do you need for the hosts connected to the switch ports, assuming that all hosts in all VLANs want to use TCP/IP?",
+          "answer": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "You cannot tell from the information provided."
+          ],
+          "correct_answer": "3"
+        },
+        {
+          "question": "Switch SW1 sends a frame to switch SW2 using 802.1Q trunking. Which of the correct_answers describes how SW1 changes or adds to the Ethernet frame before forwarding the frame to SW2?",
+          "answer": [
+            "Inserts a 4-byte header and does change the MAC addresses.",
+            "Inserts a 4-byte header and does not change the MAC addresses.",
+            "Encapsulates the original frame behind an entirely new Ethernet header.",
+            "None of the other correct_answers are correct."
+          ],
+          "correct_answer": "Inserts a 4-byte header and does not change the MAC addresses."
+        },
+        {
+          "question": "You are told that switch 1 is configured with the switchport mode dynamic auto command on its Fa0/5 interface, which is connected to switch 2. Which of the following settings on the switchport mode command on switch 2 would allow trunking to work? (Choose two correct_answers.)",
+          "answer": [
+            "trunk",
+            "dynamic auto",
+            "dynamic desirable",
+            "access",
+            "None of the other correct_answers are correct."
+          ],
+          "correct_answer": "trunk, dynamic desirable"
+        },
+        {
+          "question": "A switch has just arrived from Cisco. The switch has never been configured with any VLANs, but VTP has been disabled. An engineer configures the vlan 22 and name Hannahs-VLAN commands and then exits configuration mode. Which of the following are true? (Choose two correct_answers.)",
+          "answer": [
+            "VLAN 22 is listed in the output of the show vlan brief command.",
+            "VLAN 22 is listed in the output of the show running-config command.",
+            "VLAN 22 is not created by this process.",
+            "VLAN 22 does not exist in that switch until at least one interface is assigned to that VLAN."
+          ],
+          "correct_answer": "VLAN 22 is listed in the output of the show vlan brief command., VLAN 22 is listed in the output of the show running-config command."
+        },
+        {
+          "question": "Which of the following commands identify switch interfaces as being trunking interfaces—interfaces that currently operate as VLAN trunks? (Choose two correct_answers.)",
+          "answer": [
+            "show interfaces",
+            "show interfaces switchport",
+            "show interfaces trunk",
+            "show trunks"
+          ],
+                    "correct_answer": "show interfaces switchport, show interfaces trunk"
+        },
+        {
+          "question": "In a switch that disables VTP, an engineer configures the commands vlan 30 and shutdown vlan 30. Which correct_answers should be true about this switch? (Choose two correct_answers.)",
+          "answer": [
+            "The show vlan brief command should list VLAN 30.",
+            "The show running-config command should list VLAN 30.",
+            "The switch should forward frames that arrive in access ports in VLAN 30.",
+            "The switch should forward frames that arrive in trunk ports tagged with VLAN 30."
+          ],
+          "correct_answer": "The show vlan brief command should list VLAN 30., The show running-config command should list VLAN 30."
+        },
+        {
+          "question": "The show interfaces g0/1 trunk command provides three lists of VLAN IDs. Which items would limit the VLANs that appear in the first of the three lists of VLANs?",
+          "answer": [
+            "A shutdown vlan 30 global command",
+            "A switchport trunk allowed vlan interface subcommand",
+            "An STP choice to block on G0/1",
+            "A no vlan 30 global command"
+          ],
+          "correct_answer": "A switchport trunk allowed vlan interface subcommand"
+        }
+      ]
+    },
+    {
+      "quizz_title": "Chapter 9: STP and RSTP Configuration",
+      "questions": [
+        {
+          "question": "Which of the following port states are stable states used when STP has completed convergence? (Choose two correct_answers.)",
+          "answer": [
+            "Blocking",
+            "Forwarding",
+            "Listening",
+            "Learning",
+            "Discarding"
+          ],
+          "correct_answer": "Blocking, Forwarding"
+        },
+        {
+          "question": "Which of the following bridge IDs wins election as root, assuming that the switches with these bridge IDs are in the same network?",
+          "answer": [
+            "32769:0200.1111.1111",
+            "32769:0200.2222.2222",
+            "4097:0200.1111.1111",
+            "4097:0200.2222.2222",
+            "40961:0200.1111.1111"
+          ],
+          "correct_answer": "4097:0200.1111.1111"
+        },
+        {
+          "question": "Which of the following are transitory port states used only during the process of STP convergence? (Choose two correct_answers.)",
+          "answer": [
+            "Blocking",
+            "Forwarding",
+            "Listening",
+            "Learning",
+            "Discarding"
+          ],
+          "correct_answer": "Listening, Learning"
+        },
+        {
+          "question": "Which of the following facts determines how often a nonroot bridge or switch sends an STP Hello BPDU message?",
+          "answer": [
+            "The Hello timer as configured on that switch.",
+            "The Hello timer as configured on the root switch.",
+            "It is always every 2 seconds.",
+            "The switch reacts to BPDUs received from the root switch by sending another BPDU 2 seconds after receiving the root BPDU."
+          ],
+          "correct_answer": "The Hello timer as configured on the root switch."
+        },
+        {
+          "question": "Which of the following RSTP port states have the same name and purpose as a port state in traditional STP? (Choose two correct_answers.)",
+          "answer": [
+            "Blocking",
+            "Forwarding",
+            "Listening",
+            "Learning",
+            "Discarding"
+          ],
+          "correct_answer": "Forwarding, Discarding"
+        },
+        {
+          "question": "RSTP adds features beyond STP that enable ports to be used for a role if another port on the same switch fails. Which of the following statements correctly describe a port role that is waiting to take over for another port role? (Choose two correct_answers.)",
+          "answer": [
+            "An alternate port waits to become a root port.",
+            "A backup port waits to become a root port.",
+            "An alternate port waits to become a designated port.",
+            "A backup port waits to become a designated port."
+          ],
+          "correct_answer": "An alternate port waits to become a root port., A backup port waits to become a designated port."
+        },
+        {
+          "question": "What STP/RSTP feature causes an interface to be placed in the forwarding state as soon as the interface is physically active?",
+          "answer": [
+            "STP",
+            "EtherChannel",
+            "Root Guard",
+            "PortFast"
+          ],
+          "correct_answer": "PortFast"
+        },
+        {
+          "question": "Which optional STP feature reacts to a subset of incoming STP BPDUs to disable the port, but allows and processes some other STP BPDUs?",
+          "answer": [
+            "Loop Guard",
+            "BPDU Guard",
+            "Root Guard",
+            "PortFast"
+          ],
+          "correct_answer": "Root Guard"
+        }
+      ]
+    },
+    {
+      "quizz_title": "Chapter 10: Spanning Tree Protocol and EtherChannel",
+      "questions": [
+        {
+          "question": "Which type value on the spanning-tree mode type global command enables the use of RSTP?",
+          "answer": [
+            "rapid-pvst",
+            "pvst",
+            "rstp",
+            "rpvst"
+          ],
+          "correct_answer": "rapid-pvst"
+        },
+        {
+          "question": "Examine the following output from the show spanning-tree vlan 5 command, which describes a root switch in a LAN. Which correct_answers accurately describe facts related to the root’s bridge ID? (Choose two correct_answers.)",
+          "answer": [
+            "The system ID extension value, in decimal, is 5.",
+            "The root’s configured priority value is 32773.",
+            "The root’s configured priority value is 32768.",
+            "The system ID extension value, in hexadecimal, is 1833.9d7b.0e80."
+          ],
+          "correct_answer": "The root’s configured priority value is 32773., The system ID extension value, in hexadecimal, is 1833.9d7b.0e80."
+        },
+        {
+          "question": "With Cisco’s RPVST+, which of the following actions does a switch take to identify which VLAN is described by a BPDU? (Choose three correct_answers.)",
+          "answer": [
+            "Adds a VLAN tag when forwarding a BPDU on trunks",
+            "Adds the VLAN ID in an extra TLV in the BPDU",
+            "Lists the VLAN ID as the middle 12 bits of the System ID field of the BPDU",
+            "Lists the VLAN ID in the System ID Extension field of the BPDU"
+          ],
+          "correct_answer": "Adds a VLAN tag when forwarding a BPDU on trunks., Adds the VLAN ID in an extra TLV in the BPDU., Lists the VLAN ID in the System ID Extension field of the BPDU."
+        },
+        {
+          "question": "A switch port in access mode connects to a single laptop. An attacker replaces the laptop with a LAN switch that uses STP. Which combination of features, enabled on the access port, results in the switch changing the port’s interface state to err-disabled? (Choose two correct_answers.)",
+          "answer": [
+            "PortFast enabled but BPDU Guard not enabled",
+            "PortFast and BPDU Guard enabled",
+            "PortFast disabled but BPDU Guard enabled",
+            "PortFast and BPDU Guard disabled"
+          ],
+          "correct_answer": "PortFast enabled but BPDU Guard not enabled., PortFast and BPDU Guard enabled."
+        },
+        {
+          "question": "Root Guard has acted to disable port G1/0/1. An engineer uses the show interfaces status and show spanning-tree vlan 1 commands to investigate the current status. Which correct_answers list facts expected due to Root Guard’s actions? (Choose two correct_answers.)",
+          "answer": [
+            "The STP port state per show spanning-tree vlan 1 shows BKN (broken).",
+            "The interface state per show interfaces status shows err-disabled.",
+            "The STP port state per show spanning-tree vlan 1 shows FWD (forwarding).",
+            "The STP port state per show spanning-tree vlan 1 shows BLK (blocking).",
+            "The interface state per show interfaces status shows connected."
+          ],
+          "correct_answer": "The STP port state per show spanning-tree vlan 1 shows BKN (broken)., The interface state per show interfaces status shows err-disabled."
+        },
+        {
+          "question": "An engineer configures a switch to put interfaces G0/1 and G0/2 into the same Layer 2 EtherChannel. Which of the following terms is used in the configuration commands?",
+          "answer": [
+            "EtherChannel",
+            "PortChannel",
+            "Ethernet-Channel",
+            "Channel-group"
+          ],
+          "correct_answer": "Channel-group"
+        },
+        {
+          "question": "Which combinations of keywords on the channel-group interface subcommand on two neighboring switches will cause the switches to use LACP and attempt to add the link to the EtherChannel? (Choose two correct_answers.)",
+          "answer": [
+            "desirable and active",
+            "passive and active",
+            "active and auto",
+            "active and active"
+          ],
+          "correct_answer": "passive and active., active and auto."
+        },
+        {
+          "question": "A Cisco Catalyst switch needs to send frames over a Layer 2 EtherChannel. Which correct_answer best describes how the switch balances the traffic over the four active links in the channel?",
+          "answer": [
+            "Breaks each frame into fragments of approximately one-fourth of the original frame, sending one fragment over each link",
+            "Sends the entire frame over one link, alternating links in sequence for each successive frame",
+            "Sends the entire frame over one link, choosing the link by applying some math to fields in each frame’s headers",
+            "Sends the entire frame over one link, using the link with the lowest percent utilization as the next link to use"
+          ],
+          "correct_answer": "Sends the entire frame over one link, choosing the link by applying some math to fields in each frame’s headers."
+        }
+      ]
+    },
+    {
+      "quizz_title": "Chapter 11: IP Addressing and Subnetting",
+      "questions": [
+        {
+          "question": "Host A is a PC, connected to switch SW1 and assigned to VLAN 1. Which of the following are typically assigned an IP address in the same subnet as host A? (Choose two correct_answers.)",
+          "answer": [
+            "The local router’s WAN interface",
+            "The local router’s LAN interface",
+            "All other hosts attached to the same switch",
+            "Other hosts attached to the same switch and also in VLAN 1"
+          ],
+          "correct_answer": "The local router’s LAN interface., Other hosts attached to the same switch and also in VLAN 1."
+        },
+        {
+          "question": "Why does the formula for the number of hosts per subnet (2H – 2) require the subtraction of two hosts?",
+          "answer": [
+            "To reserve two addresses for redundant default gateways (routers)",
+            "To reserve the two addresses required for DHCP operation",
+            "To reserve addresses for the subnet ID and default gateway (router)",
+            "To reserve addresses for the subnet broadcast address and subnet ID"
+          ],
+          "correct_answer": "To reserve addresses for the subnet broadcast address and subnet ID."
+        },
+        {
+          "question": "A Class B network needs to be subnetted such that it supports 100 subnets and 100 hosts/subnet. Which of the following correct_correct_answers list a workable combination for the number of network, subnet, and host bits? (Choose two answers.)",
+          "answer": [
+            "Network = 16, subnet = 7, host = 7",
+            "Network = 16, subnet = 8, host = 8",
+            "Network = 16, subnet = 9, host = 7",
+            "Network = 8, subnet = 7, host = 17"
+          ],
+          "correct_answer": "Network = 16, subnet = 8, host = 8., Network = 16, subnet = 9, host = 7."
+        },
+        {
+          "question": "Which of the following are private IP networks? (Choose two correct_correct_answers.)",
+          "answer": [
+            "172.31.0.0",
+            "172.32.0.0",
+            "192.168.255.0",
+            "192.1.168.0",
+            "11.0.0.0"
+          ],
+          "correct_answer": "172.31.0.0, 192.168.255.0"
+        },
+        {
+          "question": "Which of the following are public IP networks? (Choose three correct_correct_answers.)",
+          "answer": [
+            "9.0.0.0",
+            "172.30.0.0",
+            "192.168.255.0",
+            "192.1.168.0",
+            "1.0.0.0"
+          ],
+          "correct_answer": "9.0.0.0, 192.1.168.0, 1.0.0.0"
+        },
+        {
+          "question": "Before Class B network 172.16.0.0 is subnetted by a network engineer, what parts of the structure of the IP addresses in this network already exist, with a specific size? (Choose two correct_correct_answers.)",
+          "answer": [
+            "Network",
+            "Subnet",
+            "Host",
+            "Broadcast"
+          ],
+          "correct_answer": "Network, Host"
+        },
+        {
+          "question": "Consider the size of the network, subnet, and host parts of the address structure for Class B network 172.16.0.0 without any subnetting. Compare that to an updated plan that subnets the network using one mask for all subnets. Which correct_correct_answer describes what changed in the network, subnet, or host fields for the new plan that uses subnetting in comparison to the earlier plan that does not?",
+          "answer": [
+            "The subnet part got smaller.",
+            "The host part got smaller.",
+            "The network part got smaller.",
+            "The host part was removed.",
+            "The network part was removed."
+          ],
+          "correct_answer": "The host part got smaller."
+        }
+      ]
+    },
+    {
+      "quizz_title": "Chapter 12: IP Addressing and Network IDs",
+      "questions": [
+        {
+          "question": "Which of the following are not valid Class A network IDs? (Choose two correct_correct_answers.)",
+          "answer": [
+            "1.0.0.0",
+            "130.0.0.0",
+            "127.0.0.0",
+            "9.0.0.0"
+          ],
+          "correct_answer": "130.0.0.0, 127.0.0.0"
+        },
+        {
+          "question": "Which of the following are not valid Class B network IDs?",
+          "answer": [
+            "130.0.0.0",
+            "191.255.0.0",
+            "128.0.0.0",
+            "150.255.0.0",
+            "All are valid Class B network IDs."
+          ],
+          "correct_answer": "All are valid Class B network IDs."
+        },
+        {
+          "question": "Which of the following are true about IP address 172.16.99.45’s IP network? (Choose two correct_answers.)",
+          "answer": [
+            "The network ID is 172.0.0.0.",
+            "The network is a Class B network.",
+            "The default mask for the network is 255.255.255.0.",
+            "The number of host bits in the unsubnetted network is 16."
+          ],
+          "correct_answer": "The network is a Class B network., The number of host bits in the unsubnetted network is 16."
+        },
+        {
+          "question": "Which of the following are true about IP address 192.168.6.7’s IP network? (Choose two correct_answers.)",
+          "answer": [
+            "The network ID is 192.168.6.0.",
+            "The network is a Class B network.",
+            "The default mask for the network is 255.255.255.0.",
+            "The number of host bits in the unsubnetted network is 16."
+          ],
+          "correct_answer": "The network ID is 192.168.6.0., The default mask for the network is 255.255.255.0."
+        },
+        {
+          "question": "Which of the following is a network broadcast address?",
+          "answer": [
+            "10.1.255.255",
+            "192.168.255.1",
+            "224.1.1.255",
+            "172.30.255.255"
+          ],
+          "correct_answer": "172.30.255.255"
+        }
+      ]
+    },
+    {
+      "quizz_title": "Chapter 13: Subnetting and IP Addressing",
+      "questions": [
+        {
+          "question": "Which of the following answers lists the prefix (CIDR) format equivalent of 255.255.254.0?",
+          "answer": [
+            "/19",
+            "/20",
+            "/23",
+            "/24",
+            "/25"
+          ],
+          "correct_answer": "/23"
+        },
+        {
+          "question": "Which of the following answers lists the prefix (CIDR) format equivalent of 255.255.255.240?",
+          "answer": [
+            "/26",
+            "/28",
+            "/27",
+            "/30",
+            "/29"
+          ],
+          "correct_answer": "/28"
+        },
+        {
+          "question": "Which of the following answers lists the dotted-decimal notation (DDN) equivalent of /30?",
+          "answer": [
+            "255.255.255.192",
+            "255.255.255.252",
+            "255.255.255.240",
+            "255.255.254.0",
+            "255.255.255.0"
+          ],
+          "correct_answer": "255.255.255.252"
+        },
+        {
+          "question": "Working at the help desk, you receive a call and learn a user’s PC IP address and mask (10.55.66.77, mask 255.255.255.0). When thinking about this using classful logic, you determine the number of network (N), subnet (S), and host (H) bits. Which of the following is true in this case?",
+          "answer": [
+            "N=12",
+            "S=12",
+            "H=8",
+            "S=8",
+            "N=24"
+          ],
+          "correct_answer": "N=24"
+        },
+        {
+          "question": "Working at the help desk, you receive a call and learn a user’s PC IP address and mask (192.168.9.1/27). When thinking about this using classful logic, you determine the number of network (N), subnet (S), and host (H) bits. Which of the following is true in this case?",
+          "answer": [
+            "N=24",
+            "S=24",
+            "H=8",
+            "H=7"
+          ],
+          "correct_answer": "H=7"
+        },
+        {
+          "question": "Which of the following statements is true about classless IP addressing concepts?",
+          "answer": [
+            "Uses a 128-bit IP address",
+            "Applies only for Class A and B networks",
+            "Separates IP addresses into network, subnet, and host parts",
+            "Ignores Class A, B, and C network rules"
+          ],
+          "correct_answer": "Ignores Class A, B, and C network rules"
+        },
+        {
+          "question": "Which of the following masks, when used as the only mask within a Class B network, would supply enough subnet bits to support 100 subnets? (Choose two answers.)",
+          "answer": [
+            "/24",
+            "255.255.255.252",
+            "/20",
+            "255.255.252.0"
+          ],
+          "correct_answer": "/24, 255.255.252.0"
+        }
+      ]
+    },
+    {
+      "quizz_title": "Chapter 14: Subnetting and IP Addressing",
+      "questions": [
+        {
+          "question": "When you think about an IP address using classful addressing rules, an address can have three parts: network, subnet, and host. If you examined all the addresses in one subnet, in binary, which of the following answers correctly states which of the three parts of the addresses will be equal among all addresses? (Choose the best answer.)",
+          "answer": [
+            "Network part only",
+            "Subnet part only",
+            "Host part only",
+            "Network and subnet parts",
+            "Subnet and host parts"
+          ],
+          "correct_answer": "Network and subnet parts"
+        },
+        {
+          "question": "Which of the following statements are true regarding the binary subnet ID, subnet broadcast address, and host IP address values in any single subnet? (Choose two answers.)",
+          "answer": [
+            "The host part of the broadcast address is all binary 0s.",
+            "The host part of the subnet ID is all binary 0s.",
+            "The host part of a usable IP address can have all binary 1s.",
+            "The host part of any usable IP address must not be all binary 0s."
+          ],
+          "correct_answer": "The host part of the subnet ID is all binary 0s., The host part of any usable IP address must not be all binary 0s."
+        },
+        {
+          "question": "Which of the following is the resident subnet ID for IP address 10.7.99.133/24?",
+          "answer": [
+            "10.0.0.0",
+            "10.7.0.0",
+            "10.7.99.0",
+            "10.7.99.128"
+          ],
+          "correct_answer": "10.7.99.0"
+        },
+        {
+          "question": "Which of the following is the resident subnet for IP address 192.168.44.97/30?",
+          "answer": [
+            "192.168.44.0",
+            "192.168.44.64",
+            "192.168.44.96",
+            "192.168.44.128"
+          ],
+          "correct_answer": "192.168.44.96"
+        },
+        {
+          "question": "Which of the following is the subnet broadcast address for the subnet in which IP address 172.31.77.201/27 resides?",
+          "answer": [
+            "172.31.201.255",
+            "172.31.255.255",
+            "172.31.77.223",
+            "172.31.77.207"
+          ],
+          "correct_answer": "172.31.77.223"
+        },
+        {
+          "question": "A fellow engineer tells you to configure the DHCP server to lease the last 100 usable IP addresses in subnet 10.1.4.0/23. Which of the following IP addresses could be leased as a result of your new configuration?",
+          "answer": [
+            "10.1.4.156",
+            "10.1.4.254",
+            "10.1.5.200",
+            "10.1.7.200",
+            "10.1.255.200"
+          ],
+          "correct_answer": "10.1.5.200"
+        }
+      ]
+    },
+    {
+      "quizz_title": "Chapter 15: IP Subnetting Design",
+      "questions": [
+        {
+          "question": "An IP subnetting design effort is under way at a company. So far, the senior engineer has decided to use private Class B network 172.23.0.0. The design calls for 100 subnets, with the largest subnet needing 500 hosts. Management requires that the design accommodate 50 percent growth in the number of subnets and the size of the largest subnet. The requirements also state that a single mask must be used throughout the Class B network. How many masks meet the requirements?",
+          "answer": [
+            "0",
+            "1",
+            "2",
+            "3+"
+          ],
+          "correct_answer": "1"
+        },
+        {
+          "question": "An IP subnetting design requires 200 subnets and 120 hosts/subnet for the largest subnets, and requires that a single mask be used throughout the one private IP network that will be used. The design also requires planning for 20 percent growth in the number of subnets and number of hosts/subnet in the largest subnet. Which of the following answers lists a private IP network and mask that, if chosen, would meet the requirements?",
+          "answer": [
+            "10.0.0.0/25",
+            "10.0.0.0/22",
+            "172.16.0.0/23",
+            "192.168.7.0/24"
+          ],
+          "correct_answer": "172.16.0.0/23"
+        },
+        {
+          "question": "An engineer has planned to use private Class B network 172.19.0.0 and a single subnet mask throughout the network. The answers list the masks considered by the engineer. Choose the mask that, among the answers, supplies the largest number of hosts per subnet, while also supplying enough subnet bits to support 1000 subnets.",
+          "answer": [
+            "255.255.255.0",
+            "/26",
+            "255.255.252.0",
+            "/28"
+          ],
+          "correct_answer": "255.255.252.0"
+        },
+        {
+          "question": "An engineer has calculated the list of subnet IDs, in consecutive order, for network 172.30.0.0, assuming that the /22 mask is used throughout the network. Which of the following are true? (Choose two answers.)",
+          "answer": [
+            "Any two consecutive subnet IDs differ by a value of 22 in the third octet.",
+            "Any two consecutive subnet IDs differ by a value of 16 in the fourth octet.",
+            "The list contains 64 subnet IDs.",
+            "The last subnet ID is 172.30.252.0."
+          ],
+          "correct_answer": "The list contains 64 subnet IDs., The last subnet ID is 172.30.252.0."
+        },
+        {
+          "question": "Which of the following are valid subnet IDs for private network 192.168.9.0, using mask /29, assuming that mask /29 is used throughout the network?",
+          "answer": [
+            "192.168.9.144",
+            "192.168.9.58",
+            "192.168.9.242",
+            "192.168.9.9"
+          ],
+          "correct_answer": "192.168.9.144"
+        },
+        {
+          "question": "Which of the following is not a valid subnet ID for private network 172.19.0.0, using mask /24, assuming that mask /24 is used throughout the network?",
+          "answer": [
+            "172.19.0.0",
+            "172.19.1.0",
+            "172.19.255.0",
+            "172.19.0.16"
+          ],
+          "correct_answer": "172.19.0.16"
+        }
+      ]
+    },
+    {
+      "quizz_title": "Chapter 16: Cisco Router and Switch CLI Interaction",
+      "questions": [
+        {
+          "question": "Which operating systems run on Cisco enterprise routers and use a CLI that works much like the CLI on Cisco LAN switches? (Choose two answers.)",
+          "answer": [
+            "CatOS",
+            "IOS",
+            "Windows",
+            "IOS XE"
+          ],
+          "correct_answer": "IOS, IOS XE"
+        },
+        {
+          "question": "Which action would you expect to be true of a router CLI interaction that is not true when configuring a LAN switch that performs only Layer 2 switching functions?",
+          "answer": [
+            "Moving from global to physical interface configuration mode",
+            "Configuring an IP address in physical interface configuration mode",
+            "Configuring a 10/100/1000 port’s settings related to speed and autonegotiation",
+            "Configuring a console password"
+          ],
+          "correct_answer": "Configuring an IP address in physical interface configuration mode"
+        },
+        {
+          "question": "Which answers list a task that could be helpful in making a router interface G0/0 ready to route packets? (Choose two answers.)",
+          "answer": [
+            "Configuring the ip address address mask command in G0/0 configuration mode",
+            "Configuring the ip address address and ip mask mask commands in G0/0 configuration mode",
+            "Configuring the no shutdown command in G0/0 configuration mode",
+            "Setting the interface description in G0/0 configuration mode"
+          ],
+          "correct_answer": "Configuring the ip address address mask command in G0/0 configuration mode, Configuring the no shutdown command in G0/0 configuration mode"
+        },
+        {
+          "question": "The output of the show ip interface brief command on R1 lists interface status codes of “down” and “down” for interface GigabitEthernet 0/0. The interface connects to a LAN switch with a UTP straight-through cable. Which of the following could be true?",
+          "answer": [
+            "The shutdown command is currently configured for router interface G0/0.",
+            "The shutdown command is currently configured for the switch interface on the other end of the cable.",
+            "The router was never configured with an ip address command on the interface.",
+            "The router was configured with the no ip address command."
+          ],
+          "correct_answer": "The shutdown command is currently configured for router interface G0/0."
+        },
+        {
+          "question": "Which of the following commands list the IP address but not the subnet mask of an interface?",
+          "answer": [
+            "show running-config",
+            "show protocols type number",
+            "show ip interface brief",
+            "show interfaces"
+          ],
+          "correct_answer": "show ip interface brief"
+        },
+        {
+          "question": "Which of the following is different on the Cisco switch CLI for a Layer 2 switch as compared with the Cisco router CLI?",
+          "answer": [
+            "The commands used to configure simple password checking for the console",
+            "The number of IP addresses configured",
+            "The configuration of the device’s hostname",
+            "The configuration of an interface description"
+          ],
+          "correct_answer": "The number of IP addresses configured"
+        }
+      ]
+    },
+    {
+      "quizz_title": "Chapter 17: Router Routing and Static Route Configuration",
+      "questions": [
+        {
+          "question": "Router R1 lists a route in its routing table. Which of the following answers list a fact from a route that the router uses when matching the packet’s destination address? (Choose two answers.)",
+          "answer": [
+            "Mask",
+            "Next-hop router",
+            "Subnet ID",
+            "Outgoing interface"
+          ],
+          "correct_answer": "Mask, Next-hop router"
+        },
+        {
+          "question": "PC1 sends an IP packet to PC2. To do so, PC1 sends the packet to Router R1, which routes it to Router R2, which routes it to Router R3, which routes it to the final destination (PC2). All links use Ethernet. How many routers de-encapsulate the IP packet from an Ethernet frame during its journey from PC1 to PC2?",
+          "answer": [
+            "0",
+            "1",
+            "2",
+            "3"
+          ],
+          "correct_answer": "3"
+        },
+        {
+          "question": "After configuring a working router interface with IP address/mask 10.1.1.100/26, which of the following routes would you expect to see in the output of the show ip route command? (Choose two answers.)",
+          "answer": [
+            "A connected route for subnet 10.1.1.64 255.255.255.192",
+            "A connected route for subnet 10.1.1.0 255.255.255.0",
+            "A local route for host 10.1.1.100 255.255.255.192",
+            "A local route for host 10.1.1.100 255.255.255.255",
+            "A local route for host 10.1.1.64 255.255.255.255"
+          ],
+                "correct_answer": "A connected route for subnet 10.1.1.64 255.255.255.192, A local route for host 10.1.1.100 255.255.255.255"
+        },
+        {
+          "question": "Which of the following pieces of information could be listed in a correct ip route command on a local router? (Choose two answers.)",
+          "answer": [
+            "The local router’s IP address on the link between the two routers",
+            "The next-hop router’s IP address on the link between the two routers",
+            "The next-hop router’s interface ID on the link between the two routers",
+            "The local router’s interface ID on the link between the two routers"
+          ],
+          "correct_answer": "The next-hop router’s IP address on the link between the two routers, The local router’s interface ID on the link between the two routers"
+        },
+        {
+          "question": "Which of the following commands correctly configures a static route?",
+          "answer": [
+            "ip route 10.1.3.0 255.255.255.0 10.1.130.253",
+            "ip route 10.1.3.0 serial 0",
+            "ip route 10.1.3.0 /24 10.1.130.253",
+            "ip route 10.1.3.0 /24 serial 0"
+          ],
+          "correct_answer": "ip route 10.1.3.0 255.255.255.0 10.1.130.253"
+        },
+        {
+          "question": "A network engineer configures the ip route 10.1.1.0 255.255.255.0 s0/0/0 command on a router and then issues a show ip route command from enable mode. No routes for subnet 10.1.1.0/24 appear in the output. Which of the following could be true?",
+          "answer": [
+            "The ip route command has incorrect syntax and was rejected in config mode.",
+            "Interface s0/0/0 is down.",
+            "The router has no up/up interfaces in Class A network 10.0.0.0.",
+            "The ip route command is missing a next-hop router IP address."
+          ],
+          "correct_answer": "Interface s0/0/0 is down."
+        }
+      ]
+    },
+    {
+      "quizz_title": "Chapter 18: Layer 3 Routing, Trunking, and EtherChannel Configuration",
+      "questions": [
+        {
+          "question": "Router 1 has a Fast Ethernet interface 0/0 with IP address 10.1.1.1. The interface is connected to a switch. This connection is then migrated to use 802.1Q trunking. Which of the following commands could be part of a valid configuration for Router 1’s Fa0/0 interface, assuming the trunk uses VLAN 4 as one of the supported VLANs? (Choose two answers.)",
+          "answer": [
+            "interface fastethernet 0/0.4",
+            "dot1q enable",
+            "dot1q enable 4",
+            "trunking enable",
+            "trunking enable 4",
+            "encapsulation dot1q 4"
+          ],
+          "correct_answer": "interface fastethernet 0/0.4, encapsulation dot1q 4"
+        },
+        {
+          "question": "Router R1 has a router-on-a-stick (ROAS) configuration with two subinterfaces of interface G0/1: G0/1.1 and G0/1.2. Physical interface G0/1 is currently in a down/down state. The network engineer then configures a shutdown command when in interface configuration mode for G0/1.1 and a no shutdown command when in interface configuration mode for G0/1.2. Which answers are correct about the interface state for the subinterfaces? (Choose two answers.)",
+          "answer": [
+            "G0/1.1 will be in a down/down state.",
+            "G0/1.2 will be in a down/down state.",
+            "G0/1.1 will be in an administratively down state.",
+            "G0/1.2 will be in an up/up state."
+          ],
+          "correct_answer": "G0/1.1 will be in an administratively down state., G0/1.2 will be in an up/up state."
+        },
+        {
+          "question": "A Layer 3 switch has been configured to route IP packets between VLANs 1, 2, and 3 using SVIs, which connect to subnets 172.20.1.0/25, 172.20.2.0/25, and 172.20.3.0/25, respectively. The engineer issues a show ip route connected command on the Layer 3 switch, listing the connected routes. Which of the following answers lists a piece of information that should be in at least one of the routes?",
+          "answer": [
+            "Interface Gigabit Ethernet 0/0.3",
+            "Next-hop router 172.20.2.1",
+            "Interface VLAN 2",
+            "Mask 255.255.255.0"
+          ],
+          "correct_answer": "Interface VLAN 2, Mask 255.255.255.0"
+        },
+        {
+          "question": "An engineer has successfully configured a Layer 3 switch with SVIs for VLANs 2 and 3 with autostate enabled by default. Hosts in the subnets using VLANs 2 and 3 can ping each other with the Layer 3 switch routing the packets. The next week, the network engineer receives a call that those same users can no longer ping each other. If the problem is with the Layer 3 switching function, which of the following could have caused the problem? (Choose two answers.)",
+          "answer": [
+            "Six (or more) out of ten working VLAN 2 access ports failing due to physical problems",
+            "A shutdown command issued from interface VLAN 4 configuration mode",
+            "A no vlan 2 command issued from global configuration mode",
+            "A shutdown command issued from VLAN 2 configuration mode"
+          ],
+          "correct_answer": "A no vlan 2 command issued from global configuration mode, A shutdown command issued from VLAN 2 configuration mode"
+        },
+        {
+          "question": "A LAN design uses a Layer 3 EtherChannel between two switches SW1 and SW2, with port-channel interface 1 used on both switches. SW1 uses ports G0/1, G0/2, G0/3, and G0/4 in the channel. Which of the following is true about SW1’s configuration to enable the channel to route IPv4 packets correctly? (Choose two answers.)",
+          "answer": [
+            "The ip address command must be on the port-channel 1 interface.",
+            "The ip address command must be on interface G0/1 (lowest numbered port).",
+            "The port-channel 1 interface must be configured with the no switchport command.",
+            "Interface G0/1 must be configured with the routedport command."
+          ],
+          "correct_answer": "The ip address command must be on the port-channel 1 interface., The port-channel 1 interface must be configured with the no switchport command."
+        },
+        {
+          "question": "A LAN design uses a Layer 3 EtherChannel between two switches: SW1 and SW2. An engineer adds SW1 port G0/1 to the channel successfully but later fails when adding SW1 port G0/2 to the channel. Which answers list a configuration setting on port G0/2 that would cause this issue? (Choose two answers.)",
+          "answer": [
+            "A different STP cost (spanning-tree cost value)",
+            "A different speed (speed value)",
+            "A default setting for switchport (switchport)",
+            "A different access VLAN (switchport access vlan vlan-id)"
+          ],
+          "correct_answer": "A different speed (speed value), A different access VLAN (switchport access vlan vlan-id)"
+        },
+        {
+          "question": "A router has some routed and some switched physical ports. Which interface subcommands would you expect to be supported only on the switched ports?",
+          "answer": [
+            "The switchport access vlan vlan-id subcommand",
+            "The ip address address mask subcommand",
+            "The description text subcommand",
+            "The hostname name subcommand"
+          ],
+          "correct_answer": "The switchport access vlan vlan-id subcommand"
+        }
+      ]
+    },
+    {
+      "quizz_title": "Chapter 19: DHCP Configuration and Client Communication",
+      "questions": [
+        {
+          "question": "A PC connects to a LAN and uses DHCP to lease an IP address for the first time. Of the usual four DHCP messages that flow between the PC and the DHCP server, which ones does the client send? (Choose two answers.)",
+          "answer": [
+            "Acknowledgment",
+            "Discover",
+            "Offer",
+            "Request"
+          ],
+          "correct_answer": "Discover, Request"
+        },
+        {
+          "question": "Which of the following kinds of information are part of a DHCP server configuration? (Choose two answers.)",
+          "answer": [
+            "Ranges of IP addresses in subnets that the server should lease",
+            "Ranges of IP addresses to not lease per subnet",
+            "DNS server hostnames",
+            "The default router IP and MAC address in each subnet"
+          ],
+          "correct_answer": "Ranges of IP addresses in subnets that the server should lease, Ranges of IP addresses to not lease per subnet"
+        },
+        {
+          "question": "Which answers list a criterion for choosing which router interfaces need to be configured as a DHCP relay agent? (Choose two answers.)",
+          "answer": [
+            "If the subnet off the interface does not include a DHCP server",
+            "If the subnet off the interface does include a DHCP server",
+            "If the subnet off the interface contains DHCP clients",
+            "If the router interface already has an ip address dhcp command"
+          ],
+          "correct_answer": "If the subnet off the interface does not include a DHCP server, If the subnet off the interface contains DHCP clients"
+        },
+        {
+          "question": "A router connects to an Internet service provider (ISP) using its G0/0/0 interface, with the ip address dhcp command configured. What does the router do with the DHCP-learned default gateway information?",
+          "answer": [
+            "The router ignores the default gateway value learned from the DHCP server.",
+            "The router uses the default gateway just like a host, ignoring its routing table.",
+            "The router forwards received packets based on its routing table but uses its default gateway setting to forward packets it generates itself.",
+            "The router adds a default route based on the default gateway to its IP routing table."
+          ],
+          "correct_answer": "The router adds a default route based on the default gateway to its IP routing table."
+        },
+        {
+          "question": "In the following excerpt from a command on a Mac, which of the following parts of the output represent information learned from a DHCP server? (Choose two answers.)",
+          "answer": [
+            "172.16.4.2",
+            "0xffffff00",
+            "172.16.4.255"
+          ],
+          "correct_answer": "172.16.4.2, 172.16.4.255"
+        },
+        {
+          "question": "Which of the following commands on a Windows OS should list both the host’s IP address and DNS servers’ IP addresses as learned with DHCP?",
+          "answer": [
+            "ifconfig",
+            "ipconfig",
+            "ifconfig /all",
+            "ipconfig /all"
+          ],
+          "correct_answer": "ipconfig /all"
+        }
+      ]
+    },
+    {
+      "quizz_title": "Chapter 21: DHCP Configuration and Client Communication",
+      "questions": [
+        {
+          "question": "A PC connects to a LAN and uses DHCP to lease an IP address for the first time. Of the usual four DHCP messages that flow between the PC and the DHCP server, which ones does the client send? (Choose two answers.)",
+          "answer": [
+            "Acknowledgment",
+            "Discover",
+            "Offer",
+            "Request"
+          ],
+          "correct_answer": "Discover, Request"
+        },
+        {
+          "question": "Which of the following kinds of information are part of a DHCP server configuration? (Choose two answers.)",
+          "answer": [
+            "Ranges of IP addresses in subnets that the server should lease",
+            "Ranges of IP addresses to not lease per subnet",
+            "DNS server hostnames",
+            "The default router IP and MAC address in each subnet"
+          ],
+          "correct_answer": "Ranges of IP addresses in subnets that the server should lease, Ranges of IP addresses to not lease per subnet"
+        },
+        {
+          "question": "Which answers list a criterion for choosing which router interfaces need to be configured as a DHCP relay agent? (Choose two answers.)",
+          "answer": [
+            "If the subnet off the interface does not include a DHCP server",
+            "If the subnet off the interface does include a DHCP server",
+            "If the subnet off the interface contains DHCP clients",
+            "If the router interface already has an ip address dhcp command"
+          ],
+          "correct_answer": "If the subnet off the interface does not include a DHCP server, If the subnet off the interface contains DHCP clients"
+        },
+        {
+          "question": "A router connects to an Internet service provider (ISP) using its G0/0/0 interface, with the ip address dhcp command configured. What does the router do with the DHCP-learned default gateway information?",
+          "answer": [
+            "The router ignores the default gateway value learned from the DHCP server.",
+            "The router uses the default gateway just like a host, ignoring its routing table.",
+            "The router forwards received packets based on its routing table but uses its default gateway setting to forward packets it generates itself.",
+            "The router adds a default route based on the default gateway to its IP routing table."
+          ],
+          "correct_answer": "The router adds a default route based on the default gateway to its IP routing table."
+        },
+        {
+          "question": "In the following excerpt from a command on a Mac, which of the following parts of the output represent information learned from a DHCP server? (Choose two answers.)",
+          "answer": [
+            "172.16.4.2",
+            "0xffffff00",
+            "172.16.4.255"
+          ],
+          "correct_answer": "172.16.4.2, 172.16.4.255"
+        },
+        {
+          "question": "Which of the following commands on a Windows OS should list both the host’s IP address and DNS servers’ IP addresses as learned with DHCP?",
+          "answer": [
+            "ifconfig",
+            "ipconfig",
+            "ifconfig /all",
+            "ipconfig /all"
+          ],
+          "correct_answer": "ipconfig /all"
+        }
+      ]
+    },
+    {
+      "quizz_title": "Chapter 22: OSPF Configuration and Commands",
+      "questions": [
+        {
+          "question": "Which of the following network commands, following the command router ospf 1, enables OSPF on interfaces whose IP addresses are 10.1.1.1, 10.1.100.1, and 10.1.120.1?",
+          "answer": [
+            "network 10.0.0.0 0.0.0.0 area 0",
+            "network 10.0.0.0 0.255.255.255 area 0",
+            "network 10.0.0.0 0.0.0.255 area 0",
+            "network 10.0.0.0 0.0.255.255 area 0"
+          ],
+          "correct_answer": "network 10.0.0.0 0.255.255.255 area 0"
+        },
+        {
+          "question": "Which of the following network commands, following the command router ospf 1, tells this router to start using OSPF on interfaces whose IP addresses are 10.1.1.1, 10.1.100.1, and 10.1.120.1?",
+          "answer": [
+            "network 10.1.0.0 0.0.255.255 area 0",
+            "network 10.0.0.0 0.255.255.0 area 0",
+            "network 10.1.1.0 0.x.1x.0 area 0",
+            "network 10.1.1.0 255.0.0.0 area 0"
+          ],
+          "correct_answer": "network 10.1.0.0 0.0.255.255 area 0"
+        },
+        {
+          "question": "Which of the following commands list the OSPF neighbors off interface serial 0/0?",
+          "answer": [
+            "show ip ospf neighbor",
+            "show ip ospf interface brief",
+            "show ip neighbor",
+            "show ip interface",
+            "show ip ospf neighbor serial 0/0"
+          ],
+          "correct_answer": "show ip ospf neighbor, show ip ospf neighbor serial 0/0"
+        },
+        {
+          "question": "When reloading and choosing a new OSPF router ID (RID), a router had working interfaces loopback 1 with IP address 10.8.8.8, loopback 2 with address 10.7.7.7, and GigabitEthernet0/0/0 with 10.9.9.9. The router did not have a router-id command in the OSPF process configuration. What RID did the router choose?",
+          "answer": [
+            "10.7.7.7",
+            "10.8.8.8",
+            "10.9.9.9",
+            "The router would fail to choose an RID."
+          ],
+          "correct_answer": "10.8.8.8"
+        },
+        {
+          "question": "An engineer migrates from a more traditional OSPFv2 configuration that uses network commands in OSPF configuration mode to instead use OSPFv2 interface configuration. Which of the following commands configures the area number assigned to an interface in this new configuration?",
+          "answer": [
+            "The area command in interface configuration mode",
+            "The ip ospf command in interface configuration mode",
+            "The router ospf command in interface configuration mode",
+            "The network command in interface configuration mode"
+          ],
+          "correct_answer": "The ip ospf command in interface configuration mode"
+        },
+        {
+          "question": "An enterprise avoids using the OSPF network command, instead preferring to enable OSPF per-interface with the ip ospf process-id area area-id interface subcommand. Which show command identifies whether an interface has been configured with the ip ospf process-id area area-id interface subcommand?",
+          "answer": [
+            "The show ip ospf interface command",
+            "The show ip ospf interface brief command",
+            "The show ip ospf neighbor command",
+            "The show ip protocols command"
+          ],
+          "correct_answer": "The show ip ospf interface command, The show ip protocols command"
+        }
+      ]
+    },
+    {
+      "quizz_title": "Chapter 23: OSPF Neighbor Relationships and Configurations",
+      "questions": [
+        {
+          "question": "Routers R1 and R2, with router IDs 1.1.1.1 and 2.2.2.2, connect over an Ethernet WAN link. If using all default OSPF settings, if the WAN link initializes for both routers at the same time, which of the following answers are true? (Choose two answers.)",
+          "answer": [
+            "Router R1 will become the DR.",
+            "Router R1 will dynamically discover the existence of Router R2.",
+            "Router R2 will be neither the DR nor the BDR.",
+            "Router R1’s show ip ospf neighbor command will list R2 with a state of “FULL/DR.”"
+          ],
+          "correct_answer": "Router R1 will become the DR., Router R1’s show ip ospf neighbor command will list R2 with a state of “FULL/DR.”"
+        },
+        {
+          "question": "Routers R1 and R2, with router IDs 1.1.1.1 and 2.2.2.2, connect over an Ethernet WAN link. The configuration uses all defaults, except giving R1 an interface priority of 11 and changing both routers to use OSPF network type point-to-point. If the WAN link initializes for both routers at the same time, which of the following answers are true? (Choose two answers.)",
+          "answer": [
+            "Router R1 will become the DR.",
+            "Router R1 will dynamically discover the existence of Router R2.",
+            "Router R2 will be neither the DR nor the BDR.",
+            "Router R2’s show ip ospf neighbor command will list R1 with a state of “FULL/DR.”"
+          ],
+          "correct_answer": "Router R2 will be neither the DR nor the BDR., Router R2’s show ip ospf neighbor command will list R1 with a state of “FULL/DR.”"
+        },
+        {
+          "question": "Per the command output, with how many routers is Router R9 fully adjacent over its Gi0/0 interface?",
+          "answer": [
+            "7",
+            "0",
+            "5",
+            "2"
+          ],
+          "correct_answer": "2"
+        },
+        {
+          "question": "Routers R1 and R2, which use default priority settings, become neighbors, with R1 as the DR and R2 as the BDR. The engineer then configures R2’s interface to use OSPF priority 100. Which answers correctly predict any changes in the OSPF neighbor relationship?",
+          "answer": [
+            "Router R2 will immediately become the DR.",
+            "Router R2 will become the DR after the neighbor relationship fails.",
+            "Router R2 will immediately stop filling the BDR role.",
+            "Router R2 will become the DR after four OSPF Hello intervals."
+          ],
+          "correct_answer": "Router R2 will immediately become the DR., Router R2 will become the DR after four OSPF Hello intervals."
+        },
+        {
+          "question": "Which of the following configuration settings on a router does not influence which IPv4 route a router chooses to add to its IPv4 routing table when using OSPFv2?",
+          "answer": [
+            "auto-cost reference-bandwidth",
+            "delay",
+            "bandwidth",
+            "ip ospf cost"
+          ],
+          "correct_answer": "delay"
+        },
+        {
+          "question": "A network engineer configures the ip ospf hello-interval 15 subcommand under the interfaces that connect OSPF neighbors R1 and R2 but with no use of the ip ospf dead-interval subcommand. Eventually, Router R1’s OSPF process fails, but the link between R1 and R2 remains working. How long after Router R1’s last Hello does R2 consider its neighbor relationship with R1 to fail?",
+          "answer": [
+            "10 seconds",
+            "15 seconds",
+            "40 seconds",
+            "60 seconds"
+          ],
+          "correct_answer": "60 seconds"
+        }
+      ]
+    },
+    {
+      "quizz_title": "Chapter 24: OSPF and Routing Behavior",
+      "questions": [
+        {
+          "question": "An engineer connects Routers R11 and R12 to the same Ethernet LAN and configures them to use OSPFv2. Which answers describe a combination of settings that would prevent the two routers from becoming OSPF neighbors? (Choose two answers.)",
+          "answer": [
+            "R11’s interface uses area 11 while R12’s interface uses area 12.",
+            "R11’s OSPF process uses process ID 11 while R12’s uses process ID 12.",
+            "R11’s interface uses OSPF priority 11 while R12’s uses OSPF priority 12.",
+            "R11’s interface uses an OSPF Hello timer value of 11 while R12’s uses 12."
+          ],
+          "correct_answer": "R11’s interface uses area 11 while R12’s interface uses area 12., R11’s OSPF process uses process ID 11 while R12’s uses process ID 12."
+        },
+        {
+          "question": "An engineer connects Routers R13 and R14 to the same Ethernet LAN and configures them to use OSPFv2. Which answers describe a combination of settings that would prevent the two routers from becoming OSPF neighbors?",
+          "answer": [
+            "Both routers’ interface IP addresses reside in the same subnet.",
+            "Both routers’ OSPF process uses process ID 13.",
+            "Both routers’ OSPF process uses router ID 13.13.13.13.",
+            "Both routers’ interfaces use an OSPF Dead interval of 40."
+          ],
+          "correct_answer": "Both routers’ OSPF process uses process ID 13., Both routers’ OSPF process uses router ID 13.13.13.13."
+        },
+        {
+          "question": "Router R15 has been a working part of a network that uses OSPFv2. An engineer then issues the shutdown command in OSPF configuration mode on R15. Which of the following occurs?",
+          "answer": [
+            "R15 empties its IP routing table of all OSPF routes but keeps its LSDB intact.",
+            "R15 empties its OSPF routes and LSDB but keeps OSPF neighbor relationships active.",
+            "R15 keeps OSPF neighbors open but does not accept new OSPF neighbors.",
+            "R15 keeps all OSPF configuration but ceases all OSPF activities (routes, LSDB, neighbors)."
+          ],
+          "correct_answer": "R15 keeps all OSPF configuration but ceases all OSPF activities (routes, LSDB, neighbors)."
+        }
+      ]
+    }
+  ]
+}

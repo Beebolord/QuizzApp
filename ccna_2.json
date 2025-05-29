@@ -1,0 +1,2062 @@
+{
+  "Quizzes": [
+    {
+  "quizz_title": "Chapter 1: Fundamentals of Wireless Networks",
+  "questions": [
+    {
+      "question": "Wired Ethernet and Wi-Fi are based on which two IEEE standards, respectively?",
+      "answer": [
+        "802.1, 802.3",
+        "802.3, 802.1",
+        "802.3, 802.11",
+        "802.11, 802.3"
+      ],
+      "correct_answer": "802.3, 802.11"
+    },
+    {
+      "question": "Devices using a wireless LAN must operate in which one of the following modes?",
+      "answer": [
+        "Round-robin access",
+        "Half duplex",
+        "Full duplex",
+        "None of these answers are correct"
+      ],
+      "correct_answer": "Half duplex"
+    },
+    {
+      "question": "An access point is set up to offer wireless coverage in an office. Which one of the following is the correct 802.11 term for the resulting standalone network?",
+      "answer": [
+        "BSA",
+        "BSD",
+        "BSS",
+        "IBSS"
+      ],
+      "correct_answer": "BSS"
+    },
+    {
+      "question": "Which one of the following is used to uniquely identify an AP and the basic service set it maintains with its associated wireless clients?",
+      "answer": [
+        "SSID",
+        "BSSID",
+        "Ethernet MAC address",
+        "Radio MAC address"
+      ],
+      "correct_answer": "BSSID"
+    },
+    {
+      "question": "Which one of the following can be used to provide wireless connectivity to a nonwireless device?",
+      "answer": [
+        "Wireless repeater",
+        "Workgroup bridge",
+        "Transparent bridge",
+        "Adaptive bridge"
+      ],
+      "correct_answer": "Workgroup bridge"
+    },
+    {
+      "question": "Which one of the following is not needed in a Cisco outdoor mesh network?",
+      "answer": [
+        "A BSS function",
+        "Ethernet cabling to each AP",
+        "A workgroup bridge",
+        "A backhaul network"
+      ],
+      "correct_answer": "Ethernet cabling to each AP"
+    },
+    {
+      "question": "Which of the following are frequency bands commonly used for Wi-Fi? (Choose two answers.)",
+      "answer": [
+        "2.5 KHz",
+        "2.5 MHz",
+        "5 MHz",
+        "2.5 GHz",
+        "5 GHz"
+      ],
+      "correct_answer": [
+        "2.5 GHz",
+        "5 GHz"
+      ]
+    },
+    {
+      "question": "Which of the following are considered to be nonoverlapping channels? (Choose two answers.)",
+      "answer": [
+        "Channels 1, 2, and 3 in the 2.4-GHz band",
+        "Channels 1, 5, and 10 in the 2.4-GHz band",
+        "Channels 1, 6, and 11 in the 2.4-GHz band",
+        "Channels 40, 44, and 48 in the 5-GHz band"
+      ],
+      "correct_answer": [
+        "Channels 1, 6, and 11 in the 2.4-GHz band",
+        "Channels 40, 44, and 48 in the 5-GHz band"
+      ]
+    }
+  ]
+    },
+    {
+  "quizz_title": "Chapter 2: Analyzing Cisco Wireless Architectures",
+  "questions": [
+    {
+      "question": "Which one of the following terms best describes a Cisco wireless access point that operates in a standalone, independent manner?",
+      "answer": [
+        "Autonomous AP",
+        "Independent AP",
+        "Lightweight AP",
+        "Embedded AP"
+      ],
+      "correct_answer": "Autonomous AP"
+    },
+    {
+      "question": "The Cisco Meraki cloud-based APs are most accurately described by which one of the following statements?",
+      "answer": [
+        "Autonomous APs joined to a WLC",
+        "Autonomous APs centrally managed",
+        "Lightweight APs joined to a WLC",
+        "Lightweight APs centrally managed"
+      ],
+      "correct_answer": "Autonomous APs centrally managed"
+    },
+    {
+      "question": "A 'lightweight' access point is said to participate in which one of the following architectures?",
+      "answer": [
+        "Light-MAC",
+        "Tunnel-MAC",
+        "Split-MAC",
+        "Big-MAC"
+      ],
+      "correct_answer": "Split-MAC"
+    },
+    {
+      "question": "How does an access point communicate with a wireless LAN controller?",
+      "answer": [
+        "Through an IPsec tunnel",
+        "Through a CAPWAP tunnel",
+        "Through a GRE tunnel",
+        "Directly over Layer 2"
+      ],
+      "correct_answer": "Through a CAPWAP tunnel"
+    },
+    {
+      "question": "Which one of the following is not needed for a Cisco AP in default local mode to be able to support three SSIDs that are bound to three VLANs?",
+      "answer": [
+        "A trunk link carrying three VLANs",
+        "An access link bound to a single VLAN",
+        "A WLC connected to three VLANs",
+        "A CAPWAP tunnel to a WLC"
+      ],
+      "correct_answer": "An access link bound to a single VLAN"
+    },
+    {
+      "question": "Which one of the following WLC deployment models would be best for a large enterprise with around 3000 APs?",
+      "answer": [
+        "Cisco Mobility Express",
+        "Embedded",
+        "Centralized",
+        "Cloud-based"
+      ],
+      "correct_answer": "Centralized"
+    },
+    {
+      "question": "If a Cisco AP provides at least one BSS for wireless clients, which one of the following modes does it use?",
+      "answer": [
+        "Local",
+        "Normal",
+        "Monitor",
+        "Client"
+      ],
+      "correct_answer": "Local"
+    },
+    {
+      "question": "Regarding Cisco AP modes, which one of the following is true?",
+      "answer": [
+        "An AP can operate in multiple modes at the same time.",
+        "An AP has only one possible mode of operation.",
+        "The Run mode is the default mode.",
+        "The SE-Connect mode is used for spectrum analysis."
+      ],
+      "correct_answer": "The SE-Connect mode is used for spectrum analysis."
+    }
+  ]
+},
+    {
+  "quizz_title": "Chapter 3: Securing Wireless Networks",
+  "questions": [
+    {
+      "question": "Which of the following are necessary components of a secure wireless connection? (Choose all that apply.)",
+      "answer": [
+        "Encryption",
+        "MIC",
+        "Authentication",
+        "All of these answers are correct"
+      ],
+      "correct_answer": "All of these answers are correct"
+    },
+    {
+      "question": "Which one of the following is used to protect the integrity of data in a wireless frame?",
+      "answer": [
+        "WIPS",
+        "WEP",
+        "MIC",
+        "EAP"
+      ],
+      "correct_answer": "MIC"
+    },
+    {
+      "question": "Which one of the following is a wireless encryption method that has been found to be vulnerable and is not recommended for use?",
+      "answer": [
+        "AES",
+        "WPA",
+        "EAP",
+        "WEP"
+      ],
+      "correct_answer": "WEP"
+    },
+    {
+      "question": "Which one of the following is used as the authentication framework when 802.1x is used on a WLAN?",
+      "answer": [
+        "Open authentication",
+        "WEP",
+        "EAP",
+        "WPA"
+      ],
+      "correct_answer": "EAP"
+    },
+    {
+      "question": "Suppose you would like to select a method to protect the privacy and integrity of wireless data. Which one of the following methods should you avoid because it has been deprecated?",
+      "answer": [
+        "TKIP",
+        "CCMP",
+        "GCMP",
+        "EAP"
+      ],
+      "correct_answer": "TKIP"
+    },
+    {
+      "question": "Which one of the following is the data encryption and integrity method used by WPA2?",
+      "answer": [
+        "WEP",
+        "TKIP",
+        "CCMP",
+        "WPA"
+      ],
+      "correct_answer": "CCMP"
+    },
+    {
+      "question": "The Wi-Fi Alliance offers which of the following certifications for wireless devices that correctly implement security standards? (Choose all that apply.)",
+      "answer": [
+        "WEP",
+        "WPA2",
+        "802.11",
+        "AES"
+      ],
+      "correct_answer": "WPA2"
+    },
+    {
+      "question": "A pre-shared key is used in which of the following wireless security configurations? (Choose all that apply.)",
+      "answer": [
+        "WPA2 personal mode",
+        "WPA2 enterprise mode",
+        "WPA3 personal mode",
+        "WPA3 enterprise mode"
+      ],
+      "correct_answer": "WPA2 personal mode, WPA3 personal mode"
+    }
+  ]
+},
+    {
+  "quizz_title": "Chapter 4: Building a Wireless LAN",
+  "questions": [
+    {
+      "question": "Suppose you need to connect a Cisco AP to a network. Assume that the AP will be using split-MAC architecture. Which one of the following link types would be necessary?",
+      "answer": [
+        "Access mode link",
+        "Trunk mode link",
+        "LAG mode link",
+        "EtherChannel link"
+      ],
+      "correct_answer": "Access mode link"
+    },
+    {
+      "question": "An autonomous AP will be configured to support three WLANs that correspond to three VLANs. The AP will connect to the network over which one of the following?",
+      "answer": [
+        "Access mode link",
+        "Trunk mode link",
+        "LAG mode link",
+        "EtherChannel link"
+      ],
+      "correct_answer": "Trunk mode link"
+    },
+    {
+      "question": "Suppose you would like to connect to a WLC to configure a new WLAN on it. Which one of the following protocols can be used to access the WLC?",
+      "answer": [
+        "SSH",
+        "HTTPS",
+        "HTTP",
+        "All of these answers are correct"
+      ],
+      "correct_answer": "All of these answers are correct"
+    },
+    {
+      "question": "Which one of the following correctly describes the single logical link formed by bundling all of a controller’s distribution system ports together?",
+      "answer": [
+        "PHY",
+        "DSP",
+        "LAG",
+        "GEC"
+      ],
+      "correct_answer": "LAG"
+    },
+    {
+      "question": "Which one of the following controller interfaces is used on an AireOS controller to map a WLAN to a VLAN?",
+      "answer": [
+        "Bridge interface",
+        "Virtual interface",
+        "WLAN interface",
+        "Dynamic interface"
+      ],
+      "correct_answer": "Dynamic interface"
+    },
+    {
+      "question": "Which of the following things are bound together when a new WLAN is created? (Choose two answers.)",
+      "answer": [
+        "VLAN",
+        "AP",
+        "CAPWAP tunnel",
+        "SSID"
+      ],
+      "correct_answer": "VLAN, SSID"
+    },
+    {
+      "question": "What is the maximum number of WLANs you can configure on a Cisco wireless controller?",
+      "answer": [
+        "8",
+        "16",
+        "512",
+        "1024"
+      ],
+      "correct_answer": "512"
+    },
+    {
+      "question": "Which of the following parameters are necessary when creating a new WLAN on an IOS-XE controller? (Choose all that apply.)",
+      "answer": [
+        "WLAN profile",
+        "Channel number",
+        "Policy profile",
+        "BSSID",
+        "IP subnet"
+      ],
+      "correct_answer": "WLAN profile, Policy profile"
+    }
+  ]
+},
+    {
+  "quizz_title": "Chapter 5: Introduction to TCP/IP Transport and Applications",
+  "questions": [
+    {
+      "question": "Which of the following header fields identify which TCP/IP application gets data received by the computer? (Choose two answers.)",
+      "answer": [
+        "Ethernet Type",
+        "SNAP Protocol Type",
+        "IP Protocol",
+        "TCP Port Number",
+        "UDP Port Number"
+      ],
+      "correct_answer": "TCP Port Number, UDP Port Number"
+    },
+    {
+      "question": "Which of the following are typical functions of TCP? (Choose four answers.)",
+      "answer": [
+        "Flow control (windowing)",
+        "Error recovery",
+        "Multiplexing using port numbers",
+        "Routing",
+        "Encryption",
+        "Ordered data transfer"
+      ],
+      "correct_answer": "Flow control (windowing), Error recovery, Multiplexing using port numbers, Ordered data transfer"
+    },
+    {
+      "question": "Which of the following functions is performed by both TCP and UDP?",
+      "answer": [
+        "Windowing",
+        "Error recovery",
+        "Multiplexing using port numbers",
+        "Routing",
+        "Encryption",
+        "Ordered data transfer"
+      ],
+      "correct_answer": "Multiplexing using port numbers"
+    },
+    {
+      "question": "What do you call data that includes the Layer 4 protocol header, and data given to Layer 4 by the upper layers, not including any headers and trailers from Layers 1 to 3? (Choose two answers.)",
+      "answer": [
+        "L3PDU",
+        "Chunk",
+        "Segment",
+        "Packet",
+        "Frame",
+        "L4PDU"
+      ],
+      "correct_answer": "Segment, L4PDU"
+    },
+    {
+      "question": "In the URI http://www.certskills.com/config-labs, which part identifies the web server?",
+      "answer": [
+        "http",
+        "www.certskills.com",
+        "certskills.com",
+        "http://www.certskills.com",
+        "The file name.html includes the hostname."
+      ],
+      "correct_answer": "www.certskills.com"
+    },
+    {
+      "question": "Fred opens a web browser and connects to the www.certskills.com website. Which of the following are typically true about what happens between Fred’s web browser and the web server? (Choose two answers.)",
+      "answer": [
+        "Messages flowing toward the server use UDP destination port 80.",
+        "Messages flowing from the server typically use RTP.",
+        "Messages flowing to the client typically use a source TCP port number of 80.",
+        "Messages flowing to the server typically use TCP."
+      ],
+      "correct_answer": "Messages flowing to the client typically use a source TCP port number of 80., Messages flowing to the server typically use TCP."
+    }
+  ]
+},
+    {
+  "quizz_title": "Chapter 6: IPv4 Access Control Lists",
+  "questions": [
+    {
+      "question": "Barney is a host with IP address 10.1.1.1 in subnet 10.1.1.0/24. Which of the following things could a standard IP ACL be configured to do? (Choose two answers.)",
+      "answer": [
+        "Match the exact source IP address.",
+        "Match IP addresses 10.1.1.1 through 10.1.1.4 with one access-list command without matching other IP addresses.",
+        "Match all IP addresses in Barney’s subnet with one access-list command without matching other IP addresses.",
+        "Match only the packet’s destination IP address."
+      ],
+      "correct_answer": "Match the exact source IP address., Match all IP addresses in Barney’s subnet with one access-list command without matching other IP addresses."
+    },
+    {
+      "question": "Which of the following answers list a valid number that standard numbered IP ACLs can use? (Choose two answers.)",
+      "answer": [
+        "1987",
+        "2187",
+        "187",
+        "87"
+      ],
+      "correct_answer": "1987, 87"
+    },
+    {
+      "question": "Which of the following wildcard masks is most useful for matching all IP packets in subnet 10.1.128.0, mask 255.255.255.0?",
+      "answer": [
+        "0.0.0.0",
+        "0.0.0.31",
+        "0.0.0.240",
+        "0.0.0.255",
+        "0.0.15.0",
+        "0.0.248.255"
+      ],
+      "correct_answer": "0.0.0.255"
+    },
+    {
+      "question": "Which of the following wildcard masks is most useful for matching all IP packets in subnet 10.1.128.0, mask 255.255.240.0?",
+      "answer": [
+        "0.0.0.0",
+        "0.0.0.31",
+        "0.0.0.240",
+        "0.0.0.255",
+        "0.0.15.255",
+        "0.0.248.255"
+      ],
+      "correct_answer": "0.0.15.255"
+    },
+    {
+      "question": "ACL 1 has three statements, in the following order, with address and wildcard mask values as follows: 1.0.0.0 0.255.255.255, 1.1.0.0 0.0.255.255, and 1.1.1.0 0.0.0.255. If a router tried to match a packet sourced from IP address 1.1.1.1 using this ACL, which ACL statement does a router consider the packet to have matched?",
+      "answer": [
+        "First",
+        "Second",
+        "Third",
+        "Implied deny at the end of the ACL"
+      ],
+      "correct_answer": "First"
+    },
+    {
+      "question": "Which of the following access-list commands, taken from a router’s running-config file, match all packets sent from hosts in subnet 172.16.4.0/23?",
+      "answer": [
+        "access-list 1 permit 172.16.0.5 0.0.255.0",
+        "access-list 1 permit 172.16.4.0 0.0.1.255",
+        "access-list 1 permit 172.16.5.0",
+        "access-list 1 permit 172.16.5.0 0.0.0.127"
+      ],
+      "correct_answer": "access-list 1 permit 172.16.4.0 0.0.1.255"
+    }
+  ]
+},
+    {
+  "quizz_title": "Chapter 7: Named and Extended IP ACLs",
+  "questions": [
+    {
+      "question": "Which answer best compares named standard IP ACLs with numbered standard IP ACLs?",
+      "answer": [
+        "Uses a name instead of a number, but with no other configuration changes",
+        "Adds additional fields to match beyond standard numbered IP ACLs",
+        "Enables you to configure matching parameters and permit/deny action in ACL mode",
+        "Enables you to configure matching parameters and permit/deny action in interface mode"
+      ],
+      "correct_answer": "Enables you to configure matching parameters and permit/deny action in ACL mode"
+    },
+    {
+      "question": "You just configured standard named ACL WAN_ACL with commands that did not use sequence numbers. Which command, if typed in ACL configuration mode for this ACL, would become the third ACE in the ACL?",
+      "answer": [
+        "15 permit 172.16.0.0 0.0.255.255",
+        "permit 16 172.16.0.0 0.0.255.255",
+        "21 permit 172.16.0.0 0.0.255.255",
+        "permit 29 172.16.0.0 0.0.255.255"
+      ],
+      "correct_answer": "21 permit 172.16.0.0 0.0.255.255"
+    },
+    {
+      "question": "Which answers list a field that cannot be matched by an extended IP ACL? (Choose two answers.)",
+      "answer": [
+        "Protocol",
+        "Source IP address",
+        "Destination IP address",
+        "TCP source port",
+        "URL",
+        "Filename for FTP transfers"
+      ],
+      "correct_answer": [
+        "URL",
+        "Filename for FTP transfers"
+      ]
+    },
+    {
+      "question": "Which access-list commands permit packets from host 10.1.1.1 to all web servers whose IP addresses begin with 172.16.5? (Choose two answers.)",
+      "answer": [
+        "access-list 101 permit tcp host 10.1.1.1 172.16.5.0 0.0.0.255 eq www",
+        "access-list 1951 permit ip host 10.1.1.1 172.16.5.0 0.0.0.255 eq www",
+        "access-list 2523 permit ip host 10.1.1.1 eq www 172.16.5.0 0.0.0.255",
+        "access-list 2523 permit tcp host 10.1.1.1 eq www 172.16.5.0 0.0.0.255",
+        "access-list 2523 permit tcp host 10.1.1.1 172.16.5.0 0.0.0.255 eq www"
+      ],
+      "correct_answer": [
+        "access-list 101 permit tcp host 10.1.1.1 172.16.5.0 0.0.0.255 eq www",
+        "access-list 2523 permit tcp host 10.1.1.1 172.16.5.0 0.0.0.255 eq www"
+      ]
+    },
+    {
+      "question": "Which of the following access-list commands permits packets going to any web client from all web servers whose IP addresses begin with 172.16.5?",
+      "answer": [
+        "access-list 101 permit tcp host 10.1.1.1 172.16.5.0 0.0.0.255 eq www",
+        "access-list 1951 permit ip host 10.1.1.1 172.16.5.0 0.0.0.255 eq www",
+        "access-list 2523 permit tcp any eq www 172.16.5.0 0.0.0.255",
+        "access-list 2523 permit tcp 172.16.5.0 0.0.0.255 eq www 172.16.5.0 0.0.0.255",
+        "access-list 2523 permit tcp 172.16.5.0 0.0.0.255 eq www any"
+      ],
+      "correct_answer": "access-list 2523 permit tcp 172.16.5.0 0.0.0.255 eq www any"
+    }
+
+  ]
+},
+    {
+  "quizz_title": "Chapter 8: Applied IP ACLs",
+  "questions": [
+    {
+      "question": "Router R1 in the figure uses the ACL below, with the ip access-group QA_01 out interface subcommand added to interface G0/0/1. The router has no other ACL-related configuration. In the output of the show access-lists command, which ACL line’s counter should increment each time router R1 sends an OSPF Hello?",
+      "answer": [
+        "Line 10",
+        "Line 20",
+        "Line 30",
+        "Line 40",
+        "None of the other answers are correct"
+      ],
+      "correct_answer": "Line 30"
+    },
+    {
+      "question": "In the figure, router R2 enables an ACL inbound on its G0/0/0 interface. Hosts A and B need to lease IP addresses from DHCP server S1. Router R1 provides the IP helper feature with the ip helper-address 172.16.2.1 subcommand on its G0/0/0 interface. Which answers list an ACE that, if part of the ACL, would match DHCP messages between the server and clients? (Choose two answers.)",
+      "answer": [
+        "permit ip host 172.16.2.1 any",
+        "permit ip any host 172.16.2.1",
+        "permit udp any eq bootps host 0.0.0.0",
+        "permit udp host 172.16.2.1 eq bootpc any",
+        "permit udp host 172.16.2.1 eq bootps any"
+      ],
+      "correct_answer": "permit udp host 172.16.2.1 eq bootpc any, permit udp host 172.16.2.1 eq bootps any"
+    },
+    {
+      "question": "In the figure, router R1 uses standard ACL QA_03. The ACL has one ACE; the ACE permits packets sourced from subnet 172.16.1.0/24. An engineer wants to filter SSH traffic, so only hosts from subnet 172.16.1.0/24 can SSH into a router. Which answer best describes how the engineer should proceed?",
+      "answer": [
+        "Enable the ACL in vty mode with the access-class QA_01 in subcommand.",
+        "Enable the ACL in vty mode with the access-class QA_01 out subcommand.",
+        "Enable the ACL in vty mode with the ip access-group QA_01 in subcommand.",
+        "Enable the ACL in vty mode with the ip access-group QA_01 out subcommand."
+      ],
+      "correct_answer": "Enable the ACL in vty mode with the access-class QA_01 in subcommand."
+    },
+    {
+      "question": "In the figure, an engineer enables ACL QA_04 inbound on router R1’s G0/0/0 interface. Imagine host A attempts to SSH to address 172.16.12.1. Which line in the ACL will the packets match in this scenario?",
+      "answer": [
+        "Line 10",
+        "Line 20",
+        "Line 30",
+        "Line 40",
+        "The implied deny ip any any"
+      ],
+      "correct_answer": "Line 20"
+    },
+    {
+      "question": "Before the introduction of the “Common” ACL in IOS XE, which answer is most accurate regarding how many IP ACLs can be enabled on one router?",
+      "answer": [
+        "One per router",
+        "One per router interface",
+        "One per router interface per direction",
+        "Two per router interface per direction",
+        "Many per router interface per direction"
+      ],
+      "correct_answer": "One per router interface per direction"
+    },
+    {
+      "question": "Named ACL QA_06 has four lines with sequence numbers 10, 20, 30, and 40. As an exercise during a job interview, you are asked to edit the ACL so that the ACEs keep the same relative order but instead use sequence numbers 50, 70, 90, and 110. Which answer lists the method to effect this change with the fewest commands from the CLI?",
+      "answer": [
+        "Issue the ip access-list resequence QA_06 50 20 command in privileged EXEC mode.",
+        "Issue the ip access-list resequence QA_06 50 20 command in global configuration mode.",
+        "Delete the entire ACL with the no ip access-list... global command and then reconfigure the entire ACL.",
+        "From ACL mode, delete each permit or deny command and then reconfigure each.",
+        "From ACL mode, issue the resequence 50 20 subcommand."
+      ],
+      "correct_answer": "Issue the ip access-list resequence QA_06 50 20 command in global configuration mode."
+    }
+  ]
+},
+    {
+  "quizz_title": "Chapter 9: Security Architectures",
+  "questions": [
+    {
+      "question": "Which one of the following terms means anything that can be considered to be a weakness that can compromise security?",
+      "answer": [
+        "Exploit",
+        "Vulnerability",
+        "Attack",
+        "Threat"
+      ],
+      "correct_answer": "Vulnerability"
+    },
+    {
+      "question": "An actual potential to exploit a vulnerability is known as which one of the following terms?",
+      "answer": [
+        "Vulnerability",
+        "Attack",
+        "Exploit",
+        "Threat"
+      ],
+      "correct_answer": "Exploit"
+    },
+    {
+      "question": "In a spoofing attack, which of the following parameters are commonly spoofed? (Choose two answers.)",
+      "answer": [
+        "MAC address",
+        "Source IP address",
+        "Destination IP address",
+        "ARP address"
+      ],
+      "correct_answer": "MAC address, Source IP address"
+    },
+    {
+      "question": "Suppose an attacker sends a series of packets toward a destination IP address with the TCP SYN flag set but sends no other packet types. Which of the following attacks is likely taking place?",
+      "answer": [
+        "Spoofing attack",
+        "Reflection attack",
+        "Reconnaissance attack",
+        "Denial-of-service attack",
+        "None of the other answers are correct"
+      ],
+      "correct_answer": "Denial-of-service attack"
+    },
+    {
+      "question": "In a reflection attack, the source IP address in the attack packets is spoofed so that it contains which one of the following entities?",
+      "answer": [
+        "The address of the attacker",
+        "The address of the reflector",
+        "The address of the victim",
+        "The address of the router"
+      ],
+      "correct_answer": "The address of the victim"
+    },
+    {
+      "question": "During a successful man-in-the-middle attack, which two of the following actions is an attacker most likely to perform?",
+      "answer": [
+        "Eavesdrop on traffic passing between hosts",
+        "Induce a buffer overflow on multiple hosts",
+        "Modify data passing between hosts",
+        "Use ping sweeps and port scans to discover the network"
+      ],
+      "correct_answer": "Eavesdrop on traffic passing between hosts, Modify data passing between hosts"
+    },
+    {
+      "question": "Which one of the following is the goal of a brute-force attack?",
+      "answer": [
+        "Try every possible TCP port until a service answers.",
+        "Try every possible combination of keyboard characters to guess a user’s password.",
+        "Initiate a denial-of-service operation on every possible host in a subnet.",
+        "Spoof every possible IP address in an organization."
+      ],
+      "correct_answer": "Try every possible combination of keyboard characters to guess a user’s password."
+    },
+    {
+      "question": "Which one of the following is an example of a AAA server?",
+      "answer": [
+        "DHCP",
+        "DNS",
+        "SNMP",
+        "ISE"
+      ],
+      "correct_answer": "ISE"
+    },
+    {
+      "question": "Physical access control is important for which one of the following reasons?",
+      "answer": [
+        "It prevents unauthorized people from sitting at a corporate user’s desk and using their computer.",
+        "It prevents users from getting angry and damaging computer equipment.",
+        "It prevents unauthorized access to network closets.",
+        "It prevents fires from destroying data centers."
+      ],
+      "correct_answer": "It prevents unauthorized access to network closets."
+    }
+  ]
+},
+    {
+  "quizz_title": "Chapter 10: Securing Network Devices",
+  "questions": [
+    {
+      "question": "Imagine that you have configured the enable secret command, followed by the enable password command, from the console. You log out of the switch and log back in at the console. Which command defines the password that you had to enter to access privileged mode?",
+      "answer": [
+        "enable password",
+        "enable secret",
+        "Neither",
+        "The password command, if it’s configured"
+      ],
+      "correct_answer": "enable secret"
+    },
+    {
+      "question": "Some IOS commands store passwords as clear text, but you can then encrypt the passwords with the service password-encryption global command. By comparison, other commands store a computed hash of the password instead of storing the password. Comparing the two options, which one answer is the most accurate about why one method is better than the other?",
+      "answer": [
+        "Using hashes is preferred because encrypted IOS passwords can be easily decrypted.",
+        "Using hashes is preferred because of the large CPU effort required for encryption.",
+        "Using encryption is preferred because it provides stronger password protection.",
+        "Using encryption is preferred because of the large CPU effort required for hashes."
+      ],
+      "correct_answer": "Using hashes is preferred because encrypted IOS passwords can be easily decrypted."
+    },
+    {
+      "question": "A network engineer issues a show running-config command and sees only one line of output that mentions the enable secret command, as follows:\n\nenable secret 5 $1$ZGMA$e8cmvkz4UjiJhVp7.maLE1\nWhich of the following is true about users of this router?",
+      "answer": [
+        "A user must type $1$ZGMA$e8cmvkz4UjiJhVp7.maLE1 to reach enable mode.",
+        "The router will hash the clear-text password that the user types to compare to the hashed password.",
+        "A no service password-encryption configuration command would decrypt this password.",
+        "The router will decrypt the password in the configuration to compare to the clear-text password typed by the user."
+      ],
+      "correct_answer": "The router will hash the clear-text password that the user types to compare to the hashed password."
+    },
+    {
+      "question": "The show running-config command output on a router includes the following line: username test05 secret 8 $8$rTJqzmkwdI20WU$.mktApC8shjjwgABbQp7UjOmttmJaiIDfvBBJOpcns6. Which answer best describes the command the network engineer used to configure this username command with its clear-text password?",
+      "answer": [
+        "username test05 algorithm-type scrypt secret cisco",
+        "username test05 algorithm-type sha256 secret cisco",
+        "username test05 algorithm-type md5 secret cisco",
+        "username test05 secret cisco"
+      ],
+      "correct_answer": "username test05 algorithm-type sha256 secret cisco"
+    },
+    {
+      "question": "A next-generation firewall sits at the edge of a company’s connection to the Internet. It has been configured to prevent Telnet clients residing in the Internet from accessing Telnet servers inside the company. Which of the following might a next-generation firewall use that a traditional firewall would not?",
+      "answer": [
+        "Match message destination well-known port 23",
+        "Match message application data",
+        "Match message IP protocol 23",
+        "Match message source TCP ports greater than 49152"
+      ],
+      "correct_answer": "Match message application data"
+    },
+    {
+      "question": "Which actions show a behavior typically supported by a Cisco next-generation IPS (NGIPS) beyond the capabilities of a traditional IPS? (Choose two answers.)",
+      "answer": [
+        "Gather and use host-based information for context",
+        "Comparisons between messages and a database of exploit signatures",
+        "Logging events for later review by the security team",
+        "Filter URIs using reputation scores"
+      ],
+      "correct_answer": "Gather and use host-based information for context, Filter URIs using reputation scores"
+    }
+  ]
+},
+    {
+  "quizz_title": "Chapter 11: Implementing Switch Port Security",
+  "questions": [
+    {
+      "question": "Which of the following is required when configuring port security with sticky learning?",
+      "answer": [
+        "Setting the maximum number of allowed MAC addresses on the interface with the switchport port-security maximum interface subcommand.",
+        "Enabling port security with the switchport port-security interface subcommand.",
+        "Defining the specific allowed MAC addresses using the switchport port-security mac-address interface subcommand.",
+        "All the other answers list required commands."
+      ],
+      "correct_answer": "Enabling port security with the switchport port-security interface subcommand."
+    },
+    {
+      "question": "A Cisco Catalyst switch connects to what should be individual user PCs. Each port has the same port security configuration, configured as follows:\n\ninterface range gigabitethernet 0/1 - 24\nswitchport mode access\nswitchport port-security\nswitchport port-security mac-address sticky\nWhich of the following answers describe the result of the port security configuration created with these commands? (Choose two answers.)",
+      "answer": [
+        "Prevents unknown devices with unknown MAC addresses from sending data through the switch ports.",
+        "If a user connects a switch to the cable, prevents multiple devices from sending data through the port.",
+        "Will allow any one device to connect to each port and will save that device’s MAC address into the startup-config.",
+        "Will allow any one device to connect to each port but will not save that device’s MAC address into the startup-config."
+      ],
+      "correct_answer": "Prevents unknown devices with unknown MAC addresses from sending data through the switch ports., Will allow any one device to connect to each port but will not save that device’s MAC address into the startup-config."
+    },
+    {
+      "question": "Which of the following commands list the MAC address table entries for MAC addresses configured by port security? (Choose two answers.)",
+      "answer": [
+        "show mac address-table dynamic",
+        "show mac address-table",
+        "show mac address-table static",
+        "show mac address-table port-security"
+      ],
+      "correct_answer": "show mac address-table, show mac address-table port-security"
+    },
+    {
+      "question": "The show port-security interface f0/1 command lists a port status of secure-shutdown. Which one of the following answers must be true about this interface at this time?",
+      "answer": [
+        "The show interface status command lists the interface status as connected.",
+        "The show interface status command lists the interface status as err-disabled.",
+        "The show port-security interface command could list a mode of shutdown or restrict, but not protect.",
+        "The show port-security interface command violation counter can increase while in the secure-shutdown port state."
+      ],
+      "correct_answer": "The show interface status command lists the interface status as err-disabled."
+    },
+    {
+      "question": "A switch’s port Gi0/1 has been correctly enabled with port security. The configuration sets the violation mode to restrict. A frame that violates the port security policy enters the interface, followed by a frame that does not. Which of the following answers correctly describe what happens in this scenario? (Choose two answers.)",
+      "answer": [
+        "The switch puts the interface into an err-disabled state when the first frame arrives.",
+        "The switch generates syslog messages about the violating traffic for the first frame.",
+        "The switch increments the violation counter for Gi0/1 by 1.",
+        "The switch discards both the first and second frames."
+      ],
+      "correct_answer": "The switch generates syslog messages about the violating traffic for the first frame., The switch increments the violation counter for Gi0/1 by 1."
+    }
+  ]
+},
+    {
+  "quizz_title": "Chapter 12: DHCP Snooping and ARP Inspection",
+  "questions": [
+    {
+      "question": "An engineer hears about DHCP Snooping and decides to implement it. Which of the following are the devices on which DHCP Snooping could be implemented? (Choose two answers.)",
+      "answer": [
+        "Layer 2 switches",
+        "Routers",
+        "Multilayer switches",
+        "End-user hosts"
+      ],
+      "correct_answer": "Layer 2 switches, Multilayer switches"
+    },
+    {
+      "question": "Layer 2 switch SW2 connects a Layer 2 switch (SW1), a router (R1), a DHCP server (S1), and three PCs (PC1, PC2, and PC3). All PCs are DHCP clients. Which of the following are the most likely DHCP Snooping trust state configurations on SW2 for the ports connected to the listed devices? (Choose two answers.)",
+      "answer": [
+        "The port connected to the router is untrusted.",
+        "The port connected to switch SW1 is trusted.",
+        "The port connected to PC1 is untrusted.",
+        "The port connected to PC3 is trusted."
+      ],
+      "correct_answer": "The port connected to the router is untrusted., The port connected to switch SW1 is trusted."
+    },
+    {
+      "question": "Switch SW1 needs to be configured to use DHCP Snooping in VLAN 5 and only VLAN 5. Which commands must be included, assuming at least one switch port in VLAN 5 must be an untrusted port? (Choose two answers.)",
+      "answer": [
+        "no ip dhcp snooping trust",
+        "ip dhcp snooping untrust",
+        "ip dhcp snooping",
+        "ip dhcp snooping vlan 5"
+      ],
+      "correct_answer": "ip dhcp snooping, ip dhcp snooping vlan 5"
+    },
+    {
+      "question": "On a multilayer switch, a switch needs to be configured to perform DHCP Snooping on some Layer 2 ports in VLAN 3. Which command may or may not be needed depending on whether the switch also acts as a DHCP relay agent?",
+      "answer": [
+        "no ip dhcp snooping information option",
+        "ip dhcp snooping limit rate 5",
+        "errdisable recovery cause dhcp-rate-limit",
+        "ip dhcp snooping vlan 3"
+      ],
+      "correct_answer": "no ip dhcp snooping information option"
+    },
+    {
+      "question": "Switch SW1 has been configured to use Dynamic ARP Inspection with DHCP Snooping in VLAN 5. An ARP request arrives on port G0/1. Which answer describes two items DAI always compares regardless of the configuration?",
+      "answer": [
+        "The message’s ARP sender hardware address and the message’s Ethernet header source MAC address",
+        "The message’s ARP sender hardware address and the DHCP Snooping binding table",
+        "The message’s ARP target IP address and the DHCP Snooping binding table",
+        "The message’s ARP target IP address and the switch’s ARP table"
+      ],
+      "correct_answer": "The message’s ARP sender hardware address and the DHCP Snooping binding table"
+    },
+    {
+      "question": "Switch SW1 needs to be configured to use Dynamic ARP Inspection along with DHCP Snooping in VLAN 6 and only VLAN 6. Which commands must be included, assuming at least one switch port in VLAN 6 must be a trusted port? (Choose two answers.)",
+      "answer": [
+        "no ip arp inspection untrust",
+        "ip arp inspection trust",
+        "ip arp inspection",
+        "ip arp inspection vlan 6"
+      ],
+      "correct_answer": "ip arp inspection trust, ip arp inspection vlan 6"
+    },
+    {
+      "question": "A Layer 2 switch needs to be configured to use Dynamic ARP Inspection along with DHCP Snooping. Which command would make DAI monitor ARP message rates on an interface at an average rate of 4 received ARP messages per second? (Choose two answers.)",
+      "answer": [
+        "ip arp inspection limit rate 4 burst interval 2",
+        "ip arp inspection limit rate 10 burst interval 2",
+        "ip arp inspection limit rate 16 burst interval 4",
+        "ip arp inspection limit rate 4"
+      ],
+      "correct_answer": "ip arp inspection limit rate 4 burst interval 2, ip arp inspection limit rate 4"
+    }
+  ]
+},
+    {
+  "quizz_title": "Chapter 13: Device Management Protocols",
+  "questions": [
+    {
+      "question": "What level of logging to the console is the default for a Cisco device?",
+      "answer": [
+        "Informational",
+        "Errors",
+        "Warnings",
+        "Debugging"
+      ],
+      "correct_answer": "Informational"
+    },
+    {
+      "question": "What command limits the messages sent to a syslog server to levels 4 through 0?",
+      "answer": [
+        "logging trap 0-4",
+        "logging trap 0,1,2,3,4",
+        "logging trap 4",
+        "logging trap through 4"
+      ],
+      "correct_answer": "logging trap 0,1,2,3,4"
+    },
+    {
+      "question": "Which of the following is accurate about the NTP client function on a Cisco router?",
+      "answer": [
+        "The client synchronizes its time-of-day clock based on the NTP server.",
+        "It counts CPU cycles of the local router CPU to keep time more accurately.",
+        "The client synchronizes all Ethernet interfaces to use the same speed.",
+        "The client must be connected to the same subnet as an NTP server."
+      ],
+      "correct_answer": "The client synchronizes its time-of-day clock based on the NTP server."
+    },
+    {
+      "question": "The only NTP configuration on router R1 is the ntp server 10.1.1.1 command. Which answer describes how NTP works on the router?",
+      "answer": [
+        "As an NTP server only",
+        "As an NTP client only",
+        "As an NTP server only after the NTP client synchronizes with NTP server 10.1.1.1",
+        "As an NTP server regardless of whether the NTP client synchronizes with NTP server 10.1.1.1"
+      ],
+      "correct_answer": "As an NTP client only"
+    },
+    {
+      "question": "Imagine that a switch connects through an Ethernet cable to a router, and the router’s host name is Hannah. Which of the following commands could tell you information about the IOS version on Hannah without establishing a Telnet connection to Hannah? (Choose two answers.)",
+      "answer": [
+        "show neighbors Hannah",
+        "show cdp",
+        "show cdp neighbors",
+        "show cdp neighbors Hannah",
+        "show cdp entry Hannah",
+        "show cdp neighbors detail"
+      ],
+      "correct_answer": "show cdp neighbors Hannah, show cdp neighbors detail"
+    },
+    {
+      "question": "A switch is cabled to a router whose host name is Hannah. Which of the following LLDP commands could identify Hannah’s enabled capabilities? (Choose two answers.)",
+      "answer": [
+        "show neighbors",
+        "show neighbors Hannah",
+        "show lldp",
+        "show lldp interface",
+        "show lldp neighbors",
+        "show lldp entry Hannah"
+      ],
+      "correct_answer": "show lldp neighbors, show lldp entry Hannah"
+    }
+  ]
+},
+    {
+  "quizz_title": "Chapter 14: Network Address Translation",
+  "questions": [
+    {
+      "question": "Which of the following are not private addresses according to RFC 1918? (Choose two answers.)",
+      "answer": [
+        "172.31.1.1",
+        "172.33.1.1",
+        "10.255.1.1",
+        "10.1.255.1",
+        "191.168.1.1"
+      ],
+      "correct_answer": "172.33.1.1, 191.168.1.1"
+    },
+    {
+      "question": "What causes the NAT router to create NAT table entries when using static NAT for inside addresses only?",
+      "answer": [
+        "The first packet from the inside network to the outside network",
+        "The first packet from the outside network to the inside network",
+        "Configuration using the ip nat inside source command",
+        "Configuration using the ip nat outside source command"
+      ],
+      "correct_answer": "The first packet from the inside network to the outside network"
+    },
+    {
+      "question": "What causes the NAT router to create NAT table entries when using dynamic NAT for inside addresses only?",
+      "answer": [
+        "The first packet from the inside network to the outside network",
+        "The first packet from the outside network to the inside network",
+        "Configuration using the ip nat inside source command",
+        "Configuration using the ip nat outside source command"
+      ],
+      "correct_answer": "The first packet from the inside network to the outside network"
+    },
+    {
+      "question": "An enterprise uses inside source NAT for packets that flow into the Internet, with a working NAT configuration that includes the command ip nat inside source list alice pool barney. Which statements must be true for the router to apply NAT to a packet entering an inside interface?",
+      "answer": [
+        "ACL alice must match the packet with a permit action.",
+        "ACL alice must match the packet with a deny action.",
+        "Pool barney must include the packet’s source IP address.",
+        "Pool barney must include the packet’s destination IP address."
+      ],
+      "correct_answer": "ACL alice must match the packet with a permit action."
+    },
+    {
+      "question": "An engineer created the incomplete configuration shown here. The configuration should achieve a typical router source NAT function at a router that connects an enterprise to the Internet and uses a single public IP address. Which answers list commands or parameters that would help complete the configuration? (Choose two answers.)",
+      "answer": [
+        "The ip nat outside command",
+        "The ip nat pat command",
+        "The overload keyword",
+        "The ip nat pool command",
+        "The inside keyword"
+      ],
+      "correct_answer": "The ip nat outside command, The overload keyword"
+    },
+    {
+      "question": "Examine the following show command output on a router configured for dynamic NAT: -- Inside Source access-list 1 pool fred refcount 2288 pool fred: netmask 255.255.255.240 start 200.1.1.1 end 200.1.1.7 type generic, total addresses 7, allocated 7 (100%), misses 965. Users are complaining about not being able to reach the Internet. Which of the following is the most likely cause?",
+      "answer": [
+        "The problem is not related to NAT, based on the information in the command output.",
+        "The NAT pool does not have enough entries to satisfy all requests.",
+        "Standard ACL 1 cannot be used; an extended ACL must be used.",
+        "The command output does not supply enough information to identify the problem."
+      ],
+      "correct_answer": "The NAT pool does not have enough entries to satisfy all requests."
+    }
+  ]
+},
+    {
+  "quizz_title": "Chapter 15: Quality of Service (QoS)",
+  "questions": [
+    {
+      "question": "Which of the following attributes do QoS tools manage? (Choose three answers.)",
+      "answer": [
+        "Bandwidth",
+        "Delay",
+        "Load",
+        "MTU",
+        "Loss"
+      ],
+      "correct_answer": "Bandwidth, Delay, Loss"
+    },
+    {
+      "question": "Which of the following QoS marking fields could remain with a packet while being sent through four different routers, over different LAN and WAN links? (Choose two answers.)",
+      "answer": [
+        "CoS",
+        "IPP",
+        "DSCP",
+        "MPLS EXP"
+      ],
+      "correct_answer": "DSCP, MPLS EXP"
+    },
+    {
+      "question": "Which of the following are available methods of classifying packets in DiffServ on Cisco routers? (Choose three answers.)",
+      "answer": [
+        "Matching the IP DSCP field",
+        "Matching the 802.1p CoS field",
+        "Matching fields with an extended IP ACL",
+        "Matching the SNMP Location variable"
+      ],
+      "correct_answer": "Matching the IP DSCP field, Matching the 802.1p CoS field, Matching fields with an extended IP ACL"
+    },
+    {
+      "question": "Which of the following behaviors are applied to a low latency queue in a Cisco router or switch? (Choose two answers.)",
+      "answer": [
+        "Shaping",
+        "Policing",
+        "Priority scheduling",
+        "Round-robin scheduling"
+      ],
+      "correct_answer": "Priority scheduling, Round-robin scheduling"
+    },
+    {
+      "question": "Enterprise router R1 sends data over a WAN link to ISP router ISP1. R1 shapes outgoing traffic to 200 Mbps, while ISP1 polices incoming traffic at a 250-Mbps rate. For an extended period (long enough to exhaust any bursting abilities of the shaper and policer), R1 receives 300 Mbps of traffic that it routes out the link connected to ISP1. Which answers describe the most likely shaping and policing actions in this scenario? (Choose two answers.)",
+      "answer": [
+        "The policer measures an incoming rate that exceeds the policing rate.",
+        "The policer measures an incoming rate that does not exceed the policing rate.",
+        "The shaper is not queuing packets to slow down the sending rate.",
+        "The shaper is queuing packets to slow down the sending rate."
+      ],
+      "correct_answer": "The policer measures an incoming rate that exceeds the policing rate., The shaper is queuing packets to slow down the sending rate."
+    },
+    {
+      "question": "A queuing system has three queues serviced with round-robin scheduling and one low latency queue that holds all voice traffic. Round-robin queue 1 holds predominantly UDP traffic, while round-robin queues 2 and 3 hold predominantly TCP traffic. The packets in each queue have a variety of DSCP markings per the QoS design. In which queues would it make sense to use a congestion avoidance (drop management) tool? (Choose two answers.)",
+      "answer": [
+        "The LLQ",
+        "Queue 1",
+        "Queue 2",
+        "Queue 3"
+      ],
+      "correct_answer": "Queue 1, Queue 3"
+    }
+  ]
+},
+    {
+  "quizz_title": "Chapter 16: First Hop Redundancy Protocols",
+  "questions": [
+    {
+      "question": "R1 and R2 attach to the same Ethernet VLAN, with subnet 10.1.19.0/25, with addresses 10.1.19.1 and 10.1.19.2, respectively, configured with the ip address interface subcommand. Host A refers to 10.1.19.1 as its default router, and host B refers to 10.1.19.2 as its default router. The routers do not use an FHRP. Which of the following is a problem for this LAN?",
+      "answer": [
+        "The design breaks IPv4 addressing rules because two routers cannot connect to the same LAN subnet.",
+        "If one router fails, neither host can send packets off-subnet.",
+        "If one router fails, both hosts will use the one remaining router as a default router.",
+        "If one router fails, the host that uses that router as a default router cannot send packets off-subnet."
+      ],
+      "correct_answer": "If one router fails, the host that uses that router as a default router cannot send packets off-subnet."
+    },
+    {
+      "question": "R1 and R2 attach to the same Ethernet VLAN, with subnet 10.1.19.0/25, with addresses 10.1.19.1 and 10.1.19.2, respectively, configured with the ip address interface subcommand. The routers use an FHRP. Host A and host B attach to the same LAN and have correct default router settings per the FHRP configuration. Which of the following statements is true for this LAN?",
+      "answer": [
+        "The design breaks IPv4 addressing rules because two routers cannot connect to the same LAN subnet.",
+        "If one router fails, neither host can send packets off-subnet.",
+        "If one router fails, both hosts will use the one remaining router as a default router.",
+        "If one router fails, only one of the two hosts will still be able to send packets off-subnet."
+      ],
+      "correct_answer": "If one router fails, both hosts will use the one remaining router as a default router."
+    },
+    {
+      "question": "R1 and R2 attach to the same Ethernet VLAN, with subnet 10.1.19.0/25, with addresses 10.1.19.1 and 10.1.19.2, respectively, configured with the ip address interface subcommand. The routers use HSRP. The network engineer prefers to have R1 be the default router when both R1 and R2 are up. Which of the following is the likely default router setting for hosts in this subnet?",
+      "answer": [
+        "10.1.19.1",
+        "10.1.19.2",
+        "Another IP address in subnet 10.1.19.0/25 other than 10.1.19.1 and 10.1.19.2",
+        "A host name that the FHRP mini-DNS will initially point to 10.1.19.1"
+      ],
+      "correct_answer": "Another IP address in subnet 10.1.19.0/25 other than 10.1.19.1 and 10.1.19.2"
+    },
+    {
+      "question": "Routers R1, R2, and R3, with addresses 10.1.1.1, 10.1.1.2, and 10.1.1.3, respectively, are in HSRPv2 group 16, and use VIP 10.1.1.8. R2 is the current HSRP active router. Which statement is true about HSRP operation in the subnet?",
+      "answer": [
+        "Traffic from hosts in the subnet balances across all routers (R1, R2, and R3).",
+        "Traffic from hosts in the subnet flows into only router R2.",
+        "Router R1 only replies to ARP requests for address 10.1.1.8.",
+        "The HSRP group uses virtual MAC 0000.0C9F.F016."
+      ],
+      "correct_answer": "Traffic from hosts in the subnet flows into only router R2."
+    },
+    {
+      "question": "Routers R1, R2, and R3, with addresses 10.1.1.1, 10.1.1.2, and 10.1.1.3, respectively, are in VRRPv3 group 32. R3 is the current VRRP active router. Which statements are true about VRRP operation in the subnet? (Choose two answers.)",
+      "answer": [
+        "The current VIP may be 10.1.1.3.",
+        "The current VIP must be 10.1.1.3.",
+        "VRRP sends its group messages to multicast address 224.0.0.18.",
+        "VRRP sends its group messages to multicast address 224.0.0.2."
+      ],
+      "correct_answer": "The current VIP may be 10.1.1.3., VRRP sends its group messages to multicast address 224.0.0.18."
+    },
+    {
+      "question": "Which answer best describes a mechanism that enables GLBP to achieve active/active load balancing, with all routers in the group forwarding packets as a default router?",
+      "answer": [
+        "By configuring a VIP that matches one of the router’s interface IP addresses",
+        "By using a different VIP per router in the same group",
+        "By using a separate GLBP group for each router",
+        "By using a different virtual MAC address per router in the same group"
+      ],
+      "correct_answer": "By using a different virtual MAC address per router in the same group"
+    }
+  ]
+},
+    {
+  "quizz_title": "Chapter 17: SNMP, FTP, and TFTP",
+  "questions": [
+    {
+      "question": "A Network Management Station (NMS) is using SNMP to manage some Cisco routers and switches with SNMPv2c. Which of the following answers most accurately describes how the SNMP agent on a router authenticates any SNMP Get requests received from the NMS?",
+      "answer": [
+        "Using a username and hashed version of a password",
+        "Using either the read-write or read-only community string",
+        "Using only the read-write community string",
+        "Using only the read-only community string"
+      ],
+      "correct_answer": "Using either the read-write or read-only community string"
+    },
+    {
+      "question": "Which of the following SNMP messages are typically sent by an SNMP agent? (Choose two answers.)",
+      "answer": [
+        "Trap",
+        "Get Request",
+        "Inform",
+        "Set Request"
+      ],
+      "correct_answer": "Trap, Inform"
+    },
+    {
+      "question": "Which SNMP verbs were added for SNMP Version 2 to improve the efficiency of retrieving lists of related MIB variables?",
+      "answer": [
+        "GetBulk",
+        "Get",
+        "GetNext",
+        "Inform"
+      ],
+      "correct_answer": "GetBulk"
+    },
+    {
+      "question": "An FTP client connects to an FTP server using active mode and retrieves a copy of a file from the server. Which of the answers describes a TCP connection initiated by the FTP client?",
+      "answer": [
+        "The FTP control connection only",
+        "The FTP data connection only",
+        "Both the FTP data and control connections",
+        "Neither the FTP data nor control connections"
+      ],
+      "correct_answer": "The FTP control connection only"
+    },
+    {
+      "question": "Which of the following functions are supported by FTP but not by TFTP? (Choose two answers.)",
+      "answer": [
+        "Transferring files from client to server",
+        "Changing the current directory on the server",
+        "Transferring files from server to client",
+        "Listing directory contents of a server’s directory"
+      ],
+      "correct_answer": "Changing the current directory on the server, Listing directory contents of a server’s directory"
+    },
+    {
+      "question": "In an IOS XE router, the pwd command output lists directory 'bootflash:'. Which answers describe what you would expect to see in the output of the show bootflash: and dir commands? (Choose two answers.)",
+      "answer": [
+        "The dir command lists all files in file system bootflash:, including files in subdirectories.",
+        "The show bootflash: command lists all files in file system bootflash:, including files in subdirectories.",
+        "The dir command lists files in the root of bootflash:, but not files in subdirectories.",
+        "The show bootflash: command lists files in the root of bootflash:, but not files in subdirectories."
+      ],
+      "correct_answer": "The show bootflash: command lists all files in file system bootflash:, including files in subdirectories., The dir command lists files in the root of bootflash:, but not files in subdirectories."
+    }
+  ]
+},
+    {
+  "quizz_title": "Chapter 18: LAN Architecture",
+  "questions": [
+    {
+      "question": "Which answers best describe the topology in a two-tier campus LAN design? (Choose two answers.)",
+      "answer": [
+        "The design uses a full mesh of links between access and distribution switches.",
+        "The design uses a partial mesh of links between access and distribution switches.",
+        "The design uses a partial mesh of links between the distribution and core switches.",
+        "The end-user and server devices connect directly to access layer switches."
+      ],
+      "correct_answer": "The design uses a partial mesh of links between access and distribution switches., The end-user and server devices connect directly to access layer switches."
+    },
+    {
+      "question": "In a three-tier campus LAN design, which answers best describe the topology? (Choose two answers.)",
+      "answer": [
+        "The design uses a partial mesh of links between access and distribution switches.",
+        "The design uses a full mesh of links between access and distribution switches.",
+        "The design uses a partial mesh of links between the distribution and core switches.",
+        "The end-user and server devices connect directly to distribution layer switches."
+      ],
+      "correct_answer": "The design uses a partial mesh of links between access and distribution switches., The design uses a partial mesh of links between the distribution and core switches."
+    },
+    {
+      "question": "Which topology term refers to a network in which one node connects to all other nodes with no other links?",
+      "answer": [
+        "Partial mesh",
+        "Full mesh",
+        "Hybrid topology",
+        "Star topology"
+      ],
+      "correct_answer": "Star topology"
+    },
+    {
+      "question": "Which cable categories support 1000BASE-T at distances up to 100 meters? (Choose two answers.)",
+      "answer": [
+        "CAT 5",
+        "CAT 5E",
+        "CAT 6",
+        "OM1",
+        "OM3"
+      ],
+      "correct_answer": "CAT 5E, CAT 6"
+    },
+    {
+      "question": "Which answers list criteria typical of a SOHO network? (Choose two answers.)",
+      "answer": [
+        "The AP functions using standalone mode.",
+        "The AP functions using a split-MAC architecture using a WLC.",
+        "A single networking device implements the router, switch, AP, and firewall functions.",
+        "Separate networking devices implement each function (router, switch, AP, and firewall)."
+      ],
+      "correct_answer": "The AP functions using standalone mode., A single networking device implements the router, switch, AP, and firewall functions."
+    },
+    {
+      "question": "After deciding the attached device wants to receive power over the UTP cable, how does a PoE LAN switch choose the initial power level to apply?",
+      "answer": [
+        "It applies a standard small amount of voltage.",
+        "It asks using CDP messages.",
+        "It asks using LLDP messages.",
+        "It applies voltage based on a configured value."
+      ],
+      "correct_answer": "It applies a standard small amount of voltage."
+    },
+    {
+      "question": "Which of the following refers to standards that deliver power over all four pairs in a UTP cable? (Choose two answers.)",
+      "answer": [
+        "PoE",
+        "UPoE",
+        "PoE+",
+        "UPoE+"
+      ],
+      "correct_answer": "UPoE, UPoE+"
+    }
+  ]
+},
+    {
+  "quizz_title": "Chapter 19: WAN Architecture",
+  "questions": [
+    {
+      "question": "Which of the following topology terms most closely describe the topology created by a Metro Ethernet Tree (E-Tree) service? (Choose two answers.)",
+      "answer": [
+        "Full mesh",
+        "Partial mesh",
+        "Hub and spoke",
+        "Point-to-point"
+      ],
+      "correct_answer": "Partial mesh, Hub and spoke"
+    },
+    {
+      "question": "Which of the following is the most likely technology used for an access link to a Metro Ethernet service?",
+      "answer": [
+        "100BASE-LX10",
+        "High-speed TDM (for example, T3, E3)",
+        "MPLS",
+        "100BASE-T"
+      ],
+      "correct_answer": "100BASE-T"
+    },
+    {
+      "question": "An enterprise uses a Metro Ethernet WAN with an Ethernet LAN (E-LAN) service, connecting the company headquarters to ten remote sites. The enterprise uses OSPF at all sites, with one router connected to the service from each site. Which of the following are true about the Layer 3 details most likely used with this service and design? (Choose two answers.)",
+      "answer": [
+        "The WAN uses one IP subnet.",
+        "The WAN uses ten or more IP subnets.",
+        "A remote site router would have one OSPF neighbor.",
+        "A remote site router would have ten OSPF neighbors."
+      ],
+      "correct_answer": "The WAN uses one IP subnet., A remote site router would have one OSPF neighbor."
+    },
+    {
+      "question": "An enterprise uses an MPLS Layer 3 VPN, connecting the company headquarters to ten remote sites. The enterprise uses OSPF at all sites, with one router connected to the service from each site. Which of the following are true about the Layer 3 details most likely used with the routers connected using MPLS? (Choose two answers.)",
+      "answer": [
+        "The WAN uses one IP subnet.",
+        "The WAN uses ten or more IP subnets.",
+        "A remote site router would have one OSPF neighbor.",
+        "A remote site router would have ten or more OSPF neighbors."
+      ],
+      "correct_answer": "The WAN uses ten or more IP subnets., A remote site router would have one OSPF neighbor."
+    },
+    {
+      "question": "Which of the following answers about access link options for an MPLS network is most accurate?",
+      "answer": [
+        "Uses only TDM (T1, T3, E1, E3, etc.)",
+        "Uses only Ethernet",
+        "Uses only DSL and cable",
+        "Uses a wide variety of Layer 1 and Layer 2 networking technologies"
+      ],
+      "correct_answer": "Uses a wide variety of Layer 1 and Layer 2 networking technologies"
+    },
+    {
+      "question": "A colleague mentions a remote access VPN using a VPN client on their laptop. Which protocols might the VPN concentrator choose to require of the VPN client? (Choose two answers.)",
+      "answer": [
+        "TLS",
+        "IPsec",
+        "GRE",
+        "FTPS"
+      ],
+      "correct_answer": "TLS, IPsec"
+    }
+  ]
+},
+
+{
+  "quizz_title": "Chapter 20: Cloud Architecture",
+  "questions": [
+    {
+      "question": "Three virtual machines run on one physical server. Which server resources does a virtualization system typically virtualize so each VM can use the required amount of that resource? (Choose three correct answers.)",
+      "answer": [
+        "NIC",
+        "RAM",
+        "Power",
+        "Hypervisor",
+        "CPU"
+      ],
+      "correct_answer": "NIC, RAM, CPU"
+    },
+    {
+      "question": "Eight virtual machines run on one physical server; the server has two physical Ethernet NICs. Which answer describes a method that allows all eight VMs to communicate?",
+      "answer": [
+        "The VMs must share two IP addresses and coordinate to avoid using duplicate TCP or UDP ports.",
+        "The hypervisor acts as an IP router using the NICs as routed IP interfaces.",
+        "Each VM uses a virtual NIC mapped to a physical NIC.",
+        "Each VM uses a virtual NIC that logically connects to a virtual switch."
+      ],
+      "correct_answer": "Each VM uses a virtual NIC that logically connects to a virtual switch."
+    },
+    {
+      "question": "Which cloud service is most likely to be used for software development?",
+      "answer": [
+        "IaaS",
+        "PaaS",
+        "SaaS",
+        "SLBaaS"
+      ],
+      "correct_answer": "PaaS"
+    },
+    {
+      "question": "With which of the following cloud services would you purchase the service and then later install your software applications?",
+      "answer": [
+        "IaaS",
+        "PaaS",
+        "SaaS",
+        "SLBaaS"
+      ],
+      "correct_answer": "IaaS"
+    },
+    {
+      "question": "An enterprise plans to use a public cloud service and considers different WAN options. The answers list four options under consideration. Which option causes the most challenges when migrating from the original cloud provider to a different one?",
+      "answer": [
+        "Using private WAN connections directly to the cloud provider",
+        "Using an Internet connection without VPN",
+        "Using an intercloud exchange",
+        "Using an Internet connection with VPN"
+      ],
+      "correct_answer": "Using private WAN connections directly to the cloud provider"
+    },
+    {
+      "question": "An enterprise plans to use a public cloud service and considers different WAN options. Which answers list a WAN option that provides good security by keeping the data private while also providing good QoS services? (Choose two answers.)",
+      "answer": [
+        "Using private WAN connections directly to the cloud provider",
+        "Using an Internet connection without VPN",
+        "Using an intercloud exchange",
+        "Using an Internet connection with VPN"
+      ],
+      "correct_answer": "Using private WAN connections directly to the cloud provider, Using an intercloud exchange"
+    }
+  ]
+},
+    {
+  "quizz_title": "Chapter 21: Introduction to Controller-Based Networking",
+  "questions": [
+    {
+      "question": "A Layer 2 switch examines a frame’s destination MAC address and chooses to forward that frame out port G0/1 only. That action occurs as part of which plane of the switch?",
+      "answer": [
+        "Data plane",
+        "Management plane",
+        "Control plane",
+        "Table plane"
+      ],
+      "correct_answer": "Data plane"
+    },
+    {
+      "question": "A router uses OSPF to learn routes and adds those to the IPv4 routing table. That action occurs as part of which plane of the router?",
+      "answer": [
+        "Data plane",
+        "Management plane",
+        "Control plane",
+        "Table plane"
+      ],
+      "correct_answer": "Control plane"
+    },
+    {
+      "question": "A network uses an SDN architecture with switches and a centralized controller. Which of the following terms describes a function or functions expected to be found on the switches but not on the controller?",
+      "answer": [
+        "A northbound interface",
+        "A southbound interface",
+        "Data plane functions",
+        "Control plane functions"
+      ],
+      "correct_answer": "Data plane functions"
+    },
+    {
+      "question": "Which of the following controllers (if any) uses a mostly centralized control plane model?",
+      "answer": [
+        "OpenDaylight Controller",
+        "Cisco Application Policy Infrastructure Controller (APIC)",
+        "Cisco Catalyst 9800 Series Controller",
+        "None of these controllers use a mostly centralized control plane."
+      ],
+      "correct_answer": "OpenDaylight Controller"
+    },
+    {
+      "question": "To which types of nodes should an ACI leaf switch connect in a typical single-site design? (Choose two answers.)",
+      "answer": [
+        "All of the other leaf switches",
+        "A subset of the spine switches",
+        "All of the spine switches",
+        "Some of the endpoints",
+        "None of the endpoints"
+      ],
+      "correct_answer": "All of the spine switches, Some of the endpoints"
+    },
+    {
+      "question": "Which answers list an advantage of controller-based networks versus traditional networks? (Choose two answers.)",
+      "answer": [
+        "The ability to configure the features for the network rather than per device",
+        "The ability to have forwarding tables at each device",
+        "Programmatic APIs available per device",
+        "More consistent device configuration"
+      ],
+      "correct_answer": "The ability to configure the features for the network rather than per device, More consistent device configuration"
+    }
+  ]
+},
+    {
+  "quizz_title": "Chapter 22: Cisco Software-Defined Access (Cisco SD-Access)",
+  "questions": [
+    {
+      "question": "In Cisco Software-Defined Access (Cisco SD-Access), which term refers to the devices and cabling, along with configuration that allows the network device nodes enough IP connectivity to send IP packets to each other?",
+      "answer": [
+        "Fabric",
+        "Overlay",
+        "Underlay",
+        "VXLAN"
+      ],
+      "correct_answer": "Underlay"
+    },
+    {
+      "question": "In Cisco Software-Defined Access (Cisco SD-Access), which term refers to the functions that deliver endpoint packets across the network using tunnels between the ingress and egress fabric nodes?",
+      "answer": [
+        "Fabric",
+        "Overlay",
+        "Underlay",
+        "VXLAN"
+      ],
+      "correct_answer": "Overlay"
+    },
+    {
+      "question": "In Software-Defined Access (Cisco SD-Access), which of the answers are part of the overlay data plane?",
+      "answer": [
+        "LISP",
+        "GRE",
+        "OSPF",
+        "VXLAN"
+      ],
+      "correct_answer": "VXLAN"
+    },
+    {
+      "question": "Which answers best describe options of how to implement security with scalable groups using Cisco Catalyst Center and Cisco SD-Access? (Choose two answers.)",
+      "answer": [
+        "A human user from the Cisco Catalyst Center GUI",
+        "An automation application using NETCONF",
+        "A human user using the CLI of a Cisco SD-Access fabric edge node",
+        "An automation application using REST"
+      ],
+      "correct_answer": "A human user from the Cisco Catalyst Center GUI, An automation application using REST"
+    },
+    {
+      "question": "Which of the following protocols or tools could be used as part of the Cisco Catalyst Center southbound interface? (Choose three answers.)",
+      "answer": [
+        "Ansible",
+        "SSH",
+        "NETCONF",
+        "SNMP",
+        "Puppet"
+      ],
+      "correct_answer": "SSH, NETCONF, SNMP"
+    },
+    {
+      "question": "Which of the following are network management features performed by both traditional network management software as well as by Cisco Catalyst Center? (Choose two answers.)",
+      "answer": [
+        "Network device discovery",
+        "Software-Defined Access configuration",
+        "End-to-end path discovery with ACL analysis",
+        "Device installation (day 0), configuration (day 1), and monitoring (day n) operations"
+      ],
+      "correct_answer": "Network device discovery, Device installation (day 0), configuration (day 1), and monitoring (day n) operations"
+    },
+    {
+      "question": "What distinguishes Narrow AI from Generative AI?",
+      "answer": [
+        "Narrow AI lacks broad cognitive capabilities, while Generative AI thrives in a limited scope.",
+        "Narrow AI is designed for specific tasks, while Generative AI is capable of learning and decision-making.",
+        "Narrow AI includes applications like speech recognition, while Generative AI focuses on conversational platforms like ChatGPT.",
+        "Narrow AI relies on explicit programming, while Generative AI learns patterns and relationships from data sources."
+      ],
+      "correct_answer": "Narrow AI is designed for specific tasks, while Generative AI is capable of learning and decision-making."
+    }
+  ]
+},
+    {
+  "quizz_title": "Chapter 23: Understanding REST and JSON",
+  "questions": [
+    {
+      "question": "Which of the following are required attributes of a REST-based API? (Choose two answers.)",
+      "answer": [
+        "Uses HTTP",
+        "Objects noted as to whether they can be cached",
+        "Stateful operation",
+        "Client/server architecture"
+      ],
+      "correct_answer": "Uses HTTP, Client/server architecture"
+    },
+    {
+      "question": "Which answers list a matching software development CRUD action to an HTTP verb that performs that action? (Choose two answers.)",
+      "answer": [
+        "CRUD create and HTTP PATCH",
+        "CRUD update and HTTP PATCH",
+        "CRUD delete and HTTP PUT",
+        "CRUD read and HTTP GET"
+      ],
+      "correct_answer": "CRUD update and HTTP PATCH, CRUD read and HTTP GET"
+    },
+    {
+      "question": "Examine the following URI that works with a Cisco DNA Controller:\n\nhttps://dnac.example.com/dna/intent/api/v1/\nnetwork-device?managementIPAddress=10.10.22.74\nWhich part of the URI, per the API documentation, is considered to identify the resource but not any parameters?",
+      "answer": [
+        "https://",
+        "dna.example.com",
+        "dna/intent/api/v1/network-device",
+        "managementIPAddress=10.10.22.74"
+      ],
+      "correct_answer": "dna/intent/api/v1/network-device"
+    },
+    {
+      "question": "Which of the following data serialization and data modeling languages would most likely be used in a response from a REST-based server API used for networking applications? (Choose two answers.)",
+      "answer": [
+        "JSON",
+        "YAML",
+        "JavaScript",
+        "XML"
+      ],
+      "correct_answer": "JSON, XML"
+    },
+    {
+      "question": "Which answers correctly describe the format of the JSON text below? (Choose two answers.)\n\n{ \"myvariable\":[1,2,3] }",
+      "answer": [
+        "One JSON object that has one key:value pair",
+        "One JSON object that has three key:value pairs",
+        "A JSON object whose value is a second JSON object",
+        "A JSON object whose value is a JSON array"
+      ],
+      "correct_answer": "One JSON object that has one key:value pair, A JSON object whose value is a JSON array"
+    },
+    {
+      "question": "Which answers refer to JSON values rather than JSON keys as found in the sample JSON data? (Choose two answers.)\n\n{\n    \"response\": {\n        \"type\": \"Cisco Catalyst 9300 Switch\",\n        \"family\": \"Switches and Hubs\",\n        \"role\": \"ACCESS\",\n        \"managementIpAddress\": \"10.10.22.66\"\n    }\n}",
+      "answer": [
+        "response",
+        "type",
+        "ACCESS",
+        "10.10.22.66"
+      ],
+      "correct_answer": "ACCESS, 10.10.22.66"
+    }
+  ]
+},
+    {
+  "quizz_title": "Chapter 24: Understanding Ansible and Terraform",
+  "questions": [
+    {
+      "question": "Which answer best describes the meaning of the term configuration drift?",
+      "answer": [
+        "Changes to a single device’s configuration over time versus that single device’s original configuration",
+        "Larger and larger sections of unnecessary configuration in a device",
+        "Changes to a single device’s configuration over time versus other devices that have the same role",
+        "Differences in device configuration versus a centralized backup copy"
+      ],
+      "correct_answer": "Changes to a single device’s configuration over time versus other devices that have the same role"
+    },
+    {
+      "question": "An enterprise moves away from manual configuration methods, making changes by editing centralized configuration files. Which answers list an issue solved by using a version control system with those centralized files? (Choose two answers.)",
+      "answer": [
+        "The ability to find which engineer changed the central configuration file on a date/time",
+        "The ability to find the details of what changed in the configuration file over time",
+        "The ability to use a template with per-device variables to create configurations",
+        "The ability to recognize configuration drift in a device and notify the staff"
+      ],
+      "correct_answer": "The ability to find which engineer changed the central configuration file on a date/time, The ability to find the details of what changed in the configuration file over time"
+    },
+    {
+      "question": "Configuration monitoring (also called configuration enforcement) by a configuration management tool generally solves which problem?",
+      "answer": [
+        "Tracking the identity of individuals who changed files, along with which files they changed",
+        "Listing differences between a former and current configuration",
+        "Testing a configuration change to determine whether it will be rejected or not when implemented",
+        "Finding instances of configuration drift"
+      ],
+      "correct_answer": "Finding instances of configuration drift"
+    },
+    {
+      "question": "Which of the following configuration management tools by default use a push model to configure network devices? (Choose two answers.)",
+      "answer": [
+        "Ansible",
+        "Both use a pull model",
+        "Terraform",
+        "Neither uses a push model"
+      ],
+      "correct_answer": "Ansible, Terraform"
+    },
+    {
+      "question": "Which of the following answers list a correct combination of configuration management tool and the term used for one of its primary configuration files? (Choose two answers.)",
+      "answer": [
+        "Ansible Configuration",
+        "Terraform Configuration",
+        "Ansible Playbook",
+        "Terraform Playbook"
+      ],
+      "correct_answer": "Terraform Configuration, Ansible Playbook"
+    }
+  ]},
+    {
+  "quizz_title": "Chapter 25: IPv6 Fundamentals",
+  "questions": [
+    {
+      "question": "Which of the following was a short-term solution to the IPv4 address exhaustion problem?",
+      "answer": [
+        "IP version 6",
+        "IP version 5",
+        "NAT/PAT",
+        "ARP"
+      ],
+      "correct_answer": "NAT/PAT"
+    },
+    {
+      "question": "A router receives an Ethernet frame that holds an IPv6 packet. The router then decides to route the packet out an Ethernet WAN link. Which statement is true about how a router forwards an IPv6 packet?",
+      "answer": [
+        "The router discards the received frame’s Ethernet data-link header and trailer.",
+        "The router makes the forwarding decision based on the packet’s source IPv6 address.",
+        "The router keeps the incoming frame’s Ethernet header, encapsulating the entire frame inside a new IPv6 packet before sending it over the outgoing Ethernet WAN link.",
+        "The router uses the IPv4 routing table when choosing where to forward the packet."
+      ],
+      "correct_answer": "The router discards the received frame’s Ethernet data-link header and trailer."
+    },
+    {
+      "question": "Which of the following is the shortest valid abbreviation for FE80:0000:0000:0000:0100:0000:0000:0123?",
+      "answer": [
+        "FE80::100::123",
+        "FE8::1::123",
+        "FE80::100:0:0:0:123:4567",
+        "FE80::100:0:0:123"
+      ],
+      "correct_answer": "FE80::100:0:0:123"
+    },
+    {
+      "question": "Which of the following is the shortest valid abbreviation for 2000:0300:0040:0005:6000:0700:0080:0009?",
+      "answer": [
+        "2:3:4:5:6:7:8:9",
+        "2000:300:40:5:6000:700:80:9",
+        "2000:300:4:5:6000:700:8:9",
+        "2000:3:4:5:6:7:8:9"
+      ],
+      "correct_answer": "2000:300:40:5:6000:700:80:9"
+    },
+    {
+      "question": "Which of the following is the unabbreviated version of IPv6 address 2001:DB8::200:28?",
+      "answer": [
+        "2001:0DB8:0000:0000:0000:0000:0200:0028",
+        "2001:0DB8::0200:0028",
+        "2001:0DB8:0:0:0:0:0200:0028",
+        "2001:0DB8:0000:0000:0000:0000:200:0028"
+      ],
+      "correct_answer": "2001:0DB8:0000:0000:0000:0000:0200:0028"
+    },
+    {
+      "question": "Which of the following is the correct abbreviated subnet prefix for address 2000:0000:0000:0005:6000:0700:0080:0009, assuming a mask of /64?",
+      "answer": [
+        "2000::5::/64",
+        "2000::5:0:0:0:0/64",
+        "2000:0:0:5::/64",
+        "2000:0:0:5:0:0:0:0/64"
+      ],
+      "correct_answer": "2000:0:0:5::/64"
+    }
+  ]
+},
+{
+  "quizz_title": "Chapter 26: Subnetting in IPv6",
+  "questions": [
+    {
+      "question": "Which of the following IPv6 addresses appears to be a unique local unicast address based on its first few hex digits?",
+      "answer": [
+        "3123:1:3:5::1",
+        "FE80::1234:56FF:FE78:9ABC",
+        "FDAD::1",
+        "FF00::5"
+      ],
+      "correct_answer": "FDAD::1"
+    },
+    {
+      "question": "Which of the following IPv6 addresses appears to be a global unicast address, based on its first few hex digits?",
+      "answer": [
+        "3123:1:3:5::1",
+        "FE80::1234:56FF:FE78:9ABC",
+        "FDAD::1",
+        "FF00::5"
+      ],
+      "correct_answer": "3123:1:3:5::1"
+    },
+    {
+      "question": "When subnetting an IPv6 address block, an engineer shows a drawing that breaks the address structure into three pieces. Comparing this concept to a three-part IPv4 address structure, which part of the IPv6 address structure is most like the IPv4 network part of the address?",
+      "answer": [
+        "Subnet ID",
+        "Interface ID",
+        "Network ID",
+        "Global routing prefix",
+        "Subnet router anycast"
+      ],
+      "correct_answer": "Global routing prefix"
+    },
+    {
+      "question": "When subnetting an IPv6 address block, an engineer shows a drawing that breaks the address structure into three pieces. Assuming that all subnets use the same /64 prefix length, which of the following answers lists the field’s name on the far right side of the address?",
+      "answer": [
+        "Subnet ID",
+        "Interface ID",
+        "Network ID",
+        "Global routing prefix",
+        "Subnet router anycast"
+      ],
+      "correct_answer": "Interface ID"
+    },
+    {
+      "question": "For the IPv6 address FD00:1234:5678:9ABC:DEF1:2345:6789:ABCD, which part of the address is considered the global ID of the unique local address?",
+      "answer": [
+        "None; this address has no global ID.",
+        "00:1234:5678:9ABC",
+        "DEF1:2345:6789:ABCD",
+        "00:1234:5678",
+        "FD00"
+      ],
+      "correct_answer": "00:1234:5678"
+    }
+  ]
+},
+{
+  "quizz_title": "Chapter 27: IPv6 Configuration and Routing",
+  "questions": [
+    {
+      "question": "Router R1 has an interface named Gigabit Ethernet 0/1, whose MAC address has been set to 0200.0001.000A. Which of the following commands, added in R1’s Gigabit Ethernet 0/1 configuration mode, gives this interface a unicast IPv6 address of 2001:1:1:1:1:200:1:A with a /64 prefix length?",
+      "answer": [
+        "ipv6 address 2001:1:1:1:1:200:1:A/64",
+        "ipv6 address 2001:1:1:1:1:200:1:A/64 eui-64",
+        "ipv6 address 2001:1:1:1:1:200:1:A  /64 eui-64",
+        "ipv6 address 2001:1:1:1:1:200:1:A  /64",
+        "None of the other answers are correct"
+      ],
+      "correct_answer": "ipv6 address 2001:1:1:1:1:200:1:A/64"
+    },
+    {
+      "question": "Router R1 has an interface named Gigabit Ethernet 0/1, whose MAC address has been set to 5055.4444.3333. This interface has been configured with the ipv6 address 2000:1:1:1::/64 eui-64 subcommand. What unicast address will this interface use?",
+      "answer": [
+        "2000:1:1:1:52FF:FE55:4444:3333",
+        "2000:1:1:1:5255:44FF:FE44:3333",
+        "2000:1:1:1:5255:4444:33FF:FE33",
+        "2000:1:1:1:200:FF:FE00:0"
+      ],
+      "correct_answer": "2000:1:1:1:52FF:FE55:4444:3333"
+    },
+    {
+      "question": "Router R1 currently supports IPv4, routing packets in and out all its interfaces. R1’s configuration must be migrated to support dual-stack operation, routing both IPv4 and IPv6. Which of the following tasks must be performed before the router can also support routing IPv6 packets? (Choose two answers.)",
+      "answer": [
+        "Enable IPv6 on each interface using an ipv6 address interface subcommand.",
+        "Enable support for both versions with the ip versions 4 6 global command.",
+        "Enable IPv6 routing using the ipv6 unicast-routing global command.",
+        "Migrate to dual-stack routing using the ip routing dual-stack global command."
+      ],
+      "correct_answer": [
+        "Enable IPv6 on each interface using an ipv6 address interface subcommand.",
+        "Enable IPv6 routing using the ipv6 unicast-routing global command."
+      ]
+    },
+    {
+      "question": "On a router configured with an ipv6 address interface subcommand on its G0/0/0 interface, which of the following commands reveals the IPv6 prefix that the router computed based on the address/prefix-length? (Choose two answers.)",
+      "answer": [
+        "show ipv6 address",
+        "show ipv6 route connected",
+        "show ipv6 interface brief",
+        "show ipv6 interface g0/0/0"
+      ],
+      "correct_answer": [
+        "show ipv6 interface brief",
+        "show ipv6 interface g0/0/0"
+      ]
+    },
+    {
+      "question": "Router R1 has an interface named Gigabit Ethernet 0/1, whose MAC address has been set to 0200.0001.000A. The interface is then configured with the ipv6 address 2001:1:1:1:200:FF:FE01:B/64 interface subcommand; no other ipv6 address commands are configured on the interface. Which of the following answers lists the link-local address used on the interface?",
+      "answer": [
+        "FE80::FF:FE01:A",
+        "FE80::FF:FE01:B",
+        "FE80::200:FF:FE01:A",
+        "FE80::200:FF:FE01:B"
+      ],
+      "correct_answer": "FE80::FF:FE01:B"
+    },
+    {
+      "question": "Which of the following multicast addresses is defined as the address for sending packets to only the IPv6 routers on the local link?",
+      "answer": [
+        "FF02::1",
+        "FF02::2",
+        "FF02::5",
+        "FF02::A"
+      ],
+      "correct_answer": "FF02::2"
+    },
+    {
+      "question": "Host C must forward a packet to its default gateway, 2001:db8:1:1::1234:5678. Host C does not yet have a neighbor table entry for that address. To which solicited-node multicast address will host C send its NDP neighbor solicitation (NS) request?",
+      "answer": [
+        "FF02::1:ff34:5678",
+        "FF02::1:ff12:3456",
+        "FF02::1ff:1234:5678",
+        "FF02::1ff:34:5678"
+      ],
+      "correct_answer": "FF02::1:ff34:5678"
+    },
+    {
+      "question": "A router uses the ipv6 enable subcommand on interface G0/0/1, the ipv6 address autoconfig command on interface G0/0/2, and the ipv6 address 2002:db8:1:1::1/64 command on interface G0/0/3. The commands succeed, dynamically or statically creating the expected addresses as typical for each command. Which answers are accurate about the link-local addresses (LLAs) on the various interfaces? (Choose two answers.)",
+      "answer": [
+        "G0/0/1 has no LLA.",
+        "G0/0/1 has an LLA.",
+        "G0/0/2 has an LLA and global unicast address with identical interface IDs.",
+        "G0/0/3 has a global unicast address but no LLA."
+      ],
+      "correct_answer": [
+        "G0/0/1 has an LLA.",
+        "G0/0/2 has an LLA and global unicast address with identical interface IDs."
+      ]
+    }
+  ]
+},
+
+    {
+    "quizz_title": "Chapter 28: IPv6 Addressing and Host Configuration",
+      "questions": [
+        {
+          "question": "PC1, PC2, and Router R1 all connect to the same VLAN and IPv6 subnet. PC1 wants to send its first IPv6 packet to PC2. What protocol message will PC1 use to begin the process of discovering PC2’s MAC address?",
+          "answer": [
+            "ARP Request",
+            "NDP NS",
+            "NDP RS",
+            "SLAAC NS"
+          ],
+          "correct_answer": "NDP NS"
+        },
+        {
+          "question": "Which of the following pieces of information does a router supply in an NDP Router Advertisement (RA) message?",
+          "answer": [
+            "Router IPv6 address",
+            "Router hostname",
+            "IPv6 prefix(es) on the link",
+            "IPv6 address of DHCP server"
+          ],
+          "correct_answer": ["Router IPv6 address", "IPv6 prefix(es) on the link"]
+        },
+        {
+          "question": "Three routers (R1, R2, and R3) connect to the same VLAN and IPv6 subnet. All three routers have responded to various NDP RS messages with NDP RA messages. Which of the answers best describes the kind of NDP information held in the output of the show ipv6 neighbors command on R1?",
+          "answer": [
+            "IPv6 neighbors (both routers and hosts) plus their MAC addresses, without noting which are routers",
+            "IPv6 neighbors (both routers and hosts) plus their MAC addresses, also noting which are routers",
+            "IPv6 routers, with no information about nonrouters, with no MAC address info",
+            "IPv6 routers, with no information about nonrouters, but with MAC address info"
+          ],
+          "correct_answer": "IPv6 neighbors (both routers and hosts) plus their MAC addresses, without noting which are routers"
+        },
+        {
+          "question": "PC1 and Router R1 connect to the same VLAN and IPv6 subnet. The user of PC1 pings the IPv6 address of a host that sits at a remote site so that the packets flow through R1, PC1’s default router. PC1 learned all its IPv6 settings dynamically. Which of the following answers lists a protocol or message that PC1 could have used to learn what IPv6 address to use as its default router?",
+          "answer": [
+            "EUI-64",
+            "NDP NS",
+            "DAD",
+            "NDP RS"
+          ],
+          "correct_answer": "NDP RS"
+        },
+        {
+          "question": "Host PC1 dynamically learns its IPv6 settings using Stateless Address Autoconfiguration (SLAAC). Which one of PC1’s settings is most likely to be learned from the stateless DHCPv6 server?",
+          "answer": [
+            "Host address",
+            "Prefix length",
+            "Default router address",
+            "DNS server address(es)"
+          ],
+          "correct_answer": "DNS server address(es)"
+        },
+        {
+          "question": "Host PC1 dynamically learns its IPv6 settings using Stateless Address Autoconfiguration (SLAAC). Think about the host’s unicast address as two parts: the subnet prefix and the interface ID. Which answers list a way that SLAAC learns or builds the value of the interface ID portion of the host’s address?",
+          "answer": [
+            "Learned from a DHCPv6 server",
+            "Built by the host using EUI-64 rules",
+            "Learned from a router using NDP RS/RA messages",
+            "Built by the host using a random value"
+          ],
+          "correct_answer": ["Built by the host using EUI-64 rules", "Built by the host using a random value"]
+        },
+        {
+          "question": "An IPv6 host is configured to use DHCP to lease its IPv6 address. The DHCPv6 server is not on the same link but is located at another site. Which answer describes a mechanism the client and routers use to make the DHCPv6 messages flow between the client and server?",
+          "answer": [
+            "The client sends the DHCPv6 Solicit message to multicast address FF02::1:2.",
+            "The client sends the DHCPv6 Solicit message to broadcast address FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF.",
+            "The client must learn the DHCPv6 server’s unicast address from a local router using NDP messages.",
+            "The routers use IPv6 multicast routing to forward the Solicit message, unchanged, to the DHCPv6 server."
+          ],
+          "correct_answer": "The client sends the DHCPv6 Solicit message to multicast address FF02::1:2."
+        },
+        {
+          "question": "All routers in the network have global unicast addresses (GUAs) configured on their interfaces. The user of PC1, on a LAN, issues a traceroute command for a distant host’s address. The command succeeds, listing four lines with IPv6 addresses. Which answer best describes the addresses in the traceroute output and its use of link-local addresses (LLAs) and GUAs?",
+          "answer": [
+            "All lines list LLAs with no GUAs.",
+            "The first line lists an address that matches PC1’s default route.",
+            "All lines list GUAs with no LLAs.",
+            "The last line lists the GUA of the final router in the route."
+          ],
+          "correct_answer": "All lines list GUAs with no LLAs."
+        }
+      ]
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
