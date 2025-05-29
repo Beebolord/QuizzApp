@@ -43,19 +43,38 @@ def question(module_name, quiz_title, index):
         session['score'] = 0
 
     if request.method == 'POST':
-        selected_answer = request.form.get('option')
+        selected = request.form.getlist('option[]')  # ✅ handles checkboxes
         current_question = quiz['questions'][session['index']]
         correct_answer = current_question['correct_answer']
-        if selected_answer == correct_answer:
+
+        # Normalize both selected and correct to sets of strings
+        if isinstance(correct_answer, str):
+            correct_set = set([x.strip() for x in correct_answer.split(',')])
+        elif isinstance(correct_answer, list):
+            correct_set = set([x.strip() for x in correct_answer])
+        else:
+            correct_set = set([str(correct_answer)])
+
+        selected_set = set([x.strip() for x in selected])
+
+        if selected_set == correct_set:
             session['score'] += 1
+
         session['index'] += 1
         if session['index'] >= len(quiz['questions']):
             return redirect(url_for('result'))
-        return redirect(url_for('question', module_name=module_name, quiz_title=quiz_title, index=session['index']))
 
+        return redirect(url_for('question', module_name=module_name, quiz_title=quiz_title, index=session['index']))
     question_data = quiz['questions'][index]
     total = len(quiz['questions']) if quiz else 0
-    return render_template('question.html', quiz_title=quiz_title, index=index, question=question_data, total=total)
+    return render_template(
+        'question.html',
+        quiz_title=quiz_title,
+        index=index,
+        question=question_data,
+        total=total,
+        module_name=module_name  # Make sure you pass this so templates can use it
+    )
 @app.route('/result')
 def result():
     score = session.get('score', 0)

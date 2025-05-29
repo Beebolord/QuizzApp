@@ -17,6 +17,12 @@
         gap: 10px;
         align-items: center;
       }
+      .highlight-correct {
+        background-color: #d4edda;
+      }
+      .highlight-incorrect {
+        background-color: #f8d7da;
+      }
     </style>
 </head>
 <body>
@@ -25,52 +31,78 @@
       <h3>{{ question.question }}</h3>
       <div style="height: 20px;"></div>
       <form method="POST">
-        {% for option in question.answer %}
-          <div>
-            <label class="option" for="{{ option }}">
-              <input type="radio" id="{{ option }}" name="option" value="{{ option }}" required>
-              {{ option }}
-              <div style="height: 10px;"></div>
-            </label>
-          </div>
-        {% endfor %}
-        <div class="button-row">
-          <button type="button" onclick="showAnswer()">Show Answer</button>
-          <button type="submit">Next</button>
-        </div>
-      </form>
+  {% set is_multiple_choice = question.correct_answer is iterable and not question.correct_answer is string
+                              or (question.correct_answer is string and ',' in question.correct_answer) %}
 
+  {% for option in question.answer %}
+    <div>
+      <label class="option" for="{{ option }}">
+        <input
+          type="{{ 'checkbox' if is_multiple_choice else 'radio' }}"
+          id="{{ option }}"
+          name="option{{ '[]' if is_multiple_choice else '' }}"
+          value="{{ option }}">
+        {{ option }}
+        <div style="height: 10px;"></div>
+      </label>
+    </div>
+  {% endfor %}
+
+  <div class="button-row">
+    <button type="button" onclick="showAnswer()">Show Answer</button>
+    <button type="submit">Next</button>
+  </div>
+</form>
       <p id="result-message" style="display:none;"></p>
       <p id="correct-answer" style="display:none;">Correct answer: {{ question.correct_answer }}</p>
    </div>
 
 <script>
-  const correctAnswer = "{{ question.correct_answer }}";
+  // Normalize correct answers into an array of strings
+  const rawCorrect = {{ question.correct_answer | tojson }};
+  let correctAnswers = [];
+
+  if (Array.isArray(rawCorrect)) {
+    correctAnswers = rawCorrect.map(String);
+  } else if (typeof rawCorrect === 'string') {
+    // Split by comma if string contains multiple answers separated by commas
+    correctAnswers = rawCorrect.includes(',') ?
+      rawCorrect.split(',').map(s => s.trim()) :
+      [rawCorrect.trim()];
+  }
 
   function showAnswer() {
-    const form = document.querySelector('form');
-    const selectedOption = form.option.value;  // get selected radio value
-    const resultMessage = document.getElementById('result-message');
-    const answerElem = document.getElementById('correct-answer');
+    // Get all inputs (radio or checkbox)
+    const inputs = document.querySelectorAll('input[type="checkbox"], input[type="radio"]');
 
-    if (!selectedOption) {
-      alert('Please select an option first.');
-      return;
-    }
+    inputs.forEach(input => {
+      const label = input.parentElement;
+      if (correctAnswers.includes(input.value)) {
+        label.classList.add('highlight-correct');
+        label.classList.remove('highlight-incorrect');
+      } else {
+        label.classList.add('highlight-incorrect');
+        label.classList.remove('highlight-correct');
+      }
+      // Disable inputs after showing answers so user can't change selection
+      input.disabled = true;
+    });
 
-    if (selectedOption === correctAnswer) {
-      resultMessage.textContent = 'Correct! 🎉';
-      resultMessage.className = 'correct';
-      answerElem.style.color = 'green';
-    } else {
-      resultMessage.textContent = 'Incorrect. 😞';
-      resultMessage.className = 'incorrect';
-      answerElem.style.color = 'red';
-    }
-
-    resultMessage.style.display = 'block';
-    answerElem.style.display = 'block';
+    // Show the correct answer text
+    document.getElementById('correct-answer').style.display = 'block';
   }
+
+  // Validation on submit
+  const form = document.querySelector("form");
+
+  form.addEventListener('submit', function (e) {
+    const inputs = form.querySelectorAll('input[type="checkbox"], input[type="radio"]');
+    const oneChecked = Array.from(inputs).some(input => input.checked);
+    if (!oneChecked) {
+      e.preventDefault();
+      alert("Please select at least one answer before continuing.");
+    }
+  });
 </script>
 
 </body>
