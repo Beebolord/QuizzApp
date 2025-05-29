@@ -109,7 +109,9 @@ button[type="submit"] {
   cursor: pointer;
   display: block;
   margin:  auto 0;
+  margin-left: 40px;
   transition: background-color 0.3s ease;
+  width: 175px
 }
 button[type="button"] {
   background-color: #007bff;
@@ -123,6 +125,7 @@ button[type="button"] {
   margin:  auto 0;
    margin-left: 200px;
   transition: background-color 0.3s ease;
+  width: 175px
 }
 button[type="submit"]:hover {
   background-color: #0056b3;

@@ -315,6 +315,91 @@
           "correct_answer": "It checks the CRL that resides on FortiGate."
         }
       ]
+    },
+     {
+      "quizz_title": "Lesson 6: Application Control and Antivirus",
+      "questions": [
+        {
+          "question": "What is the default scanning behavior for files over 10 MB?",
+          "answer": [
+            "Block all large files that exceed the buffer threshold",
+            "Allow the file without scanning"
+          ],
+          "correct_answer": "Allow the file without scanning"
+        },
+        {
+          "question": "Which statement about application control in an NGFW policy-based configuration is true?",
+          "answer": [
+            "The application control profile must be applied to firewall policies.",
+            "Applications are applied directly to the security policies."
+          ],
+          "correct_answer": "Applications are applied directly to the security policies."
+        },
+        {
+          "question": "Which databases can be manually selected for use in antivirus scanning?",
+          "answer": [
+            "Extended and Extreme",
+            "Quick, Normal, and Extreme"
+          ],
+          "correct_answer": "Extended and Extreme"
+        },
+        {
+          "question": "If antivirus, grayware, and AI scans are enabled, in what order are they performed?",
+          "answer": [
+            "AI scan, followed by grayware scan, followed by antivirus scan",
+            "Antivirus scan, followed by grayware scan, followed by AI scan"
+          ],
+          "correct_answer": "Antivirus scan, followed by grayware scan, followed by AI scan"
+        },
+        {
+          "question": "Which SSL/SSH inspection method is recommended for use with application control scanning to improve application detection?",
+          "answer": [
+            "Certificate-based inspection profile",
+            "Deep-inspection profile"
+          ],
+          "correct_answer": "Deep-inspection profile"
+        },
+        {
+          "question": "Which protocol does FortiGate use with FortiGuard to receive updates for application control?",
+          "answer": [
+            "TCP",
+            "UDP"
+          ],
+          "correct_answer": "TCP"
+        },
+        {
+          "question": "Which statement about the application control database is true?",
+          "answer": [
+            "The application control database is separate from the IPS database.",
+            "The application control database must be updated manually."
+          ],
+          "correct_answer": "The application control database is separate from the IPS database."
+        },
+        {
+          "question": "Which type of inspection mode can be offloaded using NTurbo hardware acceleration?",
+          "answer": [
+            "Flow-based",
+            "Proxy-based"
+          ],
+          "correct_answer": "Flow-based"
+        },
+        {
+          "question": "Which statement about the HTTP block page for application control is true?",
+          "answer": [
+            "It can be used only for web applications.",
+            "It works for all types of applications."
+          ],
+          "correct_answer": "It can be used only for web applications."
+        },
+        {
+          "question": "Which statement about application control is true?",
+          "answer": [
+            "Application control is unable to scan P2P architecture traffic.",
+            "Application control uses the IPS engine to scan traffic for application patterns."
+          ],
+          "correct_answer": "Application control uses the IPS engine to scan traffic for application patterns."
+        }
+      ]
     }
 
   ]
