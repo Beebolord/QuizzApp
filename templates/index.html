@@ -1,18 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-
- </head>
+    <title>Select a Module</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial;
+            padding-top: 50px;
+        }
+        h1 {
+            margin-bottom: 40px;
+        }
+        a.module {
+            display: inline-block;
+            margin: 10px;
+            padding: 20px 40px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        a.module:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
 <body>
-    <h1>Current Module: Network Security and Unified Threat Management .2</h1>
-  <h2>Select a Quiz</h2>
-  <ul>
-    {% for quiz in quizzes %}
-      <li>
-        <a href="{{ url_for('question', quiz_title=quiz.quizz_title, index=0) }}">{{ quiz.quizz_title }}</a>
-      </li>
+    <h1>Select a Lesson</h1>
+    {% for module in modules %}
+        <a href="{{ url_for('module_page', module_name=module) }}" class="module">{{ module }}</a>
+        <div style="height:20px"></div>
+
     {% endfor %}
-  </ul>
 </body>
 </html>

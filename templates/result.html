@@ -1,69 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>{{ title }} - Results</title>
+    <meta charset="UTF-8">
+    <title>Quiz Result</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f9fafb;
-            color: #222;
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;  /* centers horizontally */
-            align-items: center;      /* centers vertically */
-        }
-
-        .results-container {
+            font-family: Arial, sans-serif;
+            padding: 30px;
+            background-color: #f9f9f9;
             text-align: center;
-            max-width: 600px;
-            padding: 30px 40px;
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 14px rgba(0,0,0,0.1);
         }
-
-        .results-title {
-            font-weight: 700;
-            font-size: 2.8rem;
-            margin-bottom: 15px;
-            color: #1a1a1a;
-        }
-
-        .score {
-            font-size: 2.2rem;
-            margin-bottom: 30px;
-            color: #333;
-        }
-
-        .out-of {
-            font-weight: 500;
-            color: #555;
-            margin: 0 8px;
-        }
-
-        a.btn {
+        .score-box {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
             display: inline-block;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        a.button {
+            display: inline-block;
+            margin: 15px;
+            padding: 15px 25px;
             background-color: #007bff;
             color: white;
-            padding: 14px 28px;
-            border-radius: 6px;
             text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1rem;
-            transition: background-color 0.3s ease;
-        }
-
-        a.btn:hover {
-            background-color: #0056b3;
+            border-radius: 6px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <div class="results-container">
-        <h2 class="results-title">{{ title }} - Your Score</h2>
-        <p class="score">{{ score }} <span class="out-of">out of</span> {{ total }}</p>
-        <a href="/" class="btn">Back to Quiz List</a>
+    <div class="score-box">
+        <h1>{{ quiz_title }} - Result</h1>
+        <p>Your score: {{ score }} out of {{ total }}</p>
+
+        <!-- Redo Quiz Button -->
+        <a class="button" href="{{ url_for('question', module_name=module_name, quiz_title=quiz_title, index=0) }}">Redo Quiz</a>
+
+        <!-- Back to Module Button -->
+        <a class="button" href="{{ url_for('index') }}">Back to Index</a>
+
     </div>
 </body>
 </html>

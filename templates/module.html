@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ module }} Quizzes</title>
+</head>
+<body style="text-align:center; font-family:Arial; padding-top:50px;">
+    <h1>{{ module }} - Choose a Quiz</h1>
+    {% for quiz in quizzes %}
+        <div style="margin: 15px;">
+            <a href="{{ url_for('question', module_name=module, quiz_title=quiz['quizz_title'], index=0) }}"
+               style="padding: 15px 25px;display: inline-block;width: 750px;  background-color:#007bff; color:white; text-decoration:none; border-radius:6px;">
+                {{ quiz['quizz_title'] }}
+            </a>
+        </div>
+    {% endfor %}
+    <br><a href="/" style="display:inline-block; margin-top:20px;">Back to Modules</a>
+</body>
+</html>
