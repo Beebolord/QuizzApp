@@ -400,6 +400,91 @@
           "correct_answer": "Application control uses the IPS engine to scan traffic for application patterns."
         }
       ]
+    },
+     {
+      "quizz_title": "Lesson 7: Intrusion Prevention and Security Fabric",
+      "questions": [
+        {
+          "question": "Which feature requires full SSL inspection to maximize its detection capability?",
+          "answer": [
+            "DoS",
+            "WAF"
+          ],
+          "correct_answer": "WAF"
+        },
+        {
+          "question": "Which behavior is a characteristic of a DoS attack?",
+          "answer": [
+            "Attempts to exploit a known application vulnerability",
+            "Attempts to overload a server with TCP SYN packets"
+          ],
+          "correct_answer": "Attempts to overload a server with TCP SYN packets"
+        },
+        {
+          "question": "Which combination of devices must participate in the Security Fabric?",
+          "answer": [
+            "A FortiMail and two or more FortiGate devices",
+            "A FortiAnalyzer and two or more FortiGate devices"
+          ],
+          "correct_answer": "A FortiAnalyzer and two or more FortiGate devices"
+        },
+        {
+          "question": "What is the Fortinet Security Fabric?",
+          "answer": [
+            "A device that can manage all your firewalls",
+            "A Fortinet solution that enables communication and visibility among devices of your network"
+          ],
+          "correct_answer": "A Fortinet solution that enables communication and visibility among devices of your network"
+        },
+        {
+          "question": "Which DoS anomaly sensor can be used to detect and block the probing attempts of a port scanner?",
+          "answer": [
+            "tcp_syn_flood",
+            "tcp_port_scan"
+          ],
+          "correct_answer": "tcp_port_scan"
+        },
+        {
+          "question": "What are the two mandatory settings of the Security Fabric configuration?",
+          "answer": [
+            "Fabric name and Security Fabric role",
+            "Fabric name and FortiManager IP address"
+          ],
+          "correct_answer": "Fabric name and Security Fabric role"
+        },
+        {
+          "question": "Which IPS action allows traffic and logs the activity?",
+          "answer": [
+            "Monitor",
+            "Allow"
+          ],
+          "correct_answer": "Monitor"
+        },
+        {
+          "question": "Which IPS component is updated most frequently?",
+          "answer": [
+            "IPS signature database",
+            "Protocol decoders"
+          ],
+          "correct_answer": "IPS signature database"
+        },
+        {
+          "question": "From where do you authorize a device to participate in the Security Fabric?",
+          "answer": [
+            "From the root FortiGate",
+            "From the downstream FortiGate"
+          ],
+          "correct_answer": "From the root FortiGate"
+        },
+        {
+          "question": "Why should an administrator extend the Security Fabric to other devices?",
+          "answer": [
+            "To eliminate the need to purchase licenses for FortiGate devices in the Security Fabric",
+            "To provide a single pane of glass for management and reporting purposes"
+          ],
+          "correct_answer": "To provide a single pane of glass for management and reporting purposes"
+        }
+      ]
     }
 
   ]
