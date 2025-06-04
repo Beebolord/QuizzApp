@@ -1,5 +1,7 @@
 from flask import Flask, render_template, request, session, redirect, url_for
 import json
+import threading
+from discord_bot import start_bot
 import random
 
 app = Flask(__name__)
@@ -95,4 +97,16 @@ def result():
     return render_template('result.html', score=score, total=total, quiz_title=quiz_title, module_name=module_name)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    bot_thread = None
+
+
+    def run_bot_once():
+        global bot_thread
+        if bot_thread is None:
+            bot_thread = threading.Thread(target=start_bot, daemon=True)
+            bot_thread.start()
+
+
+    # Call run_bot_once() in your main entrypoint, not inside routes
+    run_bot_once()
+    app.run(debug=True, use_reloader=False)
