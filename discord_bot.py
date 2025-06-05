@@ -23,7 +23,7 @@ async def on_ready():
     global job_added
     print(f"🤖 Bot connected as {client.user}")
     if not job_added:
-        scheduler.add_job(send_daily_checkin, 'cron', hour=21, minute=8)  # Adjust time
+        scheduler.add_job(send_daily_checkin, 'cron', hour=21, minute=12)  # Adjust time
         scheduler.start()
         job_added = True
 
