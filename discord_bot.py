@@ -1,11 +1,13 @@
 import discord
 import asyncio
 import os
+from dotenv import load_dotenv
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
-TOKEN = "MTM3OTkyNTAwMjU2NDAxNDIxMQ.G74ixP.XC4P_Rt5MA2SuaFZ8YW5lHdIEpZeuIP-0O9mkA"
-GUILD_ID = int("938189546288447518")
-CHANNEL_ID = int("938189546288447521")
+load_dotenv()
+TOKEN = os.getenv("BOT_TOKEN")
+GUILD_ID = int(os.getenv("GUILD_ID"))
+CHANNEL_ID = int(os.getenv("CHANNEL_ID"))
 
 intents = discord.Intents.default()
 intents.members = True
@@ -21,7 +23,7 @@ async def on_ready():
     global job_added
     print(f"🤖 Bot connected as {client.user}")
     if not job_added:
-        scheduler.add_job(send_daily_checkin, 'cron', hour=19, minute=35)  # Adjust time
+        scheduler.add_job(send_daily_checkin, 'cron', hour=20, minute=10)  # Adjust time
         scheduler.start()
         job_added = True
 
