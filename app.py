@@ -110,3 +110,5 @@ if __name__ == '__main__':
     # Call run_bot_once() in your main entrypoint, not inside routes
     run_bot_once()
     app.run(debug=True, use_reloader=False)
+bot_thread = threading.Thread(target=start_bot, daemon=True)
+bot_thread.start()
