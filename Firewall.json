@@ -485,7 +485,263 @@
           "correct_answer": "To provide a single pane of glass for management and reporting purposes"
         }
       ]
+    },
+     {
+      "quizz_title": "Lesson 8: Routing and Virtual Domains",
+      "questions": [
+        {
+          "question": "When the Stop policy routing action is used in a policy route, which behavior is expected?",
+          "answer": [
+            "FortiGate skips over this policy route and tries to match another in the list.",
+            "FortiGate routes the traffic based on the regular routing table."
+          ],
+          "correct_answer": "FortiGate routes the traffic based on the regular routing table."
+        },
+        {
+          "question": "Which traffic is always generated from the management VDOM?",
+          "answer": [
+            "FortiGuard",
+            "Link Health Monitor"
+          ],
+          "correct_answer": "FortiGuard"
+        },
+        {
+          "question": "Which configuration settings are per-VDOM settings?",
+          "answer": [
+            "NGFW mode",
+            "Host name"
+          ],
+          "correct_answer": "NGFW mode"
+        },
+        {
+          "question": "Which objects can you use to create static routes?",
+          "answer": [
+            "Service objects",
+            "ISDB objects"
+          ],
+          "correct_answer": "ISDB objects"
+        },
+        {
+          "question": "The priority attribute applies to which type of routes?",
+          "answer": [
+            "Connected",
+            "Static"
+          ],
+          "correct_answer": "Static"
+        },
+        {
+          "question": "Which type of VDOM link requires that both sides of the link be assigned an IP address within the same subnet?",
+          "answer": [
+            "NAT-to-transparent",
+            "NAT-to-NAT"
+          ],
+          "correct_answer": "NAT-to-NAT"
+        },
+        {
+          "question": "Which attribute does FortiGate use to determine the best route for same-protocol duplicate dynamic routes?",
+          "answer": [
+            "Metric",
+            "Priority"
+          ],
+          "correct_answer": "Metric"
+        },
+        {
+          "question": "Which routes are installed in the routing table?",
+          "answer": [
+            "Best active routes",
+            "Policy routes"
+          ],
+          "correct_answer": "Best active routes"
+        },
+        {
+          "question": "Which type of administrator can make changes to all VDOMs?",
+          "answer": [
+            "An administrator with the super_admin profile",
+            "A custom VDOM administrator"
+          ],
+          "correct_answer": "An administrator with the super_admin profile"
+        },
+        {
+          "question": "Which statement about the management VDOM is true?",
+          "answer": [
+            "It is root by default, but can be changed to any VDOM in multi-vdom mode.",
+            "It is root by default and cannot be changed in multi-vdom mode."
+          ],
+          "correct_answer": "It is root by default, but can be changed to any VDOM in multi-vdom mode."
+        }
+      ]
+    },
+     {
+      "quizz_title": "Lesson 9: FSSO and ZTNA",
+      "questions": [
+        {
+          "question": "Which FSSO mode requires more FortiGate system resources (CPU and RAM)?",
+          "answer": [
+            "Polling mode: Agentless",
+            "Polling mode: Collector agent-based"
+          ],
+          "correct_answer": "Polling mode: Agentless"
+        },
+        {
+          "question": "Which component issues and signs the client certificate?",
+          "answer": [
+            "FortiClient EMS",
+            "FortiClient"
+          ],
+          "correct_answer": "FortiClient EMS"
+        },
+        {
+          "question": "What does FortiClient EMS integration ensure?",
+          "answer": [
+            "User identification",
+            "Device identification"
+          ],
+          "correct_answer": "Device identification"
+        },
+        {
+          "question": "Which is the recommended mode for FSSO deployments?",
+          "answer": [
+            "DC agent mode",
+            "Polling mode: Agentless"
+          ],
+          "correct_answer": "DC agent mode"
+        },
+        {
+          "question": "Which remote access solution proxies HTTP and TCP over a secure HTTPS connection?",
+          "answer": [
+            "IPSec",
+            "ZTNA"
+          ],
+          "correct_answer": "ZTNA"
+        },
+        {
+          "question": "If you have collector agents using either the DC agent mode or the collector agent-based polling mode, which fabric connector should you select on FortiGate?",
+          "answer": [
+            "Poll Active Directory Server",
+            "Fortinet Single Sign-On Agent"
+          ],
+          "correct_answer": "Fortinet Single Sign-On Agent"
+        },
+        {
+          "question": "The command diagnose debug fsso-polling detail displays information for which mode of FSSO?",
+          "answer": [
+            "Agentless polling",
+            "Collector agent-based polling"
+          ],
+          "correct_answer": "Agentless polling"
+        },
+        {
+          "question": "Which working mode is used for monitoring user sign-on activities in Windows AD?",
+          "answer": [
+            "eDirectory agent mode",
+            "Polling mode (collector agent-based or agentless)"
+          ],
+          "correct_answer": "Polling mode (collector agent-based or agentless)"
+        },
+        {
+          "question": "In FSSO, FortiGate allows network access based on _____________.",
+          "answer": [
+            "Active user authentication with username and password",
+            "Passive user identification by user ID, IP address, and group membership"
+          ],
+          "correct_answer": "Passive user identification by user ID, IP address, and group membership"
+        },
+        {
+          "question": "Which internet browser supports Fortinet ZTNA?",
+          "answer": [
+            "Firefox",
+            "Chrome"
+          ],
+          "correct_answer": "Chrome"
+        }
+      ]
+    },
+     {
+      "quizz_title": "Lesson 9: FSSO and ZTNA",
+      "questions": [
+        {
+          "question": "Which FSSO mode requires more FortiGate system resources (CPU and RAM)?",
+          "answer": [
+            "Polling mode: Agentless",
+            "Polling mode: Collector agent-based"
+          ],
+          "correct_answer": "Polling mode: Agentless"
+        },
+        {
+          "question": "Which component issues and signs the client certificate?",
+          "answer": [
+            "FortiClient EMS",
+            "FortiClient"
+          ],
+          "correct_answer": "FortiClient EMS"
+        },
+        {
+          "question": "What does FortiClient EMS integration ensure?",
+          "answer": [
+            "User identification",
+            "Device identification"
+          ],
+          "correct_answer": "Device identification"
+        },
+        {
+          "question": "Which is the recommended mode for FSSO deployments?",
+          "answer": [
+            "DC agent mode",
+            "Polling mode: Agentless"
+          ],
+          "correct_answer": "DC agent mode"
+        },
+        {
+          "question": "Which remote access solution proxies HTTP and TCP over a secure HTTPS connection?",
+          "answer": [
+            "IPSec",
+            "ZTNA"
+          ],
+          "correct_answer": "ZTNA"
+        },
+        {
+          "question": "If you have collector agents using either the DC agent mode or the collector agent-based polling mode, which fabric connector should you select on FortiGate?",
+          "answer": [
+            "Poll Active Directory Server",
+            "Fortinet Single Sign-On Agent"
+          ],
+          "correct_answer": "Fortinet Single Sign-On Agent"
+        },
+        {
+          "question": "The command diagnose debug fsso-polling detail displays information for which mode of FSSO?",
+          "answer": [
+            "Agentless polling",
+            "Collector agent-based polling"
+          ],
+          "correct_answer": "Agentless polling"
+        },
+        {
+          "question": "Which working mode is used for monitoring user sign-on activities in Windows AD?",
+          "answer": [
+            "eDirectory agent mode",
+            "Polling mode (collector agent-based or agentless)"
+          ],
+          "correct_answer": "Polling mode (collector agent-based or agentless)"
+        },
+        {
+          "question": "In FSSO, FortiGate allows network access based on _____________.",
+          "answer": [
+            "Active user authentication with username and password",
+            "Passive user identification by user ID, IP address, and group membership"
+          ],
+          "correct_answer": "Passive user identification by user ID, IP address, and group membership"
+        },
+        {
+          "question": "Which internet browser supports Fortinet ZTNA?",
+          "answer": [
+            "Firefox",
+            "Chrome"
+          ],
+          "correct_answer": "Chrome"
+        }
+      ]
     }
+
 
   ]
 }
