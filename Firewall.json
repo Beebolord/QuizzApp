@@ -740,6 +740,91 @@
           "correct_answer": "Chrome"
         }
       ]
+    },
+     {
+      "quizz_title": "Lesson 11: SSL and IPSec VPN",
+      "questions": [
+        {
+          "question": "Which statement about tunnel-mode SSL VPN is correct?",
+          "answer": [
+            "It requires bookmarks.",
+            "It supports split tunneling."
+          ],
+          "correct_answer": "It supports split tunneling."
+        },
+        {
+          "question": "Which VPN topology is the most fault tolerant?",
+          "answer": [
+            "Full mesh",
+            "Hub-and-spoke"
+          ],
+          "correct_answer": "Full mesh"
+        },
+        {
+          "question": "Which action may allow internet access in tunnel mode, if the remote network does not allow internet access to SSL VPN users?",
+          "answer": [
+            "Enable split tunneling",
+            "Configure the DNS server to use the same DNS server as the client system DNS"
+          ],
+          "correct_answer": "Enable split tunneling"
+        },
+        {
+          "question": "A web-mode SSL VPN user uses ______ to access internal network resources.",
+          "answer": [
+            "FortiClient",
+            "bookmarks"
+          ],
+          "correct_answer": "bookmarks"
+        },
+        {
+          "question": "Which IPsec VPN type is legacy and not recommended for new deployments?",
+          "answer": [
+            "Route-based IPsec VPN",
+            "Policy-based IPsec VPN"
+          ],
+          "correct_answer": "Policy-based IPsec VPN"
+        },
+        {
+          "question": "Which IPsec protocol is not supported by FortiGate?",
+          "answer": [
+            "AH",
+            "IKEv2"
+          ],
+          "correct_answer": "AH"
+        },
+        {
+          "question": "When the remote gateway is set to dial-up user, a static route to the remote network is added to the routing table after ______.",
+          "answer": [
+            "Phase 1 comes up",
+            "Phase 2 comes up"
+          ],
+          "correct_answer": "Phase 2 comes up"
+        },
+        {
+          "question": "Which setting determines whether a tunnel is used as primary or backup?",
+          "answer": [
+            "Routing",
+            "Firewall policies"
+          ],
+          "correct_answer": "Routing"
+        },
+        {
+          "question": "A web-mode SSL VPN user connects to a remote web server. What is the source IP address of the HTTP request the web server receives?",
+          "answer": [
+            "The remote user IP address",
+            "The FortiGate device internal IP address"
+          ],
+          "correct_answer": "The FortiGate device internal IP address"
+        },
+        {
+          "question": "What does the SSL VPN monitor feature allow you to do?",
+          "answer": [
+            "Monitor SSL VPN user actions, such as authentication",
+            "Force SSL VPN user disconnections"
+          ],
+          "correct_answer": "Force SSL VPN user disconnections"
+        }
+      ]
     }
 
 
