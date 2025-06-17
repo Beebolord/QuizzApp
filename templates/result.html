@@ -33,7 +33,6 @@
     <div class="score-box">
         <h1>{{ quiz_title }} - Result</h1>
         <p>Your score: {{ score }} out of {{ total }}</p>
-
         <!-- Redo Quiz Button -->
         <a class="button" href="{{ url_for('question', module_name=module_name, quiz_title=quiz_title, index=0) }}">Redo Quiz</a>
 

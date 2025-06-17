@@ -31,17 +31,17 @@
           "question": "Which is a more accurate description of a modern firewall?",
           "answer": [
             "A device that inspects network traffic at an entry point to the internet and within a simple, easily defined network perimeter",
-            "A multifunctional device that inspects network traffic from the perimeter or internally, within a network that has many different entry points"
+            "A multifunctional device that inspects network traffic from the perimeter or internally within a network that has many different entry points"
           ],
-          "correct_answer": "A multifunctional device that inspects network traffic from the perimeter or internally, within a network that has many different entry points"
+          "correct_answer": "A multifunctional device that inspects network traffic from the perimeter or internally within a network that has many different entry points"
         },
         {
           "question": "Which solution specific to Fortinet enhances performance and reduces latency for specific features and traffic?",
           "answer": [
             "Increased RAM and CPU power",
-            "Acceleration hardware, called SPUs"
+            "Acceleration hardware called SPUs"
           ],
-          "correct_answer": "Acceleration hardware, called SPUs"
+          "correct_answer": "Acceleration hardware called SPUs"
         },
         {
           "question": "What criteria does FortiGate use to match traffic to a firewall policy?",
@@ -642,9 +642,9 @@
           "question": "In FSSO, FortiGate allows network access based on _____________.",
           "answer": [
             "Active user authentication with username and password",
-            "Passive user identification by user ID, IP address, and group membership"
+            "Passive user identification by user ID IP address and group membership"
           ],
-          "correct_answer": "Passive user identification by user ID, IP address, and group membership"
+          "correct_answer": "Passive user identification by user ID IP address and group membership"
         },
         {
           "question": "Which internet browser supports Fortinet ZTNA?",
@@ -656,92 +656,8 @@
         }
       ]
     },
-     {
-      "quizz_title": "Lesson 9: FSSO and ZTNA",
-      "questions": [
-        {
-          "question": "Which FSSO mode requires more FortiGate system resources (CPU and RAM)?",
-          "answer": [
-            "Polling mode: Agentless",
-            "Polling mode: Collector agent-based"
-          ],
-          "correct_answer": "Polling mode: Agentless"
-        },
-        {
-          "question": "Which component issues and signs the client certificate?",
-          "answer": [
-            "FortiClient EMS",
-            "FortiClient"
-          ],
-          "correct_answer": "FortiClient EMS"
-        },
-        {
-          "question": "What does FortiClient EMS integration ensure?",
-          "answer": [
-            "User identification",
-            "Device identification"
-          ],
-          "correct_answer": "Device identification"
-        },
-        {
-          "question": "Which is the recommended mode for FSSO deployments?",
-          "answer": [
-            "DC agent mode",
-            "Polling mode: Agentless"
-          ],
-          "correct_answer": "DC agent mode"
-        },
-        {
-          "question": "Which remote access solution proxies HTTP and TCP over a secure HTTPS connection?",
-          "answer": [
-            "IPSec",
-            "ZTNA"
-          ],
-          "correct_answer": "ZTNA"
-        },
-        {
-          "question": "If you have collector agents using either the DC agent mode or the collector agent-based polling mode, which fabric connector should you select on FortiGate?",
-          "answer": [
-            "Poll Active Directory Server",
-            "Fortinet Single Sign-On Agent"
-          ],
-          "correct_answer": "Fortinet Single Sign-On Agent"
-        },
-        {
-          "question": "The command diagnose debug fsso-polling detail displays information for which mode of FSSO?",
-          "answer": [
-            "Agentless polling",
-            "Collector agent-based polling"
-          ],
-          "correct_answer": "Agentless polling"
-        },
-        {
-          "question": "Which working mode is used for monitoring user sign-on activities in Windows AD?",
-          "answer": [
-            "eDirectory agent mode",
-            "Polling mode (collector agent-based or agentless)"
-          ],
-          "correct_answer": "Polling mode (collector agent-based or agentless)"
-        },
-        {
-          "question": "In FSSO, FortiGate allows network access based on _____________.",
-          "answer": [
-            "Active user authentication with username and password",
-            "Passive user identification by user ID, IP address, and group membership"
-          ],
-          "correct_answer": "Passive user identification by user ID, IP address, and group membership"
-        },
-        {
-          "question": "Which internet browser supports Fortinet ZTNA?",
-          "answer": [
-            "Firefox",
-            "Chrome"
-          ],
-          "correct_answer": "Chrome"
-        }
-      ]
-    },
-     {
+
+    {
       "quizz_title": "Lesson 11: SSL and IPSec VPN",
       "questions": [
         {
@@ -819,14 +735,99 @@
         {
           "question": "What does the SSL VPN monitor feature allow you to do?",
           "answer": [
-            "Monitor SSL VPN user actions, such as authentication",
+            "Monitor SSL VPN user actions such as authentication",
             "Force SSL VPN user disconnections"
           ],
           "correct_answer": "Force SSL VPN user disconnections"
         }
       ]
-    }
+    },
 
+{
+      "quizz_title": "Lesson 12: High Availability and Diagnostics",
+      "questions": [
+        {
+          "question": "In an active-passive HA cluster, you can configure virtual clustering between only ___ FortiGate devices with multiple VDOMs.",
+          "answer": [
+            "Four",
+            "Two"
+          ],
+          "correct_answer": "Two"
+        },
+        {
+          "question": "What is a requirement for members to form an HA cluster?",
+          "answer": [
+            "They must run the same firmware version",
+            "They must have same host name"
+          ],
+          "correct_answer": "They must run the same firmware version"
+        },
+        {
+          "question": "What is the default order criteria (override disabled) for selecting the primary in an HA cluster?",
+          "answer": [
+            "Connected monitored ports > HA uptime > priority > serial number",
+            "Priority > HA uptime > connected monitored ports > serial number"
+          ],
+          "correct_answer": "Connected monitored ports > HA uptime > priority > serial number"
+        },
+        {
+          "question": "Which threshold is used to determine when FortiGate enters conserve mode?",
+          "answer": [
+            "Green",
+            "Red"
+          ],
+          "correct_answer": "Red"
+        },
+        {
+          "question": "Which information is synchronized in an HA cluster?",
+          "answer": [
+            "Firewall policies and objects",
+            "FortiGate host name"
+          ],
+          "correct_answer": "Firewall policies and objects"
+        },
+        {
+          "question": "Which CLI command can be used to determine the MAC address of a FortiGate default gateway?",
+          "answer": [
+            "get system arp",
+            "get hardware nic"
+          ],
+          "correct_answer": "get system arp"
+        },
+        {
+          "question": "When is a new TCP session allocated?",
+          "answer": [
+            "When a SYN packet is allowed",
+            "When a SYN/ACK packet is allowed"
+          ],
+          "correct_answer": "When a SYN packet is allowed"
+        },
+        {
+          "question": "Which action does FortiGate take during memory conserve mode?",
+          "answer": [
+            "Configuration changes are not allowed.",
+            "Administrative access is denied."
+          ],
+          "correct_answer": "Configuration changes are not allowed."
+        },
+        {
+          "question": "Which member is the heartbeat interface IP address 169.254.0.1 assigned to?",
+          "answer": [
+            "The member with the highest serial number",
+            "The member with the highest priority"
+          ],
+          "correct_answer": "The member with the highest serial number"
+        },
+        {
+          "question": "Which types of information are stored in the crash log?",
+          "answer": [
+            "Traffic logs and security logs",
+            "Process crashes and conserve mode events"
+          ],
+          "correct_answer": "Process crashes and conserve mode events"
+        }
+      ]
+    }
 
   ]
 }

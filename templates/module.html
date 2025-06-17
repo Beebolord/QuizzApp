@@ -13,6 +13,12 @@
             </a>
         </div>
     {% endfor %}
+     <li>
+        <a href="{{ url_for('question', module_name=module, quiz_title='__combined__', index=0) }}"
+         style="padding: 15px 25px;display: inline-block;width: 750px;  background-color:#007bff; color:white; text-decoration:none; border-radius:6px;">
+            Combined Quiz (All Questions)
+        </a>
+    </li>
     <br><a href="/" style="display:inline-block; margin-top:20px;">Back to Modules</a>
 </body>
 </html>
