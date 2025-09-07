@@ -1,719 +1,830 @@
 {
   "Quizzes": [
     {
-      "quizz_title": "Lesson 1: Understanding Security Attacks",
-      "questions": [
-        {
-          "question": "Targeted attacks are easier and take less time and effort than attacks on targets of opportunity.",
-          "answer": [
-            "True",
-            "False"
-          ],
-          "correct_answer": "False"
-        },
-        {
-          "question": "What kind of an attack involves a piece of software that appears to do one thing (and may, in fact, actually do that thing), but hides some other functionality?",
-          "answer": [
-            "logic bomb",
-            "hoax",
-            "trojan",
-            "worm"
-          ],
-          "correct_answer": "trojan"
-        },
-        {
-          "question": "Which term refers to a form of malware that is specifically designed to modify the operation of the operating system in some fashion to facilitate nonstandard functionality?",
-          "answer": [
-            "rootkit",
-            "boot sector virus",
-            "spyware",
-            "dieware"
-          ],
-          "correct_answer": "rootkit"
-        },
-        {
-          "question": "What term refers to an attacker’s attempt to discover unprotected modem connections to computer systems and networks?",
-          "answer": [
-            "software exploitation",
-            "indirect attack",
-            "war-dialing",
-            "spoofing"
-          ],
-          "correct_answer": "war-dialing"
-        },
-        {
-          "question": "A salt is a random set of characters designed to increase the length of the item being hashed.",
-          "answer": [
-            "True",
-            "False"
-          ],
-          "correct_answer": "True"
-        }
-      ]
+  "quizz_title": "Chapter 2: System and Network Architecture",
+  "questions": [
+    {
+      "question": "Naomi wants to make her applications portable and easy to move to new environments without the overhead of a full operating system. What type of solution should she select?",
+      "answer": [
+        "An x86 architecture",
+        "Virtualization",
+        "Containerization",
+        "A SASE solution"
+      ],
+      "correct_answer": "Containerization"
     },
     {
-      "quizz_title": "Lesson 3: Designing and Securing Networks",
-      "questions": [
-        {
-          "question": "What phrase refers to all transmission media not guided by wire, fiber, or other constraints, including radio frequency, infrared, and microwave methods?",
-          "answer": [
-            "modulation",
-            "implicit coverage",
-            "guided media",
-            "unguided media"
-          ],
-          "correct_answer": "unguided media"
-        },
-
-        {
-          "question": "What is one benefit of Network Address Translation (NAT)?",
-          "answer": [
-            "NAT compensates for the lack of available IP address space.",
-            "NAT allows devices using two different protocols to communicate.",
-            "NAT creates a DMZ.",
-            "NAT translates MAC addresses to IP addresses."
-          ],
-          "correct_answer": "NAT compensates for the lack of available IP address space."
-        },
-        {
-          "question": "What is a disadvantage of a host-based IDS?",
-          "answer": [
-            "It is ineffective when traffic is encrypted.",
-            "It cannot store alarm information in a local file.",
-            "It must be able to handle high volumes of traffic.",
-            "It can have a high cost of ownership and maintenance."
-          ],
-          "correct_answer": "It can have a high cost of ownership and maintenance."
-        },
-
-        {
-          "question": "Which of the following is an example of a MAC address?",
-          "answer": [
-            "00:07:h9:c8:ff:00",
-            "00:07:e9:c8:ff:00",
-            "00:39:c8:ff:00",
-            "00:07:59:c8:ff:00:e8"
-          ],
-          "correct_answer": "00:07:e9:c8:ff:00"
-        },
-
-        {
-          "question": "Packet fragmentation is the splitting of a packet while in transit into two packets so that they fit past an MTU bottleneck.",
-          "answer": [
-            "True",
-            "False"
-          ],
-          "correct_answer": "True"
-        }
-      ]
-    },
-     {
-      "quizz_title": "Lesson 6: Wireless Security and Mobile Devices",
-      "questions": [
-
-        {
-          "question": "The most common tools for an attacker to use against wireless technology are reception-based programs.",
-          "answer": [
-            "True",
-            "False"
-          ],
-          "correct_answer": "True"
-        },
-        {
-          "question": "The primary reason that spread-spectrum technology is used in 802.11 protocols is to provide security.",
-          "answer": [
-            "True",
-            "False"
-          ],
-          "correct_answer": "False"
-        },
-        {
-          "question": "Which type of attack occurs when the attacker captures a portion of a communication between two parties and retransmits it at a later time?",
-          "answer": [
-            "denial of service",
-            "replay",
-            "evil twin",
-            "man-in-the-middle"
-          ],
-          "correct_answer": "replay"
-        },
-        {
-          "question": "Which term refers to a set of wireless technologies that enables smartphones and other devices to establish radio communication when they are within close proximity to each other?",
-          "answer": [
-            "orthogonal frequency division band (OFDB)",
-            "direct-sequence spread spectrum (DSSS)",
-            "near field communication (NFC)",
-            "802.11i"
-          ],
-          "correct_answer": "near field communication (NFC)"
-        },
-
-        {
-          "question": "Which option is a short- to medium-range, low-power wireless protocol typically used for mobile phones, laptops, printers, and audio devices?",
-          "answer": [
-            "WPA2",
-            "Bluetooth",
-            "WEP",
-            "802.11n"
-          ],
-          "correct_answer": "Bluetooth"
-        },
-        {
-          "question": "Which network security standard was created to provide users with an easy method of configuring wireless networks?",
-          "answer": [
-            "Wireless Transport Layer Security (WTLS)",
-            "Wi-Fi Protected Setup (WPS)",
-            "Protected EAP (PEAP)",
-            "Wireless Application Protocol (WAP)"
-          ],
-          "correct_answer": "Wi-Fi Protected Setup (WPS)"
-        }
-      ]
+      "question": "Bharath wants to make changes to the Windows Registry. What tool should he select?",
+      "answer": [
+        "regwiz.msc",
+        "notepad.exe",
+        "secpol.msc",
+        "regedit"
+      ],
+      "correct_answer": "regedit"
     },
     {
-      "quizz_title": "Lesson 7: Endpoint Security",
-      "questions": [
-        {
-          "question": "Application blacklisting is essentially noting which applications should be allowed to run on the machine.",
-          "answer": [
-            "True",
-            "False"
-          ],
-          "correct_answer": "False"
-        },
-        {
-          "question": "What component or practice is the foundation of system security?",
-          "answer": [
-            "operating system",
-            "password selection",
-            "securing the firewall",
-            "hardening applications"
-          ],
-          "correct_answer": "operating system"
-        },
-
-        {
-          "question": "Which term refers to the quarantine or isolation of a system from its surroundings?",
-          "answer": [
-            "demilitarized zoning",
-            "read-only domain controller pruning",
-            "egress filtering",
-            "sandboxing"
-          ],
-          "correct_answer": "sandboxing"
-        },
-        {
-          "question": "Service pack is the term for a small software update designed to address a specific problem, such as a buffer overflow in an application that exposes the system to attacks.",
-          "answer": [
-            "True",
-            "False"
-          ],
-          "correct_answer": "False"
-        },
-
-        {
-          "question": "What term refers to the process of establishing a system’s operational state?",
-          "answer": [
-            "hardening",
-            "baselining",
-            "securing",
-            "controlling"
-          ],
-          "correct_answer": "baselining"
-        },
-        {
-          "question": "Which protection ring has the highest privilege level and acts directly with the physical hardware?",
-          "answer": [
-            "Ring 0",
-            "Ring 1",
-            "Ring 2",
-            "Ring 3"
-          ],
-          "correct_answer": "Ring 0"
-        }
-      ]
+      "question": "Tom wants to set an appropriate logging level for his Cisco networking equipment while he's troubleshooting. What log level should he set?",
+      "answer": [
+        "1",
+        "3",
+        "5",
+        "7"
+      ],
+      "correct_answer": "7"
     },
     {
-      "quizz_title": "Lesson 8: Cloud & Physical Security",
-      "questions": [
-
-        {
-          "question": "The presence of what element activates a photoelectric fire detector?",
-          "answer": [
-            "heat",
-            "infrared energy",
-            "lasers",
-            "smoke"
-          ],
-          "correct_answer": "smoke"
-        },
-        {
-          "question": "If your organization is highly sensitive to sharing resources, you might want to consider the use of a public cloud to reduce exposure and increase your control over security, processing, and handling of data.",
-          "answer": [
-            "True",
-            "False"
-          ],
-          "correct_answer": "False"
-        },
-        {
-          "question": "Bollards obscure vision, just as a wall or fence might.",
-          "answer": [
-            "True",
-            "False"
-          ],
-          "correct_answer": "False"
-        },
-        {
-          "question": "Which term refers to a network connection used to interconnect virtual private clouds and on-premises networks?",
-          "answer": [
-            "certificate repository",
-            "digital sandbox",
-            "captive portal",
-            "transit gateway"
-          ],
-          "correct_answer": "transit gateway"
-        },
-        {
-          "question": "Which type of computing brings processing closer to the edge of the network, which optimizes web applications and IoT devices?",
-          "answer": [
-            "implicit",
-            "edge",
-            "recovery",
-            "hybrid"
-          ],
-          "correct_answer": "edge"
-        },
-        {
-          "question": "Which term refers to the disturbance on an electrical circuit caused by that circuit’s reception of electromagnetic radiation?",
-          "answer": [
-            "convergence",
-            "electromagnetic interference",
-            "sunspots",
-            "TEMPEST"
-          ],
-          "correct_answer": "electromagnetic interference"
-        }
-      ]
+      "question": "Which of the following is not a common use of network segmentation?",
+      "answer": [
+        "Decreasing attack surfaces",
+        "Limiting the scope of regulatory compliance",
+        "Reducing availability",
+        "Increasing the efficiency of a network"
+      ],
+      "correct_answer": "Reducing availability"
     },
     {
-      "quizz_title": "Lesson 9: Today's Cybersecurity Analyst",
-      "questions": [
-        {
-          "question": "Which of the following is not a common use of network segmentation?",
-          "answer": [
-            "Increasing the efficiency of a network",
-            "Decreasing attack surfaces",
-            "Reducing availability",
-            "Decreasing attack surfaces"
-          ],
-          "correct_answer": "Reducing availability"
-        },
-        {
-          "question": "Juan's organization uses LDAP to allow users to log into a variety of services without having to type in their username and password again. What type of service is in use?",
-          "answer": [
-            "MFA",
-            "ZeroAuth",
-            "EDR",
-            "SSO"
-          ],
-          "correct_answer": "SSO"
-        },
-        {
-          "question": "Michelle has a security token that her company issues to her. What type of authentication factor does she have?",
-          "answer": [
-            "Inherence",
-            "Possession",
-            "Knowledge",
-            "Biometric"
-          ],
-          "correct_answer": "Possession"
-        },
-        {
-          "question": "Ric's organization wants to implement zero trust. What concern should Ric raise about zero trust implementations?",
-          "answer": [
-            "Zero trust does not support TLS inspection.",
-            "They are likely to prevent users from accomplishing their jobs.",
-            "They can be complex to implement.",
-            "Zero trust is not compatible with modern software-defined networks."
-          ],
-          "correct_answer": "They can be complex to implement."
-        },
-        {
-          "question": "Tom wants to set an appropriate logging level for his Cisco networking equipment while he's troubleshooting. What log level should he set?",
-          "answer": [
-            "1",
-            "5",
-            "7",
-            "3"
-          ],
-          "correct_answer": "7"
-        },
-        {
-          "question": "Jen's organization wants to ensure that administrator credentials are not used improperly. What type of solution should Jen recommend to address this requirement?",
-          "answer": [
-            "CASB",
-            "PAM",
-            "PKI",
-            "SAML"
-          ],
-          "correct_answer": "PAM"
-        },
-        {
-          "question": "Bharath wants to make changes to the Windows Registry. What tool should he select?",
-          "answer": [
-            "secpol.msc",
-            "notepad.exe",
-            "regwiz.msc",
-            "regedit"
-          ],
-          "correct_answer": "regedit"
-        },
-        {
-          "question": "What design concept requires that each action requested be verified and validated before it is allowed to occur?",
-          "answer": [
-            "Secure access service edge",
-            "Extended validation network",
-            "Zero trust",
-            "Trust but verify"
-          ],
-          "correct_answer": "Zero trust"
-        },
-        {
-          "question": "Which party in a federated identity service model makes assertions about identities to service providers?",
-          "answer": [
-            "CDUs",
-            "Aps",
-            "RPs",
-            "IDPs"
-          ],
-          "correct_answer": "IDPs"
-        },
-        {
-          "question": "Naomi wants to make her applications portable and easy to move to new environments without the overhead of a full operating system. What type of solution should she select?",
-          "answer": [
-            "An x86 architecture",
-            "A SASE solution",
-            "Containerization",
-            "Virtualization"
-          ],
-          "correct_answer": "Containerization"
-        }
-      ]
+      "question": "Ric's organization wants to implement zero trust. What concern should Ric raise about zero trust implementations?",
+      "answer": [
+        "They can be complex to implement.",
+        "Zero trust does not support TLS inspection.",
+        "Zero trust is not compatible with modern software-defined networks.",
+        "They are likely to prevent users from accomplishing their jobs."
+      ],
+      "correct_answer": "They can be complex to implement."
     },
     {
-      "quizz_title": "Lesson 11: Threat Intelligence",
-      "questions": [
-        {
-          "question": "Susan wants to start performing intelligence gathering. Which of the following options is frequently conducted in the requirements gathering stage?",
-          "answer": [
-            "Review of current vulnerability scans",
-            "Review of threat intelligence feeds for new threats",
-            "Review of security breaches or compromises your organization has faced",
-            "Review of current data handling standards"
-          ],
-          "correct_answer": "Review of security breaches or compromises your organization has faced"
-        },
-        {
-          "question": "What type of assessment is particularly useful for identifying insider threats?",
-          "answer": [
-            "Instinctual",
-            "Behavioral",
-            "Habitual",
-            "IOCs"
-          ],
-          "correct_answer": "Behavioral"
-        },
-        {
-          "question": "Which of the following measures is not commonly used to assess threat intelligence?",
-          "answer": [
-            "Detail",
-            "Relevance",
-            "Accuracy",
-            "Timeliness"
-          ],
-          "correct_answer": "Detail"
-        },
-        {
-          "question": "Organizations like Anonymous, which target governments and businesses for political reasons, are examples of what type of threat actor?",
-          "answer": [
-            "Nation-state actors",
-            "Organized crime",
-            "Military assets",
-            "Hacktivists"
-          ],
-          "correct_answer": "Hacktivists"
-        },
-        {
-          "question": "Jason gathers threat intelligence that tells him that an adversary his organization considers a threat likes to use USB key drops to compromise their targets. What is this an example of?",
-          "answer": [
-            "A probability assessment",
-            "An example of adversary capability",
-            "His organization's attack surface",
-            "A possible attack vector"
-          ],
-          "correct_answer": "A possible attack vector"
-        },
-        {
-          "question": "Felix want to gather threat intelligence about an organized crime threat actor. Where is he most likely to find information published by the threat actor?",
-          "answer": [
-            "The dark web",
-            "Government bulletins",
-            "Blogs",
-            "Social media"
-          ],
-          "correct_answer": "The dark web"
-        },
-        {
-          "question": "Which of the following activities follows threat data analysis in the threat intelligence cycle?",
-          "answer": [
-            "Threat data review",
-            "Gathering feedback",
-            "Threat data collection",
-            "Threat intelligence dissemination"
-          ],
-          "correct_answer": "Threat intelligence dissemination"
-        },
-        {
-          "question": "Which of the following threat actors typically has the greatest access to resources?",
-          "answer": [
-            "Hacktivists",
-            "Insider threats",
-            "Nation-state actors",
-            "Organized crime"
-          ],
-          "correct_answer": "Nation-state actors"
-        },
-        {
-          "question": "What organizations did the U.S. government help create to help share knowledge between organizations in specific verticals?",
-          "answer": [
-            "SANS",
-            "DHS",
-            "ISACs",
-            "CERTs"
-          ],
-          "correct_answer": "ISACs"
-        },
-        {
-          "question": "Nandita has encountered an attacker who appears to be using a commonly available exploit package to attack her organization. The package seems to have been run with default configurations against her entire public-facing Internet presence from a single system. What type of threat actor is she most likely facing?",
-          "answer": [
-            "An APT",
-            "A hacktivist",
-            "A nation-state actor",
-            "A script kiddie"
-          ],
-          "correct_answer": "A script kiddie"
-        }
-      ]
+      "question": "Michelle has a security token that her company issues to her. What type of authentication factor does she have?",
+      "answer": [
+        "Biometric",
+        "Possession",
+        "Knowledge",
+        "Inherence"
+      ],
+      "correct_answer": "Possession"
     },
     {
-      "quizz_title": "Lesson 12: Reconnaissance and Intelligence Gathering",
-      "questions": [
-        {
-          "question": "Valerie wants to use a graphical interface to control nmap and wants to display her scans as a visual map to help her understand her target networks. What tool from the following list should she use?",
-          "answer": [
-            "Zenmap",
-            "nmap-gs",
-            "wmap",
-            "Angry IP Scanner"
-          ],
-          "correct_answer": "Zenmap"
-        },
-        {
-          "question": "After running an nmap scan, Geoff sees ports 80 and 443 open on a system he scanned. What reasonable guess can he make about the system based on this result?",
-          "answer": [
-            "The system is a Linux system.",
-            "The system is running a database server.",
-            "The system is running a web server.",
-            "The system is a Windows system."
-          ],
-          "correct_answer": "The system is running a web server."
-        },
-        {
-          "question": "Murali wants to scan a network using nmap and has run a scan without any flags without discovering all of the hosts that he thinks should show. What scan flag can he use to scan without performing host discovery that will also determine if services are open on the systems?",
-          "answer": [
-            "-PS",
-            "-sL",
-            "-Pn",
-            "-sn"
-          ],
-          "correct_answer": "-Pn"
-        },
-        {
-          "question": "What information is used to identify network segments and topology when conducting an nmap scan?",
-          "answer": [
-            "Hostnames",
-            "Time to live",
-            "IP addresses",
-            "Port numbers"
-          ],
-          "correct_answer": "Time to live"
-        },
-        {
-          "question": "Megan wants to use the Metasploit Framework to conduct a web application vulnerability scan. What module from the following list is best suited to her needs?",
-          "answer": [
-            "nmap",
-            "wmap",
-            "smb_login",
-            "Angry IP"
-          ],
-          "correct_answer": "wmap"
-        },
-        {
-          "question": "Tuan wants to gather additional information about a domain that he has entered in Maltego. What functionality is used to perform server-based actions in Maltego?",
-          "answer": [
-            "A query",
-            "A transform",
-            "A worker",
-            "A scan"
-          ],
-          "correct_answer": "A transform"
-        },
-        {
-          "question": "What flag does nmap use to enable operating system identification?",
-          "answer": [
-            "–osscan",
-            "–os",
-            "–O",
-            "–id"
-          ],
-          "correct_answer": "–O"
-        },
-        {
-          "question": "Susan runs an nmap scan using the following command: nmap -O -Pn 192.168.1.0/255. What information will she see about the hosts she scans?",
-          "answer": [
-            "The hostname, uptime, and logged-in user",
-            "The hostname and operating system",
-            "The hostname and service ports",
-            "The hostname, service ports, and operating system"
-          ],
-          "correct_answer": "The hostname, service ports, and operating system"
-        },
-        {
-          "question": "Laura wants to conduct a search for hosts using Recon-ng but wants to leverage a search engine with API access to acquire existing data. What module should she use?",
-          "answer": [
-            "recon/companies-multi/whois_miner",
-            "recon/domains-hosts/shodan_hostname",
-            "import/list",
-            "import/nmap"
-          ],
-          "correct_answer": "recon/domains-hosts/shodan_hostname"
-        },
-        {
-          "question": "What command-line tool can be used to determine the path that traffic takes to a remote system?",
-          "answer": [
-            "Whois",
-            "traceroute",
-            "nslookup",
-            "routeview"
-          ],
-          "correct_answer": "traceroute"
-        }
-      ]
+      "question": "Which party in a federated identity service model makes assertions about identities to service providers?",
+      "answer": [
+        "RPs",
+        "CDUs",
+        "IDPs",
+        "APs"
+      ],
+      "correct_answer": "IDPs"
     },
     {
-      "quizz_title": "Lesson 13: Designing a Vulnerability Management Program",
-      "questions": [
-        {
-          "question": "Tonya is configuring vulnerability scans for a system that is subject to the PCI DSS compliance standard. What is the minimum frequency with which she must conduct scans?",
-          "answer": [
-            "Quarterly",
-            "Weekly",
-            "Monthly",
-            "Daily"
-          ],
-          "correct_answer": "Quarterly"
-        },
-        {
-          "question": "Which one of the following is not an example of a vulnerability scanning tool?",
-          "answer": [
-            "OpenVAS",
-            "Snort",
-            "Nikto",
-            "Nessus"
-          ],
-          "correct_answer": "Snort"
-        },
-        {
-          "question": "Renee is configuring her vulnerability management solution to perform credentialed scans of servers on her network. What type of account should she provide to the scanner?",
-          "answer": [
-            "Local administrator",
-            "Root",
-            "Read-only",
-            "Domain administrator"
-          ],
-          "correct_answer": "Read-only"
-        },
-        {
-          "question": "Which type of organization is the most likely to face a regulatory requirement to conduct vulnerability scans?",
-          "answer": [
-            "Doctor's office",
-            "Hospital",
-            "Bank",
-            "Government agency"
-          ],
-          "correct_answer": "Government agency"
-        },
-        {
-          "question": "Jason is writing a report about a potential security vulnerability in a software product and wishes to use standardized product names to ensure that other security analysts understand the report. Which SCAP component can Jason turn to for assistance?",
-          "answer": [
-            "CVSS",
-            "OVAL",
-            "CPE",
-            "CVE"
-          ],
-          "correct_answer": "CPE"
-        },
-        {
-          "question": "What tool can administrators use to help identify the systems present on a network prior to conducting vulnerability scans?",
-          "answer": [
-            "Router",
-            "Asset inventory",
-            "Web application assessment",
-            "DLP"
-          ],
-          "correct_answer": "Asset inventory"
-        },
-        {
-          "question": "Which one of the following industry standards describes a standard approach for setting up an information security management system?",
-          "answer": [
-            "CIS",
-            "OWASP",
-            "ISO 27001",
-            "ISO 27002"
-          ],
-          "correct_answer": "ISO 27001"
-        },
-        {
-          "question": "Bill would like to run an internal vulnerability scan on a system for PCI DSS compliance purposes. Who is authorized to complete one of these scans?",
-          "answer": [
-            "Any qualified individual",
-            "Any employee of the organization",
-            "A PCI DSS service provider",
-            "An approved scanning vendor"
-          ],
-          "correct_answer": "Any qualified individual"
-        },
-        {
-          "question": "What federal law requires the use of vulnerability scanning on information systems operated by federal government agencies?",
-          "answer": [
-            "FERPA",
-            "HIPAA",
-            "GLBA",
-            "FISMA"
-          ],
-          "correct_answer": "FISMA"
-        },
-        {
-          "question": "Bethany is the vulnerability management specialist for a large retail organization. She completed her last PCI DSS compliance scan in March. In April, the organization upgraded their point-of-sale system, and Bethany is preparing to conduct new scans. When must she complete the new scan?",
-          "answer": [
-            "No scans are required.",
-            "December.",
-            "Immediately.",
-            "June."
-          ],
-          "correct_answer": "Immediately."
-        }
-      ]
+      "question": "What design concept requires that each action requested be verified and validated before it is allowed to occur?",
+      "answer": [
+        "Secure access service edge",
+        "Zero trust",
+        "Trust but verify",
+        "Extended validation network"
+      ],
+      "correct_answer": "Zero trust"
+    },
+    {
+      "question": "Juan's organization uses LDAP to allow users to log into a variety of services without having to type in their username and password again. What type of service is in use?",
+      "answer": [
+        "SSO",
+        "MFA",
+        "EDR",
+        "ZeroAuth"
+      ],
+      "correct_answer": "SSO"
+    },
+    {
+      "question": "Jen's organization wants to ensure that administrator credentials are not used improperly. What type of solution should Jen recommend to address this requirement?",
+      "answer": [
+        "SAML",
+        "CASB",
+        "PAM",
+        "PKI"
+      ],
+      "correct_answer": "PAM"
+    },
+    {
+      "question": "Financial and medical records are an example of what type of data?",
+      "answer": [
+        "CHD",
+        "PCI",
+        "PII",
+        "TS/SCI"
+      ],
+      "correct_answer": "PII"
+    },
+    {
+      "question": "Which of the following is not part of cardholder data for credit cards?",
+      "answer": [
+        "The cardholder's name",
+        "The CVV code",
+        "The expiration date",
+        "The primary account number"
+      ],
+      "correct_answer": "The cardholder's name"
+    },
+    {
+      "question": "Sally wants to find configuration files for a Windows system. Which of the following is not a common configuration file location?",
+      "answer": [
+        "The Windows Registry",
+        "C:\\Program Files\\",
+        "directory: \\Windows\\Temp",
+        "C:\\ProgramData\\"
+      ],
+      "correct_answer": "directory: \\Windows\\Temp"
+    },
+    {
+      "question": "What type of factor is a PIN?",
+      "answer": [
+        "A location factor",
+        "A biometric factor",
+        "A possession factor",
+        "A knowledge factor"
+      ],
+      "correct_answer": "A knowledge factor"
+    },
+    {
+      "question": "What protocol is used to ensure that logs are time synchronized?",
+      "answer": [
+        "TTP",
+        "NTP",
+        "SAML",
+        "FTP"
+      ],
+      "correct_answer": "NTP"
+    },
+    {
+      "question": "OAuth, OpenID, SAML, and AD FS are all examples of what type of technology?",
+      "answer": [
+        "Federation",
+        "Multifactor authentication",
+        "Identity vetting",
+        "PKI"
+      ],
+      "correct_answer": "Federation"
+    },
+    {
+      "question": "Example Corporation has split their network into network zones that include sales, HR, research and development, and guest networks, each separated from the others using network security devices. What concept is Example Corporation using for their network security?",
+      "answer": [
+        "Segmentation",
+        "Software-defined networking",
+        "Single-point-of-failure avoidance",
+        "Zoned routing"
+      ],
+      "correct_answer": "Segmentation"
+    },
+    {
+      "question": "During a penetration test of Anna's company, the penetration testers were able to compromise the company's web servers and deleted their log files, preventing analysis of their attacks. What compensating control is best suited to prevent this issue in the future?",
+      "answer": [
+        "Using full-disk encryption",
+        "Using log rotation",
+        "Sending logs to a syslog server",
+        "Using TLS to protect traffic"
+      ],
+      "correct_answer": "Sending logs to a syslog server"
+    },
+    {
+      "question": "Ben is preparing a system hardening procedure for his organization. Which of the following is not a typical system hardening process or step?",
+      "answer": [
+        "Updating and patching systems",
+        "Enabling additional services",
+        "Enabling logging",
+        "Configuration disk encryption"
+      ],
+      "correct_answer": "Enabling additional services"
+    },
+    {
+      "question": "Gabby is designing a multifactor authentication system for her company. She has decided to use a passphrase, a time-based code generator, and a PIN to provide additional security. How many distinct factors will she have implemented when she is done?",
+      "answer": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correct_answer": "2"
     }
+  ]
+
+},
+    {
+  "quizz_title": "Chapter 3: Malicious Activity",
+  "questions": [
+    {
+      "question": "Which of the following Linux commands will show you how much disk space is in use?",
+      "answer": [
+        "top",
+        "df",
+        "lsof",
+        "ps"
+      ],
+      "correct_answer": "df"
+    },
+    {
+      "question": "What Windows tool provides detailed information, including information about USB host controllers, memory usage, and disk transfers?",
+      "answer": [
+        "Statmon",
+        "Resmon",
+        "Perfmon",
+        "Winmon"
+      ],
+      "correct_answer": "Resmon"
+    },
+    {
+      "question": "What type of network information should you capture to be able to provide a report about how much traffic systems in your network sent to remote systems?",
+      "answer": [
+        "Syslog data",
+        "WMI data",
+        "Resmon data",
+        "Flow data"
+      ],
+      "correct_answer": "Flow data"
+    },
+    {
+      "question": "Which of the following technologies is best suited to prevent wired rogue devices from connecting to a network?",
+      "answer": [
+        "NAC",
+        "PRTG",
+        "Port security",
+        "NTP"
+      ],
+      "correct_answer": "Port security"
+    },
+    {
+      "question": "As part of her job, Danielle sets an alarm to notify her team via email if her Windows server uses 80 percent of its memory and to send a text message if it reaches 90 percent utilization. What is this setting called?",
+      "answer": [
+        "A monitoring threshold",
+        "A preset notification level",
+        "Page monitoring",
+        "Perfmon calibration"
+      ],
+      "correct_answer": "A monitoring threshold"
+    },
+    {
+      "question": "Chris is reviewing a file that is part of an exploit package. He notes that there is a file that has content with curly brackets ({}) around statements. What file type from the following list is he most likely reviewing?",
+      "answer": [
+        "Plain text",
+        "JSON",
+        "XML",
+        "HTML"
+      ],
+      "correct_answer": "JSON"
+    },
+    {
+      "question": "What term describes a system sending heartbeat traffic to a botnet command-and-control server?",
+      "answer": [
+        "Beaconing",
+        "Zombie ping",
+        "CNCstatus",
+        "CNClog"
+      ],
+      "correct_answer": "Beaconing"
+    },
+    {
+      "question": "Cameron wants to check if a file matches a known-good original. What technique can he use to do so?",
+      "answer": [
+        "Decrypt both the file and the original to compare them.",
+        "Use strings to compare the file content.",
+        "Hash both the file and the original and compare the hashes.",
+        "Check the file size and creation date."
+      ],
+      "correct_answer": "Hash both the file and the original and compare the hashes."
+    },
+    {
+      "question": "What can the MAC address of a rogue device tell you?",
+      "answer": [
+        "Its operating system version",
+        "The TTL of the device",
+        "What type of rogue it is",
+        "The manufacturer of the device"
+      ],
+      "correct_answer": "The manufacturer of the device"
+    },
+    {
+      "question": "How can Jim most effectively locate a wireless rogue access point that is causing complaints from employees in his building?",
+      "answer": [
+        "Nmap",
+        "Signal strength and triangulation",
+        "Connecting to the rogue AP",
+        "NAC"
+      ],
+      "correct_answer": "Signal strength and triangulation"
+    },
+    {
+      "question": "Which of the following tools does not provide real-time drive capacity monitoring for Windows?",
+      "answer": [
+        "Microsoft Configuration Manager",
+        "Resmon",
+        "SCOM",
+        "Perfmon"
+      ],
+      "correct_answer": "Microsoft Configuration Manager"
+    },
+    {
+      "question": "One of the business managers in Geeta's organization reports that she received an email with a link that appeared to be a link to the organization's HR website, and that the website it went to when she clicked on it was very similar to the organization's website. Fortunately, the manager noticed that the URL was different than usual. What technique best describes a link that is disguised to appear legitimate?",
+      "answer": [
+        "An obfuscated link",
+        "A symbolic link",
+        "A phishing link",
+        "A decoy link"
+      ],
+      "correct_answer": "A phishing link"
+    },
+    {
+      "question": "Angela wants to review the syslog on a Linux system. What directory should she check to find it on most Linux distributions?",
+      "answer": [
+        "/home/log",
+        "/var/log",
+        "/log",
+        "/var/syslog"
+      ],
+      "correct_answer": "/var/log"
+    },
+    {
+      "question": "Laura wants to review headers in an email that one of her staff is suspicious of. What should she not have that person do if she wants to preserve the headers?",
+      "answer": [
+        "She shouldn't have them print the email.",
+        "She shouldn't have them reply to the email.",
+        "She shouldn't have them forward the email to her.",
+        "She shouldn't have them download the email."
+      ],
+      "correct_answer": "She shouldn't have them forward the email to her."
+    },
+    {
+      "question": "Which of the following is a key differentiator between a SIEM and a SOAR?",
+      "answer": [
+        "A SIEM does not provide a dashboard.",
+        "A SOAR provides automated response capabilities.",
+        "A SOAR does not provide log aggregation.",
+        "A SIEM provides log analysis."
+      ],
+      "correct_answer": "A SOAR provides automated response capabilities."
+    },
+    {
+      "question": "Which of the following options is not a valid way to check the status of a service in Windows?",
+      "answer": [
+        "Use sc at the command line.",
+        "Use service ––status at the command line.",
+        "Use services.msc.",
+        "Query service status using PowerShell."
+      ],
+      "correct_answer": "Use service ––status at the command line."
+    },
+    {
+      "question": "Avik has been asked to identify unexpected traffic on her organization's network. Which of the following is not a technique she should use?",
+      "answer": [
+        "Protocol analysis",
+        "Heuristics",
+        "Baselining",
+        "Beaconing"
+      ],
+      "correct_answer": "Beaconing"
+    },
+    {
+      "question": "Sofia suspects that a system in her datacenter may be sending beaconing traffic to a remote system. Which of the following is not a useful tool to help verify her suspicions?",
+      "answer": [
+        "Flows",
+        "A protocol analyzer",
+        "SNMP",
+        "An IDS or IPS"
+      ],
+      "correct_answer": "SNMP"
+    },
+    {
+      "question": "Susan wants to use an email security protocol to determine the authenticity of an email. Which of the following options will ensure that her organization's email server can determine if it should accept email from a sender?",
+      "answer": [
+        "DMARC",
+        "SPF",
+        "DKIM",
+        "POP3"
+      ],
+      "correct_answer": "SPF"
+    },
+    {
+      "question": "Juan wants to see a list of processes along with their CPU utilization in an interactive format. What built-in Linux tool should he use?",
+      "answer": [
+        "df",
+        "top",
+        "tail",
+        "cpugrep"
+      ],
+      "correct_answer": "top"
+    }
+  ]
+},
+    {
+  "quizz_title": "Chapter 4: Threat Intelligence",
+  "questions": [
+    {
+      "question": "Which of the following measures is not commonly used to assess threat intelligence?",
+      "answer": [
+        "Timeliness",
+        "Detail",
+        "Accuracy",
+        "Relevance"
+      ],
+      "correct_answer": "Detail"
+    },
+    {
+      "question": "Nandita has encountered an attacker who appears to be using a commonly available exploit package to attack her organization. The package seems to have been run with default configurations against her entire public-facing Internet presence from a single system. What type of threat actor is she most likely facing?",
+      "answer": [
+        "An APT",
+        "A hacktivist",
+        "A script kiddie",
+        "A nation-state actor"
+      ],
+      "correct_answer": "A script kiddie"
+    },
+    {
+      "question": "Which of the following activities follows threat data analysis in the threat intelligence cycle?",
+      "answer": [
+        "Gathering feedback",
+        "Threat data collection",
+        "Threat data review",
+        "Threat intelligence dissemination"
+      ],
+      "correct_answer": "Threat intelligence dissemination"
+    },
+    {
+      "question": "Susan wants to start performing intelligence gathering. Which of the following options is frequently conducted in the requirements gathering stage?",
+      "answer": [
+        "Review of security breaches or compromises your organization has faced",
+        "Review of current vulnerability scans",
+        "Review of current data handling standards",
+        "Review of threat intelligence feeds for new threats"
+      ],
+      "correct_answer": "Review of security breaches or compromises your organization has faced"
+    },
+    {
+      "question": "What organizations did the U.S. government help create to help share knowledge between organizations in specific verticals?",
+      "answer": [
+        "DHS",
+        "SANS",
+        "CERTs",
+        "ISACs"
+      ],
+      "correct_answer": "ISACs"
+    },
+    {
+      "question": "Which of the following threat actors typically has the greatest access to resources?",
+      "answer": [
+        "Nation-state actors",
+        "Organized crime",
+        "Hacktivists",
+        "Insider threats"
+      ],
+      "correct_answer": "Nation-state actors"
+    },
+    {
+      "question": "Organizations like Anonymous, which target governments and businesses for political reasons, are examples of what type of threat actor?",
+      "answer": [
+        "Hacktivists",
+        "Military assets",
+        "Nation-state actors",
+        "Organized crime"
+      ],
+      "correct_answer": "Hacktivists"
+    },
+    {
+      "question": "Jason gathers threat intelligence that tells him that an adversary his organization considers a threat likes to use USB key drops to compromise their targets. What is this an example of?",
+      "answer": [
+        "His organization's attack surface",
+        "A possible attack vector",
+        "An example of adversary capability",
+        "A probability assessment"
+      ],
+      "correct_answer": "A possible attack vector"
+    },
+    {
+      "question": "What type of assessment is particularly useful for identifying insider threats?",
+      "answer": [
+        "Behavioral",
+        "Instinctual",
+        "Habitual",
+        "IOCs"
+      ],
+      "correct_answer": "Behavioral"
+    },
+    {
+      "question": "Felix want to gather threat intelligence about an organized crime threat actor. Where is he most likely to find information published by the threat actor?",
+      "answer": [
+        "Social media",
+        "Blogs",
+        "Government bulletins",
+        "The dark web"
+      ],
+      "correct_answer": "The dark web"
+    },
+    {
+      "question": "Which of the following is not a common indicator of compromise?",
+      "answer": [
+        "Administrative account logins",
+        "Unexpected modifications of configuration files",
+        "Login activity from atypical countries or locations",
+        "Large outbound data transfers from administrative systems"
+      ],
+      "correct_answer": "Administrative account logins"
+    },
+    {
+      "question": "Nick wants to analyze attacker tactics and techniques. What type of tool can he deploy to most effectively capture actual attack data for analysis?",
+      "answer": [
+        "A firewall",
+        "A honeypot",
+        "A web application firewall",
+        "A SIEM"
+      ],
+      "correct_answer": "A honeypot"
+    },
+    {
+      "question": "Which of the following is not a common focus area for threat hunting activities?",
+      "answer": [
+        "Policies",
+        "Misconfigurations",
+        "Isolated networks",
+        "Business-critical assets"
+      ],
+      "correct_answer": "Isolated networks"
+    },
+    {
+      "question": "What term describes an analysis of threat information that might include details such as whether it is confirmed by multiple independent sources or has been directly confirmed?",
+      "answer": [
+        "Threat quality level",
+        "STIX level",
+        "Confidence level",
+        "Assurance level"
+      ],
+      "correct_answer": "Confidence level"
+    },
+    {
+      "question": "What drove the creation of ISACs in the United States?",
+      "answer": [
+        "Threat information sharing for infrastructure owners",
+        "The Cybersecurity Act of 1994",
+        "Threat information collection network providers",
+        "The 1998 ISAC Act"
+      ],
+      "correct_answer": "Threat information sharing for infrastructure owners"
+    },
+    {
+      "question": "How is threat intelligence sharing most frequently used for vulnerability management?",
+      "answer": [
+        "To identify zero-day threats before they are released",
+        "As part of vulnerability feeds for scanning systems",
+        "As part of patch management processes to determine which patches are not installed",
+        "To perform quantitative risk assessment"
+      ],
+      "correct_answer": "As part of vulnerability feeds for scanning systems"
+    },
+    {
+      "question": "OpenIOC uses a base set of indicators of compromise originally created and provided by which security company?",
+      "answer": [
+        "Mandiant",
+        "McAfee",
+        "CrowdStrike",
+        "Cisco"
+      ],
+      "correct_answer": "Mandiant"
+    },
+    {
+      "question": "Advanced persistent threats are most commonly associated with which type of threat actor?",
+      "answer": [
+        "Insider threats",
+        "Nation-state actors",
+        "Organized crime",
+        "Hacktivists"
+      ],
+      "correct_answer": "Nation-state actors"
+    },
+    {
+      "question": "What are the two types of insider threats?",
+      "answer": [
+        "Attack and defense",
+        "Approved and prohibited",
+        "Real and imagined",
+        "Intentional and unintentional"
+      ],
+      "correct_answer": "Intentional and unintentional"
+    },
+    {
+      "question": "Forensic data is most often used for what type of threat assessment data?",
+      "answer": [
+        "STIX",
+        "Behavioral",
+        "IOCs",
+        "TAXII"
+      ],
+      "correct_answer": "IOCs"
+    }
+  ]
+},
+    {
+  "quizz_title": "Chapter 5: Reconnaissance and Intelligence Gathering",
+  "questions": [
+    {
+      "question": "Megan wants to use the Metasploit Framework to conduct a web application vulnerability scan. What module from the following list is best suited to her needs?",
+      "answer": [
+        "smb_login",
+        "Angry IP",
+        "nmap",
+        "wmap"
+      ],
+      "correct_answer": "wmap"
+    },
+    {
+      "question": "What flag does nmap use to enable operating system identification?",
+      "answer": [
+        "–os",
+        "–id",
+        "–O",
+        "–osscan"
+      ],
+      "correct_answer": "–O"
+    },
+    {
+      "question": "What command-line tool can be used to determine the path that traffic takes to a remote system?",
+      "answer": [
+        "Whois",
+        "traceroute",
+        "nslookup",
+        "routeview"
+      ],
+      "correct_answer": "traceroute"
+    },
+    {
+      "question": "Valerie wants to use a graphical interface to control nmap and wants to display her scans as a visual map to help her understand her target networks. What tool from the following list should she use?",
+      "answer": [
+        "Angry IP Scanner",
+        "wmap",
+        "Zenmap",
+        "nmap-gs"
+      ],
+      "correct_answer": "Zenmap"
+    },
+    {
+      "question": "Susan runs an nmap scan using the following command: nmap -O -Pn 192.168.1.0/255. What information will she see about the hosts she scans?",
+      "answer": [
+        "The hostname and service ports",
+        "The hostname, service ports, and operating system",
+        "The hostname and operating system",
+        "The hostname, uptime, and logged-in user"
+      ],
+      "correct_answer": "The hostname, service ports, and operating system"
+    },
+    {
+      "question": "Tuan wants to gather additional information about a domain that he has entered in Maltego. What functionality is used to perform server-based actions in Maltego?",
+      "answer": [
+        "A worker",
+        "A query",
+        "A transform",
+        "A scan"
+      ],
+      "correct_answer": "A transform"
+    },
+    {
+      "question": "Laura wants to conduct a search for hosts using Recon-ng but wants to leverage a search engine with API access to acquire existing data. What module should she use?",
+      "answer": [
+        "recon/companies-multi/whois_miner",
+        "import/nmap",
+        "recon/domains-hosts/shodan_hostname",
+        "import/list"
+      ],
+      "correct_answer": "recon/domains-hosts/shodan_hostname"
+    },
+    {
+      "question": "After running an nmap scan, Geoff sees ports 80 and 443 open on a system he scanned. What reasonable guess can he make about the system based on this result?",
+      "answer": [
+        "The system is a Windows system.",
+        "The system is running a database server.",
+        "The system is a Linux system.",
+        "The system is running a web server."
+      ],
+      "correct_answer": "The system is running a web server."
+    },
+    {
+      "question": "What information is used to identify network segments and topology when conducting an nmap scan?",
+      "answer": [
+        "IP addresses",
+        "Hostnames",
+        "Time to live",
+        "Port numbers"
+      ],
+      "correct_answer": "IP addresses"
+    },
+    {
+      "question": "Murali wants to scan a network using nmap and has run a scan without any flags without discovering all of the hosts that he thinks should show. What scan flag can he use to scan without performing host discovery that will also determine if services are open on the systems?",
+      "answer": [
+        "-sn",
+        "-PS",
+        "-Pn",
+        "-sL"
+      ],
+      "correct_answer": "-Pn"
+    },
+    {
+      "question": "Jaime is using the Angry IP Scanner and notices that it supports multiple types of pings to identify hosts. Why might she choose to use a specific type of ping over others?",
+      "answer": [
+        "To bypass firewalls",
+        "To allow better vulnerability detection",
+        "To prevent the scan from being flagged by DDoS protection tools",
+        "To leverage the faster speed of TCP pings over UDP pings"
+      ],
+      "correct_answer": "To bypass firewalls"
+    },
+    {
+      "question": "Hue wants to perform network footprinting as part of a reconnaissance effort. Which of the following tools is best suited to passive footprinting given a domain name as the starting point for her efforts?",
+      "answer": [
+        "Traceroute",
+        "Maltego",
+        "Nmap",
+        "Angry IP Scanner"
+      ],
+      "correct_answer": "Maltego"
+    },
+    {
+      "question": "Jack wants to scan a system using the Angry IP Scanner. What information does he need to run the scan?",
+      "answer": [
+        "The system's IP address",
+        "The system's Whois data",
+        "The system's MAC address",
+        "The system administrator's username and password"
+      ],
+      "correct_answer": "The system's IP address"
+    },
+    {
+      "question": "Which of the following is not a reason that security professionals often perform packet capture while conducting port and vulnerability scanning?",
+      "answer": [
+        "Work process documentation",
+        "To capture additional data for analysis",
+        "To prevent external attacks",
+        "To provide a timeline"
+      ],
+      "correct_answer": "To prevent external attacks"
+    },
+    {
+      "question": "What process uses information such as the way that a system's TCP stack responds to queries, what TCP options it supports, and the initial window size it uses?",
+      "answer": [
+        "Service identification",
+        "Fuzzing",
+        "Application scanning",
+        "OS detection"
+      ],
+      "correct_answer": "OS detection"
+    },
+    {
+      "question": "Li wants to use Recon-ng to gather data from systems. Which of the following is not a common use for Recon-ng?",
+      "answer": [
+        "Conducting vulnerability scans of services",
+        "Looking for sensitive files",
+        "Conducting OSINT gathering of Whois, DNS, and similar data",
+        "Finding target IP addresses"
+      ],
+      "correct_answer": "Conducting vulnerability scans of services"
+    },
+    {
+      "question": "Jason wants to conduct a port scan using the Metasploit Framework. What tool can he use from the framework to do this?",
+      "answer": [
+        "Angry IP Scanner",
+        "Recon-ng",
+        "Maltego",
+        "Nmap"
+      ],
+      "correct_answer": "Nmap"
+    },
+    {
+      "question": "Sally wants to use operating system identification using nmap to determine what OS a device is running. Which of the following is not a datapoint used by nmap to identify operating systems?",
+      "answer": [
+        "TCP sequences",
+        "TCP timestamps",
+        "TCP OS header",
+        "TCP options"
+      ],
+      "correct_answer": "TCP OS header"
+    },
+    {
+      "question": "Chris wants to perform network-based asset discovery. What limitation will he encounter if he relies on a port scanner to perform his discovery?",
+      "answer": [
+        "Port scanners cannot detect vulnerabilities.",
+        "Port scanners cannot determine what services are running on a given port.",
+        "Firewalls can prevent port scanners from detecting systems.",
+        "A port scanner can create a denial-of-service condition for many modern systems."
+      ],
+      "correct_answer": "Firewalls can prevent port scanners from detecting systems."
+    },
+    {
+      "question": "Emily wants to gather open source intelligence and centralize it using an open source tool. Which of the following tools is best suited to managing the collection of data for her OSINT efforts?",
+      "answer": [
+        "The Metasploit Framework",
+        "Recon-ng",
+        "nmap",
+        "Angry IP Scanner"
+      ],
+      "correct_answer": "Recon-ng"
+    }
+  ]
+}
+
+
+
+
+
   ]
 }
