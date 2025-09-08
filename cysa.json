@@ -1146,8 +1146,8 @@
     },
     {
       "question": "Aziz is responsible for the administration of an e-commerce website that generates $100,000 per day in revenue for his firm. The website uses a database that contains sensitive information about the firm’s customers. He expects that a compromise of that database would result in $500,000 of fines against his firm. What is the asset value (AV)?",
-      "answer": ["$5,000", "$100,000", "$500,000", "$600,000"],
-      "correct_answer": "$500,000"
+      "answer": ["$5 000", "$100 000", "$500 000", "$600 000"],
+      "correct_answer": "$500 000"
     },
     {
       "question": "What is the exposure factor (EF)?",
@@ -1156,7 +1156,7 @@
     },
     {
       "question": "What is the single loss expectancy (SLE)?",
-      "answer": ["$5,000", "$100,000", "$500,000", "$600,000"],
+      "answer": ["$5 000", "$100 000", "$500 000", "$600 000"],
       "correct_answer": "$500,000"
     },
     {
@@ -1166,8 +1166,8 @@
     },
     {
       "question": "What is the annualized loss expectancy (ALE)?",
-      "answer": ["$5,000", "$25,000", "$100,000", "$500,000"],
-      "correct_answer": "$25,000"
+      "answer": ["$5 000", "$25 000", "$100 000", "$500 000"],
+      "correct_answer": "$25 000"
     },
     {
       "question": "Grace's first idea is to add a web application firewall to protect her organization against SQL injection attacks. What risk management strategy does this approach adopt?",
