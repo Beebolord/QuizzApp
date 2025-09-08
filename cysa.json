@@ -663,11 +663,11 @@
       "question": "Susan runs an nmap scan using the following command: nmap -O -Pn 192.168.1.0/255. What information will she see about the hosts she scans?",
       "answer": [
         "The hostname and service ports",
-        "The hostname, service ports, and operating system",
+        "The hostname + service ports + and operating system",
         "The hostname and operating system",
-        "The hostname, uptime, and logged-in user"
+        "The hostname + uptime + and logged-in user"
       ],
-      "correct_answer": "The hostname, service ports, and operating system"
+      "correct_answer": "The hostname + service ports + and operating system"
     },
     {
       "question": "Tuan wants to gather additional information about a domain that he has entered in Maltego. What functionality is used to perform server-based actions in Maltego?",
