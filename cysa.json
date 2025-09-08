@@ -1380,6 +1380,12 @@
       "correct_answer": "System images"
     },
     {
+      "question": "Are we all being shipped to Kingston",
+      "answer": ["Yes 100%", "No"],
+      "correct_answer": "Yes 100%"
+    },
+
+    {
       "question": "Cameron wants to be able to detect a denial-of-service attack against his web server. Which of the following tools should he avoid?",
       "answer": ["Log analysis", "Flow monitoring", "iPerf", "IPS"],
       "correct_answer": "iPerf"
