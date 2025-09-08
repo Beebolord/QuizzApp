@@ -820,7 +820,1054 @@
       "correct_answer": "Recon-ng"
     }
   ]
+},
+{
+  "quizz_title": "Chapter 6: Designing a Vulnerability Management Program",
+  "questions": [
+    {
+      "question": "What federal law requires the use of vulnerability scanning on information systems operated by federal government agencies?",
+      "answer": [
+        "HIPAA",
+        "GLBA",
+        "FISMA",
+        "FERPA"
+      ],
+      "correct_answer": "FISMA"
+    },
+    {
+      "question": "Which one of the following industry standards describes a standard approach for setting up an information security management system?",
+      "answer": [
+        "OWASP",
+        "CIS",
+        "ISO 27002",
+        "ISO 27001"
+      ],
+      "correct_answer": "ISO 27001"
+    },
+    {
+      "question": "What tool can administrators use to help identify the systems present on a network prior to conducting vulnerability scans?",
+      "answer": [
+        "Asset inventory",
+        "Web application assessment",
+        "Router",
+        "DLP"
+      ],
+      "correct_answer": "Asset inventory"
+    },
+    {
+      "question": "Tonya is configuring vulnerability scans for a system that is subject to the PCI DSS compliance standard. What is the minimum frequency with which she must conduct scans?",
+      "answer": [
+        "Daily",
+        "Weekly",
+        "Monthly",
+        "Quarterly"
+      ],
+      "correct_answer": "Quarterly"
+    },
+    {
+      "question": "Which one of the following is not an example of a vulnerability scanning tool?",
+      "answer": [
+        "Nikto",
+        "Snort",
+        "Nessus",
+        "OpenVAS"
+      ],
+      "correct_answer": "Snort"
+    },
+    {
+      "question": "Bethany is the vulnerability management specialist for a large retail organization. She completed her last PCI DSS compliance scan in March. In April, the organization upgraded their point-of-sale system, and Bethany is preparing to conduct new scans. When must she complete the new scan?",
+      "answer": [
+        "Immediately.",
+        "June.",
+        "December.",
+        "No scans are required."
+      ],
+      "correct_answer": "Immediately."
+    },
+    {
+      "question": "Renee is configuring her vulnerability management solution to perform credentialed scans of servers on her network. What type of account should she provide to the scanner?",
+      "answer": [
+        "Domain administrator",
+        "Local administrator",
+        "Root",
+        "Read-only"
+      ],
+      "correct_answer": "Read-only"
+    },
+    {
+      "question": "Jason is writing a report about a potential security vulnerability in a software product and wishes to use standardized product names to ensure that other security analysts understand the report. Which SCAP component can Jason turn to for assistance?",
+      "answer": [
+        "CVSS",
+        "CVE",
+        "CPE",
+        "OVAL"
+      ],
+      "correct_answer": "CPE"
+    },
+    {
+      "question": "Bill would like to run an internal vulnerability scan on a system for PCI DSS compliance purposes. Who is authorized to complete one of these scans?",
+      "answer": [
+        "Any employee of the organization",
+        "An approved scanning vendor",
+        "A PCI DSS service provider",
+        "Any qualified individual"
+      ],
+      "correct_answer": "Any qualified individual"
+    },
+    {
+      "question": "Which type of organization is the most likely to face a regulatory requirement to conduct vulnerability scans?",
+      "answer": [
+        "Bank",
+        "Hospital",
+        "Government agency",
+        "Doctor's office"
+      ],
+      "correct_answer": "Government agency"
+    },
+    {
+      "question": "Which one of the following organizations focuses on providing tools and advice for secure web application development?",
+      "answer": [
+        "OWASP",
+        "CIS",
+        "NIST",
+        "Microsoft"
+      ],
+      "correct_answer": "OWASP"
+    },
+    {
+      "question": "What term describes an organization's willingness to tolerate risk in their computing environment?",
+      "answer": [
+        "Risk landscape",
+        "Risk appetite",
+        "Risk level",
+        "Risk adaptation"
+      ],
+      "correct_answer": "Risk appetite"
+    },
+    {
+      "question": "Which one of the following factors is least likely to impact vulnerability scanning schedules?",
+      "answer": [
+        "Regulatory requirements",
+        "Technical constraints",
+        "Business constraints",
+        "Staff availability"
+      ],
+      "correct_answer": "Staff availability"
+    },
+    {
+      "question": "Barry placed all of his organization's credit card processing systems on an isolated network dedicated to card processing. He has implemented appropriate segmentation controls to limit the scope of PCI DSS to those systems through the use of VLANs and firewalls. When Barry goes to conduct vulnerability scans for PCI DSS compliance purposes, what systems must he scan?",
+      "answer": [
+        "Customer systems",
+        "Systems on the isolated network",
+        "Systems on the general enterprise network",
+        "Both B and C"
+      ],
+      "correct_answer": "Systems on the isolated network"
+    },
+    {
+      "question": "Ryan is planning to conduct a vulnerability scan of a business-critical system using dangerous plug-ins. What would be the best approach for the initial scan?",
+      "answer": [
+        "Run the scan against production systems to achieve the most realistic results possible.",
+        "Run the scan during business hours.",
+        "Run the scan in a test environment.",
+        "Do not run the scan to avoid disrupting the business."
+      ],
+      "correct_answer": "Run the scan in a test environment."
+    },
+    {
+      "question": "Which one of the following activities is not part of the vulnerability management life cycle?",
+      "answer": [
+        "Detection",
+        "Remediation",
+        "Reporting",
+        "Testing"
+      ],
+      "correct_answer": "Testing"
+    },
+    {
+      "question": "What approach to vulnerability scanning incorporates information from agents running on the target servers?",
+      "answer": [
+        "Continuous monitoring",
+        "Ongoing scanning",
+        "On-demand scanning",
+        "Alerting"
+      ],
+      "correct_answer": "Continuous monitoring"
+    },
+    {
+      "question": "Kolin would like to use an automated web application vulnerability scanner to identify any potential security issues in an application that is about to be deployed in his environment. Which one of the following tools is least likely to meet his needs?",
+      "answer": [
+        "ZAP",
+        "Nikto",
+        "Arachni",
+        "Burp Suite"
+      ],
+      "correct_answer": "Nikto"
+    },
+    {
+      "question": "Jessica is reading reports from vulnerability scans run by different part of her organization using different products. She is responsible for assigning remediation resources and is having difficulty prioritizing issues from different sources. What SCAP component can help Jessica with this task?",
+      "answer": [
+        "CVSS",
+        "CVE",
+        "CPE",
+        "XCCDF"
+      ],
+      "correct_answer": "CVSS"
+    },
+    {
+      "question": "Sarah would like to run an external vulnerability scan on a system for PCI DSS compliance purposes. Who is authorized to complete one of these scans?",
+      "answer": [
+        "Any employee of the organization",
+        "An approved scanning vendor",
+        "A PCI DSS service provider",
+        "Any qualified individual"
+      ],
+      "correct_answer": "An approved scanning vendor"
+    }
+  ]
+},
+    {
+  "quizz_title": "Chapter 7: Analyzing Vulnerability Scans",
+  "questions": [
+    {
+      "question": "Tom is reviewing a vulnerability scan report and finds that one of the servers on his network suffers from an internal IP address disclosure vulnerability. What technology is likely in use on this network that resulted in this vulnerability?",
+      "answer": ["TLS", "NAT", "SSH", "VPN"],
+      "correct_answer": "NAT"
+    },
+    {
+      "question": "Which one of the CVSS metrics would contain information about the type of account access that an attacker must have to execute an attack?",
+      "answer": ["AV", "C", "PR", "AC"],
+      "correct_answer": "PR"
+    },
+    {
+      "question": "Which one of the following values for the CVSS attack complexity metric would indicate that the specified attack is simplest to exploit?",
+      "answer": ["High", "Medium", "Low", "Severe"],
+      "correct_answer": "Low"
+    },
+    {
+      "question": "Which one of the following values for the confidentiality, integrity, or availability CVSS metric would indicate the potential for total compromise of a system?",
+      "answer": ["N", "L", "M", "H"],
+      "correct_answer": "H"
+    },
+    {
+      "question": "What is the most recent version of CVSS that is currently available?",
+      "answer": ["2.0", "2.5", "3.1", "3.2"],
+      "correct_answer": "3.1"
+    },
+    {
+      "question": "Which one of the following metrics is not included in the calculation of the CVSS exploitability score?",
+      "answer": ["Attack vector", "Vulnerability age", "Attack complexity", "Privileges required"],
+      "correct_answer": "Vulnerability age"
+    },
+    {
+      "question": "Kevin recently identified a new software vulnerability and computed its CVSS base score as 6.5. Which risk category would this vulnerability fall into?",
+      "answer": ["Low", "Medium", "High", "Critical"],
+      "correct_answer": "Medium"
+    },
+    {
+      "question": "Tara recently analyzed the results of a vulnerability scan report and found that a vulnerability reported by the scanner did not exist because the system was actually patched as specified. What type of error occurred?",
+      "answer": ["False positive", "False negative", "True positive", "True negative"],
+      "correct_answer": "False positive"
+    },
+    {
+      "question": "Which one of the following is not a common source of information that may be correlated with vulnerability scan results?",
+      "answer": ["Logs", "Database tables", "SIEM", "Configuration management system"],
+      "correct_answer": "Database tables"
+    },
+    {
+      "question": "Which one of the following operating systems should be avoided on production networks?",
+      "answer": ["Windows Server 2008 R2", "Red Hat Enterprise Linux 9", "Debian Linux 11", "Ubuntu 22"],
+      "correct_answer": "Windows Server 2008 R2"
+    },
+    {
+      "question": "In what type of attack does the attacker place more information in a memory location than is allocated for that use?",
+      "answer": ["SQL injection", "LDAP injection", "Cross-site scripting", "Buffer overflow"],
+      "correct_answer": "Buffer overflow"
+    },
+    {
+      "question": "The Dirty COW attack is an example of what type of vulnerability?",
+      "answer": ["Malicious code", "Privilege escalation", "Buffer overflow", "LDAP injection"],
+      "correct_answer": "Privilege escalation"
+    },
+    {
+      "question": "Which one of the following protocols should never be used on a public network?",
+      "answer": ["SSH", "HTTPS", "SFTP", "Telnet"],
+      "correct_answer": "Telnet"
+    },
+    {
+      "question": "Betty is selecting a transport encryption protocol for use in a new public website she is creating. Which protocol would be the best choice?",
+      "answer": ["SSL 2.0", "SSL 3.0", "TLS 1.0", "TLS 1.3"],
+      "correct_answer": "TLS 1.3"
+    },
+    {
+      "question": "Which one of the following conditions would not result in a certificate warning during a vulnerability scan of a web server?",
+      "answer": ["Use of an untrusted CA", "Inclusion of a public encryption key", "Expiration of the certificate", "Mismatch in certificate name"],
+      "correct_answer": "Inclusion of a public encryption key"
+    },
+    {
+      "question": "What type of attack depends on the fact that users are often logged into many websites simultaneously in the same browser?",
+      "answer": ["SQL injection", "Cross-site scripting", "Cross-site request forgery", "File inclusion"],
+      "correct_answer": "Cross-site request forgery"
+    },
+    {
+      "question": "Bonnie discovers entries in a web server log indicating that penetration testers attempted to access the following URL: www.mycompany.com/sortusers.php?file=C:\\uploads\\attack.exe. What type of attack did they most likely attempt?",
+      "answer": ["Reflected XSS", "Persistent XSS", "Local file inclusion", "Remote file inclusion"],
+      "correct_answer": "Local file inclusion"
+    },
+    {
+      "question": "Which one of the following terms is not typically used to describe the connection of physical devices to a network?",
+      "answer": ["IoT", "IDS", "SCADA", "ICS"],
+      "correct_answer": "IDS"
+    },
+    {
+      "question": "Monica discovers that an attacker posted a message in a web forum that she manages that is attacking users who visit the site. Which one of the following attack types is most likely to have occurred?",
+      "answer": ["SQL injection", "Malware injection", "LDAP injection", "Cross-site scripting"],
+      "correct_answer": "Cross-site scripting"
+    },
+    {
+      "question": "Alan is reviewing web server logs after an attack and finds many records that contain semicolons and apostrophes in queries from end users. What type of attack should he suspect?",
+      "answer": ["SQL injection", "LDAP injection", "Cross-site scripting", "Buffer overflow"],
+      "correct_answer": "SQL injection"
+    }
+  ]
+},
+    {
+  "quizz_title": "Chapter 8: Responding to Vulnerabilities",
+  "questions": [
+    {
+      "question": "Jen identified a missing patch on a Windows server that might allow an attacker to gain remote control of the system. After consulting with her manager, she applied the patch. From a risk management perspective, what has she done?",
+      "answer": ["Removed the threat", "Reduced the threat", "Removed the vulnerability", "Reduced the vulnerability"],
+      "correct_answer": "Removed the vulnerability"
+    },
+    {
+      "question": "You notice a high number of SQL injection attacks against a web application run by your organization and you install a web application firewall to block many of these attacks before they reach the server. How have you altered the severity of this risk?",
+      "answer": ["Reduced the magnitude", "Eliminated the vulnerability", "Reduced the probability", "Eliminated the threat"],
+      "correct_answer": "Reduced the probability"
+    },
+    {
+      "question": "Aziz is responsible for the administration of an e-commerce website that generates $100,000 per day in revenue for his firm. The website uses a database that contains sensitive information about the firm’s customers. He expects that a compromise of that database would result in $500,000 of fines against his firm. What is the asset value (AV)?",
+      "answer": ["$5,000", "$100,000", "$500,000", "$600,000"],
+      "correct_answer": "$500,000"
+    },
+    {
+      "question": "What is the exposure factor (EF)?",
+      "answer": ["5%", "20%", "50%", "100%"],
+      "correct_answer": "100%"
+    },
+    {
+      "question": "What is the single loss expectancy (SLE)?",
+      "answer": ["$5,000", "$100,000", "$500,000", "$600,000"],
+      "correct_answer": "$500,000"
+    },
+    {
+      "question": "What is the annualized rate of occurrence (ARO)?",
+      "answer": ["0.05", "0.20", "2.00", "5.00"],
+      "correct_answer": "0.05"
+    },
+    {
+      "question": "What is the annualized loss expectancy (ALE)?",
+      "answer": ["$5,000", "$25,000", "$100,000", "$500,000"],
+      "correct_answer": "$25,000"
+    },
+    {
+      "question": "Grace's first idea is to add a web application firewall to protect her organization against SQL injection attacks. What risk management strategy does this approach adopt?",
+      "answer": ["Risk acceptance", "Risk avoidance", "Risk mitigation", "Risk transference"],
+      "correct_answer": "Risk mitigation"
+    },
+    {
+      "question": "Business leaders are considering dropping the customer activities that collect and store sensitive personal information. What risk management strategy would this approach use?",
+      "answer": ["Risk acceptance", "Risk avoidance", "Risk mitigation", "Risk transference"],
+      "correct_answer": "Risk avoidance"
+    },
+    {
+      "question": "The business decided to install the web application firewall and continue doing business. They still were worried about other risks to the information that were not addressed by the firewall and consider purchasing an insurance policy to cover those risks. What strategy does this use?",
+      "answer": ["Risk acceptance", "Risk avoidance", "Risk mitigation", "Risk transference"],
+      "correct_answer": "Risk transference"
+    },
+    {
+      "question": "In the end, risk managers found that the insurance policy was too expensive and opted not to purchase it. They are taking no additional action. What risk management strategy is being used in this situation?",
+      "answer": ["Risk acceptance", "Risk avoidance", "Risk mitigation", "Risk transference"],
+      "correct_answer": "Risk acceptance"
+    },
+    {
+      "question": "Which of the following is a formal process that allows organizations to open their systems to inspection by security researchers in a controlled environment?",
+      "answer": ["Edge discovery", "Passive discovery", "Security controls testing", "Bug bounty"],
+      "correct_answer": "Bug bounty"
+    },
+    {
+      "question": "Which of the following is often used to assist with the prevention of XSS and SQL injection attacks?",
+      "answer": ["Secure session management", "Input validation", "SLOs", "Maintenance windows"],
+      "correct_answer": "Input validation"
+    },
+    {
+      "question": "Which of the following is designed specifically to support penetration testing and the reverse engineering of malware?",
+      "answer": ["Immunity debugger", "GDB", "SDLC", "Parameterized queries"],
+      "correct_answer": "Immunity debugger"
+    },
+    {
+      "question": "Jason gathers threat intelligence that notes that an adversary that his organization considers a threat likes to use USB key drops to compromise their targets. What is this an example of?",
+      "answer": ["His organization's attack surface", "A possible attack vector", "An example of adversary capability", "A probability assessment"],
+      "correct_answer": "A possible attack vector"
+    },
+    {
+      "question": "What type of assessment is particularly useful for identifying insider threats?",
+      "answer": ["Behavioral", "Instinctual", "Habitual", "IOCs"],
+      "correct_answer": "Behavioral"
+    },
+    {
+      "question": "STRIDE, PASTA, and LIDDUN are all examples of what?",
+      "answer": ["Zero-day rating systems", "Vulnerability assessment tools", "Adversary analysis tools", "Threat classification tools"],
+      "correct_answer": "Threat classification tools"
+    },
+    {
+      "question": "What type of software testing tool executes the code as it is being tested?",
+      "answer": ["Static analysis", "Dynamic analysis", "Compilation", "Decompilation"],
+      "correct_answer": "Dynamic analysis"
+    },
+    {
+      "question": "Adam is conducting software testing by reviewing the source code of the application. What type of code testing is Adam conducting?",
+      "answer": ["Mutation testing", "Static code analysis", "Dynamic code analysis", "Fuzzing"],
+      "correct_answer": "Static code analysis"
+    },
+    {
+      "question": "During testing, Tiffany slowly increases the number of connections to an application until it fails. What is she doing?",
+      "answer": ["Regression testing", "Unit testing", "Stress testing", "Fagan testing"],
+      "correct_answer": "Stress testing"
+    }
+  ]
+},
+    {
+  "quizz_title": "Chapter 9: Building an Incident Response Program",
+  "questions": [
+    {
+      "question": "Which one of the following is an example of a computer security incident?",
+      "answer": ["User accesses a secure file", "Administrator changes a file's permission settings", "Intruder breaks into a building", "Former employee crashes a server"],
+      "correct_answer": "Former employee crashes a server"
+    },
+    {
+      "question": "During what phase of the incident response process would an organization implement defenses designed to reduce the likelihood of a security incident?",
+      "answer": ["Preparation", "Detection and analysis", "Containment, eradication, and recovery", "Post-incident activity"],
+      "correct_answer": "Preparation"
+    },
+    {
+      "question": "Alan is responsible for developing his organization's detection and analysis capabilities. He would like to purchase a system that can combine log records from multiple sources to detect potential security incidents. What type of system is best suited to meet Alan's security objective?",
+      "answer": ["IPS", "IDS", "SIEM", "Firewall"],
+      "correct_answer": "SIEM"
+    },
+    {
+      "question": "Ben is working to classify the functional impact of an incident. The incident has disabled email service for approximately 30 percent of his organization's staff. How should Ben classify the functional impact of this incident according to the NIST scale?",
+      "answer": ["None", "Low", "Medium", "High"],
+      "correct_answer": "Low"
+    },
+    {
+      "question": "What phase of the incident response process would include measures designed to limit the damage caused by an ongoing breach?",
+      "answer": ["Preparation", "Detection and analysis", "Containment, eradication, and recovery", "Post-incident activity"],
+      "correct_answer": "Containment, eradication, and recovery"
+    },
+    {
+      "question": "What common criticism is leveled at the Cyber Kill Chain?",
+      "answer": ["Not all threats are aimed at a kill.", "It is too detailed.", "It includes actions outside the defended network.", "It focuses too much on insider threats."],
+      "correct_answer": "It includes actions outside the defended network."
+    },
+    {
+      "question": "Karen is responding to a security incident that resulted from an intruder stealing files from a government agency. Those files contained unencrypted information about protected critical infrastructure. How should Karen rate the information impact of this loss?",
+      "answer": ["None", "Privacy breach", "Proprietary breach", "Integrity loss"],
+      "correct_answer": "Proprietary breach"
+    },
+    {
+      "question": "Matt is concerned about the fact that log records from his organization contain conflicting timestamps due to unsynchronized clocks. What protocol can he use to synchronize clocks throughout the enterprise?",
+      "answer": ["NTP", "FTP", "ARP", "SSH"],
+      "correct_answer": "NTP"
+    },
+    {
+      "question": "Which one of the following document types would outline the authority of a CSIRT responding to a security incident?",
+      "answer": ["Policy", "Procedure", "Playbook", "Baseline"],
+      "correct_answer": "Policy"
+    },
+    {
+      "question": "A cross-site scripting attack is an example of what type of threat vector?",
+      "answer": ["Impersonation", "Email", "Attrition", "Web"],
+      "correct_answer": "Web"
+    },
+    {
+      "question": "What phase of the Cyber Kill Chain includes creation of persistent backdoor access for attackers?",
+      "answer": ["Delivery", "Exploitation", "Installation", "C2"],
+      "correct_answer": "Installation"
+    },
+    {
+      "question": "Robert is finishing a draft of a proposed incident response policy for his organization. Who would be the most appropriate person to sign the policy?",
+      "answer": ["CEO", "Director of security", "CIO", "CSIRT leader"],
+      "correct_answer": "CIO"
+    },
+    {
+      "question": "Which one of the following is not an objective of the containment, eradication, and recovery phase of incident response?",
+      "answer": ["Detect an incident in progress.", "Implement a containment strategy.", "Identify the attackers.", "Eradicate the effects of the incident."],
+      "correct_answer": "Detect an incident in progress."
+    },
+    {
+      "question": "Renee is responding to a security incident that resulted in the unavailability of a website critical to her company's operations. She is unsure of the amount of time and effort that it will take to recover the website. How should Renee classify the recoverability effort?",
+      "answer": ["Regular", "Supplemented", "Extended", "Not recoverable"],
+      "correct_answer": "Extended"
+    },
+    {
+      "question": "Which one of the following is an example of an attrition attack?",
+      "answer": ["SQL injection", "Theft of a laptop", "User installs file sharing software", "Brute-force password attack"],
+      "correct_answer": "Brute-force password attack"
+    },
+    {
+      "question": "Who is the best facilitator for a post-incident lessons learned session?",
+      "answer": ["CEO", "CSIRT leader", "Independent facilitator", "First responder"],
+      "correct_answer": "Independent facilitator"
+    },
+    {
+      "question": "Which one of the following elements is not normally found in an incident response policy?",
+      "answer": ["Performance measures for the CSIRT", "Definition of cybersecurity incidents", "Definition of roles, responsibilities, and levels of authority", "Procedures for rebuilding systems"],
+      "correct_answer": "Procedures for rebuilding systems"
+    },
+    {
+      "question": "An on-path attack is an example of what type of threat vector?",
+      "answer": ["Attrition", "Impersonation", "Web", "Email"],
+      "correct_answer": "Impersonation"
+    },
+    {
+      "question": "Tommy is the CSIRT team leader for his organization and is responding to a newly discovered security incident. What document is most likely to contain step-by-step instructions that he might follow in the early hours of the response effort?",
+      "answer": ["Policy", "Baseline", "Playbook", "Textbook"],
+      "correct_answer": "Playbook"
+    },
+    {
+      "question": "Hank is responding to a security event where the CEO of his company had her laptop stolen. The laptop was encrypted but contained sensitive information about the company's employees. How should Hank classify the information impact of this security event?",
+      "answer": ["None", "Privacy breach", "Proprietary breach", "Integrity loss"],
+      "correct_answer": "Privacy breach"
+    }
+  ]
+},
+    {
+  "quizz_title": "Chapter 10: Incident Detection and Analysis",
+  "questions": [
+    {
+      "question": "Susan needs to track evidence that has been obtained throughout its life cycle. What documentation does she need to create and maintain if she expects the evidence to be used in a legal case?",
+      "answer": ["Forensic hashes", "Legal hold", "Chain of custody", "IoC ratings"],
+      "correct_answer": "Chain of custody"
+    },
+    {
+      "question": "Hui wants to comply with a legal hold but knows that her organization has a regular process that purges logs after 45 days due to space limitations. What should she do if the logs are covered by the legal hold?",
+      "answer": ["Notify counsel that the logs will be deleted automatically in 45 days.", "Delete the logs now to allow longer before space is filled up.", "Identify a preservation method to comply with the hold.", "Make no changes; holds allow ongoing processes to continue as normal."],
+      "correct_answer": "Identify a preservation method to comply with the hold."
+    },
+    {
+      "question": "Juan wants to validate the integrity of a drive that he has forensically imaged as part of an incident response process. Which of the options should he select?",
+      "answer": ["Compare a hash of the original drive to the drive image.", "Compare the file size on disk of the original drive to the space taken up by the drive image.", "Compare the vendor's drive size listing to the space taken up by the drive image.", "Use PGP to encrypt the drive and image and make sure that both encrypted versions match."],
+      "correct_answer": "Compare a hash of the original drive to the drive image."
+    },
+    {
+      "question": "Kathleen wants to determine if the traffic she is seeing is unusual for her network. Which of the following options would be most useful to determine if traffic levels are not typical for this time of day in a normal week?",
+      "answer": ["Heuristics", "Baselines", "Protocol analysis", "Network flow logs"],
+      "correct_answer": "Baselines"
+    },
+    {
+      "question": "Renee wants to adopt an open IoC feed. What issue is Renee most likely to need to address when adopting it?",
+      "answer": ["The cost of the IoC feed", "The quality of the feed", "The update frequency of the feed", "The level of detail in the feed"],
+      "correct_answer": "The quality of the feed"
+    },
+    {
+      "question": "Chris wants to use an active monitoring approach to test his network. Which of the following techniques is appropriate?",
+      "answer": ["Collecting NetFlow data", "Using a protocol analyzer", "Pinging remote systems", "Enabling SNMP"],
+      "correct_answer": "Pinging remote systems"
+    },
+    {
+      "question": "Which of the following is not information commonly found in an IoC?",
+      "answer": ["IP addresses", "Domain names", "System images", "Behavior-based information"],
+      "correct_answer": "System images"
+    },
+    {
+      "question": "Cameron wants to be able to detect a denial-of-service attack against his web server. Which of the following tools should he avoid?",
+      "answer": ["Log analysis", "Flow monitoring", "iPerf", "IPS"],
+      "correct_answer": "iPerf"
+    },
+    {
+      "question": "Sameer finds log information that indicates that a process that he believes is malicious starts at the same time every day on a Linux system. Where should he start looking for an issue like this?",
+      "answer": ["He should review the system log.", "He should check the Task Scheduler.", "He should check cron jobs.", "He should check user directories."],
+      "correct_answer": "He should check cron jobs."
+    },
+    {
+      "question": "Jim uses an IoC feed to help detect new attacks against his organization. What should he do first if his security monitoring system flags a match for an IoC?",
+      "answer": ["Shut down the system that caused the alert", "Review the alert to determine why it occurred", "Check network logs to identify the remote attacker", "Run a port scan to determine if the system is compromised"],
+      "correct_answer": "Review the alert to determine why it occurred"
+    },
+    {
+      "question": "While monitoring network traffic to his web server cluster, Mark notices a significant increase in traffic. He checks the source addresses for inbound traffic and finds that the traffic is coming from many different systems all over the world. What should Mark identify this as if he believes that it may be an attack?",
+      "answer": ["A denial-of-service attack", "A distributed network scan", "A DNS-based attack", "A distributed denial-of-service attack"],
+      "correct_answer": "A distributed denial-of-service attack"
+    },
+    {
+      "question": "Valentine wants to check for unauthorized access to a system. What two log types are most likely to contain this information?",
+      "answer": ["Authentication logs and user creation logs", "System logs and application logs", "Authentication logs and application logs", "System logs and authentication logs"],
+      "correct_answer": "Authentication logs and user creation logs"
+    },
+    {
+      "question": "Sayed notices that a remote system has attempted to log into a system he is responsible for multiple times using the same administrator's user ID but different passwords. What has Sayed most likely discovered?",
+      "answer": ["A user who forgot their password", "A broken application", "A brute-force attack", "A misconfigured service"],
+      "correct_answer": "A brute-force attack"
+    },
+    {
+      "question": "While Susan is monitoring a router via network flows, she sees a sudden drop in network traffic levels to zero, and the traffic chart shows a flat line. What has likely happened?",
+      "answer": ["The sampling rate is set incorrectly.", "The router is using SNMP.", "The monitored link failed.", "A DDoS attack is occurring."],
+      "correct_answer": "The monitored link failed."
+    },
+    {
+      "question": "Leo wants to monitor his application for common issues. Which of the following is not a typical method of monitoring for application issues?",
+      "answer": ["Up/down logging", "System logging", "Performance logging", "Transactional logging"],
+      "correct_answer": "Transactional logging"
+    },
+    {
+      "question": "Greg notices that a user account on a Linux server he is responsible for has connected to 10 machines via SSH within seconds. What type of IoC best matches this type of behavior?",
+      "answer": ["Bot-like behavior", "Port scanning", "Denial of service", "Escalation of privileges"],
+      "correct_answer": "Bot-like behavior"
+    },
+    {
+      "question": "Arun wants to monitor for unusual database usage. Which of the following is most likely to be indicative of a malicious actor?",
+      "answer": ["Increases in cached hits to the database", "Decreases in network traffic to the database", "Increases in disk reads for the database", "Decreases in database size"],
+      "correct_answer": "Increases in disk reads for the database"
+    },
+    {
+      "question": "Valerie is concerned that an attacker may have gained access to a system in her datacenter. Which of the following behaviors is not a common network-based IoC that she should monitor for?",
+      "answer": ["Traffic to unexpected destinations", "Unusual volumes of outbound traffic", "Increases in system memory consumption", "Outbound traffic at unusual times"],
+      "correct_answer": "Increases in system memory consumption"
+    },
+    {
+      "question": "Alex has noticed that the primary disk for his Windows server is quickly filling up. What should he do to determine what is filling up the drive?",
+      "answer": ["Check the filesystem logs.", "Check the security logs.", "Search for large files and directories.", "Search for file changes."],
+      "correct_answer": "Search for large files and directories."
+    },
+    {
+      "question": "Joseph wants to be notified if user behaviors vary from normal on systems he maintains. He uses a tool to capture and analyze a week of user behavior and uses that to determine if unusual behavior occurs. What is this practice called?",
+      "answer": ["Pattern matching", "Baselining", "Fingerprinting", "User modeling"],
+      "correct_answer": "Baselining"
+    }
+  ]
+},
+    {
+  "quizz_title": "Chapter 11: Containment, Eradication, and Recovery",
+  "questions": [
+    {
+      "question": "Which one of the phases of incident response involves primarily active undertakings designed to limit the damage that an attacker might cause?",
+      "answer": ["Containment, Eradication, and Recovery", "Preparation", "Post-Incident Activity", "Detection and Analysis"],
+      "correct_answer": "Containment, Eradication, and Recovery"
+    },
+    {
+      "question": "Which one of the following criteria is not normally used when evaluating the appropriateness of a cybersecurity incident containment strategy?",
+      "answer": ["Effectiveness of the strategy", "Evidence preservation requirements", "Log records generated by the strategy", "Cost of the strategy"],
+      "correct_answer": "Log records generated by the strategy"
+    },
+    {
+      "question": "Alice is responding to a cybersecurity incident and notices a system that she suspects is compromised. She places this system on a quarantine VLAN with limited access to other networked systems. What containment strategy is Alice pursuing?",
+      "answer": ["Eradication", "Isolation", "Segmentation", "Removal"],
+      "correct_answer": "Isolation"
+    },
+    {
+      "question": "Alice confers with other team members and decides that even allowing limited access to other systems is an unacceptable risk and chooses instead to prevent the quarantine VLAN from accessing any other systems by putting firewall rules in place that limit access to other enterprise systems. The attacker can still control the system to allow Alice to continue monitoring the incident. What strategy is she now pursuing?",
+      "answer": ["Eradication", "Isolation", "Segmentation", "Removal"],
+      "correct_answer": "Segmentation"
+    },
+    {
+      "question": "After observing the attacker, Alice decides to remove the Internet connection entirely, leaving the systems running but inaccessible from outside the quarantine VLAN. What strategy is she now pursuing?",
+      "answer": ["Eradication", "Isolation", "Segmentation", "Removal"],
+      "correct_answer": "Removal"
+    },
+    {
+      "question": "Which one of the following tools may be used to isolate an attacker so that they may not cause damage to production systems but may still be observed by cybersecurity analysts?",
+      "answer": ["Sandbox", "Playpen", "IDS", "DLP"],
+      "correct_answer": "Sandbox"
+    },
+    {
+      "question": "Tamara is a cybersecurity analyst for a private business that is suffering a security breach. She believes the attackers have compromised a database containing sensitive information. Which one of the following activities should be Tamara's first priority?",
+      "answer": ["Identifying the source of the attack", "Eradication", "Containment", "Recovery"],
+      "correct_answer": "Containment"
+    },
+    {
+      "question": "What should be clearly identified during a lessons learned review in order to reduce the likelihood of a similar incident escaping attention in the future?",
+      "answer": ["IOCs", "Scope", "Impact", "Reimaging"],
+      "correct_answer": "IOCs"
+    },
+    {
+      "question": "Which one of the following pieces of information is most critical to conducting a solid incident recovery effort?",
+      "answer": ["Identity of the attacker", "Time of the attack", "Root cause of the attack", "Attacks on other organizations"],
+      "correct_answer": "Root cause of the attack"
+    },
+    {
+      "question": "Lynda is disposing of a drive containing sensitive information that was collected during the response to a cybersecurity incident. The information is categorized as a high security risk and she wishes to reuse the media during a future incident. What is the appropriate disposition for this information?",
+      "answer": ["Clear", "Erase", "Purge", "Destroy"],
+      "correct_answer": "Purge"
+    },
+    {
+      "question": "Which one of the following activities is not normally conducted during the recovery validation phase?",
+      "answer": ["Verify the permissions assigned to each account.", "Implement new firewall rules.", "Conduct vulnerability scans.", "Verify logging is functioning properly."],
+      "correct_answer": "Implement new firewall rules."
+    },
+    {
+      "question": "What incident response activity focuses on removing any artifacts of the incident that may remain on the organization's network?",
+      "answer": ["Containment", "Recovery", "Post-Incident Activities", "Eradication"],
+      "correct_answer": "Eradication"
+    },
+    {
+      "question": "Which one of the following is not a common use of formal incident reports?",
+      "answer": ["Training new team members", "Sharing with other organizations", "Developing new security controls", "Assisting with legal action"],
+      "correct_answer": "Developing new security controls"
+    },
+    {
+      "question": "Which one of the following data elements would not normally be included in an evidence log?",
+      "answer": ["Serial number", "Record of handling", "Storage location", "Malware signatures"],
+      "correct_answer": "Malware signatures"
+    },
+    {
+      "question": "Sondra determines that an attacker has gained access to a server containing critical business files and wishes to ensure that the attacker cannot delete those files. Which one of the following strategies would meet Sondra's goal?",
+      "answer": ["Isolation", "Segmentation", "Removal", "None of the above"],
+      "correct_answer": "None of the above"
+    },
+    {
+      "question": "Joe would like to determine the appropriate disposition of a flash drive used to gather highly sensitive evidence during an incident response effort. He does not need to reuse the drive but wants to return it to its owner, an outside contractor. What is the appropriate disposition?",
+      "answer": ["Destroy", "Clear", "Erase", "Purge"],
+      "correct_answer": "Clear"
+    },
+    {
+      "question": "Which one of the following is not typically found in a cybersecurity incident report?",
+      "answer": ["Chronology of events", "Identity of the attacker", "Estimates of impact", "Documentation of lessons learned"],
+      "correct_answer": "Identity of the attacker"
+    },
+    {
+      "question": "What NIST publication contains guidance on cybersecurity incident handling?",
+      "answer": ["SP 800-53", "SP 800-88", "SP 800-18", "SP 800-61"],
+      "correct_answer": "SP 800-61"
+    },
+    {
+      "question": "Which one of the following is not a purging activity?",
+      "answer": ["Resetting to factory state", "Overwriting", "Block erase", "Cryptographic erase"],
+      "correct_answer": "Resetting to factory state"
+    },
+    {
+      "question": "Ben is responding to a security incident and determines that the attacker is using systems on Ben's network to attack a third party. Which one of the following containment approaches will prevent Ben's systems from being used in this manner?",
+      "answer": ["Removal", "Isolation", "Detection", "Segmentation"],
+      "correct_answer": "Removal"
+    }
+  ]
+},
+{
+  "quizz_title": "Chapter 12: Reporting and Communication",
+  "questions": [
+    {
+      "question": "Why should organizations predetermine communication guidelines according to NIST?",
+      "answer": [
+        "To limit how many individuals know sensitive incident information",
+        "To ensure compliance with federal law",
+        "To ensure that appropriate communications are shared with the right parties",
+        "To ensure consistency of communications"
+      ],
+      "correct_answer": "To ensure that appropriate communications are shared with the right parties"
+    },
+    {
+      "question": "Valentine is preparing a vulnerability management report. What data point will provide the greatest help in determining if patching programs are not succeeding?",
+      "answer": [
+        "A list of affected hosts",
+        "Information about recurrence",
+        "Prioritization information",
+        "Risk scores"
+      ],
+      "correct_answer": "Information about recurrence"
+    },
+    {
+      "question": "Jake wants to identify stakeholders for vulnerability management communications. Which stakeholder group is most likely to want information to be available via an API instead of a written communication?",
+      "answer": [
+        "Security operations and oversight stakeholders",
+        "Audit and compliance stakeholders",
+        "System administration stakeholders",
+        "Management stakeholders"
+      ],
+      "correct_answer": "System administration stakeholders"
+    },
+    {
+      "question": "What phase of the NIST IR cycle does communication to stakeholders occur in?",
+      "answer": [
+        "Detection and Analysis",
+        "Containment, Eradication, and Recovery",
+        "Post-Incident Activity",
+        "All cycles include communication with stakeholders."
+      ],
+      "correct_answer": "All cycles include communication with stakeholders."
+    },
+    {
+      "question": "Which of the following potential incident response metrics is least useful in understanding the organization's ability to respond to incidents?",
+      "answer": [
+        "Mean time to detect",
+        "Alert volume",
+        "Mean time to respond",
+        "Mean time to remediate"
+      ],
+      "correct_answer": "Alert volume"
+    },
+    {
+      "question": "Why might a service level agreement cause an organization to delay patching?",
+      "answer": [
+        "To force vendor compliance",
+        "To remain compliance with licensing",
+        "To achieve organizational governance targets",
+        "To meet performance targets defined by the SLA"
+      ],
+      "correct_answer": "To meet performance targets defined by the SLA"
+    },
+    {
+      "question": "Ian wants to ensure that patches are installed as part of a baseline for his organization. What type of tool should he invest in as part of his overall action plan for remediation?",
+      "answer": [
+        "A vulnerability scanner",
+        "A configuration management tool or system",
+        "A baseline configuration scanner",
+        "An endpoint detection and response (EDR) tool"
+      ],
+      "correct_answer": "A configuration management tool or system"
+    },
+    {
+      "question": "Sally is preparing an incident response report. What part of the report is intended to help organizations understand the outcome of the incident and financial, reputational, or other damages?",
+      "answer": [
+        "The impact assessment",
+        "The timeline",
+        "The scope",
+        "The recommendations"
+      ],
+      "correct_answer": "The impact assessment"
+    },
+    {
+      "question": "Jaime is concerned that her organization may face multiple inhibitors to remediation. Which of the following inhibitors to remediation is most often associated with performance or uptime targets?",
+      "answer": [
+        "Organizational governance",
+        "Legacy systems",
+        "Memorandums of understanding",
+        "Proprietary systems"
+      ],
+      "correct_answer": "Organizational governance"
+    },
+    {
+      "question": "Selah wants to include sections of relevant logs in her incident report. What report section most frequently includes logs?",
+      "answer": [
+        "In the timeline",
+        "As part of the executive summary",
+        "As evidence in the appendix",
+        "As part of the recommendations"
+      ],
+      "correct_answer": "As evidence in the appendix"
+    },
+    {
+      "question": "Danielle has completed her incident report and wants to ensure that her organization benefits from the process. What exercise is most frequently conducted after the report to improve future IR processes?",
+      "answer": [
+        "Media training",
+        "Government compliance reporting",
+        "A lessons learned exercise",
+        "A mandatory report to auditors"
+      ],
+      "correct_answer": "A lessons learned exercise"
+    },
+    {
+      "question": "What phase of the IR cycle does media training typically occur in?",
+      "answer": [
+        "Preparation",
+        "Detection and Analysis",
+        "Containment, Eradication, and Recovery",
+        "Post-Incident Activity"
+      ],
+      "correct_answer": "Preparation"
+    },
+    {
+      "question": "Michelle is performing root cause analysis. Which of the following is not one of the four common steps in an RCA exercise?",
+      "answer": [
+        "Documenting the root cause analysis using a chart or diagram",
+        "Establishing a timeline of events",
+        "Determining which individual or team was responsible for the problem",
+        "Identifying the problems and events that occurred during the event and describing them as completely as possible"
+      ],
+      "correct_answer": "Determining which individual or team was responsible for the problem"
+    },
+    {
+      "question": "The organization that Charles works for has experienced a significant incident. Which of the following is most likely to require the organization to report the incident in a specific timeframe?",
+      "answer": [
+        "Organizational policy",
+        "Internal governance",
+        "Regulatory compliance",
+        "Media requirements"
+      ],
+      "correct_answer": "Regulatory compliance"
+    },
+    {
+      "question": "After testing, Jim's team has determined that installing a patch will result in degraded functionality due to a service being modified. What should Jim suggest to address this inhibitor to remediation?",
+      "answer": [
+        "Take the change through organizational governance.",
+        "Identify a compensating control.",
+        "Replace the legacy system.",
+        "Update the service level agreement."
+      ],
+      "correct_answer": "Identify a compensating control."
+    },
+    {
+      "question": "Which of the following is not a NIST-recommended practice to help with media communication procedures?",
+      "answer": [
+        "Avoiding media contact throughout IR processes",
+        "Establishing procedures for briefing the media",
+        "Maintaining an IR status document or statement",
+        "Media training"
+      ],
+      "correct_answer": "Avoiding media contact throughout IR processes"
+    },
+    {
+      "question": "An incident report is typically prepared in what phase of the NIST incident response cycle?",
+      "answer": [
+        "Detection and Analysis",
+        "Post-Incident Activity",
+        "Preparation",
+        "Containment, Eradication, and Recovery"
+      ],
+      "correct_answer": "Post-Incident Activity"
+    },
+    {
+      "question": "The security team that Chris works on has been notified of a zero-day vulnerability in Windows Server that was released earlier in the morning. Chris's manager asks Chris to immediately check recent vulnerability reports to determine if the organization is impacted. What should Chris tell his manager?",
+      "answer": [
+        "That the reports will need to be rerun to list the zero-day vulnerability.",
+        "He needs to update the vulnerability scanner to detect the zero-day vulnerability.",
+        "Zero-day vulnerabilities won't show in previously run vulnerability management reports.",
+        "That zero-day vulnerabilities cannot be detected."
+      ],
+      "correct_answer": "Zero-day vulnerabilities won't show in previously run vulnerability management reports."
+    },
+    {
+      "question": "Mikayla's organization has identified an ongoing problem based on their vulnerability management dashboard reports. Trends indicate that patching is not occurring in a timely manner, and that patches are not being installed for some of the most critical vulnerabilities. What should Mikayla do if she believes that system administrators are not prioritizing patching?",
+      "answer": [
+        "Engage in awareness, education, and training activities.",
+        "Assess changing business requirements.",
+        "Deploy compensating controls.",
+        "Engage management to punish administrators who are not patching."
+      ],
+      "correct_answer": "Engage in awareness, education, and training activities."
+    },
+    {
+      "question": "Geeta's organization operates a critical system provided by a vendor that specifies that the operating system cannot be patched. What type of solution should Geeta recommend when her vulnerability reporting shows the system is behind on patching and has critical vulnerabilities?",
+      "answer": [
+        "Mark the vulnerabilities as unable to be remediated and continue operations to ensure business continuity.",
+        "Shut off the system until a solution can be identified.",
+        "Install the operating system patch and test if it causes issues.",
+        "Identify and deploy a compensating control."
+      ],
+      "correct_answer": "Identify and deploy a compensating control."
+    }
+  ]
+},
+    {
+  "quizz_title": "Chapter 13: Performing Forensic Analysis and Techniques for Incident Response",
+  "questions": [
+    {
+      "question": "Which format does dd produce files in while disk imaging?",
+      "answer": ["ddf", "RAW", "EN01", "OVF"],
+      "correct_answer": "RAW"
+    },
+    {
+      "question": "Gurvinder has completed his root cause analysis and wants to use it to avoid future problems. What should he document next?",
+      "answer": ["Lessons learned", "The system architecture diagram", "An updated forensic process", "Current legal holds"],
+      "correct_answer": "Lessons learned"
+    },
+    {
+      "question": "Mike is conducting a root cause analysis. Which of the following is not a typical phase in the root cause analysis process?",
+      "answer": ["Identifying contributing factors", "Identifying solutions to the root cause", "Performing a risk analysis", "Implementing controls or fixes to address the root cause"],
+      "correct_answer": "Performing a risk analysis"
+    },
+    {
+      "question": "Alice wants to copy a drive without any chance of it being modified by the copying process. What type of device should she use to ensure that this does not happen during her data acquisition process?",
+      "answer": ["A read blocker", "A drive cloner", "A write blocker", "A hash validator"],
+      "correct_answer": "A write blocker"
+    },
+    {
+      "question": "Frederick's organization has been informed that data must be preserved due to pending legal action. What is this type of requirement called?",
+      "answer": ["A retainer", "A legal hold", "A data freeze", "An extra-legal hold"],
+      "correct_answer": "A legal hold"
+    },
+    {
+      "question": "What process is often performed as part of incident response forensic analysis?",
+      "answer": ["Blame assignment", "Root cause analysis", "Reverse hashing", "Legal holds"],
+      "correct_answer": "Root cause analysis"
+    },
+    {
+      "question": "Jeff is investigating a system compromise and knows that the first event was reported on October 5. What forensic tool capability should he use to map other events found in logs and files to this date?",
+      "answer": ["A timeline", "A log viewer", "Registry analysis", "Timestamp validator"],
+      "correct_answer": "A timeline"
+    },
+    {
+      "question": "During her forensic copy validation process, Danielle hashed the original, cloned the image files, and received the following MD5 sums. What is likely wrong?\nb49794e007e909c00a51ae208cacb169  original.img\nd9ff8a0cf6bc0ab066b6416e7e7abf35  clone.img",
+      "answer": ["The original was modified.", "The clone was modified.", "dd failed.", "An unknown change or problem occurred."],
+      "correct_answer": "An unknown change or problem occurred."
+    },
+    {
+      "question": "Jennifer wants to perform memory analysis and forensics for Windows, macOS, and Linux systems. Which of the following is best suited to her needs?",
+      "answer": ["LiME", "DumpIt", "fmem", "The Volatility Framework"],
+      "correct_answer": "The Volatility Framework"
+    },
+    {
+      "question": "As part of her review of a forensic process, Lisa is reviewing a log that lists each time a person handled a forensic image. She notices that an entry lists forensic analysis actions but does not have a name logged. What concept does this violate?",
+      "answer": ["Image integrity", "Forensic authenticity", "Preservation", "Chain of custody"],
+      "correct_answer": "Chain of custody"
+    },
+    {
+      "question": "Why is validating data integrity critical to forensic processes?",
+      "answer": ["It ensures the system has not been compromised.", "It ensures the system has not been altered by the forensic examiner.", "It ensures the operating system version matches the expected version.", "It is required by the legal hold process."],
+      "correct_answer": "It ensures the system has not been altered by the forensic examiner."
+    },
+    {
+      "question": "Carl does not have the ability to capture data from a cell phone using mobile forensic or imaging software, and the phone does not have removable storage. Fortunately, the phone was not set up with a PIN or screen lock. What is his best option to ensure he can see email and other data stored there?",
+      "answer": ["Physical acquisition", "Logical access", "Filesystem access", "Manual access"],
+      "correct_answer": "Manual access"
+    },
+    {
+      "question": "What forensic issue might the presence of a program like CCleaner indicate?",
+      "answer": ["Antiforensic activities", "Full disk encryption", "Malware packing", "MAC time modifications"],
+      "correct_answer": "Antiforensic activities"
+    },
+    {
+      "question": "Which of the following is not a potential issue with live imaging of a system?",
+      "answer": ["Remnant data from the imaging tool will remain.", "Unallocated space will be captured.", "Memory or drive contents may change during the imaging process.", "Malware may detect the imaging tool and work to avoid it."],
+      "correct_answer": "Unallocated space will be captured."
+    },
+    {
+      "question": "During his investigation, Jeff, a certified forensic examiner, is provided with a drive image created by an IT staff member and is asked to add it to his forensic case. What is the most important issue that Jeff could encounter if the case goes to court and his procedures are questioned?",
+      "answer": ["Bad checksums", "Hash mismatch", "Antiforensic activities", "Inability to certify chain of custody"],
+      "correct_answer": "Inability to certify chain of custody"
+    },
+    {
+      "question": "Jeff is investigating a system that is running malware that he believes encrypts its data on the drive. What process should he use to have the best chance of viewing that data in an unencrypted form?",
+      "answer": ["Live imaging", "Offline imaging", "Brute-force encryption cracking", "Causing a system crash and analyzing the memory dump"],
+      "correct_answer": "Offline imaging"
+    },
+    {
+      "question": "Susan needs to capture network traffic from a Linux server that does not use a GUI. What packet capture utility is found on many Linux systems and works from the command line?",
+      "answer": ["tcpdump", "netdd", "Wireshark", "Snifman"],
+      "correct_answer": "tcpdump"
+    },
+    {
+      "question": "During a forensic investigation, Ben asks Chris to sit with him and to sign off on the actions he has taken. What is he doing?",
+      "answer": ["Maintaining chain of custody", "Over-the-shoulder validation", "Pair forensics", "Separation of duties"],
+      "correct_answer": "Over-the-shoulder validation"
+    },
+    {
+      "question": "Which tool is not commonly used to generate the hash of a forensic copy?",
+      "answer": ["MD5", "FTK", "SHA1", "AES"],
+      "correct_answer": "AES"
+    },
+    {
+      "question": "Which of the following issues makes both cloud and virtualized environments more difficult to perform forensics on?",
+      "answer": ["Other organizations manage them.", "Systems may be ephemeral.", "No forensic tools work in both environments.", "Drive images cannot be verified."],
+      "correct_answer": "Systems may be ephemeral."
+    }
+  ]
 }
+
+
+
+
+
+
+
 
 
 
