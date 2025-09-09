@@ -121,7 +121,7 @@
         "The expiration date",
         "The primary account number"
       ],
-      "correct_answer": "The cardholder's name"
+      "correct_answer": "The CVV code"
     },
     {
       "question": "Sally wants to find configuration files for a Windows system. Which of the following is not a common configuration file location?",
