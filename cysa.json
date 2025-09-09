@@ -247,7 +247,7 @@
         "Port security",
         "NTP"
       ],
-      "correct_answer": "Port security"
+      "correct_answer": "NAC"
     },
     {
       "question": "As part of her job, Danielle sets an alarm to notify her team via email if her Windows server uses 80 percent of its memory and to send a text message if it reaches 90 percent utilization. What is this setting called?",
@@ -327,7 +327,7 @@
         "A phishing link",
         "A decoy link"
       ],
-      "correct_answer": "A phishing link"
+      "correct_answer": "An obfuscated link"
     },
     {
       "question": "Angela wants to review the syslog on a Linux system. What directory should she check to find it on most Linux distributions?",
@@ -397,7 +397,7 @@
         "DKIM",
         "POP3"
       ],
-      "correct_answer": "SPF"
+      "correct_answer": "DMAC"
     },
     {
       "question": "Juan wants to see a list of processes along with their CPU utilization in an interactive format. What built-in Linux tool should he use?",
@@ -542,7 +542,7 @@
         "Isolated networks",
         "Business-critical assets"
       ],
-      "correct_answer": "Isolated networks"
+      "correct_answer": "Policies"
     },
     {
       "question": "What term describes an analysis of threat information that might include details such as whether it is confirmed by multiple independent sources or has been directly confirmed?",
@@ -1257,7 +1257,7 @@
     {
       "question": "Ben is working to classify the functional impact of an incident. The incident has disabled email service for approximately 30 percent of his organization's staff. How should Ben classify the functional impact of this incident according to the NIST scale?",
       "answer": ["None", "Low", "Medium", "High"],
-      "correct_answer": "Low"
+      "correct_answer": "Medium"
     },
     {
       "question": "What phase of the incident response process would include measures designed to limit the damage caused by an ongoing breach?",
@@ -1297,7 +1297,7 @@
     {
       "question": "Robert is finishing a draft of a proposed incident response policy for his organization. Who would be the most appropriate person to sign the policy?",
       "answer": ["CEO", "Director of security", "CIO", "CSIRT leader"],
-      "correct_answer": "CIO"
+      "correct_answer": "CEO"
     },
     {
       "question": "Which one of the following is not an objective of the containment, eradication, and recovery phase of incident response?",
@@ -1337,7 +1337,7 @@
     {
       "question": "Hank is responding to a security event where the CEO of his company had her laptop stolen. The laptop was encrypted but contained sensitive information about the company's employees. How should Hank classify the information impact of this security event?",
       "answer": ["None", "Privacy breach", "Proprietary breach", "Integrity loss"],
-      "correct_answer": "Privacy breach"
+      "correct_answer": "None"
     }
   ]
 },
@@ -1468,12 +1468,12 @@
     {
       "question": "Alice is responding to a cybersecurity incident and notices a system that she suspects is compromised. She places this system on a quarantine VLAN with limited access to other networked systems. What containment strategy is Alice pursuing?",
       "answer": ["Eradication", "Isolation", "Segmentation", "Removal"],
-      "correct_answer": "Isolation"
+      "correct_answer": "Segmentation"
     },
     {
       "question": "Alice confers with other team members and decides that even allowing limited access to other systems is an unacceptable risk and chooses instead to prevent the quarantine VLAN from accessing any other systems by putting firewall rules in place that limit access to other enterprise systems. The attacker can still control the system to allow Alice to continue monitoring the incident. What strategy is she now pursuing?",
       "answer": ["Eradication", "Isolation", "Segmentation", "Removal"],
-      "correct_answer": "Segmentation"
+      "correct_answer": "Isolation"
     },
     {
       "question": "After observing the attacker, Alice decides to remove the Internet connection entirely, leaving the systems running but inaccessible from outside the quarantine VLAN. What strategy is she now pursuing?",
@@ -1533,7 +1533,7 @@
     {
       "question": "Joe would like to determine the appropriate disposition of a flash drive used to gather highly sensitive evidence during an incident response effort. He does not need to reuse the drive but wants to return it to its owner, an outside contractor. What is the appropriate disposition?",
       "answer": ["Destroy", "Clear", "Erase", "Purge"],
-      "correct_answer": "Clear"
+      "correct_answer": "Destroy"
     },
     {
       "question": "Which one of the following is not typically found in a cybersecurity incident report?",
@@ -1588,7 +1588,7 @@
         "System administration stakeholders",
         "Management stakeholders"
       ],
-      "correct_answer": "System administration stakeholders"
+      "correct_answer": "Security operations and oversight stakeholders"
     },
     {
       "question": "What phase of the NIST IR cycle does communication to stakeholders occur in?",
@@ -1648,7 +1648,7 @@
         "Memorandums of understanding",
         "Proprietary systems"
       ],
-      "correct_answer": "Organizational governance"
+      "correct_answer": "Memorandums of understanding"
     },
     {
       "question": "Selah wants to include sections of relevant logs in her incident report. What report section most frequently includes logs?",
