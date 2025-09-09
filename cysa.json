@@ -1457,8 +1457,8 @@
   "questions": [
     {
       "question": "Which one of the phases of incident response involves primarily active undertakings designed to limit the damage that an attacker might cause?",
-      "answer": ["Containment, Eradication, and Recovery", "Preparation", "Post-Incident Activity", "Detection and Analysis"],
-      "correct_answer": "Containment, Eradication, and Recovery"
+      "answer": ["Containment + Eradication + and Recovery", "Preparation", "Post-Incident Activity", "Detection and Analysis"],
+      "correct_answer": "Containment + Eradication + and Recovery"
     },
     {
       "question": "Which one of the following criteria is not normally used when evaluating the appropriateness of a cybersecurity incident containment strategy?",
