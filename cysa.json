@@ -1002,7 +1002,7 @@
         "Arachni",
         "Burp Suite"
       ],
-      "correct_answer": "Nikto"
+      "correct_answer": "ZAP"
     },
     {
       "question": "Jessica is reading reports from vulnerability scans run by different part of her organization using different products. She is responsible for assigning remediation resources and is having difficulty prioritizing issues from different sources. What SCAP component can help Jessica with this task?",
