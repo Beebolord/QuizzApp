@@ -397,7 +397,7 @@
         "DKIM",
         "POP3"
       ],
-      "correct_answer": "DMAC"
+      "correct_answer": "DMARC"
     },
     {
       "question": "Juan wants to see a list of processes along with their CPU utilization in an interactive format. What built-in Linux tool should he use?",
