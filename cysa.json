@@ -227,7 +227,7 @@
         "Perfmon",
         "Winmon"
       ],
-      "correct_answer": "Resmon"
+      "correct_answer": "Perfmon"
     },
     {
       "question": "What type of network information should you capture to be able to provide a report about how much traffic systems in your network sent to remote systems?",
