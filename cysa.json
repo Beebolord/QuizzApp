@@ -1533,7 +1533,7 @@
     {
       "question": "Joe would like to determine the appropriate disposition of a flash drive used to gather highly sensitive evidence during an incident response effort. He does not need to reuse the drive but wants to return it to its owner, an outside contractor. What is the appropriate disposition?",
       "answer": ["Destroy", "Clear", "Erase", "Purge"],
-      "correct_answer": "Destroy"
+      "correct_answer": "Clear"
     },
     {
       "question": "Which one of the following is not typically found in a cybersecurity incident report?",
