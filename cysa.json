@@ -982,7 +982,7 @@
         "Reporting",
         "Testing"
       ],
-      "correct_answer": "Testing"
+      "correct_answer": "Reporting"
     },
     {
       "question": "What approach to vulnerability scanning incorporates information from agents running on the target servers?",
