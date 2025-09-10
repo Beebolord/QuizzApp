@@ -14,71 +14,89 @@
             border-color: #dc3545;
             background-color: #ffe6e6;
         }
+
+        .explanation {
+            margin-top: 20px;
+            padding: 10px;
+            border-left: 4px solid #007bff;
+            background-color: #f0f8ff;
+            display: none;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h2>Question {{ index + 1 }} of {{ total }}</h2>
-        <p class="score-text">Score: {{ score }} / {{ total }}</p>
+<div class="container">
+    <h2>Question {{ index + 1 }} of {{ total }}</h2>
+    <p class="score-text">Score: {{ score }} / {{ total }}</p>
 
-        <form method="POST">
-            {% set is_multiple = question.correct_answer is iterable and not question.correct_answer is string or (question.correct_answer is string and ',' in question.correct_answer) %}
+    <form method="POST">
+        {% set is_multiple = question.correct_answer is iterable and not question.correct_answer is string or (question.correct_answer is string and ',' in question.correct_answer) %}
 
-            <div class="question-text">{{ question.question }}</div>
-            <ul class="answers">
-                {% for option in question.answer %}
-                <li>
-                    <label>
-                        <input type="{{ 'checkbox' if is_multiple else 'radio' }}" name="option[]" value="{{ option }}">
-                        {{ option }}
-                    </label>
-                </li>
-                {% endfor %}
-            </ul>
+        <div class="question-text">{{ question.question }}</div>
+        <ul class="answers">
+            {% for option in question.answer %}
+            <li>
+                <label>
+                    <input type="{{ 'checkbox' if is_multiple else 'radio' }}" name="option[]" value="{{ option }}">
+                    {{ option }}
+                </label>
+            </li>
+            {% endfor %}
+        </ul>
 
-            <div class="button-row">
-                <button type="submit">Next</button>
-                <button type="button" onclick="showAnswer()">Show Answer</button>
-            </div>
-        </form>
-    </div>
+        <div class="button-row">
+            <button type="submit">Next</button>
+            <button type="button" onclick="showAnswer()">Show Answer</button>
+        </div>
 
-    <script>
-        const rawCorrect = {{ question.correct_answer | tojson }};
-        let correctAnswers = [];
+        <!-- Explanation element -->
+        <div class="explanation" id="explanation">
+            {{ question.explanation }}
+        </div>
+    </form>
+</div>
 
-        if (Array.isArray(rawCorrect)) {
-            correctAnswers = rawCorrect.map(String);
-        } else if (typeof rawCorrect === 'string') {
-            correctAnswers = rawCorrect.includes(',') ?
-                rawCorrect.split(',').map(s => s.trim()) :
-                [rawCorrect.trim()];
-        }
+<script>
+    const rawCorrect = {{ question.correct_answer | tojson }};
+    let correctAnswers = [];
 
-        function showAnswer() {
-            const inputs = document.querySelectorAll('input[type="checkbox"], input[type="radio"]');
-            inputs.forEach(input => {
-                const label = input.parentElement;
-                if (correctAnswers.includes(input.value)) {
-                    label.classList.add('highlight-correct');
-                    label.classList.remove('highlight-incorrect');
-                } else {
-                    label.classList.add('highlight-incorrect');
-                    label.classList.remove('highlight-correct');
-                }
-                // Do NOT disable the input so it can still be submitted
-            });
-        }
+    if (Array.isArray(rawCorrect)) {
+        correctAnswers = rawCorrect.map(String);
+    } else if (typeof rawCorrect === 'string') {
+        correctAnswers = rawCorrect.includes(',') ?
+            rawCorrect.split(',').map(s => s.trim()) :
+            [rawCorrect.trim()];
+    }
 
-        const form = document.querySelector("form");
-        form.addEventListener('submit', function (e) {
-            const inputs = form.querySelectorAll('input[type="checkbox"], input[type="radio"]');
-            const oneChecked = Array.from(inputs).some(input => input.checked);
-            if (!oneChecked) {
-                e.preventDefault();
-                alert("Please select at least one answer before continuing.");
+    function showAnswer() {
+        const inputs = document.querySelectorAll('input[type="checkbox"], input[type="radio"]');
+        inputs.forEach(input => {
+            const label = input.parentElement;
+            if (correctAnswers.includes(input.value)) {
+                label.classList.add('highlight-correct');
+                label.classList.remove('highlight-incorrect');
+            } else {
+                label.classList.add('highlight-incorrect');
+                label.classList.remove('highlight-correct');
             }
         });
-    </script>
+
+        // Show the explanation
+        const explanation = document.getElementById('explanation');
+        if (explanation) {
+            explanation.style.display = 'block';
+        }
+    }
+
+    const form = document.querySelector("form");
+    form.addEventListener('submit', function (e) {
+        const inputs = form.querySelectorAll('input[type="checkbox"], input[type="radio"]');
+        const oneChecked = Array.from(inputs).some(input => input.checked);
+        if (!oneChecked) {
+            e.preventDefault();
+            alert("Please select at least one answer before continuing.");
+        }
+    });
+</script>
 </body>
 </html>
