@@ -962,7 +962,7 @@
         "Systems on the general enterprise network",
         "Both B and C"
       ],
-      "correct_answer": "Systems on the isolated network"
+      "correct_answer": "Both B and C"
     },
     {
       "question": "Ryan is planning to conduct a vulnerability scan of a business-critical system using dangerous plug-ins. What would be the best approach for the initial scan?",
@@ -1261,8 +1261,8 @@
     },
     {
       "question": "What phase of the incident response process would include measures designed to limit the damage caused by an ongoing breach?",
-      "answer": ["Preparation", "Detection and analysis", "Containment, eradication, and recovery", "Post-incident activity"],
-      "correct_answer": "Containment, eradication, and recovery"
+      "answer": ["Preparation", "Detection and analysis", "Containment + eradication + and recovery", "Post-incident activity"],
+      "correct_answer": "Containment + eradication + and recovery"
     },
     {
       "question": "What common criticism is leveled at the Cyber Kill Chain?",
