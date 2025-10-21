@@ -1,0 +1,2534 @@
+{
+  "Quizzes": [
+ {
+      "quizz_title": "Module 1. Ethical Hacking Overview",
+      "questions": [
+        {
+          "question": "The U.S. Department of Justice defines a hacker as which of the following?",
+          "answer": [
+            "A person who accesses a computer or network without the owner’s permission",
+            "A penetration tester",
+            "A person who uses phone services without payment",
+            "A person who accesses a computer or network system with the owner’s permission"
+          ],
+          "correct_answer": "A person who accesses a computer or network without the owner’s permission",
+          "explanation": "According to the U.S. Department of Justice, a hacker is someone who gains unauthorized access to computer systems or networks without the owner’s permission."
+        },
+        {
+          "question": "A penetration tester is which of the following?",
+          "answer": [
+            "A person who breaks into a computer or network without permission from the owner",
+            "A person who uses telephone services without payment",
+            "A security professional hired to break into a network to discover vulnerabilities",
+            "A hacker who breaks into a system without permission but doesn’t delete or destroy files"
+          ],
+          "correct_answer": "A security professional hired to break into a network to discover vulnerabilities",
+          "explanation": "A penetration tester (ethical hacker) is a professional hired by an organization to legally exploit systems to identify and fix vulnerabilities before malicious hackers can exploit them."
+        },
+        {
+          "question": "Some experienced hackers refer to inexperienced hackers who copy or use prewritten scripts or programs as which of the following? (Choose all that apply.)",
+          "answer": [
+            "Script monkeys",
+            "Packet kiddies",
+            "Packet monkeys",
+            "Script kiddies"
+          ],
+          "correct_answer": "Script kiddies, Packet monkeys",
+          "explanation": "Inexperienced hackers who rely on prewritten tools or scripts to perform attacks are often called script kiddies or packet monkeys."
+        },
+
+        {
+          "question": "A team composed of people with varied skills who attempt to penetrate a network is called which of the following?",
+          "answer": [
+            "Green team",
+            "Blue team",
+            "Black team",
+            "Red team"
+          ],
+          "correct_answer": "Red team",
+          "explanation": "A Red Team simulates real-world attacks to test the effectiveness of an organization's defenses and response capabilities."
+        },
+        {
+          "question": "How can you find out which computer crime laws are applicable in your state? (Choose all that apply.)",
+          "answer": [
+            "Contact your local law enforcement agencies.",
+            "Contact your ISP provider.",
+            "Contact your local computer store vendor.",
+            "Research online for the laws in your area."
+          ],
+          "correct_answer": "Contact your local law enforcement agencies., Research online for the laws in your area.",
+          "explanation": "You can identify applicable computer crime laws by researching online or contacting local law enforcement agencies for official information."
+        },
+        {
+          "question": "What portion of your ISP contract might affect your ability to conduct a penetration test over the Internet?",
+          "answer": [
+            "Scanning policy",
+            "Port access policy",
+            "Acceptable use policy",
+            "Warranty policy"
+          ],
+          "correct_answer": "Acceptable use policy",
+          "explanation": "The Acceptable Use Policy (AUP) outlines what activities are permitted on your ISP’s network and often restricts scanning or penetration testing."
+        },
+        {
+          "question": "If you run a program in New York City that uses network resources to the extent that a user is denied access to them, what type of law have you violated?",
+          "answer": [
+            "City",
+            "State",
+            "Local",
+            "Federal"
+          ],
+          "correct_answer": "Federal",
+          "explanation": "Using network resources in a way that denies access to others (such as a DoS attack) violates federal computer crime laws."
+        },
+        {
+          "question": "Which federal law prohibits unauthorized access of classified information?",
+          "answer": [
+            "Computer Fraud and Abuse Act, Title 18",
+            "Electronic Communication Privacy Act",
+            "Stored Wire and Electronic Communications and Transactional Records Act",
+            "Fifth Amendment"
+          ],
+          "correct_answer": "Computer Fraud and Abuse Act, Title 18",
+          "explanation": "The Computer Fraud and Abuse Act (CFAA) prohibits unauthorized access to computers and classified data, among other offenses."
+        },
+        {
+          "question": "Which federal law prohibits intercepting any communication, regardless of how it was transmitted?",
+          "answer": [
+            "Computer Fraud and Abuse Act, Title 18",
+            "Electronic Communication Privacy Act",
+            "Stored Wire and Electronic Communications and Transactional Records Act",
+            "Fourth Amendment"
+          ],
+          "correct_answer": "Electronic Communication Privacy Act",
+          "explanation": "The Electronic Communication Privacy Act (ECPA) makes it illegal to intercept or access electronic communications without authorization."
+        },
+        {
+          "question": "Which federal law amended Chapter 119 of Title 18, U.S. Code?",
+          "answer": [
+            "Computer Fraud and Abuse Act, Title 18",
+            "Electronic Communication Privacy Act",
+            "Stored Wire and Electronic Communications and Transactional Records Act",
+            "U.S. PATRIOT Act, Sec. 217: Interception of Computer Trespasser Communications"
+          ],
+          "correct_answer": "Electronic Communication Privacy Act",
+          "explanation": "The Electronic Communication Privacy Act (ECPA) amended Chapter 119 of Title 18 of the U.S. Code to include electronic communications."
+        },
+        {
+          "question": "What is the Budapest Convention?",
+          "answer": [
+            "A hacking convention held in Europe",
+            "The first international treaty seeking to address Internet and computer crime",
+            "International rules governing penetration testing",
+            "A European treaty governing the protection of personal information"
+          ],
+          "correct_answer": "The first international treaty seeking to address Internet and computer crime",
+          "explanation": "The Budapest Convention is the first international treaty designed to harmonize national laws and improve international cooperation on cybercrime."
+        },
+        {
+          "question": "What organization offers the CEH certification exam?",
+          "answer": [
+            "ISC2",
+            "EC-Council",
+            "CompTIA",
+            "GIAC"
+          ],
+          "correct_answer": "EC-Council",
+          "explanation": "The EC-Council (International Council of E-Commerce Consultants) offers the Certified Ethical Hacker (CEH) certification."
+        },
+        {
+          "question": "What organization offers the PenTest+ certification exam?",
+          "answer": [
+            "ISC2",
+            "CompTIA",
+            "SANS Institute",
+            "GIAC"
+          ],
+          "correct_answer": "CompTIA",
+          "explanation": "The CompTIA PenTest+ certification validates penetration testing and vulnerability assessment skills."
+        },
+        {
+          "question": "What is an OSCP?",
+          "answer": [
+            "Open Security Consultant Professional",
+            "Offensive Security Certified Professional",
+            "Official Security Computer Programmer",
+            "OSSTMM Security Certified Professional"
+          ],
+          "correct_answer": "Offensive Security Certified Professional",
+          "explanation": "The Offensive Security Certified Professional (OSCP) is a hands-on ethical hacking certification offered by Offensive Security."
+        },
+        {
+          "question": "As a security tester, what should you do before installing hacking software on your computer? (Choose all that apply.)",
+          "answer": [
+            "Check with local law enforcement agencies.",
+            "Contact your hardware vendor.",
+            "Contact your ISP.",
+            "Research online for the laws in your area."
+          ],
+          "correct_answer": "Check with local law enforcement agencies., Research online for the laws in your area.",
+          "explanation": "Before installing hacking tools, ensure legality by checking local regulations and consulting law enforcement or legal references."
+        },
+        {
+          "question": "Before using hacking software over the Internet, you should contact which of the following? (Choose all that apply.)",
+          "answer": [
+            "Your ISP",
+            "Your vendor",
+            "Local law enforcement authorities to check for compliance",
+            "The FBI"
+          ],
+          "correct_answer": "Your ISP, Local law enforcement authorities to check for compliance",
+          "explanation": "Before using hacking software online, notify your ISP and verify with law enforcement that your activities comply with regulations."
+        },
+        {
+          "question": "Which organization issues the Top 25 list of software errors?",
+          "answer": [
+            "SANS Institute",
+            "ISECOM",
+            "EC-Council",
+            "OPST"
+          ],
+          "correct_answer": "SANS Institute",
+          "explanation": "The SANS Institute publishes the CWE/SANS Top 25 list, which highlights the most dangerous software vulnerabilities."
+        },
+        {
+          "question": "A written contract isn’t necessary when a friend recommends a client. True or False?",
+          "answer": [
+            "True",
+            "False"
+          ],
+          "correct_answer": "False",
+          "explanation": "A written contract is always necessary, even with a friend’s recommendation, to define scope, liability, and legal protection."
+        },
+        {
+          "question": "A security tester should have which of the following attributes? (Choose all that apply.)",
+          "answer": [
+            "Good listening skills",
+            "Knowledge of networking and computer technology",
+            "Good verbal and written communication skills",
+            "An interest in securing networks and computer systems"
+          ],
+          "correct_answer": "Good listening skills, Knowledge of networking and computer technology, Good verbal and written communication skills, An interest in securing networks and computer systems",
+          "explanation": "Effective security testers combine technical knowledge, communication skills, attentiveness, and a genuine interest in improving security."
+        }
+      ]
+    },
+     {
+      "quizz_title": "Module 2. TCP/IP Concepts Review",
+      "questions": [
+        {
+          "question": "The netstat command indicates that POP3 is in use on a remote server. Which port is the remote server most likely using?",
+          "answer": [
+            "Port 25",
+            "Port 110",
+            "Port 143",
+            "Port 80"
+          ],
+          "correct_answer": "Port 110",
+          "explanation": "POP3 (Post Office Protocol version 3) operates on TCP port 110 for retrieving email messages from a mail server."
+        },
+        {
+          "question": "On a Windows computer, what command can you enter to show all open ports being used?",
+          "answer": [
+            "netstat",
+            "ipconfig",
+            "ifconfig",
+            "nbtstat"
+          ],
+          "correct_answer": "netstat",
+          "explanation": "The netstat command displays active connections and listening ports on a Windows system."
+        },
+        {
+          "question": "What does the command chmod u+x script.sh do?",
+          "answer": [],
+          "correct_answer": "It grants execute permission to the user (owner) for the file script.sh.",
+          "explanation": "The chmod command changes file permissions. 'u+x' adds execute rights to the file’s owner."
+        },
+        {
+          "question": "Which protocol offers guaranteed delivery and is connection oriented?",
+          "answer": [
+            "UDP",
+            "IP",
+            "TCP",
+            "TFTP"
+          ],
+          "correct_answer": "TCP",
+          "explanation": "TCP (Transmission Control Protocol) is connection-oriented and ensures reliable, ordered delivery of data."
+        },
+        {
+          "question": "TCP communication can be likened to which of the following?",
+          "answer": [
+            "Announcement over a loudspeaker",
+            "Bullhorn at a sporting event",
+            "Driving on a highway",
+            "Phone conversation"
+          ],
+          "correct_answer": "Phone conversation",
+          "explanation": "TCP communication is like a phone conversation where both parties establish a connection and acknowledge each other."
+        },
+        {
+          "question": "Which of the following protocols is connectionless? (Choose all that apply.)",
+          "answer": [
+            "UDP",
+            "IP",
+            "TCP",
+            "SPX"
+          ],
+          "correct_answer": "UDP, IP",
+          "explanation": "UDP and IP are connectionless protocols that send data without establishing a dedicated connection or ensuring delivery."
+        },
+        {
+          "question": "Which command verifies the existence of a node on a network?",
+          "answer": [
+            "ping",
+            "ipconfig",
+            "netstat",
+            "nbtstat"
+          ],
+          "correct_answer": "ping",
+          "explanation": "The ping command sends ICMP Echo Requests to verify that a host is reachable on the network."
+        },
+        {
+          "question": "What numbering system is used to express IPv6 addresses?",
+          "answer": [
+            "Binary",
+            "Octal",
+            "Hexadecimal",
+            "Decimal"
+          ],
+          "correct_answer": "Hexadecimal",
+          "explanation": "IPv6 addresses are represented in hexadecimal notation, consisting of eight 16-bit blocks separated by colons."
+        },
+        {
+          "question": "List the three components of the TCP/IP three-way handshake.",
+          "answer": [],
+          "correct_answer": "SYN, SYN-ACK, ACK",
+          "explanation": "The TCP three-way handshake involves three messages: SYN, SYN-ACK, and ACK to establish a reliable connection."
+        },
+        {
+          "question": "What protocol is used for reporting or informational purposes?",
+          "answer": [
+            "IGMP",
+            "TCP",
+            "ICMP",
+            "IP"
+          ],
+          "correct_answer": "ICMP",
+          "explanation": "ICMP (Internet Control Message Protocol) is used for error reporting and diagnostic functions like ping and traceroute."
+        },
+        {
+          "question": "List the six flags of a TCP packet.",
+          "answer": [],
+          "correct_answer": "URG, ACK, PSH, RST, SYN, FIN",
+          "explanation": "TCP uses six control flags: URG (urgent), ACK (acknowledge), PSH (push), RST (reset), SYN (synchronize), and FIN (finish)."
+        },
+        {
+          "question": "How many hosts can a CIDR /24 network have?",
+          "answer": [],
+          "correct_answer": "254",
+          "explanation": "A /24 network has 256 total addresses minus 2 (network and broadcast), leaving 254 usable host addresses."
+        },
+        {
+          "question": "What port, other than port 110, is used to retrieve email?",
+          "answer": [
+            "Port 25",
+            "Port 143",
+            "Port 80",
+            "Port 135"
+          ],
+          "correct_answer": "Port 143",
+          "explanation": "IMAP (Internet Message Access Protocol) uses port 143 to retrieve and manage emails from a server."
+        },
+        {
+          "question": "What port does DNS use?",
+          "answer": [
+            "Port 80",
+            "Port 69",
+            "Port 25",
+            "Port 53"
+          ],
+          "correct_answer": "Port 53",
+          "explanation": "DNS (Domain Name System) operates on port 53 using both TCP and UDP for name resolution."
+        },
+        {
+          "question": "Given an IP address of 192.168.1.17 and a subnet mask of 255.255.255.192, what are the subnet part of the address and the host part of the address?",
+          "answer": [],
+          "correct_answer": "Subnet: 192.168.1.0, Host: 17 (within 64-address block)",
+          "explanation": "A /26 mask (255.255.255.192) divides the network into blocks of 64 addresses. 192.168.1.17 belongs to subnet 192.168.1.0."
+        },
+        {
+          "question": "Which of the following is not a valid octal number?",
+          "answer": [
+            "5555",
+            "4567",
+            "3482",
+            "7770"
+          ],
+          "correct_answer": "3482",
+          "explanation": "Octal numbers use digits 0–7 only. The number 3482 is invalid because it includes the digit 8."
+        },
+        {
+          "question": "The ISN is set at which step of the TCP three-way handshake?",
+          "answer": [
+            "1, 2, 3",
+            "1, 3",
+            "1",
+            "1 and 2"
+          ],
+          "correct_answer": "1 and 2",
+          "explanation": "The Initial Sequence Number (ISN) is set during the first two steps of the TCP handshake (SYN and SYN-ACK)."
+        },
+        {
+          "question": "A ping command initially uses which ICMP type code?",
+          "answer": [
+            "Type 0",
+            "Type 8",
+            "Type 14",
+            "Type 13"
+          ],
+          "correct_answer": "Type 8",
+          "explanation": "Ping sends an ICMP Echo Request, which uses Type 8. The Echo Reply uses Type 0."
+        },
+        {
+          "question": "What class is the IP address 172.16.0.1?",
+          "answer": [
+            "Class A",
+            "Class B",
+            "Class C",
+            "Class D"
+          ],
+          "correct_answer": "Class B",
+          "explanation": "IP address 172.16.0.1 falls within the Class B range (128.0.0.0 to 191.255.255.255)."
+        },
+        {
+          "question": "What’s the hexadecimal equivalent of the binary number 1111 1111?",
+          "answer": [
+            "FF",
+            "255",
+            "EE",
+            "DD"
+          ],
+          "correct_answer": "FF",
+          "explanation": "The binary number 1111 1111 equals 255 in decimal and FF in hexadecimal."
+        }
+      ]
+    },
+     {
+      "quizz_title": "Module 3. Network and Computer Attacks",
+      "questions": [
+        {
+          "question": "What is the main purpose of malware?",
+          "answer": [
+            "Financial gain or destruction",
+            "Learning passwords",
+            "Discovering open ports",
+            "Identifying an operating system"
+          ],
+          "correct_answer": "Financial gain or destruction",
+          "explanation": "Malware is primarily designed to achieve financial gain, steal data, or cause system disruption and destruction."
+        },
+        {
+          "question": "A computer blank 1 relies on a host to propagate throughout a network.",
+          "answer": [
+            "worm",
+            "virus",
+            "program",
+            "sniffer"
+          ],
+          "correct_answer": "virus",
+          "explanation": "A virus relies on a host program to execute and spread, unlike worms, which are self-replicating."
+        },
+        {
+          "question": "An exploit that attacks computer systems by inserting executable code in areas of memory because of poorly written code is called which of the following?",
+          "answer": [
+            "Buffer overflow",
+            "Trojan program",
+            "Virus",
+            "Worm"
+          ],
+          "correct_answer": "Buffer overflow",
+          "explanation": "A buffer overflow occurs when a program writes more data to a memory buffer than it can handle, allowing attackers to insert malicious code."
+        },
+        {
+          "question": "Which of the following exploits might hide its destructive payload in a legitimate application or game?",
+          "answer": [
+            "Trojan",
+            "Macro virus",
+            "Worm",
+            "Buffer overflow"
+          ],
+          "correct_answer": "Trojan",
+          "explanation": "A Trojan disguises itself as legitimate software but contains hidden malicious code that executes once installed."
+        },
+        {
+          "question": "Antivirus software is one of the main points of defense against malware and network attacks. Perform research to discover five of the best “free” antivirus solutions. In a few paragraphs, describe your findings and choose which antivirus software you think is the best and explain why.",
+          "answer": [],
+          "correct_answer": "",
+          "explanation": "Open-ended research question. Students should compare antivirus solutions such as Avast, AVG, Bitdefender, Kaspersky, and Microsoft Defender, evaluating detection rates, performance, and usability."
+        },
+        {
+          "question": "Which of the following doesn’t attach itself to a host but can replicate itself?",
+          "answer": [
+            "Worm",
+            "Virus",
+            "Trojan",
+            "Buffer overflow"
+          ],
+          "correct_answer": "Worm",
+          "explanation": "A worm is a self-replicating program that spreads across networks without attaching to a host file."
+        },
+        {
+          "question": "Which of the following is an example of a macro programming language?",
+          "answer": [
+            "C++",
+            "Shell",
+            "Basic",
+            "Visual Basic for Applications"
+          ],
+          "correct_answer": "Visual Basic for Applications",
+          "explanation": "VBA (Visual Basic for Applications) is used in Microsoft Office documents and is often exploited by macro viruses."
+        },
+        {
+          "question": "One annoying attribute of adware is to determine a user’s purchasing habits and then show pop-up ads featuring items the user might want to buy. Social media platforms, search engines, and e-commerce sites do the same thing. Research the interaction between social media platforms, search engines, and e-commerce sites and how they track users and display targeted ads. In a few paragraphs, describe what you have discovered, and discuss whether you think this is helpful or harmful.",
+          "answer": [],
+          "correct_answer": "",
+          "explanation": "Open-ended research question. Students should analyze tracking mechanisms such as cookies, pixels, and behavioral profiling used for targeted advertising."
+        },
+        {
+          "question": "Viruses, worms, Trojans, adware, and spyware are five types of malware. Choose one type, and research online the latest piece of malware in that family, how it is affecting businesses and individuals, how it is being delivered to victims, and what is being done to counteract it. In a few paragraphs, describe your findings.",
+          "answer": [],
+          "correct_answer": "",
+          "explanation": "Open-ended research question. Students should identify recent malware incidents, delivery vectors, and mitigation measures."
+        },
+        {
+          "question": "A software or hardware component that records each keystroke a user enters is called which of the following?",
+          "answer": [
+            "Key sniffer",
+            "Keylogger",
+            "Trojan",
+            "Buffer overflow"
+          ],
+          "correct_answer": "Keylogger",
+          "explanation": "A keylogger captures keystrokes to record sensitive data such as passwords or messages, often installed covertly."
+        },
+        {
+          "question": "Email is the most common way that malware enters organizations. Research some of the latest and cleverest email malware campaigns. In a few paragraphs, describe your findings, and suggest ways to counteract this threat.",
+          "answer": [],
+          "correct_answer": "",
+          "explanation": "Open-ended research question. Students should investigate phishing campaigns and describe preventive strategies like user awareness and email filtering."
+        },
+        {
+          "question": "The Ping of Death is an exploit that sends multiple ICMP packets to a host faster than the host can handle. True or false?",
+          "answer": [
+            "True",
+            "False"
+          ],
+          "correct_answer": "False",
+          "explanation": "False. The Ping of Death exploit involves sending oversized ICMP packets that exceed the maximum IP packet size, not multiple packets."
+        },
+        {
+          "question": "What type of network attack relies on multiple servers participating in an attack on one host system?",
+          "answer": [
+            "Trojan attack",
+            "Buffer overflow",
+            "Denial-of-service attack",
+            "Distributed denial-of-service attack"
+          ],
+          "correct_answer": "Distributed denial-of-service attack",
+          "explanation": "A DDoS attack uses multiple systems or bots to flood a target with traffic, overwhelming its resources."
+        },
+        {
+          "question": "What exploit is used to elevate an attacker’s permissions by inserting executable code in the computer’s memory?",
+          "answer": [
+            "Trojan",
+            "Buffer overflow",
+            "Ping of Death",
+            "Buffer variance"
+          ],
+          "correct_answer": "Buffer overflow",
+          "explanation": "Buffer overflow exploits can modify memory to gain elevated privileges and execute arbitrary code."
+        },
+        {
+          "question": "What component can be used to reduce the risk of a Trojan or rootkit sending information from an attacked computer to a remote host?",
+          "answer": [
+            "Base-64 decoder",
+            "Keylogger",
+            "Telnet",
+            "Firewall"
+          ],
+          "correct_answer": "Firewall",
+          "explanation": "A firewall can block unauthorized outbound communication attempts from infected systems to remote command-and-control servers."
+        },
+        {
+          "question": "To reduce the risk of a virus attack on a network, you should do which of the following?",
+          "answer": [
+            "Use antivirus software.",
+            "Educate users about opening attachments from suspicious email.",
+            "Keep virus signature files current.",
+            "All of the above"
+          ],
+          "correct_answer": "All of the above",
+          "explanation": "Effective malware prevention involves user education, regular updates, and active antivirus protection."
+        },
+        {
+          "question": "What is the primary way that malware enters an organization?",
+          "answer": [
+            "USB sticks",
+            "Email",
+            "Buffer overflows",
+            "Backdoors"
+          ],
+          "correct_answer": "Email",
+          "explanation": "Email remains the most common malware vector through phishing attachments and malicious links."
+        },
+        {
+          "question": "An exploit that leaves an attacker with another way to compromise a network later is called which of the following? (Choose all that apply.)",
+          "answer": [
+            "Rootkit",
+            "Worm",
+            "Backroot",
+            "Backdoor"
+          ],
+          "correct_answer": "Rootkit, Backdoor",
+          "explanation": "Rootkits and backdoors allow attackers persistent or hidden access to compromised systems for future exploitation."
+        },
+        {
+          "question": "Which of the following is a good place to begin your search for vulnerabilities in Microsoft products?",
+          "answer": [
+            "Hacking websites",
+            "Microsoft Security Bulletins",
+            "Newsgroup references to vulnerabilities",
+            "User manuals"
+          ],
+          "correct_answer": "Microsoft Security Bulletins",
+          "explanation": "Microsoft Security Bulletins and CVE databases provide official, verified information on software vulnerabilities."
+        },
+        {
+          "question": "Four common operating systems are Microsoft Windows, Linux, Android OS, and Apple iOS. Research online to discover current vulnerabilities and exploits that are affecting or attacking each of these operating systems. Usually exploits are specific to a certain operating system. Can you find any single exploit that is capable of attacking two or more of these operating systems? In a few paragraphs, discuss your findings.",
+          "answer": [],
+          "correct_answer": "",
+          "explanation": "Open-ended research question. Students should analyze cross-platform vulnerabilities such as web-based or Java-related exploits that affect multiple OS environments."
+        }
+      ]
+    },
+    {
+      "quizz_title": "Module 4. Footprinting and Social Engineering Review Questions",
+      "questions": [
+        {
+          "question": "Which of the following is a fast and easy way to gather information about a company? (Choose all that apply.)",
+          "answer": [
+            "Conduct port scanning.",
+            "Perform a zone transfer of the company’s DNS server.",
+            "View the company’s website.",
+            "Look for company ads in publications."
+          ],
+          "correct_answer": "View the company’s website., Look for company ads in publications.",
+          "explanation": "Viewing a company's website and advertisements can quickly provide information about its services, employees, and technologies."
+        },
+        {
+          "question": "To find information about the key IT personnel responsible for a company’s domain, you might use which of the following tools? (Choose all that apply.)",
+          "answer": [
+            "Whois",
+            "Whatis",
+            "Domain Dossier",
+            "Nbtstat"
+          ],
+          "correct_answer": "Whois, Domain Dossier",
+          "explanation": "Whois and Domain Dossier provide domain registration data including contact names, emails, and technical contacts for organizations."
+        },
+        {
+          "question": "__________ is one of the components most vulnerable to network attacks.",
+          "answer": [
+            "TCP/IP",
+            "WINS",
+            "DHCP",
+            "DNS"
+          ],
+          "correct_answer": "DNS",
+          "explanation": "DNS is a common target for attackers because compromising it can redirect or intercept traffic from legitimate sites."
+        },
+        {
+          "question": "Which of the following contains host records for a domain?",
+          "answer": [
+            "DNS",
+            "WINS",
+            "Linux server",
+            "UNIX web clients"
+          ],
+          "correct_answer": "DNS",
+          "explanation": "DNS (Domain Name System) stores host records, mapping domain names to IP addresses."
+        },
+        {
+          "question": "Which of the following is a good website for gathering information on a domain?",
+          "answer": [
+            "www.google.com",
+            "whois.domaintools.com at https://centralops.net/co/",
+            "www.arin.net",
+            "All of the above"
+          ],
+          "correct_answer": "All of the above",
+          "explanation": "Google, DomainTools, and ARIN are all valuable sources for discovering domain ownership and network registration data."
+        },
+        {
+          "question": "A cookie can store information about a website’s visitors. True or False?",
+          "answer": [
+            "True",
+            "False"
+          ],
+          "correct_answer": "True",
+          "explanation": "Cookies are small text files that store user preferences, login data, and tracking information for websites."
+        },
+        {
+          "question": "Which of the following enables you to view all host computers on a network?",
+          "answer": [
+            "SOA",
+            "ipconfig",
+            "Zone transfers",
+            "HTTP HEAD method"
+          ],
+          "correct_answer": "Zone transfers",
+          "explanation": "A zone transfer can reveal all host records within a DNS zone, exposing internal hostnames and IP addresses."
+        },
+        {
+          "question": "What command-line tool can be used to harvest DNS information?",
+          "answer": [
+            "dns-get",
+            "dug",
+            "dig",
+            "axfer"
+          ],
+          "correct_answer": "dig",
+          "explanation": "The dig (Domain Information Groper) command retrieves DNS records and assists in DNS reconnaissance."
+        },
+        {
+          "question": "Which of the following is one method of gathering information about the operating systems a company is using?",
+          "answer": [
+            "Search the web for email addresses of IT employees.",
+            "Connect via Telnet to the company’s web server.",
+            "Ping the URL and analyze ICMP messages.",
+            "Use the ipconfig /os command."
+          ],
+          "correct_answer": "Ping the URL and analyze ICMP messages.",
+          "explanation": "Analyzing ICMP responses to ping requests can reveal OS-specific characteristics such as TTL values and response patterns."
+        },
+        {
+          "question": "To determine a company’s primary DNS server, you can look for a DNS server containing which of the following?",
+          "answer": [
+            "Cname record",
+            "Host record",
+            "PTR record",
+            "SOA record"
+          ],
+          "correct_answer": "SOA record",
+          "explanation": "The Start of Authority (SOA) record identifies the primary DNS server responsible for the domain."
+        },
+        {
+          "question": "When conducting competitive intelligence, which of the following is a good way to determine the size of a company’s IT support staff?",
+          "answer": [
+            "Review job postings on websites such as www.indeed.com.",
+            "Use the nslookup command.",
+            "Perform a zone transfer of the company’s DNS server.",
+            "Use the host -t command."
+          ],
+          "correct_answer": "Review job postings on websites such as www.indeed.com.",
+          "explanation": "Job postings often reveal the size and structure of a company’s IT team as well as technologies in use."
+        },
+        {
+          "question": "Open your web browser and go to https://osintframework.com/. Explore the framework by expanding nodes to discover different tools. Choose two tools. In four paragraphs describe what these two tools can do, how to use them, and how they would be useful in footprinting.",
+          "answer": [],
+          "correct_answer": "",
+          "explanation": "Open-ended research question. Students should explore OSINT tools and describe how they can assist in collecting publicly available intelligence."
+        },
+        {
+          "question": "Which of the following tools can assist you in finding general information about an organization and its employees? (Choose all that apply.)",
+          "answer": [
+            "www.google.com",
+            "https://groups.google.com",
+            "netcat",
+            "nmap"
+          ],
+          "correct_answer": "www.google.com, https://groups.google.com",
+          "explanation": "Search engines and public discussion archives help gather employee names, email addresses, and organizational data."
+        },
+        {
+          "question": "What is the first method a security tester should attempt to find a password for a computer on the network?",
+          "answer": [
+            "Use a scanning tool.",
+            "Install a sniffer on the network.",
+            "Ask the user.",
+            "Install a password-cracking program."
+          ],
+          "correct_answer": "Ask the user.",
+          "explanation": "The simplest social engineering approach is to ask the user directly, as human error is often the weakest link."
+        },
+        {
+          "question": "Many social engineers begin gathering the information they need by using which of the following?",
+          "answer": [
+            "Internet",
+            "Phone",
+            "Company intranet",
+            "Email"
+          ],
+          "correct_answer": "Internet",
+          "explanation": "The Internet provides open-source intelligence through public websites, social media, and databases."
+        },
+        {
+          "question": "Open a web browser and go to https://spyse.com. The free version has a daily lookup limit, so don’t waste your lookups. You can start a free trial if you need more lookups. Search for the domain name of a major news organization of your choice as a target. In three paragraphs, discuss what basic information you have discovered and any security issues that are revealed, and then propose solutions for the security issues. In your discussion, include the organization’s security rating, DNS information, and any email addresses you discover.",
+          "answer": [],
+          "correct_answer": "",
+          "explanation": "Open-ended research question. Students should use Spyse to gather and interpret public security data related to a domain."
+        },
+        {
+          "question": "Chances are that your computer has cookies stored on it that you are unaware of. Open the web browser that you use most often and find the setting where cookies are stored. Check the contents of these cookies to see what kind of information is being recorded. If you are unsure how to find this information, perform an Internet search for how to find cookies for your specific browser. In two paragraphs, describe which websites are storing information on your computer and what they are storing.",
+          "answer": [],
+          "correct_answer": "",
+          "explanation": "Open-ended research question. Students should analyze cookie data stored in their browser to understand user tracking."
+        },
+        {
+          "question": "Dumpster diving, though messy, is an effective way to gather intelligence on a targeted organization or individual. Dumpster dive your own trash to discover what actionable information you may have thrown away. You might be surprised at what personal information you (or other family members) have casually tossed out. In two paragraphs, describe what you have found (leaving out private details), and what steps you can take to correct this security flaw.",
+          "answer": [],
+          "correct_answer": "",
+          "explanation": "Open-ended research question. Students should perform a safe self-assessment to understand the risks of discarded information."
+        },
+        {
+          "question": "What social-engineering technique involves telling an employee that you’re calling from the CEO’s office and need certain information ASAP? (Choose all that apply.)",
+          "answer": [
+            "Urgency",
+            "Status quo",
+            "Position of authority",
+            "Quid pro quo"
+          ],
+          "correct_answer": "Urgency, Position of authority",
+          "explanation": "Combining urgency with authority manipulates employees into bypassing security policies to comply quickly."
+        },
+        {
+          "question": "Before conducting a security test by using social-engineering tactics, what should you do?",
+          "answer": [
+            "Set up an appointment.",
+            "Document all findings.",
+            "Get written permission from the person who hired you to conduct the security test.",
+            "Get written permission from the department head."
+          ],
+          "correct_answer": "Get written permission from the person who hired you to conduct the security test.",
+          "explanation": "Written authorization protects the tester legally and ensures that social-engineering activities are ethical and approved."
+        }
+      ]
+    },
+    {
+      "quizz_title": "Module 5. Port Scanning Review Questions",
+      "questions": [
+        {
+          "question": "Security testers and hackers use which of the following to determine the services running on a host and the vulnerabilities associated with these services?",
+          "answer": [
+            "Zone transfers",
+            "Zone scanning",
+            "Encryption algorithms",
+            "Port scanning"
+          ],
+          "correct_answer": "Port scanning",
+          "explanation": "Port scanning reveals open ports and associated services so testers can identify potential vulnerabilities."
+        },
+        {
+          "question": "What is the most widely used port-scanning tool?",
+          "answer": [
+            "Netcat",
+            "Netstat",
+            "Nmap",
+            "Nslookup"
+          ],
+          "correct_answer": "Nmap",
+          "explanation": "Nmap is the most popular and feature-rich port scanner used by security professionals."
+        },
+        {
+          "question": "Perform an Nmap scan of your home network. Write a one-page report outlining the services that you discovered. Were you surprised by anything you discovered?",
+          "answer": [],
+          "correct_answer": "",
+          "explanation": "Practical exercise — student to run Nmap locally and write the report describing discovered services and observations."
+        },
+        {
+          "question": "Install Nessus Essentials and perform a basic network scan of your home network. Write a one-page report of your discoveries.",
+          "answer": [],
+          "correct_answer": "",
+          "explanation": "Practical exercise — student to run Nessus locally and report on identified vulnerabilities and findings."
+        },
+        {
+          "question": "Which of the following Nmap commands sends a SYN packet to a computer with the IP address 193.145.85.210? (Choose all that apply.)",
+          "answer": [
+            "nmap -sS 193.145.85.210",
+            "nmap -v 193.145.85.210",
+            "nmap -sA 193.145.85.210",
+            "nmap -sF 193.145.85.210"
+          ],
+          "correct_answer": "nmap -sS 193.145.85.210",
+          "explanation": "The -sS option performs a SYN (half-open) scan by sending SYN packets."
+        },
+        {
+          "question": "Which flags are set on a packet sent with the nmap -sX 193.145.85.202 command? (Choose all that apply.)",
+          "answer": [
+            "FIN",
+            "PSH",
+            "SYN",
+            "URG"
+          ],
+          "correct_answer": "FIN, PSH, URG",
+          "explanation": "The XMAS (-sX) scan sets the FIN, PSH and URG flags (hence 'lit up like a Christmas tree')."
+        },
+        {
+          "question": "Port scanning is not illegal but must be performed in a controlled manner. The Open Source Security Testing Methodology Manual (OSSTMM) can be found online at https://isecom.org/research.html. Read 'Chapter 2 -What you need to do' and in a one-page report, summarize the guidance it gives.",
+          "answer": [],
+          "correct_answer": "",
+          "explanation": "Open-ended reading and summary exercise — student to read OSSTMM Chapter 2 and summarize the recommended methodology and legal/ethical guidance."
+        },
+        {
+          "question": "A closed port responds to a SYN packet with which of the following packets?",
+          "answer": [
+            "FIN",
+            "SYN-ACK",
+            "SYN",
+            "RST"
+          ],
+          "correct_answer": "RST",
+          "explanation": "A closed TCP port will commonly reply to a SYN with an RST (reset) to indicate the port is not open."
+        },
+        {
+          "question": "Which parameter can be added to nmap to run a script scan with the default scripts?",
+          "answer": [
+            "-sC",
+            "-oA",
+            "-p",
+            "-rT"
+          ],
+          "correct_answer": "-sC",
+          "explanation": "The -sC option runs Nmap's default NSE scripts (script scan)."
+        },
+        {
+          "question": "Security testers can use Hping3 to bypass filtering devices. True or false?",
+          "answer": [
+            "True",
+            "False"
+          ],
+          "correct_answer": "True",
+          "explanation": "Hping3 crafts custom packets (TCP/UDP/ICMP) and can be used to probe or bypass certain filters by varying flags, ports, and packet properties."
+        },
+        {
+          "question": "A FIN packet sent to a closed port responds with which of the following packets?",
+          "answer": [
+            "FIN",
+            "SYN-ACK",
+            "RST",
+            "SYN"
+          ],
+          "correct_answer": "RST",
+          "explanation": "RFC-compliant stacks typically respond to unexpected FINs to closed ports with an RST."
+        },
+        {
+          "question": "A(n) blank 1 scan sends a packet with all flags set to NULL.",
+          "answer": [
+            "NULL",
+            "VOID",
+            "SYN",
+            "XMAS"
+          ],
+          "correct_answer": "NULL",
+          "explanation": "A NULL scan sends a TCP packet with no flags set (i.e., all flag bits are zero)."
+        },
+        {
+          "question": "Using your Nessus Essentials scan from question 4, write a one-page report describing one of the Common Vulnerabilities and Exposures (CVEs) that you discovered. In the report, include what operating systems this CVE affects, the details of the CVE, and what can be done to fix this vulnerability.",
+          "answer": [],
+          "correct_answer": "",
+          "explanation": "Practical exercise — student to document a CVE found in Nessus, affected OSes, CVE details, and remediation steps."
+        },
+        {
+          "question": "Port scanning provides the state for all but which of the following ports?",
+          "answer": [
+            "Closed",
+            "Open",
+            "Filtered",
+            "Buffered"
+          ],
+          "correct_answer": "Buffered",
+          "explanation": "Common port states are open, closed, filtered, 'buffered' is not a standard port state used in scan results."
+        },
+        {
+          "question": "A NULL scan requires setting the FIN, ACK, and URG flags. True or false?",
+          "answer": [
+            "True",
+            "False"
+          ],
+          "correct_answer": "False",
+          "explanation": "False — a NULL scan sets no flags at all. A scan that sets FIN, ACK, and URG would not be a NULL scan."
+        },
+        {
+          "question": "Why does the fping -f 193.145.85.201 193.145.85.220 command cause an error?",
+          "answer": [
+            "An incorrect parameter is used.",
+            "The IP range should be indicated as 193.145.85.201-220.",
+            "There’s no such command.",
+            "IP ranges aren’t allowed with this command."
+          ],
+          "correct_answer": "The IP range should be indicated as 193.145.85.201-220.",
+          "explanation": "fping expects a single host, a file, or a proper range expression, the range needs the dash notation (e.g., 193.145.85.201-220)."
+        },
+        {
+          "question": "In basic network scanning, ICMP Echo Requests (type 8) are sent to host computers from the attacker, who waits for which type of packet to confirm that the host computer is live?",
+          "answer": [
+            "ICMP SYN-ACK packet",
+            "ICMP SYN packet",
+            "ICMP Echo Reply (type 8)",
+            "ICMP Echo Reply (type 0)"
+          ],
+          "correct_answer": "ICMP Echo Reply (type 0)",
+          "explanation": "Ping sends ICMP Echo Request (Type 8) and expects an ICMP Echo Reply (Type 0) to confirm host reachability."
+        },
+        {
+          "question": "To bypass some ICMP-filtering devices on a network, an attacker might send which type of packets to scan the network for vulnerable services? (Choose all that apply.)",
+          "answer": [
+            "PING packets",
+            "SYN packets",
+            "ACK packets",
+            "Echo Request packets"
+          ],
+          "correct_answer": "SYN packets, ACK packets",
+          "explanation": "If ICMP is filtered, attackers often switch to TCP probes such as SYN or ACK packets to discover services and bypass ICMP-based filters."
+        },
+        {
+          "question": "Which of the following is a tool for creating a custom TCP/IP packet and sending it to a host computer?",
+          "answer": [
+            "Tracert",
+            "Traceroute",
+            "Hping3",
+            "Nmapping"
+          ],
+          "correct_answer": "Hping3",
+          "explanation": "Hping3 allows crafting and sending custom TCP/UDP/ICMP packets for advanced network testing."
+        },
+        {
+          "question": "Fping doesn’t allow pinging multiple IP addresses simultaneously. True or false?",
+          "answer": [
+            "True",
+            "False"
+          ],
+          "correct_answer": "False",
+          "explanation": "False — fping is designed to ping multiple hosts in parallel, it supports lists and ranges for simultaneous pings."
+        }
+      ]
+    },
+        {
+      "quizz_title": "Module 6. Enumeration Review Questions",
+      "questions": [
+        {
+          "question": "Which of the following testing processes is the most intrusive?",
+          "answer": [
+            "Port scanning",
+            "Enumeration",
+            "Null scanning",
+            "Numeration"
+          ],
+          "correct_answer": "Enumeration",
+          "explanation": "Enumeration is more intrusive than port scanning because it actively engages with network services to extract information such as users, groups, and shares."
+        },
+        {
+          "question": "Security testers conduct enumeration for which of the following reasons? (Choose all that apply.)",
+          "answer": [
+            "Gaining access to shares and network resources",
+            "Obtaining user logon names and group memberships",
+            "Discovering services running on computers and servers",
+            "Discovering open ports on computers and servers"
+          ],
+          "correct_answer": "Gaining access to shares and network resources, Obtaining user logon names and group memberships, Discovering services running on computers and servers",
+          "explanation": "Enumeration focuses on gathering detailed network information such as shares, user accounts, and services, which go beyond simple port discovery."
+        },
+        {
+          "question": "Which of the following tools can be used to enumerate Windows systems? (Choose all that apply.)",
+          "answer": [
+            "OpenVAS or Nessus",
+            "Reddit",
+            "DumpIt",
+            "Hyena"
+          ],
+          "correct_answer": "OpenVAS or Nessus, Hyena",
+          "explanation": "Tools like Nessus and Hyena are used to identify vulnerabilities and enumerate Windows system information such as users and shares."
+        },
+        {
+          "question": "Enumeration of Windows systems can be more difficult if port blank 1 is filtered.",
+          "answer": [
+            "110/UDP",
+            "443/UDP",
+            "80/TCP",
+            "139/TCP"
+          ],
+          "correct_answer": "139/TCP",
+          "explanation": "Port 139/TCP is used for NetBIOS sessions and file sharing, filtering it prevents many Windows enumeration techniques."
+        },
+        {
+          "question": "Perform a Net view scan of your own computer. Write a brief report (three paragraphs) of your findings. Were you surprised by any of the shares you discovered? Describe the shares you discovered and why they are there.",
+          "answer": [],
+          "correct_answer": "",
+          "explanation": "Practical exercise — students should use the 'net view' command to identify shared folders and explain their purpose."
+        },
+        {
+          "question": "The Net view command can be used to see whether a server has any shared resources. True or false?",
+          "answer": [
+            "True",
+            "False"
+          ],
+          "correct_answer": "True",
+          "explanation": "The 'net view' command displays shared folders and resources available on a networked computer."
+        },
+        {
+          "question": "To identify the NetBIOS names of systems on the 193.145.85.0 network, which of the following commands do you use?",
+          "answer": [
+            "nbtscan 193.145.85.0/24",
+            "nbtscan 193.145.85.0-255",
+            "nbtstat 193.145.85.0/24",
+            "netstat 193.145.85.0/24"
+          ],
+          "correct_answer": "nbtscan 193.145.85.0/24",
+          "explanation": "The nbtscan command scans a subnet to identify NetBIOS names and associated IP addresses."
+        },
+        {
+          "question": "Which of the following is a Windows command-line utility for seeing NetBIOS shares on a network?",
+          "answer": [
+            "Net use",
+            "Net user",
+            "Net view",
+            "Nbtuser"
+          ],
+          "correct_answer": "Net view",
+          "explanation": "'net view' is used to view shared resources on a remote or local Windows system."
+        },
+        {
+          "question": "The Nbtstat command is used to enumerate *nix systems. True or false?",
+          "answer": [
+            "True",
+            "False"
+          ],
+          "correct_answer": "False",
+          "explanation": "Nbtstat is a Windows command used to display NetBIOS over TCP/IP information, not for enumerating *nix systems."
+        },
+        {
+          "question": "Not counting the reserved character at the end, a NetBIOS name can contain a maximum of blank 1 characters.",
+          "answer": [
+            "10",
+            "11",
+            "15",
+            "16"
+          ],
+          "correct_answer": "15",
+          "explanation": "NetBIOS names are limited to 15 visible characters plus one reserved service identification character."
+        },
+        {
+          "question": "Which of the following commands connects to a computer containing shared files and folders?",
+          "answer": [
+            "Net view",
+            "Net use",
+            "Netstat",
+            "Nbtstat"
+          ],
+          "correct_answer": "Net use",
+          "explanation": "'net use' connects a computer to shared resources on another system, such as drives or folders."
+        },
+        {
+          "question": "Which port numbers indicate NetBIOS is in use on a remote target?",
+          "answer": [
+            "135 to 137",
+            "389 to 1023",
+            "135 to 139",
+            "110 and 115"
+          ],
+          "correct_answer": "135 to 139",
+          "explanation": "NetBIOS commonly uses ports 135–139 for name service, session service, and RPC communication."
+        },
+        {
+          "question": "Perform a Nessus scan of your own computer. Try a variety of scans to see what kind of information you can enumerate. Did you find any vulnerabilities? If so, research the solutions to those vulnerabilities and see if you can apply the fixes. Nessus may list solutions directly in its description or you may have to look up the CVEs at https://cve.mitre.org/cve/search_cve_list.html. List the information you enumerated, but do not list your vulnerabilities. (For security reasons, you do not want to share your vulnerabilities.)",
+          "answer": [],
+          "correct_answer": "",
+          "explanation": "Practical exercise — students should run Nessus, note enumerated details such as services or OS, and discuss mitigation research without exposing personal vulnerabilities."
+        },
+        {
+          "question": "Most NetBIOS enumeration tools connect to the target system by using which of the following?",
+          "answer": [
+            "ICMP packets",
+            "Default logons and blank passwords",
+            "Null sessions",
+            "Admin accounts"
+          ],
+          "correct_answer": "Null sessions",
+          "explanation": "Null sessions allow unauthenticated connections to Windows systems to gather information such as users and shares."
+        },
+        {
+          "question": "What is the best method of preventing NetBIOS attacks?",
+          "answer": [
+            "Filtering certain ports at the firewall",
+            "Telling users to create difficult-to-guess passwords",
+            "Pausing the Workstation service",
+            "Stopping the Workstation service"
+          ],
+          "correct_answer": "Filtering certain ports at the firewall",
+          "explanation": "Blocking NetBIOS-related ports (135–139, 445) at the firewall prevents unauthorized enumeration or access."
+        },
+        {
+          "question": "Which of the following is a commonly used UNIX enumeration tool?",
+          "answer": [
+            "Netcat",
+            "Nbtstat",
+            "Netstat",
+            "SNMPWalk"
+          ],
+          "correct_answer": "SNMPWalk",
+          "explanation": "SNMPWalk retrieves detailed information from SNMP-enabled devices, such as users, processes, and configurations."
+        },
+        {
+          "question": "Which of the following commands should you use to determine whether there are any shared resources on a Windows computer with the IP address 193.145.85.202?",
+          "answer": [
+            "netstat -c 193.145.85.202",
+            "nbtscan -a 193.145.85.202",
+            "nbtstat -a 193.145.85.202",
+            "nbtstat -a \\\\193.145.85.202\\\\193.145.85.202"
+          ],
+          "correct_answer": "nbtstat -a 193.145.85.202",
+          "explanation": "The 'nbtstat -a' command displays NetBIOS name tables and shared resources for the specified IP address."
+        },
+        {
+          "question": "Log on to your Kali Linux instance. Use each of the Linux-based tools discussed in this module on the Kali Linux instance itself. List your findings. Were there any surprises? If so, what were they?",
+          "answer": [],
+          "correct_answer": "",
+          "explanation": "Practical exercise — students should run Linux enumeration tools (e.g., SNMPWalk, Netcat, Nmap) and describe the information gathered."
+        }
+      ]
+    },
+     {
+      "quizz_title": "Module 7. Programming for Security Professionals Review Questions",
+      "questions": [
+        {
+          "question": "A C program must contain which of the following?",
+          "answer": [
+            "Name of the computer programmer",
+            "A main() function",
+            "The #include<std.h> header file",
+            "A description of the algorithm used"
+          ],
+          "correct_answer": "A main() function",
+          "explanation": "Every C program must contain a main() function, which serves as the program’s entry point and where execution begins."
+        },
+        {
+          "question": "An algorithm is defined as which of the following?",
+          "answer": [
+            "A list of possible solutions for solving a problem",
+            "A method for automating a manual process",
+            "A program written in a high-level language",
+            "A set of instructions for solving a specific problem"
+          ],
+          "correct_answer": "A set of instructions for solving a specific problem",
+          "explanation": "An algorithm is a well-defined sequence of steps designed to solve a particular problem or perform a computation."
+        },
+        {
+          "question": "A missing parenthesis or brace might cause a C compiler to return which of the following?",
+          "answer": [
+            "System fault",
+            "Interpreter error",
+            "Syntax error",
+            "Machine-language fault"
+          ],
+          "correct_answer": "Syntax error",
+          "explanation": "A syntax error occurs when the compiler detects a rule violation in the program’s structure, such as missing parentheses or braces."
+        },
+        {
+          "question": "Write a program in C that politely asks the user to enter a string of characters (for example, their name), and then prints that string of characters backwards. Execute the code, and test that your program works.",
+          "answer": [],
+          "correct_answer": "",
+          "explanation": "Open-ended exercise — students should write, execute, and test a C program that reverses a user-inputted string."
+        },
+        {
+          "question": "Most programming languages enable programmers to perform which of the following actions? (Choose all that apply.)",
+          "answer": [
+            "Branching",
+            "Testing",
+            "Faulting",
+            "Looping"
+          ],
+          "correct_answer": "Branching, Testing, Looping",
+          "explanation": "Programming languages support branching for decision-making, testing conditions, and looping for repeated execution."
+        },
+        {
+          "question": "Before writing a program, many programmers outline it first by using which of the following?",
+          "answer": [
+            "Pseudocode",
+            "Machine code",
+            "Assembly code",
+            "Assembler code"
+          ],
+          "correct_answer": "Pseudocode",
+          "explanation": "Pseudocode is a human-readable outline of a program’s logic used before coding to plan its structure."
+        },
+        {
+          "question": "Which of the following C statements has the highest risk of creating an infinite loop?",
+          "answer": [
+            "while (a > 10)",
+            "while (a < 10)",
+            "for (a = 1, a < 100, ++a)",
+            "for (,,)"
+          ],
+          "correct_answer": "for (,,)",
+          "explanation": "A for(,,) loop has no start, condition, or increment expressions, creating an infinite loop unless broken manually."
+        },
+        {
+          "question": "To add comments to a Perl or Python script, you use which of the following symbols?",
+          "answer": [
+            "//",
+            "/*",
+            "#",
+            "<!—<!—"
+          ],
+          "correct_answer": "#",
+          "explanation": "The '#' character denotes comments in both Perl and Python, making any text after it ignored by the interpreter."
+        },
+        {
+          "question": "Using a Windows computer, write a program in Perl that politely asks the user to enter a string of characters (for example, their name), and then prints that string of characters backwards. Execute the code, and test that your program works.",
+          "answer": [],
+          "correct_answer": "",
+          "explanation": "Practical task — students should create and run a Perl program that reverses a string input from the user."
+        },
+        {
+          "question": "Name two looping mechanisms used in Perl.",
+          "answer": [],
+          "correct_answer": "for loop, while loop",
+          "explanation": "Perl supports multiple looping constructs such as for, while, and until loops."
+        },
+        {
+          "question": "In C, which looping function performs an action first and then tests to see whether the action should continue to occur?",
+          "answer": [
+            "for loop",
+            "while loop",
+            "do loop",
+            "unless loop"
+          ],
+          "correct_answer": "do loop",
+          "explanation": "A do-while loop in C executes the body at least once before testing the condition."
+        },
+        {
+          "question": "What is the result of running the following C program?",
+          "answer": [
+            "\"Syntax error: illegal use of ,\" is displayed.",
+            "\"I made a mistake!\" is displayed.",
+            "\"Syntax error: variable not declared\" is displayed.",
+            "\"I did it correctly!\" is displayed."
+          ],
+          "correct_answer": "\"I did it correctly!\" is displayed.",
+          "explanation": "Assuming proper syntax, the output indicates the program executed correctly."
+        },
+        {
+          "question": "Using the following Perl code, how many times will “This is easy...” be displayed onscreen?",
+          "answer": [
+            "6",
+            "4",
+            "None (syntax error)",
+            "5"
+          ],
+          "correct_answer": "5",
+          "explanation": "Assuming the Perl loop runs from 1 to 5, the string prints five times."
+        },
+        {
+          "question": "Using a Linux computer, write a program in Perl that politely asks the user to enter a string of characters (for example, their name), and then prints that string of characters backwards. Execute the code, and test that your program works.",
+          "answer": [],
+          "correct_answer": "",
+          "explanation": "Practical task — students should implement and test a Perl script that reverses an input string on Linux."
+        },
+        {
+          "question": "Which of the following HTML tags is used to create a hyperlink to a remote website?",
+          "answer": [
+            "<a href=http://URL>",
+            "<a href=\"http://URL\">",
+            "<a href=\"file:///c:/filename>",
+            "<a href/>"
+          ],
+          "correct_answer": "<a href=\"http://URL\">",
+          "explanation": "The <a> (anchor) tag with the href attribute creates a hyperlink to another web page or resource."
+        },
+        {
+          "question": "In object-oriented programming, classes are defined as the structures that hold data and functions. True or false?",
+          "answer": [
+            "True",
+            "False"
+          ],
+          "correct_answer": "True",
+          "explanation": "In object-oriented programming, a class defines both the data (attributes) and functions (methods) used by its objects."
+        },
+        {
+          "question": "What are the three looping mechanisms in C? (Choose all that apply.)",
+          "answer": [
+            "for loop",
+            "while loop",
+            "if-then-else loop",
+            "do loop"
+          ],
+          "correct_answer": "for loop, while loop, do loop",
+          "explanation": "C supports three primary looping constructs: for, while, and do-while loops."
+        },
+        {
+          "question": "Which of the following is the Win32 API function for verifying the file system on a Windows computer?",
+          "answer": [
+            "Filesystem()",
+            "FsType()",
+            "System()",
+            "IsNT()"
+          ],
+          "correct_answer": "IsNT()",
+          "explanation": "The Win32 API function IsNT() verifies the operating system type and file system used on a Windows computer."
+        },
+        {
+          "question": "Using a Windows computer, write a program in Python that politely asks the user to enter a string of characters (for example, their name), and then prints that string of characters backwards. Execute the code, and test that your program works.",
+          "answer": [],
+          "correct_answer": "",
+          "explanation": "Practical exercise — students should create and test a Python script that reverses a user-inputted string."
+        },
+        {
+          "question": "Which of the following tags enables an HTML programmer to create a loop?",
+          "answer": [
+            "<loop>",
+            "<nest>",
+            "<while>",
+            "HTML doesn’t have a looping function or tag."
+          ],
+          "correct_answer": "HTML doesn’t have a looping function or tag.",
+          "explanation": "HTML is a markup language and doesn’t support loops, loops are implemented using scripting languages like JavaScript."
+        }
+      ]
+    },
+     {
+      "quizz_title": "Module 8. Desktop and Server OS Vulnerabilities Review Questions",
+      "questions": [
+        {
+          "question": "Use Nessus Essentials to perform a web application test scan of the computer where Nessus Essentials is installed. The Nessus Essential interface is a web application, so you are having Nessus test itself. Write a three-paragraph report that details the vulnerabilities found, the CVEs or known exploits they map to, and suggested fixes.",
+          "answer": [],
+          "correct_answer": "",
+          "explanation": "Practical task — students should perform a local Nessus self-scan and document discovered vulnerabilities, CVE mappings, and remediation actions."
+        },
+        {
+          "question": "In Windows Server 2016, the administrator must enable IIS manually to use it. True or false?",
+          "answer": [
+            "True",
+            "False"
+          ],
+          "correct_answer": "True",
+          "explanation": "By default, IIS (Internet Information Services) is not enabled on Windows Server 2016 and must be installed and configured manually by the administrator."
+        },
+        {
+          "question": "Windows OSs are vulnerable to the Conficker worm because of which of the following?",
+          "answer": [
+            "Arbitrary code",
+            "SQL buffer overflow",
+            "Blank password",
+            "RPC vulnerability"
+          ],
+          "correct_answer": "RPC vulnerability",
+          "explanation": "The Conficker worm exploited a Windows RPC (Remote Procedure Call) vulnerability that allowed remote code execution."
+        },
+        {
+          "question": "Which of the following is a well-known SMB hacking tool? (Choose all that apply.)",
+          "answer": [
+            "SMBRelay",
+            "SMBsnag",
+            "L0phtcrack’s SMB Packet Capture utility",
+            "NTPass"
+          ],
+          "correct_answer": "SMBRelay, SMBsnag, L0phtcrack’s SMB Packet Capture utility",
+          "explanation": "SMBRelay, SMBsnag, and L0phtcrack tools exploit SMB vulnerabilities or capture SMB authentication traffic for password cracking."
+        },
+        {
+          "question": "Which ports should be filtered out to protect a network from SMB attacks?",
+          "answer": [
+            "134 to 138 and 445",
+            "135, 139, and 443",
+            "137 to 139 and 445",
+            "53 TCP/UDP and 445 UDP"
+          ],
+          "correct_answer": "137 to 139 and 445",
+          "explanation": "SMB services typically run on ports 137–139 (NetBIOS) and 445 (Direct SMB over TCP/IP). Filtering them reduces SMB attack exposure."
+        },
+        {
+          "question": "For a Windows computer to be able to access a *nix resource, CIFS must be enabled on at least one of the systems. True or false?",
+          "answer": [
+            "True",
+            "False"
+          ],
+          "correct_answer": "True",
+          "explanation": "CIFS (Common Internet File System) enables file sharing between Windows and Unix/Linux systems via the SMB protocol."
+        },
+        {
+          "question": "Applications written in which programming language are especially vulnerable to buffer overflow attacks? (Choose all that apply.)",
+          "answer": [
+            "C",
+            "Perl",
+            "C++",
+            "Java"
+          ],
+          "correct_answer": "C, C++",
+          "explanation": "Languages like C and C++ lack automatic memory management and bounds checking, making them prone to buffer overflow exploits."
+        },
+        {
+          "question": "Which of the following is the most efficient way to determine which OS a company is using?",
+          "answer": [
+            "Run Nmap or other port-scanning programs.",
+            "Use the Whois database.",
+            "Install a sniffer on the company’s network segment.",
+            "Call the company and ask."
+          ],
+          "correct_answer": "Run Nmap or other port-scanning programs.",
+          "explanation": "Nmap and similar scanners identify OS fingerprints by analyzing network responses, providing a non-intrusive and accurate method."
+        },
+        {
+          "question": "List three measures for protecting systems on any network.",
+          "answer": [],
+          "correct_answer": "Use firewalls, Keep systems patched, Implement strong authentication policies",
+          "explanation": "Basic defensive measures include regular patching, using firewalls, and enforcing strong password and access control policies."
+        },
+        {
+          "question": "Employees should be able to install programs on their company computers as long as the programs aren’t copyrighted. True or false?",
+          "answer": [
+            "True",
+            "False"
+          ],
+          "correct_answer": "False",
+          "explanation": "Unauthorized software installations can introduce vulnerabilities or malware, only administrators should manage software installation."
+        },
+        {
+          "question": "Which of the following is an OS security mechanism that enforces access rules based on privileges for interactions between processes, files, and users?",
+          "answer": [
+            "MBSA",
+            "Mandatory Access Control",
+            "Server Message Block",
+            "Systems Management Server"
+          ],
+          "correct_answer": "Mandatory Access Control",
+          "explanation": "MAC (Mandatory Access Control) restricts interactions based on predefined security labels and privileges, enforcing strict access rules."
+        },
+        {
+          "question": "A good password policy should include which of the following? (Choose all that apply.)",
+          "answer": [
+            "Specifies a minimum password length",
+            "Mandates password complexity",
+            "States that passwords never expire",
+            "Recommends writing down passwords to prevent forgetting them"
+          ],
+          "correct_answer": "Specifies a minimum password length, Mandates password complexity",
+          "explanation": "Strong password policies enforce length and complexity requirements to protect against brute-force and dictionary attacks."
+        },
+        {
+          "question": "Linux antivirus software can’t detect backdoor Trojans. True or false?",
+          "answer": [
+            "True",
+            "False"
+          ],
+          "correct_answer": "False",
+          "explanation": "Modern Linux antivirus solutions can detect Trojans, rootkits, and backdoors through signature and heuristic scanning."
+        },
+        {
+          "question": "Which program can detect rootkits on *nix systems?",
+          "answer": [
+            "chkrootkit",
+            "rktdetect",
+            "SELinux",
+            "Ionx"
+          ],
+          "correct_answer": "chkrootkit",
+          "explanation": "chkrootkit is a well-known Linux tool that scans for signatures and behaviors of rootkits installed on a system."
+        },
+        {
+          "question": "Which organization offers free benchmark information for Windows and Linux?",
+          "answer": [
+            "PacketStorm Security",
+            "CVE",
+            "Center for Internet Security",
+            "Trusted Security Solutions"
+          ],
+          "correct_answer": "Center for Internet Security",
+          "explanation": "The Center for Internet Security (CIS) provides free configuration benchmarks and best practices for securing operating systems."
+        },
+        {
+          "question": "Use OpenVAS to scan a computer running the Windows operating system. Write a three-paragraph report which details the vulnerabilities found, what CVEs or known exploits they map to, and suggested fixes.",
+          "answer": [],
+          "correct_answer": "",
+          "explanation": "Hands-on task — students must use OpenVAS to scan a Windows host and document vulnerabilities, corresponding CVEs, and mitigations."
+        },
+        {
+          "question": "Use Nessus Essentials to scan a computer running the Linux operating system. Write a three-paragraph report which details the vulnerabilities found, the CVEs or known exploits they map to, and suggested fixes.",
+          "answer": [],
+          "correct_answer": "",
+          "explanation": "Hands-on task — students must perform a Nessus scan on a Linux system and report vulnerabilities with CVE details and remediation steps."
+        }
+      ]
+    },
+    {
+      "quizz_title": "Module 9. Embedded Operating Systems: The Hidden Threat Review Questions",
+      "questions": [
+        {
+          "question": "An embedded OS must be developed specifically for use with embedded systems. True or false?",
+          "answer": [
+            "True",
+            "False"
+          ],
+          "correct_answer": "True",
+          "explanation": "Embedded operating systems are designed specifically for embedded systems, optimized for limited resources and specific hardware functions."
+        },
+        {
+          "question": "Why are embedded OSs more likely to have unpatched security vulnerabilities than general-purpose OSs do? (Choose all that apply.)",
+          "answer": [
+            "Many security checks are omitted during development to reduce the code size.",
+            "Devices with embedded OSs connect to the Internet more frequently.",
+            "Manufacturers prefer that you upgrade the system rather than the embedded OS.",
+            "Devices with embedded OSs typically can’t have any downtime for installing patches."
+          ],
+          "correct_answer": "Many security checks are omitted during development to reduce the code size, Manufacturers prefer that you upgrade the system rather than the embedded OS, Devices with embedded OSs typically can’t have any downtime for installing patches.",
+          "explanation": "Embedded OSs often remain unpatched because manufacturers prioritize minimal downtime, compact code, and encourage full device replacement instead of patching."
+        },
+        {
+          "question": "Which of the following describes an RTOS?",
+          "answer": [
+            "An embedded OS capable of multitasking and responding predictably",
+            "An embedded OS intended for real-time data manipulation",
+            "An embedded OS intended for packet analysis",
+            "An embedded OS intended for devices that run multiple OSs"
+          ],
+          "correct_answer": "An embedded OS capable of multitasking and responding predictably",
+          "explanation": "A Real-Time Operating System (RTOS) is optimized for deterministic behavior, ensuring predictable task execution and timing."
+        },
+        {
+          "question": "Which of the following does not use an embedded OS?",
+          "answer": [
+            "ATM",
+            "Workstation running Windows 10",
+            "NAS device running Windows Server 2012 for Embedded Systems",
+            "Slot machine"
+          ],
+          "correct_answer": "Workstation running Windows 10",
+          "explanation": "A standard Windows 10 workstation uses a general-purpose OS, not an embedded system designed for limited-function devices."
+        },
+        {
+          "question": "Provide two reasons rootkits that infect a device’s firmware are considered the biggest threat to any OS (embedded or general-purpose).",
+          "answer": [],
+          "correct_answer": "They operate below the OS level and persist after reinstallation, They can evade detection by antivirus or integrity check tools.",
+          "explanation": "Firmware rootkits infect the lowest system layer, giving attackers persistent, stealthy control even across OS reinstalls or disk wipes."
+        },
+        {
+          "question": "Research the Windows 10 IoT embedded operating system. The following link is a good place to start: https://developer.microsoft.com/en-us/windows/iot/. In a report of three paragraphs, discuss what kinds of products can be built using Windows 10 IoT, describe some of the Windows 10 IoT’s security features, and discuss any Windows 10 IoT vulnerabilities that hackers have exploited.",
+          "answer": [],
+          "correct_answer": "",
+          "explanation": "Open-ended research task — students must analyze Windows 10 IoT, its supported devices, security features, and vulnerabilities or exploits."
+        },
+        {
+          "question": "VxWorks is which of the following?",
+          "answer": [
+            "Windows embedded OS",
+            "Proprietary embedded OS",
+            "Linux embedded OS",
+            "Windows security validation tool"
+          ],
+          "correct_answer": "Proprietary embedded OS",
+          "explanation": "VxWorks is a proprietary real-time operating system (RTOS) widely used in aerospace, networking, and industrial devices."
+        },
+        {
+          "question": "Which of the following is a major challenge of securing embedded OSs?",
+          "answer": [
+            "Training users",
+            "Configuration",
+            "Patching",
+            "Backup and recovery"
+          ],
+          "correct_answer": "Patching",
+          "explanation": "Embedded systems often lack straightforward patching mechanisms, leading to prolonged exposure to known vulnerabilities."
+        },
+        {
+          "question": "The lack of a familiar interface, such as USB ports, contributes to the difficulty of updating embedded OSs. True or false?",
+          "answer": [
+            "True",
+            "False"
+          ],
+          "correct_answer": "True",
+          "explanation": "Without accessible interfaces like USB or consoles, updating embedded systems can be difficult or require specialized tools."
+        },
+        {
+          "question": "Embedded OSs on routers are susceptible to which of the following? (Choose all that apply.)",
+          "answer": [
+            "Authentication bypass attacks",
+            "Buffer overflow attacks",
+            "Password-guessing attacks",
+            "RTOS clock corruption"
+          ],
+          "correct_answer": "Authentication bypass attacks, Buffer overflow attacks, Password-guessing attacks",
+          "explanation": "Router embedded OSs are prone to authentication bypass, weak password exploits, and buffer overflows due to exposed network services."
+        },
+        {
+          "question": "Multifunction devices (MFDs) are rarely:",
+          "answer": [
+            "Targets of network attacks",
+            "Installed on Windows networks",
+            "Installed on large networks",
+            "Scanned for vulnerabilities"
+          ],
+          "correct_answer": "Scanned for vulnerabilities",
+          "explanation": "MFDs such as printers and copiers are often overlooked in vulnerability scans despite their network connectivity and data exposure risks."
+        },
+        {
+          "question": "SCADA systems are used for which of the following?",
+          "answer": [
+            "Monitoring embedded OSs",
+            "Monitoring ATM access codes",
+            "Monitoring equipment in large-scale industries",
+            "Protecting embedded OSs from remote attacks"
+          ],
+          "correct_answer": "Monitoring equipment in large-scale industries",
+          "explanation": "SCADA (Supervisory Control and Data Acquisition) systems manage and monitor industrial infrastructure like power plants and manufacturing."
+        },
+        {
+          "question": "Cell phone vulnerabilities make it possible for attackers to do which of the following? (Choose all that apply.)",
+          "answer": [
+            "Use your phone as a microphone to eavesdrop on meetings or private conversations",
+            "Install a BIOS-based rootkit",
+            "Clone your phone to make illegal long-distance phone calls",
+            "Listen to your phone conversations"
+          ],
+          "correct_answer": "Use your phone as a microphone to eavesdrop on meetings or private conversations, Clone your phone to make illegal long-distance phone calls, Listen to your phone conversations",
+          "explanation": "Exploiting mobile OS vulnerabilities allows attackers to activate microphones, clone SIMs, and intercept calls for espionage or fraud."
+        },
+        {
+          "question": "Pressure to get a product to market as soon as possible sometimes results in embedded systems products having insecure code or poor security testing. True or false?",
+          "answer": [
+            "True",
+            "False"
+          ],
+          "correct_answer": "True",
+          "explanation": "Rapid development cycles often compromise thorough security testing, leaving embedded systems with exploitable flaws."
+        },
+        {
+          "question": "Most printers now have only TCP/IP enabled and don’t allow default administrator passwords, so they are inherently more secure. True or false?",
+          "answer": [
+            "True",
+            "False"
+          ],
+          "correct_answer": "False",
+          "explanation": "Many printers still ship with default admin passwords and open network services, making them potential entry points for attackers."
+        }
+      ]
+    },
+     {
+      "quizz_title": "Module 10. Hacking Web Servers Review Questions",
+      "questions": [
+        {
+          "question": "Using resources discussed in this module and your favorite search engine, search for recent successful SQL injection attacks. In a three-paragraph report, describe the organizations affected by the attack, what operating systems and web server programs were exploited, and details of how the attack was executed.",
+          "answer": [],
+          "correct_answer": "",
+          "explanation": "Open-ended research task — students should identify and describe recent real-world SQL injection incidents, affected systems, and mitigation steps."
+        },
+        {
+          "question": "Which of the following can be used to create dynamic webpages? (Choose all that apply.)",
+          "answer": [
+            "ColdFusion",
+            "PHP",
+            "ASP",
+            "MySQL"
+          ],
+          "correct_answer": "ColdFusion, PHP, ASP",
+          "explanation": "ColdFusion, PHP, and ASP are scripting platforms for generating dynamic web content, while MySQL is a database management system."
+        },
+        {
+          "question": "Which of the following can be used to connect a web server to a back-end database server? (Choose all that apply.)",
+          "answer": [
+            "ODBC",
+            "OLE DB",
+            "ADO",
+            "HTML"
+          ],
+          "correct_answer": "ODBC, OLE DB, ADO",
+          "explanation": "ODBC, OLE DB, and ADO are technologies used to connect web applications to databases, HTML cannot make such connections by itself."
+        },
+        {
+          "question": "Using resources discussed in this module and your favorite search engine, search for website attacks that had the most impact last year. In a three-paragraph report, describe the organizations affected by the attack, what operating systems and web server programs were exploited, and details of how the attack was executed.",
+          "answer": [],
+          "correct_answer": "",
+          "explanation": "Open-ended research — students should identify major web-based attacks, their impact, exploited components, and the security implications."
+        },
+        {
+          "question": "What is DAST?",
+          "answer": [
+            "Dynamic Application Static Testing",
+            "Dynamic Application Server Takeover",
+            "Delivery Application Server Testing",
+            "Dynamic Application Security Testing"
+          ],
+          "correct_answer": "Dynamic Application Security Testing",
+          "explanation": "DAST dynamically tests running applications to identify vulnerabilities such as XSS or SQL injection during execution."
+        },
+        {
+          "question": "What is authorization testing?",
+          "answer": [
+            "Testing to ensure that an application is properly sanitizing input",
+            "Testing an application’s access control mechanisms to ensure only authorized users have access to resources",
+            "Testing focused on client-side code and the execution of scripts in the user’s browser",
+            "Testing that is specific to source code, otherwise referred to as Static Application Security Testing (SAST)"
+          ],
+          "correct_answer": "Testing an application’s access control mechanisms to ensure only authorized users have access to resources",
+          "explanation": "Authorization testing validates that users only access data and functions allowed by their role or privilege level."
+        },
+        {
+          "question": "Entering the value ' OR 1 = 1 in a web application that has an “Enter Your PIN” field is most likely an example of which attack?",
+          "answer": [
+            "SQL injection",
+            "Code injection",
+            "Buffer overflow",
+            "Ethernet flaw"
+          ],
+          "correct_answer": "SQL injection",
+          "explanation": "The injected ' OR 1=1 payload manipulates SQL queries to always return true, bypassing authentication controls."
+        },
+        {
+          "question": "HTML webpages containing connection strings are more vulnerable to attack. True or false?",
+          "answer": [
+            "True",
+            "False"
+          ],
+          "correct_answer": "True",
+          "explanation": "If connection strings containing credentials or database paths are exposed in HTML or source files, attackers can exploit them for unauthorized access."
+        },
+        {
+          "question": "The AccessFileName directive in Apache, along with a configuration file (such as .htaccess), can be used to perform which of the following on a website?",
+          "answer": [
+            "Run malicious code in the browser",
+            "Protect against XSS worms",
+            "Restrict directory access to those with authorized user credentials",
+            "Scan for CGI vulnerabilities"
+          ],
+          "correct_answer": "Restrict directory access to those with authorized user credentials",
+          "explanation": "The AccessFileName directive allows Apache to use .htaccess files to enforce authentication and directory-level access control."
+        },
+        {
+          "question": "Which of the following is an open source technology for creating dynamic HTML webpages?",
+          "answer": [
+            "ASP",
+            "PHP",
+            "Java",
+            "Oracle"
+          ],
+          "correct_answer": "PHP",
+          "explanation": "PHP is an open-source scripting language widely used for creating dynamic web content embedded in HTML."
+        },
+        {
+          "question": "CGI is used in Microsoft ASP pages. True or false?",
+          "answer": [
+            "True",
+            "False"
+          ],
+          "correct_answer": "False",
+          "explanation": "Microsoft ASP uses its own scripting engine and does not rely on the Common Gateway Interface (CGI) standard."
+        },
+        {
+          "question": "Name three web application vulnerabilities from OWASP’s top 10 list.",
+          "answer": [],
+          "correct_answer": "Injection, Broken Authentication, Cross-Site Scripting (XSS)",
+          "explanation": "Common OWASP Top 10 vulnerabilities include Injection flaws, Broken Authentication, and Cross-Site Scripting."
+        },
+        {
+          "question": "If a web server isn’t protected, an attacker can gain access through remote administration interfaces. True or false?",
+          "answer": [
+            "True",
+            "False"
+          ],
+          "correct_answer": "True",
+          "explanation": "Unsecured remote administration interfaces like RDP or SSH can be exploited to compromise the web server."
+        },
+        {
+          "question": "Which of the following is used to connect an ASP.NET webpage to an Oracle database? (Choose all that apply.)",
+          "answer": [
+            "ADO",
+            "HTML",
+            "CGA",
+            "OLE DB"
+          ],
+          "correct_answer": "ADO, OLE DB",
+          "explanation": "ADO and OLE DB are Microsoft data access technologies commonly used in ASP.NET to connect to databases such as Oracle."
+        },
+        {
+          "question": "List an organization with online resources for learning more about web application vulnerabilities.",
+          "answer": [],
+          "correct_answer": "OWASP (Open Web Application Security Project)",
+          "explanation": "OWASP provides extensive free educational materials, tools, and guidelines on web application security."
+        },
+        {
+          "question": "ASP is a legacy web scripting language that was first released in 1996. ASP is discussed in this module because organizations still use it. Perform some Internet research to determine what types of organizations still use ASP, and identify specific organizations by name, if possible. Were any significant web server breaches in the past few years related to ASP issues? Document your findings in a brief report.",
+          "answer": [],
+          "correct_answer": "",
+          "explanation": "Research task — students should identify current users of legacy ASP systems and examine any related security incidents."
+        },
+        {
+          "question": "What tags identify PHP as the scripting language?",
+          "answer": [
+            "<# #>",
+            "<% %>",
+            "<? ?>",
+            "<! /!>"
+          ],
+          "correct_answer": "<? ?>",
+          "explanation": "PHP scripts are enclosed within <? and ?> tags, allowing server-side code to execute within HTML pages."
+        },
+        {
+          "question": "An HTML webpage containing ASP.NET code must be compiled before running. True or false?",
+          "answer": [
+            "True",
+            "False"
+          ],
+          "correct_answer": "True",
+          "explanation": "ASP.NET applications are compiled into assemblies before execution, unlike interpreted scripts like PHP or ASP Classic."
+        },
+        {
+          "question": "Which of the following can be used to detect a new application vulnerability on a website? (Choose all that apply.)",
+          "answer": [
+            "PHP",
+            "Nmap",
+            "Wapiti",
+            "Wfetch"
+          ],
+          "correct_answer": "Nmap, Wapiti, Wfetch",
+          "explanation": "Nmap can identify vulnerable services, Wapiti performs web vulnerability scans, and Wfetch helps analyze HTTP responses."
+        },
+        {
+          "question": "IIS is used on more web servers than Apache Web Server. True or false?",
+          "answer": [
+            "True",
+            "False"
+          ],
+          "correct_answer": "False",
+          "explanation": "Apache remains the most widely used web server globally, while IIS holds a smaller market share."
+        }
+      ]
+    },
+     {
+      "quizz_title": "Module 11. Hacking Wireless Networks Review Questions",
+      "questions": [
+        {
+          "question": "Which IEEE standard defines authentication and authorization in wireless networks?",
+          "answer": [
+            "802.11",
+            "802.11a",
+            "802.11b",
+            "802.1X"
+          ],
+          "correct_answer": "802.1X",
+          "explanation": "IEEE 802.1X defines authentication and authorization mechanisms used for securing access to wired and wireless networks."
+        },
+        {
+          "question": "Which EAP method requires installing digital certificates on both the server and client?",
+          "answer": [
+            "EAP-TLS",
+            "PEAP",
+            "EAP-SSL",
+            "EAP-CA"
+          ],
+          "correct_answer": "EAP-TLS",
+          "explanation": "EAP-TLS (Extensible Authentication Protocol-Transport Layer Security) uses certificates on both the client and server for mutual authentication."
+        },
+        {
+          "question": "Which wireless encryption standard offers the best security?",
+          "answer": [
+            "WPA3",
+            "WEP",
+            "WPS",
+            "WPA"
+          ],
+          "correct_answer": "WPA3",
+          "explanation": "WPA3 is the most secure Wi-Fi encryption standard, offering improved encryption strength and protection against offline dictionary attacks."
+        },
+        {
+          "question": "Name a tool that can help reduce the risk of a wardriver attacking your WLAN.",
+          "answer": [],
+          "correct_answer": "Use wireless intrusion detection tools such as Kismet or AirMagnet WiFi Analyzer.",
+          "explanation": "Tools like Kismet can detect unauthorized devices and suspicious activities on wireless networks to mitigate wardriving threats."
+        },
+        {
+          "question": "What protocol was added to 802.11i to address WEP’s encryption vulnerability?",
+          "answer": [
+            "MIC",
+            "TKIP",
+            "TTL",
+            "EAP-TLS"
+          ],
+          "correct_answer": "TKIP",
+          "explanation": "Temporal Key Integrity Protocol (TKIP) was introduced as part of 802.11i to strengthen encryption and correct flaws in WEP."
+        },
+        {
+          "question": "What IEEE standard defines wireless technology?",
+          "answer": [
+            "802.3",
+            "802.5",
+            "802.11",
+            "All 802 standards"
+          ],
+          "correct_answer": "802.11",
+          "explanation": "IEEE 802.11 is the standard that defines wireless LAN technologies, including Wi-Fi communication protocols."
+        },
+        {
+          "question": "What information can be gathered by wardriving? (Choose all that apply.)",
+          "answer": [
+            "SSIDs of wireless networks",
+            "Whether encryption is enabled",
+            "Whether SSL is enabled",
+            "Signal strength"
+          ],
+          "correct_answer": "SSIDs of wireless networks, Whether encryption is enabled, Signal strength",
+          "explanation": "Wardriving tools collect SSIDs, encryption status, and signal strength, but not SSL details, which apply to web connections."
+        },
+        {
+          "question": "Disabling SSID broadcasts must be configured on the computer and the AP. True or false?",
+          "answer": [
+            "True",
+            "False"
+          ],
+          "correct_answer": "False",
+          "explanation": "SSID broadcast suppression is configured on the access point, not on client devices."
+        },
+        {
+          "question": "What TKIP enhancement addressed the WEP vulnerability of forging packets?",
+          "answer": [
+            "Extended Initialization Vector (IV) with sequencing rules",
+            "Per-packet key mixing",
+            "Rekeying mechanism",
+            "Message Integrity Check (MIC)"
+          ],
+          "correct_answer": "Message Integrity Check (MIC)",
+          "explanation": "The MIC feature in TKIP prevents attackers from forging packets by verifying message integrity."
+        },
+        {
+          "question": "Wi-Fi Protected Access (WPA) was introduced in which IEEE 802 standard?",
+          "answer": [
+            "802.11a",
+            "802.11b",
+            "802.11i",
+            "802.11"
+          ],
+          "correct_answer": "802.11i",
+          "explanation": "The 802.11i amendment formally introduced WPA and WPA2 standards to enhance wireless encryption and authentication."
+        },
+        {
+          "question": "Use Vistumbler to scan for APs. Using the information you discover, write a three-paragraph report. In the first paragraph, outline each SSID you have discovered and its configuration information, including what authentication method it is using. In the second paragraph, suggest security improvements for each SSID. In the third paragraph, choose one of the discovered SSIDs and outline what tools you would use to penetration test it.",
+          "answer": [],
+          "correct_answer": "",
+          "explanation": "Practical task — students perform a wireless scan using Vistumbler, analyze discovered networks, and propose security improvements."
+        },
+        {
+          "question": "What is a known weakness of wireless network SSIDs?",
+          "answer": [
+            "They’re broadcast in cleartext.",
+            "They’re difficult to configure.",
+            "They use large amounts of bandwidth.",
+            "They consume an excessive amount of computer memory."
+          ],
+          "correct_answer": "They’re broadcast in cleartext.",
+          "explanation": "SSID names are transmitted in cleartext in beacon frames, allowing attackers to easily discover wireless networks."
+        },
+        {
+          "question": "Bluetooth technology is more vulnerable to network attacks than WLANs are. True or false?",
+          "answer": [
+            "True",
+            "False"
+          ],
+          "correct_answer": "True",
+          "explanation": "Bluetooth protocols often lack strong encryption and have a shorter security key space, making them easier to attack than WLANs."
+        },
+        {
+          "question": "Which of the following channels are available in 802.11b for attempting to prevent overlapping? (Choose all that apply.)",
+          "answer": [
+            "1",
+            "5",
+            "6",
+            "11"
+          ],
+          "correct_answer": "1, 6, 11",
+          "explanation": "Channels 1, 6, and 11 are non-overlapping in the 2.4 GHz spectrum used by 802.11b networks."
+        },
+        {
+          "question": "Which authentication mechanisms and standards are currently exploitable?",
+          "answer": [
+            "WEP",
+            "WPA",
+            "WP2",
+            "WPS"
+          ],
+          "correct_answer": "WEP, WPS",
+          "explanation": "WEP and WPS both have well-known vulnerabilities — WEP due to weak encryption and WPS due to its PIN brute-force flaw."
+        },
+        {
+          "question": "An access point provides which of the following?",
+          "answer": [
+            "Access to the BSS",
+            "Access to the DS",
+            "Access to a remote station",
+            "Access to a secure node"
+          ],
+          "correct_answer": "Access to the DS",
+          "explanation": "An AP bridges wireless clients in a Basic Service Set (BSS) to the Distribution System (DS), enabling LAN access."
+        },
+        {
+          "question": "WPA3 is the latest and greatest version of the WPA protocol. Security flaws have been discovered in WPA3. Write a three-paragraph report outlining what security flaws have been discovered and what steps have been taken to mitigate these flaws, and then discuss the most critical CVE involving WPA3 that has been reported to date.",
+          "answer": [],
+          "correct_answer": "",
+          "explanation": "Research assignment — students investigate WPA3 vulnerabilities such as Dragonblood (CVE-2019-13377) and summarize mitigation efforts."
+        },
+        {
+          "question": "Perform an analysis of your home Wi-Fi access points. What authentication method are you using? Do you have WPS enabled? Write a three-paragraph report outlining the details of your analysis and suggest changes you can make to improve your home Wi-Fi security.",
+          "answer": [],
+          "correct_answer": "",
+          "explanation": "Practical assignment — students examine their home Wi-Fi configuration, identify security settings, and propose enhancements."
+        },
+        {
+          "question": "Which of the following typically functions as the 802.1X authenticator, allowing or denying a supplicant’s access to a WLAN?",
+          "answer": [
+            "AP",
+            "RADIUS server",
+            "CA",
+            "Public key issuer"
+          ],
+          "correct_answer": "AP",
+          "explanation": "In 802.1X authentication, the access point acts as the authenticator, forwarding credentials between the supplicant and the RADIUS server."
+        }
+      ]
+    },
+    {
+      "quizz_title": "Module 12. Cryptography Review Questions",
+      "questions": [
+        {
+          "question": "Digital signatures are used to do which of the following?",
+          "answer": [
+            "Verify that a message was received",
+            "Ensure that repudiation is provided",
+            "Provide authentication and nonrepudiation",
+            "Encrypt sensitive messages"
+          ],
+          "correct_answer": "Provide authentication and nonrepudiation",
+          "explanation": "Digital signatures verify the sender’s identity (authentication) and ensure the sender cannot deny sending the message (nonrepudiation)."
+        },
+        {
+          "question": "What is the standard for PKI certificates?",
+          "answer": [
+            "X.500",
+            "X.400",
+            "X.509",
+            "MySQL.409"
+          ],
+          "correct_answer": "X.509",
+          "explanation": "X.509 is the international standard for defining the format of public key certificates used in PKI systems."
+        },
+        {
+          "question": "A man-in-the-middle attack can be performed using a number of hardware and software tools readily available for purchase or download on the Internet. Write a three-paragraph report describing some of these tools. Include information such as where the tools can be acquired, what they cost, and how they are used.",
+          "answer": [],
+          "correct_answer": "",
+          "explanation": "Open-ended research question — students should describe available MITM tools such as Wireshark, Ettercap, or Cain & Abel and explain their functionality."
+        },
+        {
+          "question": "A hash value is a fixed-length string used to verify message integrity. True or false?",
+          "answer": [
+            "True",
+            "False"
+          ],
+          "correct_answer": "True",
+          "explanation": "Hash values create a unique, fixed-length output from data to verify integrity and detect any changes."
+        },
+        {
+          "question": "OpenPGP is focused on protecting which of the following?",
+          "answer": [
+            "Web content",
+            "Email messages",
+            "Database systems",
+            "IPSec traffic"
+          ],
+          "correct_answer": "Email messages",
+          "explanation": "OpenPGP (Pretty Good Privacy) primarily secures email messages through encryption and digital signatures."
+        },
+        {
+          "question": "Intruders can perform which kind of attack if they have possession of a company’s password hash file?",
+          "answer": [
+            "Dictionary",
+            "Scan",
+            "Ciphertext",
+            "Buffer overflow"
+          ],
+          "correct_answer": "Dictionary",
+          "explanation": "With password hashes, attackers can perform dictionary or brute-force attacks to recover plaintext passwords."
+        },
+        {
+          "question": "Intercepting messages destined for another computer and sending back messages while pretending to be the other computer is an example of what type of attack?",
+          "answer": [
+            "Man-in-the-middle",
+            "Smurf",
+            "Buffer overflow",
+            "Mathematical"
+          ],
+          "correct_answer": "Man-in-the-middle",
+          "explanation": "A man-in-the-middle attack intercepts communication between two systems, allowing the attacker to read or modify data."
+        },
+        {
+          "question": "A certification authority (CA) issues private keys to recipients. True or false?",
+          "answer": [
+            "True",
+            "False"
+          ],
+          "correct_answer": "False",
+          "explanation": "CAs issue public certificates, private keys are generated and securely stored by the certificate owner."
+        },
+        {
+          "question": "Any cryptography can be cracked given enough time and processing power. The advent of quantum computing has raised concerns about the security of our current encryption algorithms. Perform an Internet search for information and write a three-paragraph report discussing quantum computing and its encryption cracking concerns.",
+          "answer": [],
+          "correct_answer": "",
+          "explanation": "Research question — students should discuss quantum computing’s potential to break RSA and ECC via Shor’s algorithm and proposed post-quantum cryptography."
+        },
+        {
+          "question": "Why did the NSA decide to drop support for DES?",
+          "answer": [
+            "The cost was too high.",
+            "The encryption algorithm was too slow.",
+            "The processing power of computers had increased.",
+            "It was too difficult for government agencies to use."
+          ],
+          "correct_answer": "The processing power of computers had increased.",
+          "explanation": "DES was dropped because advancing computing power made its 56-bit key length vulnerable to brute-force attacks."
+        },
+        {
+          "question": "Symmetric algorithms can be block ciphers or stream ciphers. True or false?",
+          "answer": [
+            "True",
+            "False"
+          ],
+          "correct_answer": "True",
+          "explanation": "Symmetric algorithms are classified as block ciphers (encrypt fixed-size blocks) or stream ciphers (encrypt data bit by bit)."
+        },
+        {
+          "question": "Which of the following describes a chosen-plaintext attack?",
+          "answer": [
+            "The attacker has ciphertext and algorithm.",
+            "The attacker has plaintext and algorithm.",
+            "The attacker has plaintext, can choose what part of the text gets encrypted, and has access to the ciphertext.",
+            "The attacker has plaintext, ciphertext, and the password file."
+          ],
+          "correct_answer": "The attacker has plaintext, can choose what part of the text gets encrypted, and has access to the ciphertext.",
+          "explanation": "In a chosen-plaintext attack, the attacker selects plaintext inputs and observes corresponding ciphertexts to deduce the encryption key."
+        },
+        {
+          "question": "Two different messages producing the same hash value results in which of the following?",
+          "answer": [
+            "Duplicate key",
+            "Corrupt key",
+            "Collision",
+            "Message digest"
+          ],
+          "correct_answer": "Collision",
+          "explanation": "A collision occurs when two different inputs generate the same hash value, undermining hash integrity."
+        },
+        {
+          "question": "In a replay attack, the attacker captures data and attempts to resubmit the data to circumvent security. Replay attacks are a common strategy in a variety of hacking methods. Write a three-paragraph report that outlines different types of replay attacks. Include information such as what type of system is being replay attacked, what weakness is the attack trying to exploit, and if there is a way to defend from such an attack.",
+          "answer": [],
+          "correct_answer": "",
+          "explanation": "Research question — students should describe replay attacks on authentication systems, tokens, and wireless networks, along with countermeasures like timestamps or nonces."
+        },
+        {
+          "question": "Advanced Encryption Standard (AES) replaced DES with which algorithm?",
+          "answer": [
+            "Rijndael",
+            "Blowfish",
+            "IDEA",
+            "Twofish"
+          ],
+          "correct_answer": "Rijndael",
+          "explanation": "AES is based on the Rijndael algorithm, chosen for its speed, flexibility, and security strength."
+        },
+        {
+          "question": "What cryptographic devices were used during World War II? (Choose all that apply.)",
+          "answer": [
+            "Enigma machine",
+            "Black Box",
+            "Purple Machine",
+            "Bombe"
+          ],
+          "correct_answer": "Enigma machine, Purple Machine, Bombe",
+          "explanation": "The Enigma (Germany), Purple (Japan), and Bombe (used by Allies to break Enigma) were major WWII cryptographic devices."
+        },
+        {
+          "question": "Asymmetric cryptography systems are which of the following?",
+          "answer": [
+            "Faster than symmetric cryptography systems",
+            "Slower than symmetric cryptography systems",
+            "The same speed as symmetric cryptography systems",
+            "Practical only on systems with multiple processors"
+          ],
+          "correct_answer": "Slower than symmetric cryptography systems",
+          "explanation": "Asymmetric encryption is slower due to the computational complexity of public-key operations compared to symmetric encryption."
+        },
+        {
+          "question": "Diffie-Hellman is used to encrypt email messages. True or false?",
+          "answer": [
+            "True",
+            "False"
+          ],
+          "correct_answer": "False",
+          "explanation": "Diffie-Hellman is a key exchange algorithm used to securely share encryption keys, not for direct encryption of messages."
+        },
+        {
+          "question": "Hiding data in a photograph is an example of which of the following?",
+          "answer": [
+            "Steganography",
+            "Stenography",
+            "Ciphertext",
+            "Cryptology"
+          ],
+          "correct_answer": "Steganography",
+          "explanation": "Steganography conceals data within other files, such as embedding hidden messages in image pixels."
+        },
+        {
+          "question": "Which of the following is an asymmetric algorithm?",
+          "answer": [
+            "DES",
+            "AES",
+            "RSA",
+            "Blowfish"
+          ],
+          "correct_answer": "RSA",
+          "explanation": "RSA is a widely used asymmetric encryption algorithm relying on key pairs for encryption and decryption."
+        }
+      ]
+    },
+     {
+      "quizz_title": "Module 13. Network Protection Systems Review Questions",
+      "questions": [
+        {
+          "question": "Which type of routing protocol advertises only new paths to other routers on the network?",
+          "answer": [
+            "Link-state routing protocol",
+            "Routing table protocol",
+            "Path-vector routing protocol",
+            "Distance-vector routing protocol"
+          ],
+          "correct_answer": "Link-state routing protocol",
+          "explanation": "Link-state routing protocols, such as OSPF and IS-IS, only send updates when there is a change in the network topology, not full routing tables."
+        },
+        {
+          "question": "A router using a distance-vector routing protocol sends only new information to other routers on the network. True or false?",
+          "answer": [
+            "True",
+            "False"
+          ],
+          "correct_answer": "False",
+          "explanation": "Distance-vector routing protocols (like RIP) periodically send entire routing tables, even if no changes have occurred."
+        },
+        {
+          "question": "Which of the following Cisco components stores a router’s running configuration, routing tables, and buffers?",
+          "answer": [
+            "NVRAM",
+            "RAM",
+            "ROM",
+            "Flash memory"
+          ],
+          "correct_answer": "RAM",
+          "explanation": "RAM in Cisco routers stores the running configuration, routing tables, and active buffers during operation."
+        },
+        {
+          "question": "If a Cisco router’s flash memory becomes corrupted, the router can boot from which of the following components?",
+          "answer": [
+            "ROM",
+            "NVRAM",
+            "RAM",
+            "CD-ROM"
+          ],
+          "correct_answer": "ROM",
+          "explanation": "ROM contains a minimal IOS image (ROMmon) that allows a router to boot and recover when flash memory is corrupted."
+        },
+        {
+          "question": "Network security devices contain software, and often this software has flaws that can be exploited to compromise security. Perform an Internet search to determine what known security flaws have been found in FortiGate products. The Search CVE List section of the cve.mitre.org website is one place you can perform this search. Write a one-page report outlining your discoveries.",
+          "answer": [],
+          "correct_answer": "",
+          "explanation": "Research task — students should examine FortiGate-related CVEs such as authentication bypass, SSL-VPN flaws, and configuration vulnerabilities."
+        },
+        {
+          "question": "A standard IP access list can’t filter IP packets based on a destination address. True or false?",
+          "answer": [
+            "True",
+            "False"
+          ],
+          "correct_answer": "True",
+          "explanation": "Standard IP ACLs in Cisco routers filter only based on source IP address, extended ACLs are required for destination-based filtering."
+        },
+        {
+          "question": "Which of the following describes a tool that collects logs and alerts from multiple devices for security analysis?",
+          "answer": [
+            "Log Management System (LMS)",
+            "Security Information and Event Management (SIEM)",
+            "Network-based IPS",
+            "Honeypot"
+          ],
+          "correct_answer": "Security Information and Event Management (SIEM)",
+          "explanation": "SIEM systems collect, analyze, and correlate logs from various devices to detect anomalies and potential security incidents."
+        },
+        {
+          "question": "Which of the following describes the main purpose of a firewall? (Choose all that apply.)",
+          "answer": [
+            "Control traffic entering and leaving a network.",
+            "Prevent certain applications from running.",
+            "Protect internal network segments.",
+            "Prevent command-and-control data from being initiated from inside the network."
+          ],
+          "correct_answer": "Control traffic entering and leaving a network., Protect internal network segments., Prevent command-and-control data from being initiated from inside the network.",
+          "explanation": "Firewalls control ingress and egress traffic, segment networks, and block suspicious outbound communications such as C2 traffic."
+        },
+        {
+          "question": "Network security devices contain software, and often this software has flaws that can be exploited to compromise security. Perform an Internet search to determine what known security flaws have been found in Cisco Router products. The Search CVE List section of the cve.mitre.org website is one place you can perform this search. Write a one-page report outlining your discoveries.",
+          "answer": [],
+          "correct_answer": "",
+          "explanation": "Research task — students should review recent Cisco Router CVEs such as privilege escalation, remote code execution, or buffer overflow issues."
+        },
+        {
+          "question": "Firewalls use which of the following to hide the internal network topology from outside users?",
+          "answer": [
+            "Packet filtering",
+            "SPI",
+            "ACL",
+            "NAT"
+          ],
+          "correct_answer": "NAT",
+          "explanation": "Network Address Translation (NAT) masks internal IP addresses, making it harder for attackers to map the internal network."
+        },
+        {
+          "question": "A stateful packet inspection firewall keeps track of network connections by using which of the following?",
+          "answer": [
+            "A state table",
+            "Fuzzy logic",
+            "Least-privileges principle",
+            "Autonomous packet flow"
+          ],
+          "correct_answer": "A state table",
+          "explanation": "Stateful firewalls maintain a state table of active connections to determine whether packets are part of a legitimate session."
+        },
+        {
+          "question": "A firewall that blocks a Telnet session from leaving the network over TCP port 443 uses which of the following?",
+          "answer": [
+            "Stateful inspection",
+            "Stateless inspection",
+            "Low-level inspection",
+            "Application layer inspection"
+          ],
+          "correct_answer": "Application layer inspection",
+          "explanation": "Application-layer firewalls inspect traffic content to ensure protocols match their expected behavior (e.g., blocking Telnet disguised as HTTPS)."
+        },
+        {
+          "question": "Web filters can prevent which type of malicious activity?",
+          "answer": [
+            "DDoS attack",
+            "SYN scan",
+            "Drive-by download",
+            "UDP flood"
+          ],
+          "correct_answer": "Drive-by download",
+          "explanation": "Web filters can block malicious sites that host drive-by downloads, preventing automatic infection when users visit compromised pages."
+        },
+        {
+          "question": "A DMZ is also referred to as which of the following?",
+          "answer": [
+            "Perimeter network",
+            "Stateful network",
+            "Stateless network",
+            "Honeypot"
+          ],
+          "correct_answer": "Perimeter network",
+          "explanation": "A DMZ (demilitarized zone) or perimeter network hosts public-facing services, providing isolation between internal and external networks."
+        },
+        {
+          "question": "Intrusion Prevention Systems contain software, and often this software has flaws that can be exploited to compromise security. Perform an Internet search to determine what known security flaws have been found in Intrusion Prevention products. The Search CVE List section of the cve.mitre.org website is one place you can perform this search. Write a one-page report outlining your discoveries.",
+          "answer": [],
+          "correct_answer": "",
+          "explanation": "Research task — students should identify vulnerabilities in IPS products such as signature evasion flaws or remote code execution vulnerabilities."
+        },
+        {
+          "question": "Which of the following describes a team of professionals whose job is to detect and respond to security incidents?",
+          "answer": [
+            "Computer Emergency Response Team (CERT)",
+            "Network Operations Center (NOC)",
+            "Data Assurance Group",
+            "Security Operations Center (SOC)"
+          ],
+          "correct_answer": "Security Operations Center (SOC)",
+          "explanation": "A Security Operations Center (SOC) monitors and analyzes security events, detecting and responding to incidents in real time."
+        },
+        {
+          "question": "Which type of IDS can send an access list to a router or firewall when an intrusion is detected on a network?",
+          "answer": [
+            "Active system",
+            "Passive system",
+            "Firewall system",
+            "Host-based system"
+          ],
+          "correct_answer": "Active system",
+          "explanation": "An active IDS (or IPS) can automatically respond by sending ACL updates to block malicious IP addresses or connections."
+        },
+        {
+          "question": "A honeypot might be used in a network for which of the following reasons? (Choose all that apply.)",
+          "answer": [
+            "Lure or entrap hackers so that law enforcement can be informed.",
+            "Gather information on new attacks and threats.",
+            "Distract hackers from attacking legitimate network resources.",
+            "Protect the DMZ from internal attacks."
+          ],
+          "correct_answer": "Lure or entrap hackers so that law enforcement can be informed., Gather information on new attacks and threats., Distract hackers from attacking legitimate network resources.",
+          "explanation": "Honeypots act as decoys to attract attackers, gather threat intelligence, and divert them from legitimate assets."
+        }
+      ]
+    },
+     {
+      "quizz_title": "Module 14. Hands-On Ethical Hacking Final Project Review Questions",
+      "questions": [
+        {
+          "question": "VirtualBox cannot run VMs unless the Hyper-V service is disabled. True or false?",
+          "answer": [
+            "True",
+            "False"
+          ],
+          "correct_answer": "True",
+          "explanation": "VirtualBox uses its own virtualization engine, which conflicts with Microsoft’s Hyper-V hypervisor. Hyper-V must be disabled for VirtualBox VMs to run properly."
+        },
+        {
+          "question": "Which type of VirtualBox network adapter allows connectivity between VMs and the host but excludes other devices on the local network?",
+          "answer": [
+            "Bridged adapter",
+            "Host-only adapter",
+            "NAT",
+            "Internal network"
+          ],
+          "correct_answer": "Host-only adapter",
+          "explanation": "A host-only adapter creates a private network between the host and VMs, isolating them from other devices on the physical LAN."
+        },
+        {
+          "question": "The Security Bytes section describes a record bug bounty of two million dollars paid by Polygon, a blockchain technology company. Write a four-paragraph report describing two other bug bounties that paid the discoverer large sums of money.",
+          "answer": [],
+          "correct_answer": "",
+          "explanation": "Research task — students should identify two major bug bounties, such as those paid by Apple, Google, or Meta, and summarize details about the vulnerabilities discovered and payouts awarded."
+        },
+        {
+          "question": "Which of the following tools can be used to discover open ports? (Choose two correct answers.)",
+          "answer": [
+            "nc",
+            "nmap",
+            "Nessus",
+            "Wget"
+          ],
+          "correct_answer": "nc, nmap",
+          "explanation": "Netcat (nc) and Nmap are both used for port scanning — Netcat for manual probing and Nmap for automated, advanced network discovery."
+        },
+        {
+          "question": "What color hat should you wear when exercising your hands-on ethical hacking abilities?",
+          "answer": [
+            "black",
+            "white",
+            "gray",
+            "multicolored"
+          ],
+          "correct_answer": "white",
+          "explanation": "Ethical hackers are referred to as 'white-hat' hackers, meaning they use their skills legally to strengthen security rather than exploit systems."
+        }
+      ]
+    }
+  ]
+}
