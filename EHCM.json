@@ -84,12 +84,12 @@
         {
           "question": "Which federal law prohibits unauthorized access of classified information?",
           "answer": [
-            "Computer Fraud and Abuse Act, Title 18",
+            "Computer Fraud and Abuse Act Title 18",
             "Electronic Communication Privacy Act",
             "Stored Wire and Electronic Communications and Transactional Records Act",
             "Fifth Amendment"
           ],
-          "correct_answer": "Computer Fraud and Abuse Act, Title 18",
+          "correct_answer": "Computer Fraud and Abuse Act Title 18",
           "explanation": "The Computer Fraud and Abuse Act (CFAA) prohibits unauthorized access to computers and classified data, among other offenses."
         },
         {
