@@ -22,9 +22,36 @@
             background-color: #f0f8ff;
             display: none;
         }
+
+        .random-gif {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+            max-width: 80%;
+            max-height: 80%;
+            display: none;
+            box-shadow: 0 0 30px rgba(0,0,0,0.5);
+            border-radius: 10px;
+        }
+
+        .gif-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.7);
+            z-index: 999;
+            display: none;
+        }
     </style>
 </head>
 <body>
+<div class="gif-overlay" id="gifOverlay" onclick="hideGif()"></div>
+<img class="random-gif" id="randomGif" src="" alt="Random GIF" onclick="hideGif()">
+
 <div class="container">
     <h2>Question {{ index + 1 }} of {{ total }}</h2>
     <p class="score-text">Score: {{ score }} / {{ total }}</p>
@@ -68,6 +95,22 @@
             [rawCorrect.trim()];
     }
 
+    // Random GIF functionality (1/20 chance)
+    function showRandomGif() {
+        const randomChance = Math.random();
+        if (randomChance < 0.02) { // 1/20 = 0.05
+            const gifUrl = "{{ url_for('static', filename='giphy.gif') }}";
+            document.getElementById('randomGif').src = gifUrl;
+            document.getElementById('randomGif').style.display = 'block';
+            document.getElementById('gifOverlay').style.display = 'block';
+        }
+    }
+
+    function hideGif() {
+        document.getElementById('randomGif').style.display = 'none';
+        document.getElementById('gifOverlay').style.display = 'none';
+    }
+
     function showAnswer() {
         const inputs = document.querySelectorAll('input[type="checkbox"], input[type="radio"]');
         inputs.forEach(input => {
@@ -86,6 +129,9 @@
         if (explanation) {
             explanation.style.display = 'block';
         }
+
+        // Trigger random GIF
+        showRandomGif();
     }
 
     const form = document.querySelector("form");
