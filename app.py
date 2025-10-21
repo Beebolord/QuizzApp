@@ -6,12 +6,12 @@ app = Flask(__name__)
 app.secret_key = 'your_secret_key_here'
 
 MODULES = {
+    'Ethical Hacking And Countermeasure ': 'EHCM.json',
     'CYSA': 'cysa.json',
     'Firewall': 'Firewall.json',
     'Linux': 'Linux Part 2.json',
     'CCNA Part 1': 'ccna.json',
     'CCNA Part 2': 'ccna_2.json',
-    'Ethical Hacking And Countermeasure ': 'EHCM.json'
 }
 
 def load_module_quizzes(module_name):
