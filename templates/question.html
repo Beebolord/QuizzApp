@@ -98,7 +98,7 @@
     // Random GIF functionality (1/20 chance)
     function showRandomGif() {
         const randomChance = Math.random();
-        if (randomChance < 0.02) { // 1/20 = 0.05
+        if (randomChance < 0.01) { // 1/20 = 0.05
             const gifUrl = "{{ url_for('static', filename='giphy.gif') }}";
             document.getElementById('randomGif').src = gifUrl;
             document.getElementById('randomGif').style.display = 'block';
