@@ -105,7 +105,7 @@ def question(module_name, quiz_title, index):
     return render_template(
         'question.html',
         quiz_title=quiz_title,
-        index=index + 1,  # 1-based display
+        index=index,
         question=question_data,
         total=total,
         module_name=module_name,
