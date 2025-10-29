@@ -1,0 +1,16 @@
+{
+    "quizz_title": "best_fruit",
+    "questions": [
+        {
+            "question": "What is the best fruit?",
+            "answer": [
+                "apple",
+                "orange",
+                "banana",
+                "clementine"
+            ],
+            "correct_answer": "apple",
+            "explanation": "Apple is considered the best fruit due to its popularity and health benefits."
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "quizz_title": "fruits",
+    "questions": [
+        {
+            "question": "What fruit is the best?",
+            "answer": [
+                "Orange",
+                "Apple",
+                "Clementine",
+                "Mandarin"
+            ],
+            "correct_answer": "Apple",
+            "explanation": "Apple is considered the best among the options provided."
+        }
+    ]
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Quiz</title>
+  <style>
+    body {
+      font-family: monospace;
+      background-color: #111;
+      color: #ddd;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    header {
+      background-color: #1e1e1e;
+      color: #0ff;
+      text-align: center;
+      padding: 15px;
+      font-size: 1.2em;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .title-bar {
+      background-color: #1a1a1a;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .title-bar label {
+      color: #0ff;
+      font-size: 0.9em;
+    }
+
+    .title-bar input {
+      flex: 1;
+      padding: 6px 10px;
+      border: none;
+      border-radius: 4px;
+      background-color: #0c0c0c;
+      color: #0ff;
+      font-family: monospace;
+    }
+
+    .editor-container {
+      display: flex;
+      flex: 1;
+      height: calc(100vh - 160px);
+    }
+
+    textarea {
+      width: 50%;
+      border: none;
+      outline: none;
+      padding: 15px;
+      font-size: 14px;
+      resize: none;
+      line-height: 1.4;
+      overflow-y: auto;
+      font-family: monospace;
+    }
+
+    #questions {
+      background-color: #1a1a1a;
+      color: #0f0;
+    }
+
+    #answers {
+      background-color: #0c0c0c;
+      color: #00ffff;
+    }
+
+    footer {
+      background-color: #1e1e1e;
+      text-align: center;
+      padding: 10px;
+    }
+
+    button {
+      background-color: #007bff;
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    a {
+      color: #0ff;
+      margin-left: 15px;
+    }
+  </style>
+</head>
+<body>
+<nav style="
+  background-color: #1e1e1e;
+  color: #0ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 25px;
+  font-family: monospace;
+  box-shadow: 0 0 10px #0ff3;
+">
+  <div style="font-weight: bold; letter-spacing: 1px; color: #0ff;">
+    🧠 <a href="/" style="text-decoration:none; color:#0ff;">QuizLab</a>
+  </div>
+
+  <div style="display:flex; gap:20px;">
+    <a href="/" style="color:#0ff; text-decoration:none;">Home</a>
+    <a href="/add_quiz" style="color:#0ff; text-decoration:none;">Add Quiz</a>
+    <a href="/module/FKSA" style="color:#0ff; text-decoration:none;">Modules</a>
+    <a href="https://github.com" target="_blank" style="color:#0ff; text-decoration:none;">GitHub</a>
+  </div>
+
+  <div style="color:#888; font-size:0.85em;">
+    <span id="time"></span>
+  </div>
+
+  <script>
+    // Optional live clock
+    function updateClock() {
+      const now = new Date();
+      document.getElementById('time').textContent =
+        now.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'});
+    }
+    updateClock();
+    setInterval(updateClock, 60000);
+  </script>
+</nav>
+  <header>🧠 Add / Edit Quiz</header>
+
+  <form method="POST">
+    <div class="title-bar">
+      <label for="quiz_title">Quiz Title:</label>
+      <input type="text" id="quiz_title" name="quiz_title" placeholder="Enter quiz title..." value="{{ quiz_title }}">
+    </div>
+
+    <div class="editor-container">
+      <textarea id="questions" name="questions" placeholder="Type or paste your QUESTIONS here...">{{ raw_text }}</textarea>
+      <textarea id="answers" name="answers" placeholder="Type or paste your ANSWERS here...">{{ json_output }}</textarea>
+    </div>
+
+    <footer>
+  <button id="makeQuizBtn" type="submit" formaction="/add_quiz">Make Quiz</button>
+  <a href="/">Back</a>
+
+  <!-- Loading overlay -->
+  <div id="loading" style="
+    display:none;
+    position:fixed;
+    top:0;left:0;
+    width:100%;height:100%;
+    background:rgba(0,0,0,0.85);
+    color:#0ff;
+    font-family:monospace;
+    font-size:1.2em;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    z-index:9999;
+  ">
+    <div style="width:60%;background:#333;border-radius:10px;overflow:hidden;height:20px;margin-bottom:10px;">
+      <div id="progress" style="width:0%;height:100%;background:#0ff;transition:width 1.5s;"></div>
+    </div>
+    <span>Building your quiz...</span>
+  </div>
+</footer>
+
+<script>
+const makeQuizBtn = document.getElementById("makeQuizBtn");
+const loading = document.getElementById("loading");
+const progress = document.getElementById("progress");
+
+makeQuizBtn.addEventListener("click", () => {
+  loading.style.display = "flex";
+  progress.style.width = "0%";
+
+  // Animate progress bar
+  let pct = 0;
+  const interval = setInterval(() => {
+    pct += Math.random() * 10;
+    if (pct > 95) pct = 95; // cap before completion
+    progress.style.width = pct + "%";
+  }, 600);
+
+  // Stop animation after form submission delay (~to avoid infinite loop)
+  setTimeout(() => clearInterval(interval), 20000);
+});
+</script>
+
+  </form>
+</body>
+</html>
